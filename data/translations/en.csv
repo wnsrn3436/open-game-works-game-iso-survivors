@@ -1,236 +1,236 @@
 key,source,source_hash,current_hash,text
-input_prompt.name.[prompt_key_1],1,,bdf7f5d0b71195a8,
-input_prompt.name.[prompt_key_2],2,,a508927e73c8f91d,
-input_prompt.name.[prompt_key_3],3,,18d3132c6a26a72d,
-input_prompt.name.[prompt_key_a],A,,e1655df306bdd7c6,
-input_prompt.name.[prompt_key_d],D,,3dd8facea39524b4,
-input_prompt.name.[prompt_key_escape],Esc,,bea229cfdc9f27fd,
-input_prompt.name.[prompt_key_p],P,,ce10a614e07ba2a5,
-input_prompt.name.[prompt_key_s],S,,62e2510f9938135d,
-input_prompt.name.[prompt_key_w],W,,28a9ba4e2555e152,
-input_prompt.name.[prompt_pad_b],B,,e015c7c3ee1c63f3,
-input_prompt.name.[prompt_pad_dpad_down],십자키 아래,,e34822361495a31a,
-input_prompt.name.[prompt_pad_dpad_left],십자키 왼쪽,,f5c70053724c01ed,
-input_prompt.name.[prompt_pad_dpad_right],십자키 오른쪽,,112183e50dd61491,
-input_prompt.name.[prompt_pad_dpad_up],십자키 위,,2f6ab4016394300e,
-input_prompt.name.[prompt_pad_rb],RB,,3e3beb50dc41e417,
-input_prompt.name.[prompt_pad_start],Start,,352d84e362cc4828,
-input_prompt.name.[prompt_pad_x],X,,09737bacc2e7f412,
-input_prompt.name.[prompt_pad_y],Y,,af86d647cc26c885,
-input_prompt.name.[prompt_touch_menu_pick_1],1,,bdf7f5d0b71195a8,
-input_prompt.name.[prompt_touch_menu_pick_2],2,,a508927e73c8f91d,
-input_prompt.name.[prompt_touch_menu_pick_3],3,,18d3132c6a26a72d,
-input_prompt.name.[prompt_touch_move_down],S,,62e2510f9938135d,
-input_prompt.name.[prompt_touch_move_left],A,,e1655df306bdd7c6,
-input_prompt.name.[prompt_touch_move_right],D,,3dd8facea39524b4,
-input_prompt.name.[prompt_touch_move_up],W,,28a9ba4e2555e152,
-input_prompt.name.[prompt_touch_pause],P,,ce10a614e07ba2a5,
-item.name.[item_gold],금화,,58c1d9ba11f8e54a,
-item.name.[upgrade_greed],탐욕,,9a4c667efe575dba,
-item.name.[upgrade_haste],서두름,,7a358840679f9b84,
-item.name.[upgrade_magnet],자력,,5fb9932c8a17681d,
-item.name.[upgrade_might],힘,,0f352d84464b845b,
-item.name.[upgrade_swiftness],신속,,567044ce7dcba3ec,
-item.name.[upgrade_vitality],생명력,,b1f35eb16609874a,
-language.name.[lang_en],English,,4579c7dbadbc4790,
-language.name.[lang_ko],한국어,,543d811aac05e8e1,
-mail_template.body.[mail_shop_grant],보관함이 가득 차서 구매한 보상을 우편으로 보냈어요,,13708d4989a1884b,
-mail_template.title.[mail_shop_grant],구매 보상,,77e3b05f155a5577,
-passive.desc.[passive_haste],레벨마다 무기 재사용 시간 −{value}%,,847895b10fd2c1e9,
-passive.desc.[passive_magnet],레벨마다 줍는 범위 +{value}%,,744af24e30dd5efb,
-passive.desc.[passive_might],레벨마다 모든 피해 +{value}%,,f3d03428ff76569f,
-passive.desc.[passive_swiftness],레벨마다 이동 속도 +{value}%,,58991085f815f204,
-passive.desc.[passive_vitality],레벨마다 최대 체력 +{value},,416856515054efc2,
-passive.name.[passive_haste],바람의 깃털,,6a892bf8f6651315,
-passive.name.[passive_magnet],자석 부적,,029eab551d3b4488,
-passive.name.[passive_might],분노의 불씨,,db578b3aaa815e7d,
-passive.name.[passive_swiftness],질풍 장화,,06bf44b3a4b88afd,
-passive.name.[passive_vitality],거인의 심장,,01b0bb74f7a683ab,
-reserved_string.text.[app_name],아이소 서바이버즈,,a51c129595a12176,
-reserved_string.text.[auth_age_confirm],확인,,1aacb54c49924296,
-reserved_string.text.[auth_age_invalid],올바른 연도와 월을 입력하세요.,,5b3a53405171535b,
-reserved_string.text.[auth_age_month],월,,ed8a406d02b187b8,
-reserved_string.text.[auth_age_title],태어난 연도와 월을 입력하세요,,55de38dd31149ce7,
-reserved_string.text.[auth_age_year],연도,,afd218a26904f527,
-reserved_string.text.[auth_deletion_back],뒤로,,2df06869205b07fe,
-reserved_string.text.[auth_deletion_body],게임에서 받은 사용자 ID와 삭제 코드를 입력하세요.,,7ac457d35cf43412,
-reserved_string.text.[auth_deletion_code],삭제 코드,,f1fee09ca28dbb39,
-reserved_string.text.[auth_deletion_confirm],삭제한 데이터는 되돌릴 수 없다는 것을 이해했습니다.,,611a6cb9cb15b714,
-reserved_string.text.[auth_deletion_done],계정 삭제를 요청했습니다.,,a83d15176d635fa1,
-reserved_string.text.[auth_deletion_failed],계정을 삭제하지 못했습니다.,,f2132aeb0e296baf,
-reserved_string.text.[auth_deletion_google],Google 로그인으로 삭제,,2a1cfc17fc383602,
-reserved_string.text.[auth_deletion_rate_limited],시도가 너무 많습니다. 잠시 뒤 다시 시도하세요.,,bc192b22d39dbdfc,
-reserved_string.text.[auth_deletion_retry],다시 시도,,196856a662bd9084,
-reserved_string.text.[auth_deletion_submit],삭제,,6139b6c3ed73cd4a,
-reserved_string.text.[auth_deletion_title],계정 삭제,,07051913f67d3a7e,
-reserved_string.text.[auth_deletion_user_id],사용자 ID,,77b43feb06c33532,
-reserved_string.text.[auth_go_to_title],타이틀로,,ebf1eb5c33b7d645,
-reserved_string.text.[auth_google_desktop_done],로그인이 끝났습니다. 게임으로 돌아가세요.,,778b373ddaab6ecf,
-reserved_string.text.[auth_privacy_ad_personalization],맞춤 광고,,c2f59f8ae2b8a3b0,
-reserved_string.text.[auth_privacy_analytics],이용 분석,,5a15c8aaef16f97e,
-reserved_string.text.[auth_privacy_confirm],확인,,1aacb54c49924296,
-reserved_string.text.[auth_privacy_title],개인정보 선택,,84908379872ae75e,
-reserved_string.text.[auth_push_ad],이벤트와 혜택 알림,,4568890021b8c58a,
-reserved_string.text.[auth_push_ad_denied],{date:date}에 이벤트와 혜택 알림을 거부했습니다.,,0da5e6a9ec10c1cf,
-reserved_string.text.[auth_push_ad_granted],{date:date}에 이벤트와 혜택 알림에 동의했습니다.,,b7d1de542d1bc183,
-reserved_string.text.[auth_push_confirm],확인,,1aacb54c49924296,
-reserved_string.text.[auth_push_night],야간 알림,,d3d0a6b97d797326,
-reserved_string.text.[auth_push_night_denied],{date:date}에 야간 알림을 거부했습니다.,,7c492972f8d50e68,
-reserved_string.text.[auth_push_night_granted],{date:date}에 야간 알림에 동의했습니다.,,8c758602e72fc4e9,
-reserved_string.text.[auth_push_title],알림,,12ddd6ca69068faa,
-reserved_string.text.[auth_recover_back],뒤로,,2df06869205b07fe,
-reserved_string.text.[auth_recover_guest],게스트 계정을 찾을 수 없습니다.,,f43c118ab28d466f,
-reserved_string.text.[auth_recover_linked],연동한 계정으로 로그인,,6643e551a57c3b05,
-reserved_string.text.[auth_recover_login_apple],Apple로 로그인,,ccc8e22998c7726e,
-reserved_string.text.[auth_recover_login_google],Google로 로그인,,9404977fe76e6108,
-reserved_string.text.[auth_recover_new],새 계정으로 시작,,391c1e0bebe1c8d9,
-reserved_string.text.[auth_recover_new_confirm],새 계정은 이전 계정으로 돌아갈 수 없습니다. 새 계정으로 시작할까요?,,d29f1ca7c446fd76,
-reserved_string.text.[auth_recover_new_ok],시작,,b1f28cd21af730b2,
-reserved_string.text.[auth_session_replaced],다른 기기에서 이 계정으로 로그인했습니다.,,c3bfd2dedf77252c,
-reserved_string.text.[auth_terms_agree_privacy],개인정보 처리방침에 동의합니다,,87308a9cf9e514f1,
-reserved_string.text.[auth_terms_agree_terms],이용약관에 동의합니다,,13d71aa6479818a6,
-reserved_string.text.[auth_terms_confirm],확인,,1aacb54c49924296,
-reserved_string.text.[auth_terms_title],이용약관 동의,,82a919ac73cb9367,
-reserved_string.text.[auth_terms_view],보기,,ac5b575fff0fa065,
-reserved_string.text.[auth_tracking_usage],사용자에게 맞는 광고를 보이는 데 데이터를 사용합니다.,,a1cbc994d5fc9fa2,
-reserved_string.text.[auth_web_link_body],진행 상황을 지키려면 계정을 연동하세요.,,26228fbebb952ee9,
-reserved_string.text.[auth_web_link_failed],계정을 연동하지 못했습니다.,,86f5fbeb19b8ef2b,
-reserved_string.text.[auth_web_link_google],Google 계정 연동,,9acaed794c215d3c,
-reserved_string.text.[auth_web_link_later],나중에,,a12252500035668f,
-reserved_string.text.[bootstrap_age_blocked],이 나이에는 이 게임을 이용할 수 없습니다.,,c2a04b5c97e36f72,
-reserved_string.text.[bootstrap_banned],사용자 {user_id}의 이용이 {until_at:datetime}까지 제한되었습니다. 자세히: {url},,d6a3d0efe4190174,
-reserved_string.text.[bootstrap_banned_deletion],계정 삭제 요청,,de7f6a00aed6d1f3,
-reserved_string.text.[bootstrap_banned_deletion_code],사용자 {user_id}: {expires_at:datetime} 전에 {url}에서 코드 {code}를 입력하세요.,,4db23020009349b0,
-reserved_string.text.[bootstrap_banned_deletion_failed],삭제 코드를 받지 못했습니다.,,3bb73ea5715cd650,
-reserved_string.text.[bootstrap_banned_permanent],사용자 {user_id}의 이용이 제한되었습니다. 자세히: {url},,a3db2da77b390862,
-reserved_string.text.[bootstrap_fatal_error],오류로 게임이 멈췄습니다.,,a3bdb0beee2103ce,
-reserved_string.text.[bootstrap_login_failed],로그인하지 못했습니다.,,b42ac90bab1504c0,
-reserved_string.text.[bootstrap_restart],다시 시작,,c0128255dc47e432,
-reserved_string.text.[common_terms_agree_all],모두 동의합니다,,78ed5c87b18e680f,
-reserved_string.text.[common_terms_agree_both],두 항목에 모두 동의하면 시작할 수 있어요,,770ce18e008caf38,
-reserved_string.text.[game_update_app_update_required],새 버전의 앱이 필요합니다.,,3f06e6b9758a2b0d,
-reserved_string.text.[game_update_data_update_required],새 게임 데이터가 필요합니다. 게임을 다시 시작합니다.,,052928483452b213,
-reserved_string.text.[game_update_download_failed],내려받지 못했습니다.,,9be8cf113c49f275,
-reserved_string.text.[game_update_go_to_store],스토어로 이동,,88c289b95c8d3173,
-reserved_string.text.[game_update_invalid_file],내려받은 파일이 손상되었습니다.,,63be79a76e3b52a2,
-reserved_string.text.[game_update_later],나중에,,a12252500035668f,
-reserved_string.text.[game_update_no_space],저장 공간이 부족합니다.,,67e613722c809957,
-reserved_string.text.[game_update_recommended],새 버전의 앱이 있습니다.,,a7fca7bdb4d895d6,
-reserved_string.text.[game_update_restart],다시 시작,,c0128255dc47e432,
-reserved_string.text.[game_update_retry],다시 시도,,196856a662bd9084,
-reserved_string.text.[game_update_save_failed],내려받은 파일을 저장하지 못했습니다.,,222b3d6311f8ff66,
-reserved_string.text.[levelup_chest_title],보물 상자!,,c0cec9905b24c252,
-reserved_string.text.[levelup_heal_desc],체력을 {amount} 회복합니다,,4b948a0c06494292,
-reserved_string.text.[levelup_heal_name],따뜻한 수프,,16e3d2333828423d,
-reserved_string.text.[levelup_level],Lv {level},,de26750a72775e77,
-reserved_string.text.[levelup_new],새로 얻기,,102868aa13a359f7,
-reserved_string.text.[levelup_pick_hint],{action:menu_pick_1} {action:menu_pick_2} {action:menu_pick_3} 로도 고를 수 있어요,,a2ac2dda9d1fd7d2,
-reserved_string.text.[levelup_subtitle],하나를 고르세요,,951bd4e47be6ef49,
-reserved_string.text.[levelup_title],레벨 업!,,474ac456d6432b23,
-reserved_string.text.[loading_text],불러오는 중,,5b7e88929ec0ed88,
-reserved_string.text.[lobby_best],최고 생존 {time:duration} · 최다 처치 {kills:n},,469a9178bbc4c5bb,
-reserved_string.text.[lobby_gold],{gold:n},,653f8333cadc3c9f,
-reserved_string.text.[lobby_no_record],첫 원정을 떠나 새벽까지 버텨 보세요,,ae8af2adb6a736b6,
-reserved_string.text.[lobby_options],설정,,115bced49291a6a0,
-reserved_string.text.[lobby_play],원정 시작,,bf24bb67327b03c9,
-reserved_string.text.[lobby_runs],원정 {runs}회 · 새벽 맞이 {dawns}회,,0217ee3ef9dde1a6,
-reserved_string.text.[lobby_upgrade_ready],금화로 살 수 있는 강화가 있어요,,effac76a0c0481f4,
-reserved_string.text.[lobby_upgrades],등불 제단,,80c8b4453c3bf118,
-reserved_string.text.[network_confirm],확인,,1aacb54c49924296,
-reserved_string.text.[network_error_banned],계정 이용이 제한되었습니다.,,f8bd4d9d2cb9e96c,
-reserved_string.text.[network_error_connection],서버에 연결할 수 없습니다.,,67e5ccaadfed98b7,
-reserved_string.text.[network_error_feature_disabled],지금은 이 기능을 쓸 수 없습니다.,,2a374ad445db3909,
-reserved_string.text.[network_error_general],서버 오류가 발생했습니다.,,1bc72fefc72067ef,
-reserved_string.text.[network_error_invalid_response],서버 응답을 읽을 수 없습니다.,,91a38e2da91fbc63,
-reserved_string.text.[network_error_maintenance],서버 점검 중입니다.,,f68e0b3df6151276,
-reserved_string.text.[network_error_rate_limited],요청이 너무 많습니다. 잠시 뒤 다시 시도하세요.,,2d32593943316aac,
-reserved_string.text.[network_error_session],세션이 끝났습니다. 다시 로그인하세요.,,6b0e13f750738811,
-reserved_string.text.[network_error_timeout],서버가 제때 응답하지 않았습니다.,,cde7d6353c46da15,
-reserved_string.text.[network_go_to_title],타이틀로,,ebf1eb5c33b7d645,
-reserved_string.text.[network_retry],다시 시도,,196856a662bd9084,
-reserved_string.text.[option_cancel],취소,,be876433993ab7ba,
-reserved_string.text.[option_close],닫기,,1e8c10206f5b35bd,
-reserved_string.text.[option_copied],복사했습니다,,5e80b233136bd398,
-reserved_string.text.[option_copy_code],코드 복사,,2fd5fe4b1f06d612,
-reserved_string.text.[option_copy_url],주소 복사,,046ea9c5e33a7e67,
-reserved_string.text.[option_copy_user_id],ID 복사,,2ddc88614e4cee8a,
-reserved_string.text.[option_deletion_info],"코드 {code}, {expires_at:datetime}까지 유효합니다. {url} 에서 입력하세요",,b13ec8559b9ece4b,
-reserved_string.text.[option_deletion_issue],계정 삭제 코드 받기,,530d7d872783e86d,
-reserved_string.text.[option_failed],실패했습니다. 다시 시도해 주세요.,,de76c668b153027d,
-reserved_string.text.[option_licenses],라이선스,,8a59fa8b83fe3e97,
-reserved_string.text.[option_privacy],개인정보 처리방침,,b4f463f37666c59e,
-reserved_string.text.[option_privacy_choices],개인정보 선택,,84908379872ae75e,
-reserved_string.text.[option_terms],이용약관,,c7e724d5c4951b72,
-reserved_string.text.[option_title],설정,,115bced49291a6a0,
-reserved_string.text.[option_user_id],사용자 ID: {user_id},,db42612695a2d20d,
-reserved_string.text.[option_withdraw],회원 탈퇴,,4406c379c287135f,
-reserved_string.text.[option_withdraw_confirm],"탈퇴할까요? 금화와 강화, 기록이 지워지고 되돌릴 수 없습니다.",,0cc6dcf4210978dc,
-reserved_string.text.[option_withdraw_ok],탈퇴,,871d207609515b86,
-reserved_string.text.[pause_give_up],원정 포기,,4f30d0563660124c,
-reserved_string.text.[pause_give_up_note],포기해도 지금까지 번 금화는 받아요,,ee2b13ac4a15e6f9,
-reserved_string.text.[pause_resume],계속하기,,5dfd3b2bc49d9944,
-reserved_string.text.[pause_title],일시 정지,,dec330ec318c8cb3,
-reserved_string.text.[result_again],다시 출발,,426e026f66a87923,
-reserved_string.text.[result_dawn],새벽이 밝았다!,,cb2c086fe64add67,
-reserved_string.text.[result_fallen],어둠에 쓰러졌다,,c076e9da3b1643b8,
-reserved_string.text.[result_gold],금화 +{gold:n},,95c353e6f68c2926,
-reserved_string.text.[result_kills],처치 {kills:n},,4af9b68b925d2c9f,
-reserved_string.text.[result_level],도달 레벨 {level},,21b1e540b44f8973,
-reserved_string.text.[result_lobby],야영지로,,ef9dbbf996b43acb,
-reserved_string.text.[result_new_best],최고 기록!,,30e038f6e4889dae,
-reserved_string.text.[result_saving],기록하는 중,,5c53ae3224462eef,
-reserved_string.text.[result_time],생존 시간 {time:duration},,ef3a0242b29253c0,
-reserved_string.text.[result_unsaved],이번 원정은 기록하지 못했어요,,70c035f517d887da,
-reserved_string.text.[result_upgrade_hint],야영지의 등불 제단에서 금화로 강화하세요,,af7a1a54d4362ee5,
-reserved_string.text.[run_dawn_near],곧 새벽이 옵니다!,,330f310803487b46,
-reserved_string.text.[run_elite_warning],강력한 적이 나타났다!,,0b83b911eda4c739,
-reserved_string.text.[run_gold],{gold:n},,653f8333cadc3c9f,
-reserved_string.text.[run_hint_move],{action:move_up}{action:move_left}{action:move_down}{action:move_right} 로 움직이세요. 공격은 자동이에요,,56291b61947fe986,
-reserved_string.text.[run_hp],{hp}/{max},,fa9d172ca36c0206,
-reserved_string.text.[run_kills],{kills:n},,e3148550b0d22c70,
-reserved_string.text.[run_level],Lv {level},,de26750a72775e77,
-reserved_string.text.[run_slot_level],{level},,89285e302ce92955,
-reserved_string.text.[run_starting],원정 준비 중,,fefe31826aab0688,
-reserved_string.text.[run_timer],{minutes}:{tens}{ones},,1f252df3dca9f97b,
-reserved_string.text.[scene_prepare_failed],화면을 불러오지 못했습니다.,,5c84f7e098772f6e,
-reserved_string.text.[scene_restart],다시 시작,,c0128255dc47e432,
-reserved_string.text.[scene_retry],다시 시도,,196856a662bd9084,
-reserved_string.text.[stat_area_up],범위 +{value}%,,e46419a4848d1ddf,
-reserved_string.text.[stat_cooldown_down],재사용 시간 −{value}%,,c6327e02c02a6cdd,
-reserved_string.text.[stat_count_up],개수 +{value},,94ddfaff769c4e99,
-reserved_string.text.[stat_damage_up],피해 +{value},,c864b9a160e91480,
-reserved_string.text.[stat_pierce_up],관통 +{value},,0958806795ac983a,
-reserved_string.text.[stat_speed_up],속도 +{value}%,,3522f51d2745176f,
-reserved_string.text.[title_name],아이소 서바이버즈,,a51c129595a12176,
-reserved_string.text.[title_tagline],새벽까지 버텨라. 등불이 어둠을 밀어낸다,,289644080621365c,
-reserved_string.text.[ui_exit_cancel],취소,,be876433993ab7ba,
-reserved_string.text.[ui_exit_confirm],게임을 종료할까요?,,451062c7656b99f3,
-reserved_string.text.[ui_exit_quit],종료,,086bb5335d174a9a,
-reserved_string.text.[ui_licenses_close],닫기,,1e8c10206f5b35bd,
-reserved_string.text.[ui_licenses_title],라이선스,,8a59fa8b83fe3e97,
-reserved_string.text.[upgrade_bought],{name} 강화 완료!,,ad8c7bfe624f8af0,
-reserved_string.text.[upgrade_buy],강화,,5384b3b94d8db893,
-reserved_string.text.[upgrade_close],닫기,,1e8c10206f5b35bd,
-reserved_string.text.[upgrade_cost],{cost:n},,19dfa1706b2d21ed,
-reserved_string.text.[upgrade_desc],금화로 산 강화는 영구적이며 다음 원정부터 적용돼요,,76345c7a6861b384,
-reserved_string.text.[upgrade_level],Lv {level}/{max},,38fcf89f8b16b798,
-reserved_string.text.[upgrade_maxed],최대,,ee3b70e7b026e0a7,
-reserved_string.text.[upgrade_not_enough],금화가 부족해요,,f40444304556eb4e,
-reserved_string.text.[upgrade_overflow_warning],보상 일부가 들어갈 자리가 없어 사라지거나 우편으로 가요. 그래도 살까요?,,c07ece1a089ef58e,
-reserved_string.text.[upgrade_title],등불 제단,,80c8b4453c3bf118,
-upgrade.desc.[upgrade_greed],레벨마다 원정 금화 +{value}%,,7333cae975451cf6,
-upgrade.desc.[upgrade_haste],레벨마다 무기 재사용 시간 −{value}%,,847895b10fd2c1e9,
-upgrade.desc.[upgrade_magnet],레벨마다 줍는 범위 +{value}%,,744af24e30dd5efb,
-upgrade.desc.[upgrade_might],레벨마다 모든 피해 +{value}%,,f3d03428ff76569f,
-upgrade.desc.[upgrade_swiftness],레벨마다 이동 속도 +{value}%,,58991085f815f204,
-upgrade.desc.[upgrade_vitality],레벨마다 최대 체력 +{value},,416856515054efc2,
-weapon.desc.[weapon_holy_aura],몸 주위의 불꽃이 가까운 적을 계속 태웁니다,,ab617fd018176004,
-weapon.desc.[weapon_lantern_bolt],가장 가까운 적에게 빛 탄환을 쏩니다,,2acb2fa7da7e5ae8,
-weapon.desc.[weapon_lightning],주변의 적에게 번개를 떨어뜨립니다,,413f9ce25fed7cf2,
-weapon.desc.[weapon_spinning_blade],낫이 몸 주위를 돌며 닿는 적을 벱니다,,279a04d1cdf3515c,
-weapon.desc.[weapon_throwing_axe],움직이는 방향으로 도끼를 던져 여러 적을 꿰뚫습니다,,c87c71a63e073835,
-weapon.name.[weapon_holy_aura],성화 오라,,305681d96509ca0f,
-weapon.name.[weapon_lantern_bolt],등불 탄환,,21de6f3dab001de5,
-weapon.name.[weapon_lightning],낙뢰,,50fae423fe2bc6e9,
-weapon.name.[weapon_spinning_blade],회전 낫,,c7db3ba655e3666f,
-weapon.name.[weapon_throwing_axe],투척 도끼,,92734fda3997b355,
+input_prompt.name.[prompt_key_1],1,0b230628486d6e28,0b230628486d6e28,1
+input_prompt.name.[prompt_key_2],2,6787cb6b7ceba4b7,6787cb6b7ceba4b7,2
+input_prompt.name.[prompt_key_3],3,eb367d97abe08efb,eb367d97abe08efb,3
+input_prompt.name.[prompt_key_a],A,bec9827322f4667f,bec9827322f4667f,A
+input_prompt.name.[prompt_key_d],D,085a6e3ce2fde9b1,085a6e3ce2fde9b1,D
+input_prompt.name.[prompt_key_escape],Esc,7697cddb9d07a54a,7697cddb9d07a54a,Esc
+input_prompt.name.[prompt_key_p],P,4f9f53d5e2cbd622,4f9f53d5e2cbd622,P
+input_prompt.name.[prompt_key_s],S,2ae7a736f6678a7e,2ae7a736f6678a7e,S
+input_prompt.name.[prompt_key_w],W,532bd7abf455b170,532bd7abf455b170,W
+input_prompt.name.[prompt_pad_b],B,7d74f2a9f38fd38d,7d74f2a9f38fd38d,B
+input_prompt.name.[prompt_pad_dpad_down],십자키 아래,3c78b48e87cf8b5b,3c78b48e87cf8b5b,D-pad Down
+input_prompt.name.[prompt_pad_dpad_left],십자키 왼쪽,087ce542ec66fea4,087ce542ec66fea4,D-pad Left
+input_prompt.name.[prompt_pad_dpad_right],십자키 오른쪽,38c598b07878d75d,38c598b07878d75d,D-pad Right
+input_prompt.name.[prompt_pad_dpad_up],십자키 위,dc9f0029a4d75c55,dc9f0029a4d75c55,D-pad Up
+input_prompt.name.[prompt_pad_rb],RB,ba495be530bc38c7,ba495be530bc38c7,RB
+input_prompt.name.[prompt_pad_start],Start,c0c6a4e1299d34ba,c0c6a4e1299d34ba,Start
+input_prompt.name.[prompt_pad_x],X,48edce40d2cc09c0,48edce40d2cc09c0,X
+input_prompt.name.[prompt_pad_y],Y,26fdc1bd44c37917,26fdc1bd44c37917,Y
+input_prompt.name.[prompt_touch_menu_pick_1],1,0b230628486d6e28,0b230628486d6e28,1
+input_prompt.name.[prompt_touch_menu_pick_2],2,6787cb6b7ceba4b7,6787cb6b7ceba4b7,2
+input_prompt.name.[prompt_touch_menu_pick_3],3,eb367d97abe08efb,eb367d97abe08efb,3
+input_prompt.name.[prompt_touch_move_down],S,2ae7a736f6678a7e,2ae7a736f6678a7e,S
+input_prompt.name.[prompt_touch_move_left],A,bec9827322f4667f,bec9827322f4667f,A
+input_prompt.name.[prompt_touch_move_right],D,085a6e3ce2fde9b1,085a6e3ce2fde9b1,D
+input_prompt.name.[prompt_touch_move_up],W,532bd7abf455b170,532bd7abf455b170,W
+input_prompt.name.[prompt_touch_pause],P,4f9f53d5e2cbd622,4f9f53d5e2cbd622,P
+item.name.[item_gold],금화,d5624f3b07b90113,d5624f3b07b90113,Gold
+item.name.[upgrade_greed],탐욕,2ab33927ede6f1ad,2ab33927ede6f1ad,Greed
+item.name.[upgrade_haste],서두름,5b31ff52b26b18d2,5b31ff52b26b18d2,Haste
+item.name.[upgrade_magnet],자력,824a96293b7fd322,824a96293b7fd322,Magnet
+item.name.[upgrade_might],힘,85b180e5794fdc57,85b180e5794fdc57,Might
+item.name.[upgrade_swiftness],신속,c94a49b2027ac044,c94a49b2027ac044,Swiftness
+item.name.[upgrade_vitality],생명력,60954d9915300fb2,60954d9915300fb2,Vitality
+language.name.[lang_en],English,4579c7dbadbc4790,4579c7dbadbc4790,English
+language.name.[lang_ko],한국어,543d811aac05e8e1,543d811aac05e8e1,한국어
+mail_template.body.[mail_shop_grant],보관함이 가득 차서 구매한 보상을 우편으로 보냈어요,13708d4989a1884b,13708d4989a1884b,"Your storage was full, so your purchased rewards were sent by mail"
+mail_template.title.[mail_shop_grant],구매 보상,77e3b05f155a5577,77e3b05f155a5577,Purchase Rewards
+passive.desc.[passive_haste],레벨마다 무기 재사용 시간 −{value}%,847895b10fd2c1e9,847895b10fd2c1e9,Each level: weapon cooldown −{value}%
+passive.desc.[passive_magnet],레벨마다 줍는 범위 +{value}%,744af24e30dd5efb,744af24e30dd5efb,Each level: pickup range +{value}%
+passive.desc.[passive_might],레벨마다 모든 피해 +{value}%,f3d03428ff76569f,f3d03428ff76569f,Each level: all damage +{value}%
+passive.desc.[passive_swiftness],레벨마다 이동 속도 +{value}%,58991085f815f204,58991085f815f204,Each level: move speed +{value}%
+passive.desc.[passive_vitality],레벨마다 최대 체력 +{value},416856515054efc2,416856515054efc2,Each level: max HP +{value}
+passive.name.[passive_haste],바람의 깃털,ecc05afad934bd84,ecc05afad934bd84,Wind Feather
+passive.name.[passive_magnet],자석 부적,6f2b0db39a4d251e,6f2b0db39a4d251e,Magnet Charm
+passive.name.[passive_might],분노의 불씨,2e587fefad4ac50b,2e587fefad4ac50b,Ember of Fury
+passive.name.[passive_swiftness],질풍 장화,b5afb8a996de99d4,b5afb8a996de99d4,Gale Boots
+passive.name.[passive_vitality],거인의 심장,580a7bf49dfa2d3d,580a7bf49dfa2d3d,Giant's Heart
+reserved_string.text.[app_name],아이소 서바이버즈,a51c129595a12176,a51c129595a12176,Iso Survivors
+reserved_string.text.[auth_age_confirm],확인,1aacb54c49924296,1aacb54c49924296,Confirm
+reserved_string.text.[auth_age_invalid],올바른 연도와 월을 입력하세요.,5b3a53405171535b,5b3a53405171535b,Enter a valid year and month.
+reserved_string.text.[auth_age_month],월,ed8a406d02b187b8,ed8a406d02b187b8,Month
+reserved_string.text.[auth_age_title],태어난 연도와 월을 입력하세요,55de38dd31149ce7,55de38dd31149ce7,Enter your birth year and month
+reserved_string.text.[auth_age_year],연도,afd218a26904f527,afd218a26904f527,Year
+reserved_string.text.[auth_deletion_back],뒤로,2df06869205b07fe,2df06869205b07fe,Back
+reserved_string.text.[auth_deletion_body],게임에서 받은 사용자 ID와 삭제 코드를 입력하세요.,0bd6778b706db34e,0bd6778b706db34e,Enter the user ID and deletion code you received in the game.
+reserved_string.text.[auth_deletion_code],삭제 코드,f1fee09ca28dbb39,f1fee09ca28dbb39,Deletion code
+reserved_string.text.[auth_deletion_confirm],삭제한 데이터는 되돌릴 수 없다는 것을 이해했습니다.,611a6cb9cb15b714,611a6cb9cb15b714,I understand that deleted data cannot be restored.
+reserved_string.text.[auth_deletion_done],계정 삭제를 요청했습니다.,a83d15176d635fa1,a83d15176d635fa1,Account deletion has been requested.
+reserved_string.text.[auth_deletion_failed],계정을 삭제하지 못했습니다.,f2132aeb0e296baf,f2132aeb0e296baf,Could not delete the account.
+reserved_string.text.[auth_deletion_google],Google 로그인으로 삭제,2a1cfc17fc383602,2a1cfc17fc383602,Delete with Google sign-in
+reserved_string.text.[auth_deletion_rate_limited],시도가 너무 많습니다. 잠시 뒤 다시 시도하세요.,bc192b22d39dbdfc,bc192b22d39dbdfc,Too many attempts. Please try again later.
+reserved_string.text.[auth_deletion_retry],다시 시도,196856a662bd9084,196856a662bd9084,Try again
+reserved_string.text.[auth_deletion_submit],삭제,6139b6c3ed73cd4a,6139b6c3ed73cd4a,Delete
+reserved_string.text.[auth_deletion_title],계정 삭제,07051913f67d3a7e,07051913f67d3a7e,Delete Account
+reserved_string.text.[auth_deletion_user_id],사용자 ID,4d4abc7a84b4f1f6,4d4abc7a84b4f1f6,User ID
+reserved_string.text.[auth_go_to_title],타이틀로,ebf1eb5c33b7d645,ebf1eb5c33b7d645,Go to title
+reserved_string.text.[auth_google_desktop_done],로그인이 끝났습니다. 게임으로 돌아가세요.,778b373ddaab6ecf,778b373ddaab6ecf,Sign-in complete. Return to the game.
+reserved_string.text.[auth_privacy_ad_personalization],맞춤 광고,c2f59f8ae2b8a3b0,c2f59f8ae2b8a3b0,Personalized ads
+reserved_string.text.[auth_privacy_analytics],이용 분석,5a15c8aaef16f97e,5a15c8aaef16f97e,Usage analytics
+reserved_string.text.[auth_privacy_confirm],확인,1aacb54c49924296,1aacb54c49924296,Confirm
+reserved_string.text.[auth_privacy_title],개인정보 선택,84908379872ae75e,84908379872ae75e,Privacy Choices
+reserved_string.text.[auth_push_ad],이벤트와 혜택 알림,4568890021b8c58a,4568890021b8c58a,Event and offer notifications
+reserved_string.text.[auth_push_ad_denied],{date:date}에 이벤트와 혜택 알림을 거부했습니다.,0da5e6a9ec10c1cf,0da5e6a9ec10c1cf,You declined event and offer notifications on {date:date}.
+reserved_string.text.[auth_push_ad_granted],{date:date}에 이벤트와 혜택 알림에 동의했습니다.,b7d1de542d1bc183,b7d1de542d1bc183,You agreed to event and offer notifications on {date:date}.
+reserved_string.text.[auth_push_confirm],확인,1aacb54c49924296,1aacb54c49924296,Confirm
+reserved_string.text.[auth_push_night],야간 알림,d3d0a6b97d797326,d3d0a6b97d797326,Night-time notifications
+reserved_string.text.[auth_push_night_denied],{date:date}에 야간 알림을 거부했습니다.,7c492972f8d50e68,7c492972f8d50e68,You declined night-time notifications on {date:date}.
+reserved_string.text.[auth_push_night_granted],{date:date}에 야간 알림에 동의했습니다.,8c758602e72fc4e9,8c758602e72fc4e9,You agreed to night-time notifications on {date:date}.
+reserved_string.text.[auth_push_title],알림,12ddd6ca69068faa,12ddd6ca69068faa,Notifications
+reserved_string.text.[auth_recover_back],뒤로,2df06869205b07fe,2df06869205b07fe,Back
+reserved_string.text.[auth_recover_guest],게스트 계정을 찾을 수 없습니다.,f43c118ab28d466f,f43c118ab28d466f,Guest account not found.
+reserved_string.text.[auth_recover_linked],연동한 계정으로 로그인,6643e551a57c3b05,6643e551a57c3b05,Sign in with linked account
+reserved_string.text.[auth_recover_login_apple],Apple로 로그인,eb3d77712b0d6aad,eb3d77712b0d6aad,Sign in with Apple
+reserved_string.text.[auth_recover_login_google],Google로 로그인,9404977fe76e6108,9404977fe76e6108,Sign in with Google
+reserved_string.text.[auth_recover_new],새 계정으로 시작,391c1e0bebe1c8d9,391c1e0bebe1c8d9,Start with a new account
+reserved_string.text.[auth_recover_new_confirm],새 계정은 이전 계정으로 돌아갈 수 없습니다. 새 계정으로 시작할까요?,d29f1ca7c446fd76,d29f1ca7c446fd76,You cannot return to your previous account from a new one. Start with a new account?
+reserved_string.text.[auth_recover_new_ok],시작,b1f28cd21af730b2,b1f28cd21af730b2,Start
+reserved_string.text.[auth_session_replaced],다른 기기에서 이 계정으로 로그인했습니다.,c3bfd2dedf77252c,c3bfd2dedf77252c,This account was signed in on another device.
+reserved_string.text.[auth_terms_agree_privacy],개인정보 처리방침에 동의합니다,87308a9cf9e514f1,87308a9cf9e514f1,I agree to the Privacy Policy
+reserved_string.text.[auth_terms_agree_terms],이용약관에 동의합니다,13d71aa6479818a6,13d71aa6479818a6,I agree to the Terms of Service
+reserved_string.text.[auth_terms_confirm],확인,1aacb54c49924296,1aacb54c49924296,Confirm
+reserved_string.text.[auth_terms_title],이용약관 동의,82a919ac73cb9367,82a919ac73cb9367,Agree to Terms
+reserved_string.text.[auth_terms_view],보기,ac5b575fff0fa065,ac5b575fff0fa065,View
+reserved_string.text.[auth_tracking_usage],사용자에게 맞는 광고를 보이는 데 데이터를 사용합니다.,a1cbc994d5fc9fa2,a1cbc994d5fc9fa2,We use data to show you ads that suit you.
+reserved_string.text.[auth_web_link_body],진행 상황을 지키려면 계정을 연동하세요.,26228fbebb952ee9,26228fbebb952ee9,Link your account to keep your progress.
+reserved_string.text.[auth_web_link_failed],계정을 연동하지 못했습니다.,86f5fbeb19b8ef2b,86f5fbeb19b8ef2b,Could not link the account.
+reserved_string.text.[auth_web_link_google],Google 계정 연동,9acaed794c215d3c,9acaed794c215d3c,Link Google account
+reserved_string.text.[auth_web_link_later],나중에,a12252500035668f,a12252500035668f,Later
+reserved_string.text.[bootstrap_age_blocked],이 나이에는 이 게임을 이용할 수 없습니다.,c2a04b5c97e36f72,c2a04b5c97e36f72,You cannot play this game at your age.
+reserved_string.text.[bootstrap_banned],사용자 {user_id}의 이용이 {until_at:datetime}까지 제한되었습니다. 자세히: {url},d6a3d0efe4190174,d6a3d0efe4190174,User {user_id} is restricted until {until_at:datetime}. Details: {url}
+reserved_string.text.[bootstrap_banned_deletion],계정 삭제 요청,de7f6a00aed6d1f3,de7f6a00aed6d1f3,Request account deletion
+reserved_string.text.[bootstrap_banned_deletion_code],사용자 {user_id}: {expires_at:datetime} 전에 {url}에서 코드 {code}를 입력하세요.,4db23020009349b0,4db23020009349b0,"User {user_id}: before {expires_at:datetime}, enter code {code} at {url}."
+reserved_string.text.[bootstrap_banned_deletion_failed],삭제 코드를 받지 못했습니다.,3bb73ea5715cd650,3bb73ea5715cd650,Could not get a deletion code.
+reserved_string.text.[bootstrap_banned_permanent],사용자 {user_id}의 이용이 제한되었습니다. 자세히: {url},a3db2da77b390862,a3db2da77b390862,User {user_id} is restricted. Details: {url}
+reserved_string.text.[bootstrap_fatal_error],오류로 게임이 멈췄습니다.,a3bdb0beee2103ce,a3bdb0beee2103ce,The game stopped because of an error.
+reserved_string.text.[bootstrap_login_failed],로그인하지 못했습니다.,b42ac90bab1504c0,b42ac90bab1504c0,Could not sign in.
+reserved_string.text.[bootstrap_restart],다시 시작,c0128255dc47e432,c0128255dc47e432,Restart
+reserved_string.text.[common_terms_agree_all],모두 동의합니다,78ed5c87b18e680f,78ed5c87b18e680f,Agree to all
+reserved_string.text.[common_terms_agree_both],두 항목에 모두 동의하면 시작할 수 있어요,770ce18e008caf38,770ce18e008caf38,Agree to both to get started
+reserved_string.text.[game_update_app_update_required],새 버전의 앱이 필요합니다.,3f06e6b9758a2b0d,3f06e6b9758a2b0d,A new version of the app is required.
+reserved_string.text.[game_update_data_update_required],새 게임 데이터가 필요합니다. 게임을 다시 시작합니다.,052928483452b213,052928483452b213,New game data is required. The game will restart.
+reserved_string.text.[game_update_download_failed],내려받지 못했습니다.,9be8cf113c49f275,9be8cf113c49f275,Download failed.
+reserved_string.text.[game_update_go_to_store],스토어로 이동,88c289b95c8d3173,88c289b95c8d3173,Go to store
+reserved_string.text.[game_update_invalid_file],내려받은 파일이 손상되었습니다.,63be79a76e3b52a2,63be79a76e3b52a2,The downloaded file is corrupted.
+reserved_string.text.[game_update_later],나중에,a12252500035668f,a12252500035668f,Later
+reserved_string.text.[game_update_no_space],저장 공간이 부족합니다.,67e613722c809957,67e613722c809957,Not enough storage space.
+reserved_string.text.[game_update_recommended],새 버전의 앱이 있습니다.,a7fca7bdb4d895d6,a7fca7bdb4d895d6,A new version of the app is available.
+reserved_string.text.[game_update_restart],다시 시작,c0128255dc47e432,c0128255dc47e432,Restart
+reserved_string.text.[game_update_retry],다시 시도,196856a662bd9084,196856a662bd9084,Try again
+reserved_string.text.[game_update_save_failed],내려받은 파일을 저장하지 못했습니다.,222b3d6311f8ff66,222b3d6311f8ff66,Could not save the downloaded file.
+reserved_string.text.[levelup_chest_title],보물 상자!,c0cec9905b24c252,c0cec9905b24c252,Treasure Chest!
+reserved_string.text.[levelup_heal_desc],체력을 {amount} 회복합니다,4b948a0c06494292,4b948a0c06494292,Restores {amount} HP
+reserved_string.text.[levelup_heal_name],따뜻한 수프,16e3d2333828423d,16e3d2333828423d,Warm Soup
+reserved_string.text.[levelup_level],Lv {level},de26750a72775e77,de26750a72775e77,Lv {level}
+reserved_string.text.[levelup_new],새로 얻기,102868aa13a359f7,102868aa13a359f7,NEW
+reserved_string.text.[levelup_pick_hint],{action:menu_pick_1} {action:menu_pick_2} {action:menu_pick_3} 로도 고를 수 있어요,f6f9192343d469b4,f6f9192343d469b4,You can also pick with {action:menu_pick_1} {action:menu_pick_2} {action:menu_pick_3}
+reserved_string.text.[levelup_subtitle],하나를 고르세요,951bd4e47be6ef49,951bd4e47be6ef49,Choose one
+reserved_string.text.[levelup_title],레벨 업!,474ac456d6432b23,474ac456d6432b23,Level Up!
+reserved_string.text.[loading_text],불러오는 중,5b7e88929ec0ed88,5b7e88929ec0ed88,Loading
+reserved_string.text.[lobby_best],최고 생존 {time:duration} · 최다 처치 {kills:n},469a9178bbc4c5bb,469a9178bbc4c5bb,Best survival {time:duration} · Most kills {kills:n}
+reserved_string.text.[lobby_gold],{gold:n},653f8333cadc3c9f,653f8333cadc3c9f,{gold:n}
+reserved_string.text.[lobby_no_record],첫 원정을 떠나 새벽까지 버텨 보세요,02d16494c0f2bd1e,02d16494c0f2bd1e,Head out on your first Run and survive until Dawn
+reserved_string.text.[lobby_options],설정,115bced49291a6a0,115bced49291a6a0,Settings
+reserved_string.text.[lobby_play],원정 시작,4e325d9edfa65f56,4e325d9edfa65f56,Start Run
+reserved_string.text.[lobby_runs],원정 {runs}회 · 새벽 맞이 {dawns}회,e869afb3fb8d9aa0,e869afb3fb8d9aa0,{runs} {runs:plural:Run/Runs} · {dawns} {dawns:plural:Dawn/Dawns} reached
+reserved_string.text.[lobby_upgrade_ready],금화로 살 수 있는 강화가 있어요,a5a343858ae025da,a5a343858ae025da,You can afford an upgrade with Gold
+reserved_string.text.[lobby_upgrades],등불 제단,ffe4fe18ee6a0f04,ffe4fe18ee6a0f04,Lantern Shrine
+reserved_string.text.[network_confirm],확인,1aacb54c49924296,1aacb54c49924296,Confirm
+reserved_string.text.[network_error_banned],계정 이용이 제한되었습니다.,f8bd4d9d2cb9e96c,f8bd4d9d2cb9e96c,This account is restricted.
+reserved_string.text.[network_error_connection],서버에 연결할 수 없습니다.,67e5ccaadfed98b7,67e5ccaadfed98b7,Cannot connect to the server.
+reserved_string.text.[network_error_feature_disabled],지금은 이 기능을 쓸 수 없습니다.,2a374ad445db3909,2a374ad445db3909,This feature is unavailable right now.
+reserved_string.text.[network_error_general],서버 오류가 발생했습니다.,1bc72fefc72067ef,1bc72fefc72067ef,A server error occurred.
+reserved_string.text.[network_error_invalid_response],서버 응답을 읽을 수 없습니다.,91a38e2da91fbc63,91a38e2da91fbc63,Cannot read the server response.
+reserved_string.text.[network_error_maintenance],서버 점검 중입니다.,f68e0b3df6151276,f68e0b3df6151276,The server is under maintenance.
+reserved_string.text.[network_error_rate_limited],요청이 너무 많습니다. 잠시 뒤 다시 시도하세요.,2d32593943316aac,2d32593943316aac,Too many requests. Please try again later.
+reserved_string.text.[network_error_session],세션이 끝났습니다. 다시 로그인하세요.,6b0e13f750738811,6b0e13f750738811,Your session has ended. Please sign in again.
+reserved_string.text.[network_error_timeout],서버가 제때 응답하지 않았습니다.,cde7d6353c46da15,cde7d6353c46da15,The server did not respond in time.
+reserved_string.text.[network_go_to_title],타이틀로,ebf1eb5c33b7d645,ebf1eb5c33b7d645,Go to title
+reserved_string.text.[network_retry],다시 시도,196856a662bd9084,196856a662bd9084,Try again
+reserved_string.text.[option_cancel],취소,be876433993ab7ba,be876433993ab7ba,Cancel
+reserved_string.text.[option_close],닫기,1e8c10206f5b35bd,1e8c10206f5b35bd,Close
+reserved_string.text.[option_copied],복사했습니다,5e80b233136bd398,5e80b233136bd398,Copied
+reserved_string.text.[option_copy_code],코드 복사,2fd5fe4b1f06d612,2fd5fe4b1f06d612,Copy code
+reserved_string.text.[option_copy_url],주소 복사,046ea9c5e33a7e67,046ea9c5e33a7e67,Copy address
+reserved_string.text.[option_copy_user_id],ID 복사,fb0875380113509e,fb0875380113509e,Copy ID
+reserved_string.text.[option_deletion_info],"코드 {code}, {expires_at:datetime}까지 유효합니다. {url} 에서 입력하세요",b13ec8559b9ece4b,b13ec8559b9ece4b,"Code {code}, valid until {expires_at:datetime}. Enter it at {url}"
+reserved_string.text.[option_deletion_issue],계정 삭제 코드 받기,530d7d872783e86d,530d7d872783e86d,Get account deletion code
+reserved_string.text.[option_failed],실패했습니다. 다시 시도해 주세요.,de76c668b153027d,de76c668b153027d,Failed. Please try again.
+reserved_string.text.[option_licenses],라이선스,8a59fa8b83fe3e97,8a59fa8b83fe3e97,Licenses
+reserved_string.text.[option_privacy],개인정보 처리방침,b4f463f37666c59e,b4f463f37666c59e,Privacy Policy
+reserved_string.text.[option_privacy_choices],개인정보 선택,84908379872ae75e,84908379872ae75e,Privacy Choices
+reserved_string.text.[option_terms],이용약관,c7e724d5c4951b72,c7e724d5c4951b72,Terms of Service
+reserved_string.text.[option_title],설정,115bced49291a6a0,115bced49291a6a0,Settings
+reserved_string.text.[option_user_id],사용자 ID: {user_id},0ed6c774221447e0,0ed6c774221447e0,User ID: {user_id}
+reserved_string.text.[option_withdraw],회원 탈퇴,4406c379c287135f,4406c379c287135f,Delete account
+reserved_string.text.[option_withdraw_confirm],"탈퇴할까요? 금화와 강화, 기록이 지워지고 되돌릴 수 없습니다.",9ca2fb5291058d60,9ca2fb5291058d60,"Delete your account? Your Gold, upgrades and records will be erased and cannot be restored."
+reserved_string.text.[option_withdraw_ok],탈퇴,871d207609515b86,871d207609515b86,Delete
+reserved_string.text.[pause_give_up],원정 포기,bc1321d93bacec6a,bc1321d93bacec6a,Give Up Run
+reserved_string.text.[pause_give_up_note],포기해도 지금까지 번 금화는 받아요,b5cc36898101c5cf,b5cc36898101c5cf,You still keep the Gold you earned so far
+reserved_string.text.[pause_resume],계속하기,5dfd3b2bc49d9944,5dfd3b2bc49d9944,Resume
+reserved_string.text.[pause_title],일시 정지,dec330ec318c8cb3,dec330ec318c8cb3,Paused
+reserved_string.text.[result_again],다시 출발,426e026f66a87923,426e026f66a87923,Go again
+reserved_string.text.[result_dawn],새벽이 밝았다!,482e1c258fceaaf2,482e1c258fceaaf2,Dawn has broken!
+reserved_string.text.[result_fallen],어둠에 쓰러졌다,c076e9da3b1643b8,c076e9da3b1643b8,Fallen to the darkness
+reserved_string.text.[result_gold],금화 +{gold:n},00258962049a4bec,00258962049a4bec,Gold +{gold:n}
+reserved_string.text.[result_kills],처치 {kills:n},4af9b68b925d2c9f,4af9b68b925d2c9f,Kills {kills:n}
+reserved_string.text.[result_level],도달 레벨 {level},21b1e540b44f8973,21b1e540b44f8973,Level reached {level}
+reserved_string.text.[result_lobby],야영지로,ef4253280298291c,ef4253280298291c,To Camp
+reserved_string.text.[result_new_best],최고 기록!,30e038f6e4889dae,30e038f6e4889dae,New best!
+reserved_string.text.[result_saving],기록하는 중,5c53ae3224462eef,5c53ae3224462eef,Saving
+reserved_string.text.[result_time],생존 시간 {time:duration},ef3a0242b29253c0,ef3a0242b29253c0,Survived {time:duration}
+reserved_string.text.[result_unsaved],이번 원정은 기록하지 못했어요,1b6bdccde8b5935b,1b6bdccde8b5935b,This Run could not be saved
+reserved_string.text.[result_upgrade_hint],야영지의 등불 제단에서 금화로 강화하세요,e330354de4e92c16,e330354de4e92c16,Spend Gold on upgrades at the Lantern Shrine in Camp
+reserved_string.text.[run_dawn_near],곧 새벽이 옵니다!,db040312b99be141,db040312b99be141,Dawn is almost here!
+reserved_string.text.[run_elite_warning],강력한 적이 나타났다!,0b83b911eda4c739,0b83b911eda4c739,A powerful enemy appears!
+reserved_string.text.[run_gold],{gold:n},653f8333cadc3c9f,653f8333cadc3c9f,{gold:n}
+reserved_string.text.[run_hint_move],{action:move_up}{action:move_left}{action:move_down}{action:move_right} 로 움직이세요. 공격은 자동이에요,56291b61947fe986,56291b61947fe986,Move with {action:move_up}{action:move_left}{action:move_down}{action:move_right}. Attacks are automatic
+reserved_string.text.[run_hp],{hp}/{max},fa9d172ca36c0206,fa9d172ca36c0206,{hp}/{max}
+reserved_string.text.[run_kills],{kills:n},e3148550b0d22c70,e3148550b0d22c70,{kills:n}
+reserved_string.text.[run_level],Lv {level},de26750a72775e77,de26750a72775e77,Lv {level}
+reserved_string.text.[run_slot_level],{level},89285e302ce92955,89285e302ce92955,{level}
+reserved_string.text.[run_starting],원정 준비 중,73dac77988fd8af9,73dac77988fd8af9,Preparing Run
+reserved_string.text.[run_timer],{minutes}:{tens}{ones},1f252df3dca9f97b,1f252df3dca9f97b,{minutes}:{tens}{ones}
+reserved_string.text.[scene_prepare_failed],화면을 불러오지 못했습니다.,5c84f7e098772f6e,5c84f7e098772f6e,Could not load the screen.
+reserved_string.text.[scene_restart],다시 시작,c0128255dc47e432,c0128255dc47e432,Restart
+reserved_string.text.[scene_retry],다시 시도,196856a662bd9084,196856a662bd9084,Try again
+reserved_string.text.[stat_area_up],범위 +{value}%,e46419a4848d1ddf,e46419a4848d1ddf,Area +{value}%
+reserved_string.text.[stat_cooldown_down],재사용 시간 −{value}%,c6327e02c02a6cdd,c6327e02c02a6cdd,Cooldown −{value}%
+reserved_string.text.[stat_count_up],개수 +{value},94ddfaff769c4e99,94ddfaff769c4e99,Count +{value}
+reserved_string.text.[stat_damage_up],피해 +{value},c864b9a160e91480,c864b9a160e91480,Damage +{value}
+reserved_string.text.[stat_pierce_up],관통 +{value},0958806795ac983a,0958806795ac983a,Pierce +{value}
+reserved_string.text.[stat_speed_up],속도 +{value}%,3522f51d2745176f,3522f51d2745176f,Speed +{value}%
+reserved_string.text.[title_name],아이소 서바이버즈,a51c129595a12176,a51c129595a12176,Iso Survivors
+reserved_string.text.[title_tagline],새벽까지 버텨라. 등불이 어둠을 밀어낸다,68e947f2b903c0d2,68e947f2b903c0d2,Survive until Dawn. The lantern pushes back the dark
+reserved_string.text.[ui_exit_cancel],취소,be876433993ab7ba,be876433993ab7ba,Cancel
+reserved_string.text.[ui_exit_confirm],게임을 종료할까요?,451062c7656b99f3,451062c7656b99f3,Quit the game?
+reserved_string.text.[ui_exit_quit],종료,086bb5335d174a9a,086bb5335d174a9a,Quit
+reserved_string.text.[ui_licenses_close],닫기,1e8c10206f5b35bd,1e8c10206f5b35bd,Close
+reserved_string.text.[ui_licenses_title],라이선스,8a59fa8b83fe3e97,8a59fa8b83fe3e97,Licenses
+reserved_string.text.[upgrade_bought],{name} 강화 완료!,ad8c7bfe624f8af0,ad8c7bfe624f8af0,{name} upgraded!
+reserved_string.text.[upgrade_buy],강화,5384b3b94d8db893,5384b3b94d8db893,Upgrade
+reserved_string.text.[upgrade_close],닫기,1e8c10206f5b35bd,1e8c10206f5b35bd,Close
+reserved_string.text.[upgrade_cost],{cost:n},19dfa1706b2d21ed,19dfa1706b2d21ed,{cost:n}
+reserved_string.text.[upgrade_desc],금화로 산 강화는 영구적이며 다음 원정부터 적용돼요,8e32a28aa83bb7f7,8e32a28aa83bb7f7,Upgrades bought with Gold are permanent and apply from your next Run
+reserved_string.text.[upgrade_level],Lv {level}/{max},38fcf89f8b16b798,38fcf89f8b16b798,Lv {level}/{max}
+reserved_string.text.[upgrade_maxed],최대,ee3b70e7b026e0a7,ee3b70e7b026e0a7,MAX
+reserved_string.text.[upgrade_not_enough],금화가 부족해요,c18eaaaf07d73f96,c18eaaaf07d73f96,Not enough Gold
+reserved_string.text.[upgrade_overflow_warning],보상 일부가 들어갈 자리가 없어 사라지거나 우편으로 가요. 그래도 살까요?,c07ece1a089ef58e,c07ece1a089ef58e,Some rewards have no room and will be lost or sent by mail. Buy anyway?
+reserved_string.text.[upgrade_title],등불 제단,ffe4fe18ee6a0f04,ffe4fe18ee6a0f04,Lantern Shrine
+upgrade.desc.[upgrade_greed],레벨마다 원정 금화 +{value}%,1aa78de518d3d2c0,1aa78de518d3d2c0,Each level: run Gold +{value}%
+upgrade.desc.[upgrade_haste],레벨마다 무기 재사용 시간 −{value}%,847895b10fd2c1e9,847895b10fd2c1e9,Each level: weapon cooldown −{value}%
+upgrade.desc.[upgrade_magnet],레벨마다 줍는 범위 +{value}%,744af24e30dd5efb,744af24e30dd5efb,Each level: pickup range +{value}%
+upgrade.desc.[upgrade_might],레벨마다 모든 피해 +{value}%,f3d03428ff76569f,f3d03428ff76569f,Each level: all damage +{value}%
+upgrade.desc.[upgrade_swiftness],레벨마다 이동 속도 +{value}%,58991085f815f204,58991085f815f204,Each level: move speed +{value}%
+upgrade.desc.[upgrade_vitality],레벨마다 최대 체력 +{value},416856515054efc2,416856515054efc2,Each level: max HP +{value}
+weapon.desc.[weapon_holy_aura],몸 주위의 불꽃이 가까운 적을 계속 태웁니다,ab617fd018176004,ab617fd018176004,Flames around you keep burning nearby enemies
+weapon.desc.[weapon_lantern_bolt],가장 가까운 적에게 빛 탄환을 쏩니다,2acb2fa7da7e5ae8,2acb2fa7da7e5ae8,Fires a bolt of light at the nearest enemy
+weapon.desc.[weapon_lightning],주변의 적에게 번개를 떨어뜨립니다,413f9ce25fed7cf2,413f9ce25fed7cf2,Calls down lightning on nearby enemies
+weapon.desc.[weapon_spinning_blade],낫이 몸 주위를 돌며 닿는 적을 벱니다,279a04d1cdf3515c,279a04d1cdf3515c,Blades circle you and cut any enemy they touch
+weapon.desc.[weapon_throwing_axe],움직이는 방향으로 도끼를 던져 여러 적을 꿰뚫습니다,c87c71a63e073835,c87c71a63e073835,"Throws an axe in your moving direction, piercing many enemies"
+weapon.name.[weapon_holy_aura],성화 오라,9c2982e0278e302a,9c2982e0278e302a,Holy Aura
+weapon.name.[weapon_lantern_bolt],등불 탄환,de5f3df785ebca3b,de5f3df785ebca3b,Lantern Bolt
+weapon.name.[weapon_lightning],낙뢰,760fbdc31e2401af,760fbdc31e2401af,Lightning Strike
+weapon.name.[weapon_spinning_blade],회전 낫,c7ec3285a65768a7,c7ec3285a65768a7,Spinning Blade
+weapon.name.[weapon_throwing_axe],투척 도끼,0513d99c28d85592,0513d99c28d85592,Throwing Axe

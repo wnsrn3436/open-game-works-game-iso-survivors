@@ -1,0 +1,74 @@
+{
+  "runs": [
+    {
+      "command": "ogw translation todo open-game-works-game-iso-survivors en",
+      "startedAt": 1792784619100,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw translation done open-game-works-game-iso-survivors en",
+      "startedAt": 1792784664373,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw translation done open-game-works-game-iso-survivors en",
+      "startedAt": 1792784668989,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw translation todo open-game-works-game-iso-survivors en",
+      "startedAt": 1792784673027,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792784681703,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw translation done open-game-works-game-iso-survivors en",
+      "startedAt": 1792784699773,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792784701779,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw translation done open-game-works-game-iso-survivors en",
+      "startedAt": 1792784709957,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw translation todo open-game-works-game-iso-survivors en",
+      "startedAt": 1792784711294,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792784712367,
+      "exitCode": 0,
+      "summary": null
+    }
+  ],
+  "translation": {
+    "en": {
+      "text": 235,
+      "glossary": 47
+    },
+    "ko": {
+      "text": 0,
+      "glossary": 0
+    }
+  }
+}
