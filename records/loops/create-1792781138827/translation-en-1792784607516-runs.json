@@ -53,6 +53,22 @@
       "startedAt": 1792784711294,
       "exitCode": 0,
       "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792784712367,
+      "exitCode": 0,
+      "summary": null
     }
-  ]
+  ],
+  "translation": {
+    "en": {
+      "text": 235,
+      "glossary": 47
+    },
+    "ko": {
+      "text": 0,
+      "glossary": 0
+    }
+  }
 }
