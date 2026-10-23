@@ -7,7 +7,7 @@ config/icon="res://resource/app_icon/main.png"
 config/name="아이소 서바이버즈"
 config/name_localized={
 "ko": "아이소 서바이버즈",
-"en": "아이소 서바이버즈"
+"en": "Iso Survivors"
 }
 run/main_scene="res://boot/boot.tscn"
 
