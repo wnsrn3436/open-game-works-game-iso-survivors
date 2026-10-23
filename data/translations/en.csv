@@ -133,7 +133,7 @@ reserved_string.text.[lobby_gold],{gold:n},653f8333cadc3c9f,653f8333cadc3c9f,{go
 reserved_string.text.[lobby_no_record],첫 원정을 떠나 새벽까지 버텨 보세요,02d16494c0f2bd1e,02d16494c0f2bd1e,Head out on your first Run and survive until Dawn
 reserved_string.text.[lobby_options],설정,115bced49291a6a0,115bced49291a6a0,Settings
 reserved_string.text.[lobby_play],원정 시작,4e325d9edfa65f56,4e325d9edfa65f56,Start Run
-reserved_string.text.[lobby_runs],원정 {runs}회 · 새벽 맞이 {dawns}회,e869afb3fb8d9aa0,e869afb3fb8d9aa0,{runs:plural:Run/Runs} · {dawns:plural:Dawn/Dawns} reached
+reserved_string.text.[lobby_runs],원정 {runs}회 · 새벽 맞이 {dawns}회,e869afb3fb8d9aa0,e869afb3fb8d9aa0,{runs} {runs:plural:Run/Runs} · {dawns} {dawns:plural:Dawn/Dawns} reached
 reserved_string.text.[lobby_upgrade_ready],금화로 살 수 있는 강화가 있어요,a5a343858ae025da,a5a343858ae025da,You can afford an upgrade with Gold
 reserved_string.text.[lobby_upgrades],등불 제단,ffe4fe18ee6a0f04,ffe4fe18ee6a0f04,Lantern Shrine
 reserved_string.text.[network_confirm],확인,1aacb54c49924296,1aacb54c49924296,Confirm
