@@ -1,0 +1,2606 @@
+{
+  "runs": [
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors app_icon/main",
+      "startedAt": 1792784628574,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors splash/main",
+      "startedAt": 1792784629202,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors font/main",
+      "startedAt": 1792784629810,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors background/title",
+      "startedAt": 1792784630415,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors texture/ground",
+      "startedAt": 1792784631021,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors model/hero",
+      "startedAt": 1792784631627,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors particle/run/hit_spark",
+      "startedAt": 1792784632220,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors nine_slice/ui/button",
+      "startedAt": 1792784632821,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors icon/gold",
+      "startedAt": 1792784633419,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors bgm/run",
+      "startedAt": 1792784634025,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors sfx/ui_click",
+      "startedAt": 1792784634640,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key app_icon/main --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/app_icon__main.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/app_icon__main",
+      "startedAt": 1792784684361,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldpnolf16383"
+    },
+    {
+      "command": "ogw generation list font-catalog",
+      "startedAt": 1792784688784,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation list font-catalog",
+      "startedAt": 1792784694974,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldpnolf16383",
+      "startedAt": 1792784726819,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key background/lobby --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/background__lobby.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/background__lobby",
+      "startedAt": 1792784769966,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrhqofbb88d"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key background/title --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/background__title.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/background__title",
+      "startedAt": 1792784770574,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldri7je0a600"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/gold --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__gold.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__gold",
+      "startedAt": 1792784771238,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldript7ed793"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/heal_soup --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__heal_soup.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__heal_soup",
+      "startedAt": 1792784771945,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrj9icb52aa"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/kills --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__kills.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__kills",
+      "startedAt": 1792784772657,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrjtaaa76f3"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/passive_haste --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__passive_haste.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_haste",
+      "startedAt": 1792784773359,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrkcs670bcd"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/passive_magnet --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__passive_magnet.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_magnet",
+      "startedAt": 1792784774057,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrkw552f928"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/passive_might --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__passive_might.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_might",
+      "startedAt": 1792784774765,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrlfufdd2de"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/passive_swiftness --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__passive_swiftness.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_swiftness",
+      "startedAt": 1792784775496,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrm0502f5d3"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/passive_vitality --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__passive_vitality.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_vitality",
+      "startedAt": 1792784776318,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrmmx350b55"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/timer --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__timer.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__timer",
+      "startedAt": 1792784777040,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrn6sfd9c15"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/upgrade_greed --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__upgrade_greed.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_greed",
+      "startedAt": 1792784777746,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrnqocec596"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/upgrade_haste --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__upgrade_haste.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_haste",
+      "startedAt": 1792784778538,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrocm334097"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/upgrade_magnet --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__upgrade_magnet.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_magnet",
+      "startedAt": 1792784779590,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrp5u090a94"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/upgrade_might --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__upgrade_might.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_might",
+      "startedAt": 1792784780725,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrq0ze70dfd"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/upgrade_swiftness --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__upgrade_swiftness.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_swiftness",
+      "startedAt": 1792784783184,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrrxp609432"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/upgrade_vitality --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__upgrade_vitality.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_vitality",
+      "startedAt": 1792784784401,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrsurae9b4e"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/weapon_holy_aura --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__weapon_holy_aura.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_holy_aura",
+      "startedAt": 1792784785310,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrtk2a3522b"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/weapon_lantern_bolt --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__weapon_lantern_bolt.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_lantern_bolt",
+      "startedAt": 1792784786341,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrucvf7e04f"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/weapon_lightning --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__weapon_lightning.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_lightning",
+      "startedAt": 1792784787232,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrv1p6845d5"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/weapon_spinning_blade --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__weapon_spinning_blade.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_spinning_blade",
+      "startedAt": 1792784788141,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrvr2fb1511"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/weapon_throwing_axe --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__weapon_throwing_axe.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_throwing_axe",
+      "startedAt": 1792784789166,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrwjc0f5b30"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key nine_slice/ui/bar_fill --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/nine_slice__ui__bar_fill.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/nine_slice__ui__bar_fill",
+      "startedAt": 1792784790113,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrx9h5c8592"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key nine_slice/ui/bar_frame --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/nine_slice__ui__bar_frame.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/nine_slice__ui__bar_frame",
+      "startedAt": 1792784791113,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldry1p9c4160"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key nine_slice/ui/button --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/nine_slice__ui__button.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/nine_slice__ui__button",
+      "startedAt": 1792784792059,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldryro52442c"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key nine_slice/ui/button_primary --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/nine_slice__ui__button_primary.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/nine_slice__ui__button_primary",
+      "startedAt": 1792784793018,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldrzicacdea9"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key nine_slice/ui/card --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/nine_slice__ui__card.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/nine_slice__ui__card",
+      "startedAt": 1792784794031,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlds0am99c2d1"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key nine_slice/ui/focus_ring --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/nine_slice__ui__focus_ring.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/nine_slice__ui__focus_ring",
+      "startedAt": 1792784795052,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlds12w117d89"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key nine_slice/ui/panel_frame --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/nine_slice__ui__panel_frame.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/nine_slice__ui__panel_frame",
+      "startedAt": 1792784796004,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlds1t8588df4"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key nine_slice/ui/plate --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/nine_slice__ui__plate.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/nine_slice__ui__plate",
+      "startedAt": 1792784796974,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlds2k86a092b"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key splash/main --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/splash__main.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/splash__main",
+      "startedAt": 1792784797816,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlds37r8bbb92"
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key texture/ground --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/texture__ground.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/texture__ground",
+      "startedAt": 1792784798591,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlds3tga3f301"
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors sfx/dawn",
+      "startedAt": 1792784807469,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors sfx/level_up",
+      "startedAt": 1792784808340,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors bgm/lobby",
+      "startedAt": 1792784809231,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors nine_slice/ui/card",
+      "startedAt": 1792784810082,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors icon/gold",
+      "startedAt": 1792784810977,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/ui_click --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__ui_click.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__ui_click.1",
+      "startedAt": 1792784843102,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt261a76cd3"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/ui_click --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__ui_click.2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__ui_click.2",
+      "startedAt": 1792784843864,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt2r655bd84"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/enemy_hit --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__enemy_hit.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_hit.1",
+      "startedAt": 1792784844694,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt3e6d72424"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/enemy_hit --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__enemy_hit.2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_hit.2",
+      "startedAt": 1792784845424,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt3yhe9d9d2"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/enemy_hit --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__enemy_hit.3.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_hit.3",
+      "startedAt": 1792784846177,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt4jf38ff83"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/enemy_die --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__enemy_die.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_die.1",
+      "startedAt": 1792784846906,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt53o07f48d"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/enemy_die --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__enemy_die.2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_die.2",
+      "startedAt": 1792784847706,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt5pb29e1f9"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/enemy_die --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__enemy_die.3.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_die.3",
+      "startedAt": 1792784848659,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt6fwdf4609"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/gem_pickup --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__gem_pickup.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__gem_pickup.1",
+      "startedAt": 1792784849611,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt76j26b6a2"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/gem_pickup --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__gem_pickup.2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__gem_pickup.2",
+      "startedAt": 1792784850518,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt7v4cade1e"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/gem_pickup --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__gem_pickup.3.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__gem_pickup.3",
+      "startedAt": 1792784851419,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt8kz117492"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/level_up --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__level_up.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__level_up.1",
+      "startedAt": 1792784852724,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldt9l250b59c"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/upgrade_pick --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__upgrade_pick.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__upgrade_pick.1",
+      "startedAt": 1792784853481,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldta6db2f765"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/player_hurt --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__player_hurt.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__player_hurt.1",
+      "startedAt": 1792784854215,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtaqrd70cd8"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/player_hurt --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__player_hurt.2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__player_hurt.2",
+      "startedAt": 1792784854950,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtbb0a5e7e0"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/chest_open --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__chest_open.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__chest_open.1",
+      "startedAt": 1792784855674,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtbv76bc48b"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/elite_roar --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__elite_roar.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__elite_roar.1",
+      "startedAt": 1792784856398,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtcfcd58975"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/heal --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__heal.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__heal.1",
+      "startedAt": 1792784857129,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtczrf11e16"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/dawn --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__dawn.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__dawn.1",
+      "startedAt": 1792784857888,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtdkp05d4c5"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/player_death --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__player_death.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__player_death.1",
+      "startedAt": 1792784859117,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldteiwaf93ac"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/upgrade_buy --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__upgrade_buy.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__upgrade_buy.1",
+      "startedAt": 1792784860044,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtf8sce033a"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/refuse --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__refuse.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__refuse.1",
+      "startedAt": 1792784860817,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtfty0cef43"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/bolt_fire --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__bolt_fire.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__bolt_fire.1",
+      "startedAt": 1792784862192,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtgv3941a9f"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/bolt_fire --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__bolt_fire.2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__bolt_fire.2",
+      "startedAt": 1792784864709,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtitva02593"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/blade_hit --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__blade_hit.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__blade_hit.1",
+      "startedAt": 1792784865647,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtjk45827b5"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/blade_hit --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__blade_hit.2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__blade_hit.2",
+      "startedAt": 1792784866470,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtk74f1838c"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/aura_pulse --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__aura_pulse.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__aura_pulse.1",
+      "startedAt": 1792784868691,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtlvr9e21bd"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/axe_throw --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__axe_throw.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__axe_throw.1",
+      "startedAt": 1792784869912,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtmus5c2311"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/axe_throw --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__axe_throw.2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__axe_throw.2",
+      "startedAt": 1792784870716,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtnh1724605"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/lightning --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__lightning.1.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__lightning.1",
+      "startedAt": 1792784871512,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldto3905cb93"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/lightning --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__lightning.2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__lightning.2",
+      "startedAt": 1792784872287,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtooqaab23c"
+    },
+    {
+      "command": "ogw generation run ace-step --game open-game-works-game-iso-survivors --key bgm/lobby --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/bgm__lobby.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/bgm__lobby",
+      "startedAt": 1792784873053,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtp9y88e2e5"
+    },
+    {
+      "command": "ogw generation run ace-step --game open-game-works-game-iso-survivors --key bgm/run --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/bgm__run.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/bgm__run",
+      "startedAt": 1792784873901,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvldtpxhca5bfa"
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors particle/run/level_up",
+      "startedAt": 1792785268916,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors font/main --method font-catalog --file /Users/jungu/projects/coggs/.ogw/generation/font-catalog/git/0/ofl/notosanskr/NotoSansKR[wght].ttf",
+      "startedAt": 1792785442621,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/chest --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/chest.glb",
+      "startedAt": 1792785452597,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_bat --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_bat.glb",
+      "startedAt": 1792785454955,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_bone_knight --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_bone_knight.glb",
+      "startedAt": 1792785457175,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_brute --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_brute.glb",
+      "startedAt": 1792785459500,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_ghoul --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_ghoul.glb",
+      "startedAt": 1792785461818,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_skeleton --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_skeleton.glb",
+      "startedAt": 1792785464738,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_wraith --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_wraith.glb",
+      "startedAt": 1792785467172,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/heal_soup --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/heal_soup.glb",
+      "startedAt": 1792785469551,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/hero --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/hero.glb",
+      "startedAt": 1792785472238,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/prop_gravestone --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/prop_gravestone.glb",
+      "startedAt": 1792785474432,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/prop_lantern_post --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/prop_lantern_post.glb",
+      "startedAt": 1792785476572,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/prop_rock --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/prop_rock.glb",
+      "startedAt": 1792785478847,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_holy_aura --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_holy_aura.glb",
+      "startedAt": 1792785480999,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_lantern_bolt --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_lantern_bolt.glb",
+      "startedAt": 1792785482987,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_lightning --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_lightning.glb",
+      "startedAt": 1792785485114,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_spinning_blade --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_spinning_blade.glb",
+      "startedAt": 1792785487245,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_throwing_axe --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_throwing_axe.glb",
+      "startedAt": 1792785489550,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/xp_gem --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/xp_gem.glb",
+      "startedAt": 1792785491801,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/hit_spark --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/hit_spark.tscn",
+      "startedAt": 1792785493954,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/enemy_death --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/enemy_death.tscn",
+      "startedAt": 1792785496101,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/level_up --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/level_up.tscn",
+      "startedAt": 1792785498406,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/lightning_impact --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/lightning_impact.tscn",
+      "startedAt": 1792785500808,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/pickup --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/pickup.tscn",
+      "startedAt": 1792785503040,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrhqofbb88d",
+      "startedAt": 1792785516247,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldri7je0a600",
+      "startedAt": 1792785517604,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldript7ed793",
+      "startedAt": 1792785518792,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors app_icon/main --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/app_icon__main/image.png",
+      "startedAt": 1792785547885,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors background/title --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/background__title/image.png",
+      "startedAt": 1792785550417,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors background/lobby --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/background__lobby/image.png",
+      "startedAt": 1792785553085,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792785580071,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors font/main --method font-catalog --file /Users/jungu/projects/coggs/.ogw/generation/font-catalog/git/0/ofl/notosanskr/NotoSansKR[wght].ttf",
+      "startedAt": 1792785692458,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/chest --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/chest.glb",
+      "startedAt": 1792785695579,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_bat --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_bat.glb",
+      "startedAt": 1792785698401,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_bone_knight --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_bone_knight.glb",
+      "startedAt": 1792785701104,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_brute --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_brute.glb",
+      "startedAt": 1792785703966,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_ghoul --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_ghoul.glb",
+      "startedAt": 1792785706168,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_skeleton --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_skeleton.glb",
+      "startedAt": 1792785708389,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_wraith --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_wraith.glb",
+      "startedAt": 1792785710690,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/heal_soup --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/heal_soup.glb",
+      "startedAt": 1792785712913,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/hero --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/hero.glb",
+      "startedAt": 1792785714763,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/prop_gravestone --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/prop_gravestone.glb",
+      "startedAt": 1792785716755,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/prop_lantern_post --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/prop_lantern_post.glb",
+      "startedAt": 1792785718710,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/prop_rock --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/prop_rock.glb",
+      "startedAt": 1792785720625,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_holy_aura --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_holy_aura.glb",
+      "startedAt": 1792785722614,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_lantern_bolt --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_lantern_bolt.glb",
+      "startedAt": 1792785724471,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_lightning --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_lightning.glb",
+      "startedAt": 1792785728154,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_spinning_blade --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_spinning_blade.glb",
+      "startedAt": 1792785730493,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_throwing_axe --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_throwing_axe.glb",
+      "startedAt": 1792785734063,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/xp_gem --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/xp_gem.glb",
+      "startedAt": 1792785736087,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/hit_spark --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/hit_spark.tscn",
+      "startedAt": 1792785737918,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/enemy_death --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/enemy_death.tscn",
+      "startedAt": 1792785739742,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/level_up --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/level_up.tscn",
+      "startedAt": 1792785741845,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/lightning_impact --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/lightning_impact.tscn",
+      "startedAt": 1792785744233,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/pickup --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/pickup.tscn",
+      "startedAt": 1792785746418,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors app_icon/main --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/app_icon__main/image.png",
+      "startedAt": 1792785748304,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors background/title --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/background__title/image.png",
+      "startedAt": 1792785750347,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors background/lobby --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/background__lobby/image.png",
+      "startedAt": 1792785752463,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792785754812,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --commit 6085dd4",
+      "startedAt": 1792785787328,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvledaq1b535a4"
+    },
+    {
+      "command": "ogw job wait mvledaq1b535a4",
+      "startedAt": 1792785793119,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvledcdl8c2724 list_commands",
+      "startedAt": 1792785814886,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvledcdl8c2724",
+      "startedAt": 1792785815970,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldript7ed793",
+      "startedAt": 1792785820090,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvledcdl8c2724 run.open_run",
+      "startedAt": 1792785821656,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvledcdl8c2724 run.fast_forward 240000",
+      "startedAt": 1792785829590,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvledcdl8c2724",
+      "startedAt": 1792785832513,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrj9icb52aa",
+      "startedAt": 1792785846572,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvledcdl8c2724",
+      "startedAt": 1792785860168,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors font/main --method font-catalog --file /Users/jungu/projects/coggs/.ogw/generation/font-catalog/git/0/ofl/notosanskr/NotoSansKR[wght].ttf",
+      "startedAt": 1792785874856,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/chest --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/chest.glb",
+      "startedAt": 1792785876839,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_bat --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_bat.glb",
+      "startedAt": 1792785878643,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_bone_knight --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_bone_knight.glb",
+      "startedAt": 1792785880406,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_brute --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_brute.glb",
+      "startedAt": 1792785882119,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_ghoul --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_ghoul.glb",
+      "startedAt": 1792785883940,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_skeleton --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_skeleton.glb",
+      "startedAt": 1792785885700,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/enemy_wraith --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/enemy_wraith.glb",
+      "startedAt": 1792785887827,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/heal_soup --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/heal_soup.glb",
+      "startedAt": 1792785889630,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/hero --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/hero.glb",
+      "startedAt": 1792785891316,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/prop_gravestone --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/prop_gravestone.glb",
+      "startedAt": 1792785893364,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/prop_lantern_post --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/prop_lantern_post.glb",
+      "startedAt": 1792785896185,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/prop_rock --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/prop_rock.glb",
+      "startedAt": 1792785898368,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_holy_aura --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_holy_aura.glb",
+      "startedAt": 1792785900450,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_lantern_bolt --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_lantern_bolt.glb",
+      "startedAt": 1792785902627,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_lightning --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_lightning.glb",
+      "startedAt": 1792785904924,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_spinning_blade --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_spinning_blade.glb",
+      "startedAt": 1792785907070,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/weapon_throwing_axe --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/weapon_throwing_axe.glb",
+      "startedAt": 1792785909288,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors model/xp_gem --method blender --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/models/out/xp_gem.glb",
+      "startedAt": 1792785911503,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/hit_spark --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/hit_spark.tscn",
+      "startedAt": 1792785913531,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/enemy_death --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/enemy_death.tscn",
+      "startedAt": 1792785915513,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/level_up --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/level_up.tscn",
+      "startedAt": 1792785917532,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/lightning_impact --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/lightning_impact.tscn",
+      "startedAt": 1792785919548,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/pickup --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/particles/proj/out/pickup.tscn",
+      "startedAt": 1792785921637,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors app_icon/main --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/app_icon__main/image.png",
+      "startedAt": 1792785923996,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors background/title --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/background__title/image.png",
+      "startedAt": 1792785926236,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors background/lobby --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/background__lobby/image.png",
+      "startedAt": 1792785928482,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792785930870,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --commit 1acd923",
+      "startedAt": 1792785955972,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlegwtzd2caa6"
+    },
+    {
+      "command": "ogw job wait mvlegwtzd2caa6",
+      "startedAt": 1792785956877,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlegy9qec6b0f run.open_run",
+      "startedAt": 1792785976767,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlegy9qec6b0f run.fast_forward 200000",
+      "startedAt": 1792785983134,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlegy9qec6b0f",
+      "startedAt": 1792785984689,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlegy9qec6b0f --video 800",
+      "startedAt": 1792786010545,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlegy9qec6b0f",
+      "startedAt": 1792786047419,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors nine_slice/ui/card --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/nine_slice__ui__card.png",
+      "startedAt": 1792786100391,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors nine_slice/ui/focus_ring --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/nine_slice__ui__focus_ring.png",
+      "startedAt": 1792786102180,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrhqofbb88d",
+      "startedAt": 1792786113708,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldri7je0a600",
+      "startedAt": 1792786114476,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldript7ed793",
+      "startedAt": 1792786115256,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrj9icb52aa",
+      "startedAt": 1792786116024,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrj9icb52aa",
+      "startedAt": 1792786147437,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrj9icb52aa",
+      "startedAt": 1792786417036,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrj9icb52aa",
+      "startedAt": 1792786448266,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrjtaaa76f3",
+      "startedAt": 1792786683811,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrjtaaa76f3",
+      "startedAt": 1792786683827,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkcs670bcd",
+      "startedAt": 1792786684584,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkcs670bcd",
+      "startedAt": 1792786684602,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792786685330,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792786685338,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors nine_slice/ui/bar_fill --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/nine_slice__ui__bar_fill.png",
+      "startedAt": 1792786752661,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors nine_slice/ui/button_primary --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/nine_slice__ui__button_primary.png",
+      "startedAt": 1792786754361,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/gold --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__gold/image-alpha.png",
+      "startedAt": 1792786766800,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/heal_soup --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__heal_soup/image-alpha.png",
+      "startedAt": 1792786768472,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/kills --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__kills/image-alpha.png",
+      "startedAt": 1792786770073,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/upgrade_might --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_might/image-alpha.png",
+      "startedAt": 1792786771674,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/passive_haste --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_haste/image-alpha.png",
+      "startedAt": 1792786773279,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/passive_vitality --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_vitality/image-alpha.png",
+      "startedAt": 1792786774853,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/upgrade_magnet --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_magnet/image-alpha.png",
+      "startedAt": 1792786776432,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/upgrade_swiftness --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_swiftness/image-alpha.png",
+      "startedAt": 1792786778016,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/weapon_throwing_axe --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_throwing_axe/image-alpha.png",
+      "startedAt": 1792786779697,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrhqofbb88d",
+      "startedAt": 1792786789086,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldri7je0a600",
+      "startedAt": 1792786789866,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldript7ed793",
+      "startedAt": 1792786790640,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrj9icb52aa",
+      "startedAt": 1792786791428,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrjtaaa76f3",
+      "startedAt": 1792786792232,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkcs670bcd",
+      "startedAt": 1792786793037,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792786793850,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792786986021,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792786986032,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792787095095,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792787287163,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792787287163,
+      "exitCode": null,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors nine_slice/ui/plate --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/nine_slice__ui__plate.png",
+      "startedAt": 1792787334150,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792787396561,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792787588216,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792787697628,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792787889123,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792787998688,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792788189980,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792788299589,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792788490685,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792788600341,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792788791519,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792788901237,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792789092499,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792789202311,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792789393578,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrkw552f928",
+      "startedAt": 1792789503220,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrlfufdd2de",
+      "startedAt": 1792789691059,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrlfufdd2de",
+      "startedAt": 1792789691059,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrm0502f5d3",
+      "startedAt": 1792789691689,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrm0502f5d3",
+      "startedAt": 1792789691799,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrmmx350b55",
+      "startedAt": 1792789692332,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrmmx350b55",
+      "startedAt": 1792789692443,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrn6sfd9c15",
+      "startedAt": 1792789692980,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrn6sfd9c15",
+      "startedAt": 1792789693085,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrnqocec596",
+      "startedAt": 1792789693641,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrnqocec596",
+      "startedAt": 1792789693782,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrocm334097",
+      "startedAt": 1792789694352,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrocm334097",
+      "startedAt": 1792789694485,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrp5u090a94",
+      "startedAt": 1792789695042,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrp5u090a94",
+      "startedAt": 1792789695158,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrq0ze70dfd",
+      "startedAt": 1792789695725,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrq0ze70dfd",
+      "startedAt": 1792789695833,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrrxp609432",
+      "startedAt": 1792789696401,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrrxp609432",
+      "startedAt": 1792789696493,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrsurae9b4e",
+      "startedAt": 1792789697060,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrsurae9b4e",
+      "startedAt": 1792789697144,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrtk2a3522b",
+      "startedAt": 1792789697727,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrtk2a3522b",
+      "startedAt": 1792789697810,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrucvf7e04f",
+      "startedAt": 1792789698396,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrucvf7e04f",
+      "startedAt": 1792789698474,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrv1p6845d5",
+      "startedAt": 1792789699163,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrv1p6845d5",
+      "startedAt": 1792789699225,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrvr2fb1511",
+      "startedAt": 1792789699880,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrvr2fb1511",
+      "startedAt": 1792789699906,
+      "exitCode": 75,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrvr2fb1511",
+      "startedAt": 1792790000758,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrvr2fb1511",
+      "startedAt": 1792790000758,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrwjc0f5b30",
+      "startedAt": 1792790122862,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrwjc0f5b30",
+      "startedAt": 1792790122970,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrx9h5c8592",
+      "startedAt": 1792790123520,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrx9h5c8592",
+      "startedAt": 1792790123620,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldry1p9c4160",
+      "startedAt": 1792790124235,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldry1p9c4160",
+      "startedAt": 1792790124314,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldryro52442c",
+      "startedAt": 1792790124906,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldryro52442c",
+      "startedAt": 1792790124964,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrzicacdea9",
+      "startedAt": 1792790125596,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldrzicacdea9",
+      "startedAt": 1792790125642,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds0am99c2d1",
+      "startedAt": 1792790126260,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds0am99c2d1",
+      "startedAt": 1792790126296,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds12w117d89",
+      "startedAt": 1792790126945,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds12w117d89",
+      "startedAt": 1792790126977,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds1t8588df4",
+      "startedAt": 1792790127642,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds1t8588df4",
+      "startedAt": 1792790127717,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds2k86a092b",
+      "startedAt": 1792790128327,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds2k86a092b",
+      "startedAt": 1792790128382,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds37r8bbb92",
+      "startedAt": 1792790129010,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds37r8bbb92",
+      "startedAt": 1792790129056,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds3tga3f301",
+      "startedAt": 1792790129716,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlds3tga3f301",
+      "startedAt": 1792790129757,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt261a76cd3",
+      "startedAt": 1792790130486,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt2r655bd84",
+      "startedAt": 1792790131156,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt3e6d72424",
+      "startedAt": 1792790131877,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt3yhe9d9d2",
+      "startedAt": 1792790132591,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt4jf38ff83",
+      "startedAt": 1792790133276,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt53o07f48d",
+      "startedAt": 1792790134254,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation run flux2-klein --game open-game-works-game-iso-survivors --key icon/passive_magnet --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/prompts/icon__passive_magnet_v2.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_magnet_v2",
+      "startedAt": 1792790162364,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlgz2ik12c58c"
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/passive_might --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_might/image-alpha.png",
+      "startedAt": 1792790163132,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/passive_swiftness --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_swiftness/image-alpha.png",
+      "startedAt": 1792790164770,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/timer --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__timer/image-alpha.png",
+      "startedAt": 1792790166265,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/upgrade_greed --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_greed/image-alpha.png",
+      "startedAt": 1792790167794,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/upgrade_haste --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_haste/image-alpha.png",
+      "startedAt": 1792790169376,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/upgrade_vitality --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__upgrade_vitality/image-alpha.png",
+      "startedAt": 1792790170936,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/weapon_holy_aura --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_holy_aura/image-alpha.png",
+      "startedAt": 1792790172551,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/weapon_lantern_bolt --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_lantern_bolt/image-alpha.png",
+      "startedAt": 1792790174061,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/weapon_lightning --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_lightning/image-alpha.png",
+      "startedAt": 1792790175592,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/weapon_spinning_blade --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__weapon_spinning_blade/image-alpha.png",
+      "startedAt": 1792790177117,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors nine_slice/ui/bar_frame --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/nine_slice__ui__bar_frame.png",
+      "startedAt": 1792790206523,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors nine_slice/ui/button --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/nine_slice__ui__button.png",
+      "startedAt": 1792790208047,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors nine_slice/ui/panel_frame --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/nine_slice__ui__panel_frame.png",
+      "startedAt": 1792790209501,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors splash/main --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/splash__main/image.png",
+      "startedAt": 1792790219714,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors texture/ground --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/texture__ground.png",
+      "startedAt": 1792790237907,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job status mvlgz2ik12c58c",
+      "startedAt": 1792790239498,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt5pb29e1f9",
+      "startedAt": 1792790252312,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt6fwdf4609",
+      "startedAt": 1792790252973,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt76j26b6a2",
+      "startedAt": 1792790253605,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt7v4cade1e",
+      "startedAt": 1792790254258,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt8kz117492",
+      "startedAt": 1792790254889,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldt9l250b59c",
+      "startedAt": 1792790255552,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldta6db2f765",
+      "startedAt": 1792790256183,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtaqrd70cd8",
+      "startedAt": 1792790256905,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtbb0a5e7e0",
+      "startedAt": 1792790257532,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtbv76bc48b",
+      "startedAt": 1792790258167,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtcfcd58975",
+      "startedAt": 1792790258818,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtczrf11e16",
+      "startedAt": 1792790259731,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtdkp05d4c5",
+      "startedAt": 1792790260387,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldteiwaf93ac",
+      "startedAt": 1792790261029,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtf8sce033a",
+      "startedAt": 1792790261656,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtfty0cef43",
+      "startedAt": 1792790262479,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtgv3941a9f",
+      "startedAt": 1792790263120,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtitva02593",
+      "startedAt": 1792790263743,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtjk45827b5",
+      "startedAt": 1792790264380,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/axe_throw --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__axe_throw.2b.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__axe_throw.2b",
+      "startedAt": 1792790264762,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlh19jo2fc415"
+    },
+    {
+      "command": "ogw job wait mvldtk74f1838c",
+      "startedAt": 1792790265056,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/bolt_fire --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__bolt_fire.2b.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__bolt_fire.2b",
+      "startedAt": 1792790265464,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlh1a35cf5d35"
+    },
+    {
+      "command": "ogw job wait mvldtlvr9e21bd",
+      "startedAt": 1792790265741,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/ui_click --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__ui_click.2b.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__ui_click.2b",
+      "startedAt": 1792790266201,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlh1ange19b5a"
+    },
+    {
+      "command": "ogw job wait mvldtmus5c2311",
+      "startedAt": 1792790266560,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtnh1724605",
+      "startedAt": 1792790267444,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldto3905cb93",
+      "startedAt": 1792790268312,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtooqaab23c",
+      "startedAt": 1792790269112,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtp9y88e2e5",
+      "startedAt": 1792790269876,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvldtpxhca5bfa",
+      "startedAt": 1792790270664,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/level_up --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__level_up.1/sound.wav",
+      "startedAt": 1792790277771,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/upgrade_pick --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__upgrade_pick.1/sound.wav",
+      "startedAt": 1792790279303,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/chest_open --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__chest_open.1/sound.wav",
+      "startedAt": 1792790280836,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/elite_roar --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__elite_roar.1/sound.wav",
+      "startedAt": 1792790282626,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/heal --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__heal.1/sound.wav",
+      "startedAt": 1792790284353,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/dawn --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__dawn.1/sound.wav",
+      "startedAt": 1792790286195,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/player_death --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__player_death.1/sound.wav",
+      "startedAt": 1792790287971,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/aura_pulse --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__aura_pulse.1/sound.wav",
+      "startedAt": 1792790289820,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/upgrade_buy --method moss-sfx --bus Ui --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__upgrade_buy.1/sound.wav",
+      "startedAt": 1792790291350,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/refuse --method moss-sfx --bus Ui --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__refuse.1/sound.wav",
+      "startedAt": 1792790292961,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/enemy_hit --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_hit.1/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_hit.2/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_hit.3/sound.wav",
+      "startedAt": 1792790294661,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/enemy_die --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_die.1/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_die.2/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__enemy_die.3/sound.wav",
+      "startedAt": 1792790296264,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/gem_pickup --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__gem_pickup.1/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__gem_pickup.2/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__gem_pickup.3/sound.wav",
+      "startedAt": 1792790297880,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/player_hurt --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__player_hurt.1/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__player_hurt.2/sound.wav",
+      "startedAt": 1792790299447,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/blade_hit --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__blade_hit.1/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__blade_hit.2/sound.wav",
+      "startedAt": 1792790300949,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/lightning --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__lightning.1/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__lightning.2/sound.wav",
+      "startedAt": 1792790302548,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors bgm/lobby --method ace-step --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/bgm__lobby.wav",
+      "startedAt": 1792790366988,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors bgm/run --method ace-step --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/final/bgm__run.wav",
+      "startedAt": 1792790370562,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlgz2ik12c58c",
+      "startedAt": 1792790380148,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlh19jo2fc415",
+      "startedAt": 1792790380880,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlh1a35cf5d35",
+      "startedAt": 1792790406946,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlh1ange19b5a",
+      "startedAt": 1792790668593,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/ui_click --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__ui_click.2c.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__ui_click.2c",
+      "startedAt": 1792790686660,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlhab3c6f57af"
+    },
+    {
+      "command": "ogw generation run moss-sfx --game open-game-works-game-iso-survivors --key sfx/ui_click --prompt /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aprompts/sfx__ui_click.2d.txt --out /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__ui_click.2d",
+      "startedAt": 1792790687325,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlhablif4443b"
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors icon/passive_magnet --method flux2-klein --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/out/icon__passive_magnet_v2/image-alpha.png",
+      "startedAt": 1792790687938,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/axe_throw --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__axe_throw.1/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__axe_throw.2b/sound.wav",
+      "startedAt": 1792790688951,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/bolt_fire --method moss-sfx --bus Sfx --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__bolt_fire.1/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__bolt_fire.2b/sound.wav",
+      "startedAt": 1792790689996,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlhab3c6f57af",
+      "startedAt": 1792790697017,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlhablif4443b",
+      "startedAt": 1792790815074,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors sfx/ui_click --method moss-sfx --bus Ui --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__ui_click.1/sound.wav --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvldo0c0c099ee/4ddcad3b-b820-4ec6-8ff8-d21fff2c3e01/scratchpad/work/aout/sfx__ui_click.2c/sound.wav",
+      "startedAt": 1792790950835,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792790957768,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --commit 2d7c1a6",
+      "startedAt": 1792790976130,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlhgifwf6fa7f"
+    },
+    {
+      "command": "ogw job wait mvlhgifwf6fa7f",
+      "startedAt": 1792790976778,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhgjew9c7170 title.open_title",
+      "startedAt": 1792790988772,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhgjew9c7170",
+      "startedAt": 1792790990095,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhgjew9c7170 lobby.open_lobby",
+      "startedAt": 1792790991364,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhgjew9c7170",
+      "startedAt": 1792790992711,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhgjew9c7170 lobby.open_upgrades",
+      "startedAt": 1792791003910,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhgjew9c7170",
+      "startedAt": 1792791004685,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhgjew9c7170 run.open_run",
+      "startedAt": 1792791005528,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhgjew9c7170 run.fast_forward 150000",
+      "startedAt": 1792791006785,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhgjew9c7170",
+      "startedAt": 1792791007803,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhgjew9c7170 run.open_levelup",
+      "startedAt": 1792791009048,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhgjew9c7170",
+      "startedAt": 1792791009880,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792791022217,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792791027792,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhgjew9c7170 key 1 80",
+      "startedAt": 1792791028429,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhgjew9c7170 --video 1500",
+      "startedAt": 1792791029265,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlhgjew9c7170",
+      "startedAt": 1792791055543,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --commit 2d7c1a6",
+      "startedAt": 1792791070430,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlhij7f785846"
+    },
+    {
+      "command": "ogw job wait mvlhij7f785846",
+      "startedAt": 1792791071102,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhik7jb6d13f title.open_title",
+      "startedAt": 1792791082586,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhik7jb6d13f",
+      "startedAt": 1792791083909,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhik7jb6d13f lobby.open_lobby",
+      "startedAt": 1792791085186,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhik7jb6d13f",
+      "startedAt": 1792791086530,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhik7jb6d13f lobby.open_upgrades",
+      "startedAt": 1792791087609,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhik7jb6d13f",
+      "startedAt": 1792791088420,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhik7jb6d13f run.open_run",
+      "startedAt": 1792791089290,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhik7jb6d13f run.fast_forward 150000",
+      "startedAt": 1792791092821,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhik7jb6d13f",
+      "startedAt": 1792791093922,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhik7jb6d13f --video 1500",
+      "startedAt": 1792791095152,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhik7jb6d13f run.open_levelup",
+      "startedAt": 1792791102772,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhik7jb6d13f",
+      "startedAt": 1792791103695,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhik7jb6d13f key 1 80",
+      "startedAt": 1792791104706,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhik7jb6d13f --video 1000",
+      "startedAt": 1792791105513,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhik7jb6d13f run.pause",
+      "startedAt": 1792791110899,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhik7jb6d13f",
+      "startedAt": 1792791111773,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhik7jb6d13f run.open_result",
+      "startedAt": 1792791112895,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhik7jb6d13f",
+      "startedAt": 1792791114272,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlhik7jb6d13f get_sound",
+      "startedAt": 1792791115187,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlhik7jb6d13f",
+      "startedAt": 1792791127515,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792791171355,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}
