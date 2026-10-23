@@ -430,5 +430,17 @@
   "tween/lobby/play_pulse": {
     "path": "res://resource/tween/lobby/play_pulse.tres",
     "variants": 1
+  },
+  "tween/run/low_health": {
+    "path": "res://resource/tween/run/low_health.tres",
+    "variants": 1
+  },
+  "tween/run/death_tint": {
+    "path": "res://resource/tween/run/death_tint.tres",
+    "variants": 1
+  },
+  "tween/run/player_fall": {
+    "path": "res://resource/tween/run/player_fall.tres",
+    "variants": 1
   }
 }

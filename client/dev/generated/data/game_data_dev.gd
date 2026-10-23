@@ -128,6 +128,7 @@ static var _ids: Dictionary[String, int] = {
 	"[lobby_runs]": 1339058380,
 	"[lobby_upgrade_ready]": 1088849998,
 	"[lobby_upgrades]": 1971290436,
+	"[low_health_permille]": 180126824,
 	"[magnet_speed]": 1361017419,
 	"[mail_shop_grant]": 464195230,
 	"[max_kills_per_minute]": 276497176,
@@ -208,6 +209,7 @@ static var _ids: Dictionary[String, int] = {
 	"[result_again]": 1714626852,
 	"[result_dawn]": 342868867,
 	"[result_fallen]": 802623559,
+	"[result_gave_up]": 1413480041,
 	"[result_gold]": 86768422,
 	"[result_kills]": 565841619,
 	"[result_level]": 2031047378,
@@ -217,6 +219,7 @@ static var _ids: Dictionary[String, int] = {
 	"[result_time]": 595884291,
 	"[result_unsaved]": 1989880305,
 	"[result_upgrade_hint]": 1203300269,
+	"[run_blessing]": 1789223552,
 	"[run_chest]": 982574741,
 	"[run_dawn]": 342822994,
 	"[run_dawn_near]": 996683534,
@@ -227,6 +230,8 @@ static var _ids: Dictionary[String, int] = {
 	"[run_end_delay]": 379332051,
 	"[run_enemy_die]": 708191316,
 	"[run_enemy_hit]": 1380966887,
+	"[run_fallen]": 1043386475,
+	"[run_gave_up]": 105483255,
 	"[run_gem]": 823550349,
 	"[run_gold]": 48683829,
 	"[run_heal]": 304320699,
@@ -235,6 +240,7 @@ static var _ids: Dictionary[String, int] = {
 	"[run_kills]": 327074360,
 	"[run_level]": 402870333,
 	"[run_level_up]": 1163686233,
+	"[run_low_health]": 965598538,
 	"[run_mode]": 96910864,
 	"[run_pick]": 435704840,
 	"[run_player_hurt]": 1216931953,
@@ -466,6 +472,11 @@ static func set_setting_levelup_heal(value: int) -> void:
 static func set_setting_lightning_range(value: float) -> void:
 	GameSetting._test_lightning_range = value
 	GameSetting._has_test_lightning_range = true
+
+
+static func set_setting_low_health_permille(value: int) -> void:
+	GameSetting._test_low_health_permille = value
+	GameSetting._has_test_low_health_permille = true
 
 
 static func set_setting_magnet_speed(value: float) -> void:

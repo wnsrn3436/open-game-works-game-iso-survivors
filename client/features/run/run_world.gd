@@ -56,6 +56,11 @@ var weapon_ids: PackedInt32Array = PackedInt32Array()
 var weapon_levels: PackedInt32Array = PackedInt32Array()
 var passive_ids: PackedInt32Array = PackedInt32Array()
 var passive_levels: PackedInt32Array = PackedInt32Array()
+## Shrine upgrades of the loadout at level 1 or more and their levels, in `upgrade.order`.
+var upgrade_ids: PackedInt32Array = PackedInt32Array()
+var upgrade_levels: PackedInt32Array = PackedInt32Array()
+## The run ended by the give-up of the pause popup, not by a fall.
+var gave_up: bool = false
 
 var enemy_count: int = 0
 var enemy_kind: PackedInt32Array = PackedInt32Array()
@@ -201,6 +206,16 @@ func survived_ms() -> int:
 
 func duration_ms() -> int:
 	return _duration_ms
+
+
+## Whether the player is invulnerable after a hit: the time the hurt flash of the player model lasts.
+func is_hurt() -> bool:
+	return _invuln_ms > 0
+
+
+## Whether health is at or below `[low_health_permille]` of the maximum while the run plays.
+func is_low_health() -> bool:
+	return phase == Phase.PLAYING and hp * _PERMILLE <= max_hp * GameSetting.low_health_permille()
 
 
 ## Whether the simulation waits for a level-up or chest pick before the next tick.
@@ -447,6 +462,7 @@ func _load_field(r: RunSaveReader) -> void:
 ## Ends the run as a give-up: the run counts as a fall at the current time.
 func give_up() -> void:
 	if phase == Phase.PLAYING:
+		gave_up = true
 		phase = Phase.DEAD
 		events |= EVENT_DEATH
 
@@ -472,6 +488,9 @@ func _read_upgrades(loadout: GameContract.PlaySessionLoadout) -> void:
 	for i: int in mini(loadout.upgrade_ids.size(), loadout.upgrade_levels.size()):
 		var row: GameData.UpgradeRow = GameData.UpgradeTable.get_row(loadout.upgrade_ids[i])
 		var bonus: int = row.per_level * loadout.upgrade_levels[i]
+		if row.id != 0 and loadout.upgrade_levels[i] > 0:
+			upgrade_ids.append(row.id)
+			upgrade_levels.append(loadout.upgrade_levels[i])
 		match row.stat:
 			GameData.RunStat.MIGHT:
 				_upgrade_might += bonus

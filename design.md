@@ -37,16 +37,17 @@
 |---|---|---|
 | `scene/title/title` | Game name and tagline over the night graveyard backdrop during boot. Terms popup `prefab/common/terms_popup` for a new user | After login, `scene/run/run` when a run the app left can resume (`CommonRunSave`), otherwise `scene/lobby/lobby` |
 | `scene/lobby/lobby` | Root panel `prefab/lobby/lobby_panel`: game name, gold, record, `원정 시작` (start run, first focus, breathing), `등불 제단` (lantern shrine) with a line when the gold covers an upgrade, `설정` (options). Shrine panel `prefab/lobby/upgrade_panel`. Options panel `prefab/lobby/option_panel` | Start run → `scene/run/run` |
-| `scene/run/run` | The 3D field, the player with the lantern light, the horde, projectiles, gems, chests, soups and props. Root panel `prefab/run/hud_panel`: health bar and numbers, XP bar, level, timer, kills, run gold so far, weapon and passive icons with levels, the move hint (until the first move), the start status and warning banners. Level-up popup `prefab/run/levelup_popup`. Pause popup `prefab/run/pause_popup`. Result panel `prefab/run/result_panel` | Result `야영지로` → `scene/lobby/lobby`; result `다시 출발` → a new `scene/run/run` |
+| `scene/run/run` | The 3D field, the player with the lantern light, the horde, projectiles, gems, chests, soups and props (props tinted darker than the horde). Root panel `prefab/run/hud_panel`: health bar and numbers, XP bar, level, timer, kills, run gold so far, weapon and passive icons with levels, the shrine upgrade icons with levels the run started with (only when it has any), a small health bar under the player, the move hint (until the first move), the start status, the red warning banners, the gold notice and the fall title. Level-up popup `prefab/run/levelup_popup`. Pause popup `prefab/run/pause_popup`. Result panel `prefab/run/result_panel` | Result `야영지로` → `scene/lobby/lobby`; result `다시 출발` → a new `scene/run/run` |
 
 - Terms popup: the `모두 동의합니다` (I agree to all) checkbox turns both consent checkboxes on or off together; confirm is disabled until both are on, and the hint line above it says so
 - Camp: pressing start twice changes the scene once. The back input on the root panel opens the quit confirmation; on the shrine and options panels it closes the panel
 - Shrine: a buy press is checked before it is sent (the step is the next level, it is not bought yet, the gold covers it). A refused press plays the refuse sound and shows a toast with the reason; a row the gold does not cover shows its cost in blood red and the `금화가 부족해요` (not enough gold) line. A press while a purchase waits for the server is ignored. On success: coin sound, `<name> 강화 완료!` toast, the row swells with a gold glow. A purchase whose reward would be discarded or mailed asks first with a system popup
-- Run start: until the server answers `StartPlaySession`, the HUD shows `원정 준비 중` (Getting the run ready) and nothing moves. On failure, core shows an error and the scene returns to the camp
+- Run start: until the server answers `StartPlaySession`, the HUD shows `원정 준비 중` (Getting the run ready) and nothing moves. On failure, core shows an error and the scene returns to the camp. A new run whose loadout has shrine upgrades shows the gold notice `등불 제단의 가호가 함께합니다` (The lantern shrine's blessing is with you) and the shrine upgrade plate
+- Hurt: a contact hit plays the hurt sound, a short shake and a red screen flash, and the player model glows blood red while it is invulnerable (`[hurt_invuln]`). The small bar under the player and the HUD bar drop at once. At or below `[low_health_permille]` of the maximum health both bars pulse, the health numbers turn red and `체력이 위험해요!` (Health is low!) shows under the player until health rises again
 - During a run: the back input and `pause` open the pause popup (`계속하기` continue, `원정 포기` give up). The HUD receives `pause` with `InputCore.is_just_pressed`, so a press in a frame where the world is stopped is not lost. While the pause or level-up popup is open, game time (`TimeCore.set_paused`), the world and the pooled effects stop. The pause popup does not open during a pick, the fall wait or the result
 - Level-up popup: the back input does nothing; the run stays held until a card is picked. Pending picks (several level-ups at once, a chest) open one after another
-- Run end: a fall plays the fall sound and shake; after `[run_end_delay]` the result is sent with `FinishPlaySession`. On success the result panel opens with the gold of the `ItemChange` of that response. When the play session expired or is unknown to the server, the gold line says `이번 원정은 기록하지 못했어요` (This run was not recorded) without a core error popup; other rejections keep the core error handling and show the same line
-- Result panel: `다시 출발` has the first focus. Either button works once; a second press is ignored. The back input goes to the camp
+- Run end: a fall plays the fall sound and shake, the field fades to a blood red tint, the hero model tips over and the fall title `등불이 꺼졌다…` (The lantern went out…) shows over the field (`원정을 포기했다…` (You gave up the run…) for a give-up); after `[run_end_delay]` the result is sent with `FinishPlaySession`. On success the result panel opens with the gold of the `ItemChange` of that response. When the play session expired or is unknown to the server, the gold line says `이번 원정은 기록하지 못했어요` (This run was not recorded) without a core error popup; other rejections keep the core error handling and show the same line
+- Result panel: the title is `새벽이 밝았다!` (Dawn has broken!) at dawn, `원정을 포기했다` (You gave up the run) after a give-up and `어둠에 쓰러졌다` (Fell in the dark) after a fall. `다시 출발` has the first focus. Either button works once; a second press is ignored. The back input goes to the camp
 - Resume: the run state is saved every `[run_save_interval]` of run time, after each pick and when the scene exits. A run the app left resumes on the next start with the pause popup open, as long as its play session can still finish (`play_session_mode.max_duration`)
 
 ## systems
@@ -60,6 +61,7 @@
 ### enemies and waves
 
 - `wave` rows by `order`, one per minute from `wave.start`. Every `wave.spawn_interval`, `wave.spawn_count` enemies spawn on a ring of `[spawn_radius]` around the player, picked by `wave.enemies` weights, while the live count is below `wave.max_alive`. Health = `enemy.health` × `wave.health_permille` ÷ 1000
+- Opening threat: a player who stands still from the start takes the first contact hit within 20000ms of run time and falls no sooner than 10000ms after that hit (regression test `client/tests/run/test_run_world.gd`, seeds 1~5). The first waves (`wave_1`, `wave_2`) and `[hurt_invuln]` set it
 - `wave.elite` arrives once at the wave start with the warning banner; an elite (`enemy.elite`) drops a chest
 - Enemies walk to the player at `enemy.speed`, push apart by `[separation]`, take knockback reduced by `enemy.knockback_resist`; one farther than `[despawn_radius]` moves back onto the ring ahead of the player
 - A defeated enemy drops a gem of `enemy.xp`; a non-elite drops a soup with `[heal_drop_permille]` chance (heals `[heal_amount]`)
@@ -129,7 +131,7 @@
 
 | metric | min | max | data |
 |---|---|---|---|
-| `first_reward_ms` | 5000 | 30000 | `game_setting.xp_base` |
+| `first_reward_ms` | 5000 | 60000 | `game_setting.xp_base` |
 | `reward_interval_ms` | 8000 | 45000 | `game_setting.xp_step` |
 | `goal_interval_ms` | 60000 | 960000 | `wave.health_permille` |
 

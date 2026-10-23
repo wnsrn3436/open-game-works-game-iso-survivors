@@ -2,8 +2,9 @@ class_name RunScene
 extends SceneBase
 ## One run. It starts a play session on the server, builds a `RunWorld` from the loadout, runs it on fixed ticks of
 ## game time with the move input, draws it with `RunView`, plays the hit, level-up, hurt and dawn feedback, opens the
-## level-up popup for each pending pick, and when the player falls or dawn breaks sends the result with
-## `FinishPlaySession` and opens the result panel. The HUD is the root panel; it follows `RunStateChangedEvent`. The
+## level-up popup for each pending pick, and when the player falls or dawn breaks plays the fall (red tint, the hero
+## tips over, the fall title) or the dawn, sends the result with `FinishPlaySession` and opens the result panel. A run
+## that starts with shrine upgrades shows the blessing notice when it first plays. The HUD is the root panel; it follows `RunStateChangedEvent`. The
 ## pause popup and the level-up popup hold game time with `TimeCore.set_paused` while they are open. The run state is
 ## saved with `CommonRunSave` every `[run_save_interval]` of run time, after each pick and when the scene exits; a run
 ## the app left resumes from it with the pause popup open.
@@ -42,9 +43,14 @@ var _shown_level: int = -1
 var _shown_xp: int = -1
 var _shown_kills: int = -1
 var _shown_seconds: int = -1
+var _shown_low: bool = false
+## The shrine blessing notice waits for the first played frame of a run that starts with shrine upgrades.
+var _notice_pending: bool = false
+var _shown_screen: Vector2 = Vector2(-1.0, -1.0)
 var _flash_hurt: TweenDefinition = null
 var _flash_level: TweenDefinition = null
 var _flash_dawn: TweenDefinition = null
+var _death_tint: TweenDefinition = null
 var _weapon_sounds: Dictionary[int, String] = {}
 
 
@@ -85,6 +91,7 @@ func on_start() -> void:
 	_flash_hurt = ResourceCore.get_loaded(ResourceKey.TWEEN__RUN__HURT_FLASH, kind, scope) as TweenDefinition
 	_flash_level = ResourceCore.get_loaded(ResourceKey.TWEEN__RUN__LEVEL_FLASH, kind, scope) as TweenDefinition
 	_flash_dawn = ResourceCore.get_loaded(ResourceKey.TWEEN__RUN__DAWN_FLASH, kind, scope) as TweenDefinition
+	_death_tint = ResourceCore.get_loaded(ResourceKey.TWEEN__RUN__DEATH_TINT, kind, scope) as TweenDefinition
 	EventCore.subscribe(RunPauseRequestedEvent, _on_pause_requested)
 	EventCore.subscribe(ItemChangedEvent, _on_item_changed)
 	if not _resume_run():
@@ -95,6 +102,7 @@ func on_exit() -> void:
 	if _stage == Stage.PLAYING:
 		save_run()
 	EventCore.unsubscribe_all(self)
+	_picking = false
 	_set_paused(false)
 	GameUpdateCore.set_in_play(false)
 	CameraCore.detach_camera()
@@ -127,6 +135,8 @@ static func icon_keys() -> PackedStringArray:
 		keys.append(row.icon)
 	for row: GameData.PassiveRow in GameData.PassiveTable.all_rows():
 		keys.append(row.icon)
+	for row: GameData.UpgradeRow in GameData.UpgradeTable.all_rows():
+		keys.append(row.icon)
 	return keys
 
 
@@ -145,7 +155,8 @@ static func tween_keys() -> PackedStringArray:
 		ResourceKey.TWEEN__RUN__DAMAGE_NUMBER, ResourceKey.TWEEN__RUN__HUD_POP, ResourceKey.TWEEN__RUN__CARD_IN,
 		ResourceKey.TWEEN__RUN__HURT_FLASH, ResourceKey.TWEEN__RUN__LEVEL_FLASH, ResourceKey.TWEEN__RUN__DAWN_FLASH,
 		ResourceKey.TWEEN__RUN__BANNER, ResourceKey.TWEEN__RUN__RESULT_IN, ResourceKey.TWEEN__RUN__EFFECT_LIFE,
-		ResourceKey.TWEEN__RUN__STRIKE])
+		ResourceKey.TWEEN__RUN__STRIKE, ResourceKey.TWEEN__RUN__DEATH_TINT, ResourceKey.TWEEN__RUN__PLAYER_FALL,
+		ResourceKey.TWEEN__RUN__LOW_HEALTH])
 
 
 ## Starts the play session of a new run. The run plays once the server answers.
@@ -176,6 +187,7 @@ func _on_started(response: ContractMessage) -> void:
 	save_run()
 	_publish_state(true)
 	EventCore.publish(EventCore.acquire(RunStartedEvent))
+	_notice_pending = not _world.upgrade_ids.is_empty()
 
 
 ## Resumes the run of `CommonRunSave` with the pause popup open. `false` when there is no run to resume; a saved run
@@ -202,6 +214,7 @@ func _resume_run() -> bool:
 	_loadout_bytes = bytes
 	_moved = true
 	_acc_ms = 0
+	_notice_pending = _world.time_ms == 0 and not _world.upgrade_ids.is_empty()
 	_next_save_ms = _world.time_ms + GameSetting.run_save_interval()
 	GameUpdateCore.set_in_play(true)
 	_stage = Stage.PLAYING
@@ -231,6 +244,9 @@ func _process(_delta: float) -> void:
 	if _world == null or (_stage != Stage.PLAYING and _stage != Stage.ENDING) or _paused:
 		return
 	var frame_ms: int = TimeCore.get_game_frame_ms()
+	if _notice_pending and _stage == Stage.PLAYING:
+		_notice_pending = false
+		_banner(ReservedString.run_blessing(), true)
 	if _stage == Stage.PLAYING and not _picking:
 		var held: Vector2 = _move
 		var move: Vector2 = _read_move()
@@ -248,6 +264,7 @@ func _process(_delta: float) -> void:
 	var weight: float = clampf(float(_acc_ms) / float(_world.tick_ms()), 0.0, 1.0)
 	view.draw(_world, weight, _move if _stage == Stage.PLAYING else Vector2.ZERO, frame_ms)
 	_publish_state(false)
+	_publish_player_screen()
 	if _stage == Stage.PLAYING:
 		if _world.time_ms >= _next_save_ms and _world.phase == RunWorld.Phase.PLAYING:
 			save_run()
@@ -315,15 +332,19 @@ func _handle_events() -> void:
 	if events & RunWorld.EVENT_ELITE:
 		_play_sound(ReservedSound.run_elite())
 		CameraCore.shake(GameSetting.shake_elite())
-		_banner(ReservedString.run_elite_warning())
+		_banner(ReservedString.run_elite_warning(), false)
 	if events & RunWorld.EVENT_DAWN_NEAR:
-		_banner(ReservedString.run_dawn_near())
+		_banner(ReservedString.run_dawn_near(), false)
 	if _world.strike_count > 0:
 		CameraCore.shake(GameSetting.shake_lightning())
 	if events & RunWorld.EVENT_DEATH:
 		_play_sound(ReservedSound.run_death())
 		CameraCore.shake(GameSetting.shake_death())
-		EventCore.publish(EventCore.acquire(RunFallenEvent))
+		_flash(_death_tint)
+		view.play_fall()
+		var fallen: RunFallenEvent = EventCore.acquire(RunFallenEvent) as RunFallenEvent
+		fallen.gave_up = _world.gave_up
+		EventCore.publish(fallen)
 	if events & RunWorld.EVENT_DAWN:
 		_play_sound(ReservedSound.run_dawn())
 		_flash(_flash_dawn)
@@ -347,9 +368,21 @@ func _flash(definition: TweenDefinition) -> void:
 		ScreenEffectCore.play_preset(ScreenEffectCore.ScreenEffectChannel.WORLD, self, definition)
 
 
-func _banner(text: String) -> void:
+func _banner(text: String, notice: bool) -> void:
 	var event: RunBannerEvent = EventCore.acquire(RunBannerEvent) as RunBannerEvent
 	event.text = text
+	event.notice = notice
+	EventCore.publish(event)
+
+
+## Tells the HUD where the player's feet are on screen when that moved, so the player health bar stays under it.
+func _publish_player_screen() -> void:
+	var screen: Vector2 = CameraCore.world_to_screen(view.player.position)
+	if screen.is_equal_approx(_shown_screen):
+		return
+	_shown_screen = screen
+	var event: RunPlayerDrawnEvent = EventCore.acquire(RunPlayerDrawnEvent) as RunPlayerDrawnEvent
+	event.screen = screen
 	EventCore.publish(event)
 
 
@@ -360,7 +393,8 @@ func _publish_state(always: bool) -> void:
 	var changed: bool = always or starting != _shown_starting or _moved != _shown_moved
 	if not starting:
 		changed = changed or _world.hp != _shown_hp or _world.max_hp != _shown_max_hp or _world.level != _shown_level \
-			or _world.xp != _shown_xp or _world.kills != _shown_kills or seconds != _shown_seconds
+			or _world.xp != _shown_xp or _world.kills != _shown_kills or seconds != _shown_seconds \
+			or _world.is_low_health() != _shown_low
 	if not changed:
 		return
 	_shown_starting = starting
@@ -375,6 +409,7 @@ func _publish_state(always: bool) -> void:
 		_shown_xp = _world.xp
 		_shown_kills = _world.kills
 		_shown_seconds = seconds
+		_shown_low = _world.is_low_health()
 		event.hp = _world.hp
 		event.max_hp = _world.max_hp
 		event.level = _world.level
@@ -389,6 +424,9 @@ func _publish_state(always: bool) -> void:
 		event.weapon_levels = _world.weapon_levels
 		event.passive_ids = _world.passive_ids
 		event.passive_levels = _world.passive_levels
+		event.low_health = _shown_low
+		event.upgrade_ids = _world.upgrade_ids
+		event.upgrade_levels = _world.upgrade_levels
 	EventCore.publish(event)
 
 
@@ -476,6 +514,7 @@ func _show_result(saved: bool) -> void:
 	var dawn: bool = _world.phase == RunWorld.Phase.DAWN
 	var param: RunResultParam = RunResultParam.new()
 	param.dawn = dawn
+	param.gave_up = _world.gave_up
 	param.saved = saved
 	param.survived_ms = _world.survived_ms()
 	param.kills = _world.kills

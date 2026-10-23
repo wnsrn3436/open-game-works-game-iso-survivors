@@ -1,6 +1,6 @@
 class_name RunResultPanel
 extends UIPanel
-## Result panel of a finished run: dawn or fall, the time survived, kills, the level reached, the gold the server
+## Result panel of a finished run: dawn, give-up or fall, the time survived, kills, the level reached, the gold the server
 ## granted (or that the run was not counted), a new best and the shrine hint. "Run again" has the first focus and starts
 ## the next run; "To camp" and a back input go to the camp. A second press of either button is ignored.
 
@@ -28,7 +28,7 @@ func accepts_param(param: UIParam) -> bool:
 
 func prepare(_reason: UICore.PanelOpenReason, _cache: UIPanelCache) -> bool:
 	_param = panel_param as RunResultParam
-	LocalizationCore.bind_text(title_label, ReservedString.result_dawn() if _param.dawn else ReservedString.result_fallen())
+	LocalizationCore.bind_text(title_label, RunResultPanel.title_key(_param))
 	LocalizationCore.bind_text(again_button, ReservedString.result_again())
 	LocalizationCore.bind_text(lobby_button, ReservedString.result_lobby())
 	LocalizationCore.bind_text(best_label, ReservedString.result_new_best())
@@ -56,6 +56,15 @@ func prepare(_reason: UICore.PanelOpenReason, _cache: UIPanelCache) -> bool:
 	best_label.visible = _param.new_best
 	hint_label.visible = _param.saved and CommonUpgrades.any_affordable()
 	return true
+
+
+## Translation key of the title: dawn, a give-up or a fall.
+static func title_key(param: RunResultParam) -> String:
+	if param.dawn:
+		return ReservedString.result_dawn()
+	if param.gave_up:
+		return ReservedString.result_gave_up()
+	return ReservedString.result_fallen()
 
 
 func on_opened(_reason: UICore.PanelOpenReason) -> void:

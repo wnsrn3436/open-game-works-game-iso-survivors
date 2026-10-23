@@ -126,6 +126,10 @@ id,text
 [run_hint_move],{action:move_up}{action:move_left}{action:move_down}{action:move_right} 로 움직이세요. 공격은 자동이에요
 [run_dawn_near],곧 새벽이 옵니다!
 [run_elite_warning],강력한 적이 나타났다!
+[run_fallen],등불이 꺼졌다…
+[run_gave_up],원정을 포기했다…
+[run_blessing],등불 제단의 가호가 함께합니다
+[run_low_health],체력이 위험해요!
 [levelup_title],레벨 업!
 [levelup_chest_title],보물 상자!
 [levelup_subtitle],하나를 고르세요
@@ -146,6 +150,7 @@ id,text
 [pause_give_up_note],포기해도 지금까지 번 금화는 받아요
 [result_dawn],새벽이 밝았다!
 [result_fallen],어둠에 쓰러졌다
+[result_gave_up],원정을 포기했다
 [result_time],생존 시간 {time:duration}
 [result_kills],처치 {kills:n}
 [result_level],도달 레벨 {level}

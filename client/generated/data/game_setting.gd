@@ -51,6 +51,8 @@ static var _has_test_levelup_heal: bool = false
 static var _test_levelup_heal: int = 0
 static var _has_test_lightning_range: bool = false
 static var _test_lightning_range: float = 0.0
+static var _has_test_low_health_permille: bool = false
+static var _test_low_health_permille: int = 0
 static var _has_test_magnet_speed: bool = false
 static var _test_magnet_speed: float = 0.0
 static var _has_test_min_cooldown_permille: bool = false
@@ -239,6 +241,12 @@ static func lightning_range() -> float:
 	return _parse_real(GameData.GameSettingTable.get_row(593570696).value)
 
 
+static func low_health_permille() -> int:
+	if _has_test_low_health_permille:
+		return _test_low_health_permille
+	return _parse_int(GameData.GameSettingTable.get_row(180126824).value)
+
+
 static func magnet_speed() -> float:
 	if _has_test_magnet_speed:
 		return _test_magnet_speed
@@ -391,6 +399,7 @@ static func _clear_tests() -> void:
 	_has_test_levelup_choices = false
 	_has_test_levelup_heal = false
 	_has_test_lightning_range = false
+	_has_test_low_health_permille = false
 	_has_test_magnet_speed = false
 	_has_test_min_cooldown_permille = false
 	_has_test_passive_slots = false

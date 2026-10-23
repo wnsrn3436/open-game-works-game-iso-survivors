@@ -24,6 +24,9 @@ static func register() -> void:
 	QACore.register_command("run.fast_forward",
 		"Runs the playing run the given ms of run time faster than real time with the bot moves and card picks; health is kept full.",
 		PackedStringArray(["ms"]), func(args: PackedStringArray) -> RunCommandResult: return await bot.fast_forward(args))
+	QACore.register_command("run.state",
+		"Reads the run on screen: time, phase, health, level, XP, kills, live enemies, weapons, passives and shrine upgrades.",
+		PackedStringArray(), func(args: PackedStringArray) -> RunCommandResult: return bot.state(args))
 	QACore.register_command("run.fall", "The player of the playing run falls now; ends when the result panel opens.",
 		PackedStringArray(), func(args: PackedStringArray) -> RunCommandResult: return await bot.fall(args))
 	QACore.register_invariant("run.health_in_range", func() -> bool: return bot.health_in_range())

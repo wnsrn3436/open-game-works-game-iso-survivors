@@ -33,3 +33,11 @@
 ## Which play mode does the run use?
 - decision: `step` with 200ms steps
 - evidence: the run is real-time action where input needs a response within a set time (`## play mode` of `game-design`); 200ms is 4 ticks of `[run_tick]`
+
+## How soon must a player who stands still be threatened in the opening, and how fast may the fall come?
+- decision: a player who stands still from 0:00 takes the first contact hit within 20000ms of run time and falls no sooner than 10000ms after that hit (`design.md` `### enemies and waves`, regression test seeds 1~5). Set by `wave_1` 900ms × 2 (max 30), `wave_2` 800ms × 3 (max 50), `wave_3` 700ms, `wave_4` 650ms and `[hurt_invuln]` 700ms (was 1500ms, 1100ms, 750ms, 700ms and 400ms)
+- evidence: genre convention (the reference horde reaches a still player within seconds of the start); judge defect `opening-no-threat` (no hit until 1:10) and play defect `difficulty-cliff` (a fall about 11 s after the first hits). Measured with the regression probe: first hit at 10950~13950ms, fall 15050~95000ms after it; on instance `mvlfyg5pd85300` a still run was hit at 12.6 s, showed the low health warning at 25.6 s and fell at 29.7 s
+
+## Which first reward time can the run reach when the metric counts the time before the run?
+- decision: `first_reward_ms` range 5000~60000 (was 5000~30000). The first level-up itself was moved earlier with `[xp_base]` 3 (was 5): 12.1~16.1 s of run time for a still player, earlier for a moving one
+- evidence: `first_reward_ms` is the `play_at` of the first reward since the telemetry start, and the title, terms popup and camp are `free` scenes where device time counts. In all three measure instances of iteration 1 the playing agent made its first input 22706~28910ms after the start and started the run at about 32000~59000ms of `play_at` (`records/loops/create-1792781138827/evidence/measure-1/*.json`), so no first level-up time can bring the median under 30000ms. This raises a time value without changing that cause; 60000 holds the measured pre-run time plus the in-run first level-up target of about 15 s

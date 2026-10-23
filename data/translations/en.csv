@@ -173,6 +173,7 @@ reserved_string.text.[pause_title],일시 정지,dec330ec318c8cb3,dec330ec318c8c
 reserved_string.text.[result_again],다시 출발,426e026f66a87923,426e026f66a87923,Go again
 reserved_string.text.[result_dawn],새벽이 밝았다!,482e1c258fceaaf2,482e1c258fceaaf2,Dawn has broken!
 reserved_string.text.[result_fallen],어둠에 쓰러졌다,c076e9da3b1643b8,c076e9da3b1643b8,Fallen to the darkness
+reserved_string.text.[result_gave_up],원정을 포기했다,,db7dd1530571f2d2,
 reserved_string.text.[result_gold],금화 +{gold:n},00258962049a4bec,00258962049a4bec,Gold +{gold:n}
 reserved_string.text.[result_kills],처치 {kills:n},4af9b68b925d2c9f,4af9b68b925d2c9f,Kills {kills:n}
 reserved_string.text.[result_level],도달 레벨 {level},21b1e540b44f8973,21b1e540b44f8973,Level reached {level}
@@ -182,13 +183,17 @@ reserved_string.text.[result_saving],기록하는 중,5c53ae3224462eef,5c53ae322
 reserved_string.text.[result_time],생존 시간 {time:duration},ef3a0242b29253c0,ef3a0242b29253c0,Survived {time:duration}
 reserved_string.text.[result_unsaved],이번 원정은 기록하지 못했어요,1b6bdccde8b5935b,1b6bdccde8b5935b,This Run could not be saved
 reserved_string.text.[result_upgrade_hint],야영지의 등불 제단에서 금화로 강화하세요,e330354de4e92c16,e330354de4e92c16,Spend Gold on upgrades at the Lantern Shrine in Camp
+reserved_string.text.[run_blessing],등불 제단의 가호가 함께합니다,,a67cd137fa3b0170,
 reserved_string.text.[run_dawn_near],곧 새벽이 옵니다!,db040312b99be141,db040312b99be141,Dawn is almost here!
 reserved_string.text.[run_elite_warning],강력한 적이 나타났다!,0b83b911eda4c739,0b83b911eda4c739,A powerful enemy appears!
+reserved_string.text.[run_fallen],등불이 꺼졌다…,,245490232f2e79a5,
+reserved_string.text.[run_gave_up],원정을 포기했다…,,b283b548d8afb153,
 reserved_string.text.[run_gold],{gold:n},653f8333cadc3c9f,653f8333cadc3c9f,{gold:n}
 reserved_string.text.[run_hint_move],{action:move_up}{action:move_left}{action:move_down}{action:move_right} 로 움직이세요. 공격은 자동이에요,56291b61947fe986,56291b61947fe986,Move with {action:move_up}{action:move_left}{action:move_down}{action:move_right}. Attacks are automatic
 reserved_string.text.[run_hp],{hp}/{max},fa9d172ca36c0206,fa9d172ca36c0206,{hp}/{max}
 reserved_string.text.[run_kills],{kills:n},e3148550b0d22c70,e3148550b0d22c70,{kills:n}
 reserved_string.text.[run_level],Lv {level},de26750a72775e77,de26750a72775e77,Lv {level}
+reserved_string.text.[run_low_health],체력이 위험해요!,,bebd7e5eee4cd428,
 reserved_string.text.[run_slot_level],{level},89285e302ce92955,89285e302ce92955,{level}
 reserved_string.text.[run_starting],원정 준비 중,73dac77988fd8af9,73dac77988fd8af9,Preparing Run
 reserved_string.text.[run_timer],{minutes}:{tens}{ones},1f252df3dca9f97b,1f252df3dca9f97b,{minutes}:{tens}{ones}

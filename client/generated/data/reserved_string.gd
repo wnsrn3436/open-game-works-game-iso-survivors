@@ -556,6 +556,10 @@ static func result_fallen() -> String:
 	return GameData.ReservedStringTable.get_row(802623559).text
 
 
+static func result_gave_up() -> String:
+	return GameData.ReservedStringTable.get_row(1413480041).text
+
+
 static func result_gold() -> String:
 	return GameData.ReservedStringTable.get_row(86768422).text
 
@@ -592,12 +596,24 @@ static func result_upgrade_hint() -> String:
 	return GameData.ReservedStringTable.get_row(1203300269).text
 
 
+static func run_blessing() -> String:
+	return GameData.ReservedStringTable.get_row(1789223552).text
+
+
 static func run_dawn_near() -> String:
 	return GameData.ReservedStringTable.get_row(996683534).text
 
 
 static func run_elite_warning() -> String:
 	return GameData.ReservedStringTable.get_row(2031089530).text
+
+
+static func run_fallen() -> String:
+	return GameData.ReservedStringTable.get_row(1043386475).text
+
+
+static func run_gave_up() -> String:
+	return GameData.ReservedStringTable.get_row(105483255).text
 
 
 static func run_gold() -> String:
@@ -618,6 +634,10 @@ static func run_kills() -> String:
 
 static func run_level() -> String:
 	return GameData.ReservedStringTable.get_row(402870333).text
+
+
+static func run_low_health() -> String:
+	return GameData.ReservedStringTable.get_row(965598538).text
 
 
 static func run_slot_level() -> String:

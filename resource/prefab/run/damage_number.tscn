@@ -15,5 +15,5 @@ render_priority = 10
 outline_render_priority = 9
 modulate = Color(0.91, 0.882, 0.816, 1.0)
 outline_modulate = Color(0.08, 0.04, 0.06, 1.0)
-font_size = 72
+font_size = 54
 outline_size = 16

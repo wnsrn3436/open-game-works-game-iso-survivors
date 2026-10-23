@@ -23,3 +23,8 @@ var weapon_levels: PackedInt32Array = PackedInt32Array()
 ## Owned passives and their levels, in the order taken.
 var passive_ids: PackedInt32Array = PackedInt32Array()
 var passive_levels: PackedInt32Array = PackedInt32Array()
+## Health is at or below `[low_health_permille]` of the maximum.
+var low_health: bool = false
+## Shrine upgrades of the loadout and their levels, in `upgrade.order`.
+var upgrade_ids: PackedInt32Array = PackedInt32Array()
+var upgrade_levels: PackedInt32Array = PackedInt32Array()

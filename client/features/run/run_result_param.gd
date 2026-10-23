@@ -3,6 +3,8 @@ extends UIParam
 ## Param of the result panel: what the finished run did and what the buttons do.
 
 var dawn: bool = false
+## The run ended by the give-up of the pause popup; the title says so.
+var gave_up: bool = false
 ## Whether the server counted the run. An unsaved run shows no gold and no best line.
 var saved: bool = false
 var survived_ms: int = 0

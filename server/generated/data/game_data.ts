@@ -3386,6 +3386,10 @@ export class ReservedStringAccessor {
     return this.Table.get_row(802623559).text;
   }
 
+  result_gave_up(): string {
+    return this.Table.get_row(1413480041).text;
+  }
+
   result_gold(): string {
     return this.Table.get_row(86768422).text;
   }
@@ -3422,12 +3426,24 @@ export class ReservedStringAccessor {
     return this.Table.get_row(1203300269).text;
   }
 
+  run_blessing(): string {
+    return this.Table.get_row(1789223552).text;
+  }
+
   run_dawn_near(): string {
     return this.Table.get_row(996683534).text;
   }
 
   run_elite_warning(): string {
     return this.Table.get_row(2031089530).text;
+  }
+
+  run_fallen(): string {
+    return this.Table.get_row(1043386475).text;
+  }
+
+  run_gave_up(): string {
+    return this.Table.get_row(105483255).text;
   }
 
   run_gold(): string {
@@ -3448,6 +3464,10 @@ export class ReservedStringAccessor {
 
   run_level(): string {
     return this.Table.get_row(402870333).text;
+  }
+
+  run_low_health(): string {
+    return this.Table.get_row(965598538).text;
   }
 
   run_slot_level(): string {

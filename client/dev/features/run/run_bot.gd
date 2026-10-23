@@ -94,13 +94,18 @@ func counts_in_range() -> bool:
 
 
 ## A run on screen is kept only while it plays with its HUD on top and no popup; otherwise the run scene opens again
-## with a new run. Ends when the run plays.
+## with a new run. A run the scene left is saved on exit and would resume paused, so a run on screen goes through the
+## camp first and its save is dropped there. Ends when the new run plays.
 func open_run(_args: PackedStringArray) -> RunCommandResult:
 	var run: RunScene = find_run_scene()
 	var keep: bool = SceneCore.current_scene_key() == ResourceKey.SCENE__RUN__RUN and run != null and run.is_running() \
 		and UICore.get_open_popups().is_empty() and UICore.get_current_panel_key() == ResourceKey.PREFAB__RUN__HUD_PANEL
 	if not keep:
 		UICore.close_all_popups()
+		if SceneCore.current_scene_key() == ResourceKey.SCENE__RUN__RUN:
+			if not await SceneCore.change_scene(ResourceKey.SCENE__LOBBY__LOBBY, null):
+				return _result(false, "\"the camp did not open\"")
+		CommonRunSave.clear()
 		if not await SceneCore.change_scene(ResourceKey.SCENE__RUN__RUN, null):
 			return _result(false, "\"the run scene did not open\"")
 	return await _wait_running()
@@ -188,6 +193,33 @@ func fast_forward(args: PackedStringArray) -> RunCommandResult:
 	run.save_run()
 	var playing: bool = world.phase == RunWorld.Phase.PLAYING
 	return _result(playing, "" if playing else "\"the run ended during the fast forward\"")
+
+
+## `run.state`: the state of the run on screen, or `null` when no run is on screen.
+func state(_args: PackedStringArray) -> RunCommandResult:
+	var world: RunWorld = _world()
+	if world == null:
+		return _result(true, "null")
+	return _result(true, JSON.stringify({
+		"time_ms": world.time_ms,
+		"phase": world.phase,
+		"hp": world.hp,
+		"max_hp": world.max_hp,
+		"low_health": world.is_low_health(),
+		"level": world.level,
+		"xp": world.xp,
+		"xp_next": world.xp_next,
+		"kills": world.kills,
+		"enemies": world.enemy_count,
+		"gems": world.gem_count,
+		"weapon_ids": world.weapon_ids,
+		"weapon_levels": world.weapon_levels,
+		"passive_ids": world.passive_ids,
+		"passive_levels": world.passive_levels,
+		"upgrade_ids": world.upgrade_ids,
+		"upgrade_levels": world.upgrade_levels,
+		"gave_up": world.gave_up,
+	}))
 
 
 ## `run.fall`: the player of the run on screen falls now (a DEV cheat). Ends when the result panel opens.

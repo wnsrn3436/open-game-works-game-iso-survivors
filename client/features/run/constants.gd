@@ -63,10 +63,26 @@ const SOUNDS_PER_FRAME: int = 1 # drawing budget; no rule reads it
 ## Enemy tint while its hit flash lasts, the normal tint, and the elite tint.
 const ENEMY_FLASH_COLOR: Color = Color(1.0, 0.45, 0.4, 1.0) # color of the drawing only; no rule reads it
 const ENEMY_COLOR: Color = Color(1.0, 1.0, 1.0, 1.0) # color of the drawing only; no rule reads it
+## Tint of the field props: darker than the horde, so the enemies stand out from the gravestones and rocks.
+const PROP_COLOR: Color = Color(0.42, 0.42, 0.52, 1.0) # color of the drawing only; no rule reads it
+## Glow over the player model while it is invulnerable after a hit: blood red #8E1F2F, half see-through.
+const PLAYER_HURT_COLOR: Color = Color(0.557, 0.122, 0.184, 0.6) # color of the drawing only; no rule reads it
+## HUD health text while health is low: a lighter blood red that reads over the dark plate, and the normal bone.
+const LOW_HEALTH_TEXT_COLOR: Color = Color(0.95, 0.36, 0.4, 1.0) # color of the drawing only; no rule reads it
+const HEALTH_TEXT_COLOR: Color = Color(0.91, 0.882, 0.816, 1.0) # color of the drawing only; no rule reads it
 ## Height of drawn things over the ground in m: projectiles, gems, the damage numbers.
 const PROJECTILE_HEIGHT: float = 0.8 # layout of the drawing only; no rule reads it
 const GEM_HEIGHT: float = 0.25 # layout of the drawing only; no rule reads it
 const NUMBER_HEIGHT: float = 1.6 # layout of the drawing only; no rule reads it
+## Damage number spots: spots on a ring around the hit, the stride that jumps between far spots, the ring radius in m,
+## the laps of higher rings and the height of one lap in m.
+const NUMBER_SPOTS: int = 8 # layout of the drawing only; no rule reads it
+const NUMBER_SPOT_STRIDE: int = 3 # layout of the drawing only; no rule reads it
+const NUMBER_SPREAD: float = 1.1 # layout of the drawing only; no rule reads it
+const NUMBER_LAPS: int = 3 # layout of the drawing only; no rule reads it
+const NUMBER_LIFT: float = 0.5 # layout of the drawing only; no rule reads it
+## Gap in px between the player's feet on screen and the top of the player health bar.
+const PLAYER_BAR_GAP: float = 14.0 # layout of the drawing only; no rule reads it
 ## Enemy bob while walking: height in m and the speed of the bob in radians per m walked.
 const ENEMY_BOB: float = 0.08 # look of the drawing only; no rule reads it
 const ENEMY_BOB_RATE: float = 4.0 # look of the drawing only; no rule reads it

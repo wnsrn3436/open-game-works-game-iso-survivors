@@ -181,7 +181,7 @@ texture_margin_top = 48.0
 texture_margin_right = 40.0
 texture_margin_bottom = 48.0
 
-[node name="HudPanel" type="Control" node_paths=PackedStringArray("hp_fill", "hp_label", "xp_fill", "level_label", "timer_label", "timer_icon", "kills_label", "kills_icon", "gold_label", "gold_icon", "weapon_icons", "weapon_levels", "passive_icons", "passive_levels", "hint_label", "status_label", "banner_label")]
+[node name="HudPanel" type="Control" node_paths=PackedStringArray("hp_fill", "hp_label", "xp_fill", "level_label", "timer_label", "timer_icon", "kills_label", "kills_icon", "gold_label", "gold_icon", "weapon_icons", "weapon_levels", "passive_icons", "passive_levels", "hint_label", "status_label", "banner_label", "notice_label", "fall_label", "hp_bar", "player_bar", "player_fill", "low_health_label", "blessing_plate", "blessing_icons", "blessing_levels")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -209,6 +209,15 @@ passive_levels = [NodePath("TopLeft/Box/Passives/Slot1/Level"), NodePath("TopLef
 hint_label = NodePath("Hint")
 status_label = NodePath("Status")
 banner_label = NodePath("Banner")
+notice_label = NodePath("Notice")
+fall_label = NodePath("Fall")
+hp_bar = NodePath("TopLeft/Box/HpRow/HpBar")
+player_bar = NodePath("PlayerBar")
+player_fill = NodePath("PlayerBar/Fill")
+low_health_label = NodePath("PlayerBar/Warn")
+blessing_plate = NodePath("BlessingPlate")
+blessing_icons = [NodePath("BlessingPlate/Row/Slot1/Icon"), NodePath("BlessingPlate/Row/Slot2/Icon"), NodePath("BlessingPlate/Row/Slot3/Icon"), NodePath("BlessingPlate/Row/Slot4/Icon"), NodePath("BlessingPlate/Row/Slot5/Icon"), NodePath("BlessingPlate/Row/Slot6/Icon")]
+blessing_levels = [NodePath("BlessingPlate/Row/Slot1/Level"), NodePath("BlessingPlate/Row/Slot2/Level"), NodePath("BlessingPlate/Row/Slot3/Level"), NodePath("BlessingPlate/Row/Slot4/Level"), NodePath("BlessingPlate/Row/Slot5/Level"), NodePath("BlessingPlate/Row/Slot6/Level")]
 
 [node name="XpBar" type="Control" parent="."]
 layout_mode = 1
@@ -637,6 +646,232 @@ offset_top = -26.0
 offset_right = 0.0
 offset_bottom = 0.0
 
+[node name="BlessingPlate" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 20.0
+offset_top = 268.0
+offset_right = 368.0
+offset_bottom = 332.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("plate")
+
+[node name="Row" type="HBoxContainer" parent="BlessingPlate"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_left = 12.0
+offset_top = 12.0
+offset_right = -12.0
+offset_bottom = -12.0
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="Slot1" type="Control" parent="BlessingPlate/Row"]
+custom_minimum_size = Vector2(40.0, 40.0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="BlessingPlate/Row/Slot1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Level" type="Label" parent="BlessingPlate/Row/Slot1"]
+layout_mode = 1
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 5
+anchor_left = 1
+anchor_top = 1
+anchor_right = 1
+anchor_bottom = 1
+offset_left = -34.0
+offset_top = -22.0
+offset_right = 2.0
+offset_bottom = 2.0
+
+[node name="Slot2" type="Control" parent="BlessingPlate/Row"]
+custom_minimum_size = Vector2(40.0, 40.0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="BlessingPlate/Row/Slot2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Level" type="Label" parent="BlessingPlate/Row/Slot2"]
+layout_mode = 1
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 5
+anchor_left = 1
+anchor_top = 1
+anchor_right = 1
+anchor_bottom = 1
+offset_left = -34.0
+offset_top = -22.0
+offset_right = 2.0
+offset_bottom = 2.0
+
+[node name="Slot3" type="Control" parent="BlessingPlate/Row"]
+custom_minimum_size = Vector2(40.0, 40.0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="BlessingPlate/Row/Slot3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Level" type="Label" parent="BlessingPlate/Row/Slot3"]
+layout_mode = 1
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 5
+anchor_left = 1
+anchor_top = 1
+anchor_right = 1
+anchor_bottom = 1
+offset_left = -34.0
+offset_top = -22.0
+offset_right = 2.0
+offset_bottom = 2.0
+
+[node name="Slot4" type="Control" parent="BlessingPlate/Row"]
+custom_minimum_size = Vector2(40.0, 40.0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="BlessingPlate/Row/Slot4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Level" type="Label" parent="BlessingPlate/Row/Slot4"]
+layout_mode = 1
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 5
+anchor_left = 1
+anchor_top = 1
+anchor_right = 1
+anchor_bottom = 1
+offset_left = -34.0
+offset_top = -22.0
+offset_right = 2.0
+offset_bottom = 2.0
+
+[node name="Slot5" type="Control" parent="BlessingPlate/Row"]
+custom_minimum_size = Vector2(40.0, 40.0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="BlessingPlate/Row/Slot5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Level" type="Label" parent="BlessingPlate/Row/Slot5"]
+layout_mode = 1
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 5
+anchor_left = 1
+anchor_top = 1
+anchor_right = 1
+anchor_bottom = 1
+offset_left = -34.0
+offset_top = -22.0
+offset_right = 2.0
+offset_bottom = 2.0
+
+[node name="Slot6" type="Control" parent="BlessingPlate/Row"]
+custom_minimum_size = Vector2(40.0, 40.0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="BlessingPlate/Row/Slot6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Level" type="Label" parent="BlessingPlate/Row/Slot6"]
+layout_mode = 1
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 5
+anchor_left = 1
+anchor_top = 1
+anchor_right = 1
+anchor_bottom = 1
+offset_left = -34.0
+offset_top = -22.0
+offset_right = 2.0
+offset_bottom = 2.0
+
 [node name="Level" type="Label" parent="."]
 layout_mode = 1
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
@@ -811,5 +1046,104 @@ offset_left = -800.0
 offset_top = -60.0
 offset_right = 800.0
 offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Notice" type="Label" parent="."]
+layout_mode = 1
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 52
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 12
+visible = false
+anchor_left = 0.5
+anchor_top = 0.3
+anchor_right = 0.5
+anchor_bottom = 0.3
+offset_left = -800.0
+offset_top = -50.0
+offset_right = 800.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayerBar" type="Control" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 18.0
+mouse_filter = 2
+
+[node name="Back" type="NinePatchRect" parent="PlayerBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("7_r")
+self_modulate = Color(0.15, 0.13, 0.2, 0.9)
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Fill" type="NinePatchRect" parent="PlayerBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("8_r")
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Warn" type="Label" parent="PlayerBar"]
+visible = false
+layout_mode = 1
+theme_override_colors/font_color = Color(0.95, 0.36, 0.4, 1.0)
+theme_override_font_sizes/font_size = 26
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 8
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = 4.0
+offset_right = 200.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="Fall" type="Label" parent="."]
+layout_mode = 1
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 104
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.557, 0.122, 0.184, 1.0)
+theme_override_constants/outline_size = 20
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -800.0
+offset_top = -250.0
+offset_right = 800.0
+offset_bottom = -110.0
 grow_horizontal = 2
 grow_vertical = 2

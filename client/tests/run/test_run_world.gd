@@ -2,9 +2,16 @@ extends UnitTestCase
 ## The run simulation: the same seed and inputs give the same run; the start weapon, health and level; XP gems raise
 ## the level and queue a pick; picks raise or add weapons and passives within the slots and the top levels; the waves
 ## spawn enemies; contact hurts the player and a fall ends the run; dawn ends the run at `[run_duration]`; a saved
-## state loads back to the same run.
+## state loads back to the same run. A player who stands still from the start is hit early and falls only a while
+## later; the hurt and low health states the view shows; a give-up is told apart from a fall; the shrine upgrades of
+## the loadout are listed.
 
 const _SEED: int = 4242
+## `design.md` `### enemies and waves`: a player who stands still from the start takes the first contact hit within
+## 20000ms of run time, and falls no sooner than 10000ms after that hit.
+const _STILL_FIRST_HIT_MS: int = 20000
+const _STILL_FALL_AFTER_MS: int = 10000
+const _STILL_SEEDS: int = 5
 
 
 func before_each() -> void:
@@ -187,6 +194,78 @@ func test_give_up_ends_the_run_as_a_fall() -> void:
 	var world: RunWorld = RunWorld.new(loadout(_SEED))
 	world.give_up()
 	assert_eq(world.phase, RunWorld.Phase.DEAD)
+	assert_true(world.gave_up, "the run is marked as given up")
+
+
+func test_a_contact_fall_is_not_a_give_up() -> void:
+	var world: RunWorld = RunWorld.new(loadout(_SEED))
+	world.hp = 1
+	world.enemy_count = 1
+	world.enemy_kind[0] = 0
+	world.enemy_x[0] = world.player_x
+	world.enemy_z[0] = world.player_z
+	world.enemy_hp[0] = world.enemy_kind_row(0).health * 100
+	world.step(Vector2.ZERO)
+	assert_eq(world.phase, RunWorld.Phase.DEAD)
+	assert_false(world.gave_up, "a fall by contact is not a give-up")
+
+
+func test_a_still_player_is_hit_early_and_falls_a_while_later() -> void:
+	for seed_value: int in range(1, _STILL_SEEDS + 1):
+		var world: RunWorld = RunWorld.new(loadout(seed_value))
+		var first_hit: int = -1
+		while world.phase == RunWorld.Phase.PLAYING and world.time_ms < world.duration_ms():
+			while world.is_waiting_pick():
+				world.apply_choice(world.roll_choices(GameSetting.levelup_choices())[0])
+			world.step(Vector2.ZERO)
+			if first_hit < 0 and (world.events & RunWorld.EVENT_HURT) != 0:
+				first_hit = world.time_ms
+			world.clear_events()
+		assert_between(first_hit, 1, _STILL_FIRST_HIT_MS, "seed %d: the first contact hit of a still player" % seed_value)
+		assert_gte(world.time_ms - first_hit, _STILL_FALL_AFTER_MS, "seed %d: the fall comes a while after the first hit" % seed_value)
+
+
+func test_a_hit_hurts_for_the_hurt_invulnerability() -> void:
+	var world: RunWorld = RunWorld.new(loadout(_SEED))
+	assert_false(world.is_hurt(), "not hurt at the start")
+	world.enemy_count = 1
+	world.enemy_kind[0] = 0
+	world.enemy_x[0] = world.player_x
+	world.enemy_z[0] = world.player_z
+	world.enemy_hp[0] = world.enemy_kind_row(0).health * 100
+	world.step(Vector2.ZERO)
+	assert_true(world.is_hurt(), "hurt after the hit")
+	world.enemy_count = 0
+	for i: int in UtilCore.floor_div(GameSetting.hurt_invuln(), world.tick_ms()):
+		world.step(Vector2.ZERO)
+	assert_false(world.is_hurt(), "the hurt ends with the invulnerability")
+
+
+func test_low_health_starts_at_the_low_health_permille() -> void:
+	var world: RunWorld = RunWorld.new(loadout(_SEED))
+	var edge: int = UtilCore.floor_div(world.max_hp * GameSetting.low_health_permille(), RunConstants.PERMILLE)
+	world.hp = edge + 1
+	assert_false(world.is_low_health(), "above the low health line")
+	world.hp = edge
+	assert_true(world.is_low_health(), "at the low health line")
+	world.give_up()
+	assert_false(world.is_low_health(), "a run that ended shows no low health")
+
+
+func test_the_shrine_upgrades_of_the_loadout_are_listed() -> void:
+	var with_upgrades: GameContract.PlaySessionLoadout = loadout(_SEED)
+	var want_ids: PackedInt32Array = PackedInt32Array()
+	var want_levels: PackedInt32Array = PackedInt32Array()
+	var level: int = 1
+	for row: GameData.UpgradeRow in CommonUpgrades.upgrades():
+		with_upgrades.upgrade_ids.append(row.id)
+		with_upgrades.upgrade_levels.append(level)
+		want_ids.append(row.id)
+		want_levels.append(level)
+		level += 1
+	assert_eq(RunWorld.new(with_upgrades).upgrade_ids, want_ids)
+	assert_eq(RunWorld.new(with_upgrades).upgrade_levels, want_levels)
+	assert_eq(RunWorld.new(loadout(_SEED)).upgrade_ids.size(), 0, "no upgrades without a shrine purchase")
 
 
 func test_a_saved_state_loads_back_to_the_same_run() -> void:

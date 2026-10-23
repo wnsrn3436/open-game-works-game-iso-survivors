@@ -3,10 +3,14 @@ extends Node3D
 ## Draws a `RunWorld` in the isometric 3D field: the player model with its lantern, the horde, projectiles, orbit
 ## blades, the aura, gems, chests and soups as multimeshes, the field props around the player, and the pooled effects
 ## and damage numbers of the event buffers. Enemies and projectiles are drawn between the last two ticks; the player
-## is drawn ahead of the last tick with the held move, so it answers the input without a tick of delay.
+## is drawn ahead of the last tick with the held move, so it answers the input without a tick of delay. The player
+## model glows blood red while it is invulnerable after a hit and tips over when it falls. Damage numbers start on a
+## ring of spots around the hit so the numbers of close hits do not cover each other.
 
 @export var player: Node3D
 @export var player_model: Node3D
+## The hero model under `player_model`; the fall tween tips it over.
+@export var player_body: Node3D
 @export var aura: Node3D
 @export var ground: Node3D
 @export var effects: Node3D
@@ -33,6 +37,10 @@ var _prop_chunk: Vector2i = RunConstants.NO_CHUNK
 var _numbers: int = 0
 var _spin: float = 0.0
 var _number_done: Callable = Callable()
+var _number_seq: int = 0
+var _player_meshes: Array[MeshInstance3D] = []
+var _hurt_overlay: StandardMaterial3D = null
+var _hurt_shown: bool = false
 
 
 ## The mesh of a model and its ground transform.
@@ -90,11 +98,16 @@ func setup(scope: Scope) -> void:
 	_soup_base = _base_of(ResourceKey.MODEL__HEAL_SOUP)
 	var chunks: int = RunConstants.PROP_CHUNKS * RunConstants.PROP_CHUNKS * RunConstants.PROPS_PER_CHUNK
 	for key: String in [ResourceKey.MODEL__PROP_GRAVESTONE, ResourceKey.MODEL__PROP_ROCK, ResourceKey.MODEL__PROP_LANTERN_POST]:
-		_props.append(_make_multimesh(key, chunks, false))
+		_props.append(_make_multimesh(key, chunks, true))
 		_prop_bases.append(_base_of(key))
 	var aura_key: String = _weapon_model(GameData.WeaponKind.AURA)
 	_attach_model(aura, aura_key)
 	aura.visible = false
+	RunView._collect_meshes(player_body, _player_meshes)
+	_hurt_overlay = StandardMaterial3D.new()
+	_hurt_overlay.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	_hurt_overlay.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	_hurt_overlay.albedo_color = RunConstants.PLAYER_HURT_COLOR
 
 
 ## Draws `world` `weight` of a tick after its last tick, with the held move `move` for the player.
@@ -108,6 +121,7 @@ func draw(world: RunWorld, weight: float, move: Vector2, frame_ms: int) -> void:
 		pz = world.player_z
 	player.position = Vector3(px, 0.0, pz)
 	player_model.rotation.y = atan2(world.facing_x, world.facing_z)
+	_draw_hurt(world.is_hurt() and world.phase == RunWorld.Phase.PLAYING)
 	ground.position = Vector3(px, 0.0, pz)
 	_spin += float(frame_ms) / RunConstants.MS_PER_SECOND_F
 	_draw_enemies(world, weight)
@@ -130,7 +144,7 @@ func play_events(world: RunWorld) -> void:
 		var number: RunDamageNumber = _borrow(ResourceKey.PREFAB__RUN__DAMAGE_NUMBER) as RunDamageNumber
 		if number != null:
 			_numbers += 1
-			number.show_amount(at, world.hit_amount[i], _number_done)
+			number.show_amount(at + _number_offset(), world.hit_amount[i], _number_done)
 		_play_effect(ResourceKey.PREFAB__RUN__HIT_EFFECT, at)
 	for i: int in mini(world.death_count, RunConstants.DEATH_EFFECTS_PER_FRAME):
 		_play_effect(ResourceKey.PREFAB__RUN__DEATH_EFFECT, Vector3(world.death_x[i], 0.0, world.death_z[i]))
@@ -140,6 +154,31 @@ func play_events(world: RunWorld) -> void:
 		_play_effect(ResourceKey.PREFAB__RUN__LEVEL_EFFECT, player.position)
 	if world.events & (RunWorld.EVENT_GEM | RunWorld.EVENT_HEAL | RunWorld.EVENT_CHEST):
 		_play_effect(ResourceKey.PREFAB__RUN__PICKUP_EFFECT, player.position)
+
+
+## Tips the hero model over: the fall of the player.
+func play_fall() -> void:
+	_draw_hurt(false)
+	TweenCore.play_preset(ResourceKey.TWEEN__RUN__PLAYER_FALL, _scope, player_body)
+
+
+## The next spot of the ring of damage number spots: around the hit on the ground and a step higher each lap of the
+## ring, so numbers started close in time and place stand apart.
+func _number_offset() -> Vector3:
+	var slot: int = _number_seq % RunConstants.NUMBER_SPOTS
+	var lap: int = UtilCore.floor_div(_number_seq, RunConstants.NUMBER_SPOTS) % RunConstants.NUMBER_LAPS
+	_number_seq += 1
+	var angle: float = TAU * float(slot * RunConstants.NUMBER_SPOT_STRIDE % RunConstants.NUMBER_SPOTS) / float(RunConstants.NUMBER_SPOTS)
+	return Vector3(cos(angle) * RunConstants.NUMBER_SPREAD, float(lap) * RunConstants.NUMBER_LIFT, sin(angle) * RunConstants.NUMBER_SPREAD)
+
+
+## Puts the blood red glow on the player model while `hurt`.
+func _draw_hurt(hurt: bool) -> void:
+	if hurt == _hurt_shown:
+		return
+	_hurt_shown = hurt
+	for mesh: MeshInstance3D in _player_meshes:
+		mesh.material_overlay = _hurt_overlay if hurt else null
 
 
 func _on_number_done() -> void:
@@ -257,6 +296,7 @@ func _place_props(x: float, z: float) -> void:
 				var at: Vector3 = Vector3((float(cx) + fx) * RunConstants.PROP_CHUNK, 0.0, (float(cz) + fz) * RunConstants.PROP_CHUNK)
 				var yaw: float = fx * TAU
 				_props[kind].multimesh.set_instance_transform(counts[kind], Transform3D(Basis(Vector3.UP, yaw), at) * _prop_bases[kind])
+				_props[kind].multimesh.set_instance_color(counts[kind], RunConstants.PROP_COLOR)
 				counts[kind] += 1
 	for kind: int in _props.size():
 		_props[kind].multimesh.visible_instance_count = counts[kind]
@@ -342,6 +382,15 @@ func _model_of(key: String) -> ModelInfo:
 		info.base = Transform3D(Basis.IDENTITY, Vector3(0.0, -box.position.y, 0.0)) * xform
 	root.free()
 	return info
+
+
+static func _collect_meshes(node: Node, out: Array[MeshInstance3D]) -> void:
+	if node == null:
+		return
+	if node is MeshInstance3D:
+		out.append(node as MeshInstance3D)
+	for child: Node in node.get_children():
+		RunView._collect_meshes(child, out)
 
 
 static func _first_mesh(node: Node) -> MeshInstance3D:

@@ -21,13 +21,14 @@ The player walks the night field and survives the growing horde until dawn at 15
 5. Level-up popup: three cards (anchor `levelup_choice`, key = the weapon or passive ID name of the card, e.g. `[weapon_spinning_blade]`, `[passive_might]`; the soup card has no key). The run is held until a card is picked
 6. When health reaches 0, the run ends after about 1.6 seconds and the result panel opens: survived time, kills, level, gold earned. `다시 출발` (Run again, anchor `result_again`, first focus) starts a new run; `야영지로` (To camp, anchor `result_lobby`) goes to the camp
 7. At 15:00 dawn breaks, every enemy vanishes, and the result panel opens with `새벽이 밝았다!` (Dawn has broken!)
-8. Pause popup: `계속하기` (Continue, anchor `pause_resume`) continues; `원정 포기` (Give up, anchor `pause_give_up`) ends the run as a fall, and the gold of the run so far is still granted
+8. Pause popup: `계속하기` (Continue, anchor `pause_resume`) continues; `원정 포기` (Give up, anchor `pause_give_up`) ends the run (`원정을 포기했다…` over the field, result title `원정을 포기했다`), and the gold of the run so far is still granted
 9. An instance started with a save fixture opens on a resumed run with the pause popup open. Press `계속하기` (anchor `pause_resume`) to continue from that moment
+10. A run started after a shrine purchase shows `등불 제단의 가호가 함께합니다` and a plate of the bought shrine upgrade icons with their levels under the weapon and passive icons
 
 ## failure
 
-- Contact with an enemy takes health (the red bar at the top left, `현재/최대`). After a hit the player cannot be hit again for 0.4 seconds
-- Fall: health 0 ends the run; the result panel opens after about 1.6 seconds. Restart: `다시 출발` (anchor `result_again`) starts a new run, or `야영지로` then `원정 시작`
+- Contact with an enemy takes health (the red bar at the top left, `현재/최대`, and the small red bar under the player). After a hit the player glows red and cannot be hit again for 0.7 seconds. At 30% health or less both bars pulse, the numbers turn red and `체력이 위험해요!` shows under the player
+- Fall: health 0 ends the run; the field turns red, the player tips over and `등불이 꺼졌다…` shows, then the result panel opens after about 1.6 seconds. Restart: `다시 출발` (anchor `result_again`) starts a new run, or `야영지로` then `원정 시작`
 
 ## input lock window
 

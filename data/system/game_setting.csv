@@ -17,9 +17,10 @@ id,target,data_type,value
 [pickup_radius],Client,float,1.7
 [magnet_speed],Client,float,15.0
 [contact_interval],Client,duration,500ms
-[hurt_invuln],Client,duration,400ms
+[hurt_invuln],Client,duration,700ms
 [hurt_flash],Client,duration,180ms
-[xp_base],Client,int,5
+[low_health_permille],Client,int,300
+[xp_base],Client,int,3
 [xp_step],Client,int,8
 [weapon_slots],Client,int,4
 [passive_slots],Client,int,4
