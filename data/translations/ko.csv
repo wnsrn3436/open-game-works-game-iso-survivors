@@ -184,6 +184,7 @@ reserved_string.text.[result_time],생존 시간 {time:duration},ef3a0242b29253c
 reserved_string.text.[result_unsaved],이번 원정은 기록하지 못했어요,4a8db587c6395d1b,4a8db587c6395d1b,이번 원정은 기록하지 못했어요
 reserved_string.text.[result_upgrade_hint],야영지의 등불 제단에서 금화로 강화하세요,6521495da01da537,6521495da01da537,야영지의 등불 제단에서 금화로 강화하세요
 reserved_string.text.[run_blessing],등불 제단의 가호가 함께합니다,5bc7953956319cd8,5bc7953956319cd8,등불 제단의 가호가 함께합니다
+reserved_string.text.[run_blessing_title],등불 제단의 가호,64dd3117698b63d5,64dd3117698b63d5,등불 제단의 가호
 reserved_string.text.[run_dawn_near],곧 새벽이 옵니다!,e057b2b5e1400fe3,e057b2b5e1400fe3,곧 새벽이 옵니다!
 reserved_string.text.[run_elite_warning],강력한 적이 나타났다!,0b83b911eda4c739,0b83b911eda4c739,강력한 적이 나타났다!
 reserved_string.text.[run_fallen],등불이 꺼졌다…,245490232f2e79a5,245490232f2e79a5,등불이 꺼졌다…
@@ -223,6 +224,12 @@ reserved_string.text.[upgrade_maxed],최대,ee3b70e7b026e0a7,ee3b70e7b026e0a7,�
 reserved_string.text.[upgrade_not_enough],금화가 부족해요,0edaadf709542dc8,0edaadf709542dc8,금화가 부족해요
 reserved_string.text.[upgrade_overflow_warning],보상 일부가 들어갈 자리가 없어 사라지거나 우편으로 가요. 그래도 살까요?,c07ece1a089ef58e,c07ece1a089ef58e,보상 일부가 들어갈 자리가 없어 사라지거나 우편으로 가요. 그래도 살까요?
 reserved_string.text.[upgrade_title],등불 제단,0a5ec1f85f96919a,0a5ec1f85f96919a,등불 제단
+upgrade.bonus.[upgrade_greed],원정 금화 +{value}%,d5b9cd28d2f84c52,d5b9cd28d2f84c52,원정 금화 +{value}%
+upgrade.bonus.[upgrade_haste],재사용 시간 −{value}%,c6327e02c02a6cdd,c6327e02c02a6cdd,재사용 시간 −{value}%
+upgrade.bonus.[upgrade_magnet],줍는 범위 +{value}%,6f7505b2b6673ec8,6f7505b2b6673ec8,줍는 범위 +{value}%
+upgrade.bonus.[upgrade_might],피해 +{value}%,bc6b9d369ff66113,bc6b9d369ff66113,피해 +{value}%
+upgrade.bonus.[upgrade_swiftness],이동 속도 +{value}%,d5794b9af4a95284,d5794b9af4a95284,이동 속도 +{value}%
+upgrade.bonus.[upgrade_vitality],최대 체력 +{value},49b57a3150c5b822,49b57a3150c5b822,최대 체력 +{value}
 upgrade.desc.[upgrade_greed],레벨마다 원정 금화 +{value}%,3094ee9ad5ad9ecc,3094ee9ad5ad9ecc,레벨마다 원정 금화 +{value}%
 upgrade.desc.[upgrade_haste],레벨마다 무기 재사용 시간 −{value}%,847895b10fd2c1e9,847895b10fd2c1e9,레벨마다 무기 재사용 시간 −{value}%
 upgrade.desc.[upgrade_magnet],레벨마다 줍는 범위 +{value}%,744af24e30dd5efb,744af24e30dd5efb,레벨마다 줍는 범위 +{value}%

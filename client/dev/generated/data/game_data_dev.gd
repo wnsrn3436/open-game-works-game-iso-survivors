@@ -220,6 +220,7 @@ static var _ids: Dictionary[String, int] = {
 	"[result_unsaved]": 1989880305,
 	"[result_upgrade_hint]": 1203300269,
 	"[run_blessing]": 1789223552,
+	"[run_blessing_title]": 511731561,
 	"[run_chest]": 982574741,
 	"[run_dawn]": 342822994,
 	"[run_dawn_near]": 996683534,
@@ -228,6 +229,7 @@ static var _ids: Dictionary[String, int] = {
 	"[run_elite]": 565753576,
 	"[run_elite_warning]": 2031089530,
 	"[run_end_delay]": 379332051,
+	"[run_end_skip_after]": 2144343618,
 	"[run_enemy_die]": 708191316,
 	"[run_enemy_hit]": 1380966887,
 	"[run_fallen]": 1043386475,
@@ -527,6 +529,11 @@ static func set_setting_run_duration(value: int) -> void:
 static func set_setting_run_end_delay(value: int) -> void:
 	GameSetting._test_run_end_delay = value
 	GameSetting._has_test_run_end_delay = true
+
+
+static func set_setting_run_end_skip_after(value: int) -> void:
+	GameSetting._test_run_end_skip_after = value
+	GameSetting._has_test_run_end_skip_after = true
 
 
 static func set_setting_run_save_interval(value: int) -> void:

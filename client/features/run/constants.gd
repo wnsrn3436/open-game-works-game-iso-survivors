@@ -53,9 +53,12 @@ const PROP_HASH_X: int = 73856093 # hash constant of the prop layout, not a tuna
 const PROP_HASH_Z: int = 19349663 # hash constant of the prop layout, not a tunable value
 const PROP_HASH_MOD: int = 1000003 # hash constant of the prop layout, not a tunable value
 const PROP_HASH_SHIFT: int = 13 # hash constant of the prop layout, not a tunable value
-## Most damage numbers drawn at once and started in one frame.
-const MAX_DAMAGE_NUMBERS: int = 40 # drawing budget; no rule reads it
-const DAMAGE_NUMBERS_PER_FRAME: int = 6 # drawing budget; no rule reads it
+## Most damage numbers drawn at once, started in one frame, and hits of a frame tried for a number (biggest first).
+const MAX_DAMAGE_NUMBERS: int = 18 # drawing budget; no rule reads it
+const DAMAGE_NUMBERS_PER_FRAME: int = 3 # drawing budget; no rule reads it
+const NUMBER_TRIES_PER_FRAME: int = 8 # drawing budget; no rule reads it
+## Most hit effects started in one frame.
+const HIT_EFFECTS_PER_FRAME: int = 6 # drawing budget; no rule reads it
 ## Most death effects started in one frame.
 const DEATH_EFFECTS_PER_FRAME: int = 6 # drawing budget; no rule reads it
 ## Sounds of one kind started at most per frame.
@@ -74,13 +77,12 @@ const HEALTH_TEXT_COLOR: Color = Color(0.91, 0.882, 0.816, 1.0) # color of the d
 const PROJECTILE_HEIGHT: float = 0.8 # layout of the drawing only; no rule reads it
 const GEM_HEIGHT: float = 0.25 # layout of the drawing only; no rule reads it
 const NUMBER_HEIGHT: float = 1.6 # layout of the drawing only; no rule reads it
-## Damage number spots: spots on a ring around the hit, the stride that jumps between far spots, the ring radius in m,
-## the laps of higher rings and the height of one lap in m.
-const NUMBER_SPOTS: int = 8 # layout of the drawing only; no rule reads it
-const NUMBER_SPOT_STRIDE: int = 3 # layout of the drawing only; no rule reads it
-const NUMBER_SPREAD: float = 1.1 # layout of the drawing only; no rule reads it
-const NUMBER_LAPS: int = 3 # layout of the drawing only; no rule reads it
-const NUMBER_LIFT: float = 0.5 # layout of the drawing only; no rule reads it
+## Least distance in m on the ground between two living damage numbers, so their text does not overlap.
+const NUMBER_GAP: float = 1.8 # layout of the drawing only; no rule reads it
+## Scale of a drawn lantern bolt: wider and much longer along its flight, a streak of light.
+const BOLT_STRETCH: Vector3 = Vector3(1.6, 1.6, 2.8) # look of the drawing only; no rule reads it
+## Glow of the gem model under the bloom: dimmer, so the gems keep their blue instead of washing out to white.
+const GEM_EMISSION_SCALE: float = 0.45 # look of the drawing only; no rule reads it
 ## Gap in px between the player's feet on screen and the top of the player health bar.
 const PLAYER_BAR_GAP: float = 14.0 # layout of the drawing only; no rule reads it
 ## Enemy bob while walking: height in m and the speed of the bob in radians per m walked.
@@ -111,5 +113,7 @@ const BOT_GEM_RADIUS: float = 14.0 # DEV bot play style; no game rule reads it
 const BOT_AWAY_WEIGHT: float = 1.5 # DEV bot play style; no game rule reads it
 ## The DEV bot holds a move key when the wanted direction leans this far along that screen axis.
 const BOT_KEY_THRESHOLD: float = 0.38 # DEV bot play style; no game rule reads it
+## Word joiner (U+2060): kept between the letters of a word so a label line breaks only between words.
+const WORD_JOINER: String = "\u2060" # text layout character, not a tunable value
 ## Format version of the saved run state; a saved state of another version starts a new run.
 const SAVE_VERSION: int = 1 # save format version, not a tunable value

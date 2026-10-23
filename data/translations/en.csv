@@ -184,6 +184,7 @@ reserved_string.text.[result_time],생존 시간 {time:duration},ef3a0242b29253c
 reserved_string.text.[result_unsaved],이번 원정은 기록하지 못했어요,1b6bdccde8b5935b,1b6bdccde8b5935b,This Run could not be saved
 reserved_string.text.[result_upgrade_hint],야영지의 등불 제단에서 금화로 강화하세요,e330354de4e92c16,e330354de4e92c16,Spend Gold on upgrades at the Lantern Shrine in Camp
 reserved_string.text.[run_blessing],등불 제단의 가호가 함께합니다,a67cd137fa3b0170,a67cd137fa3b0170,The Lantern Shrine blesses you
+reserved_string.text.[run_blessing_title],등불 제단의 가호,,54dacf167f7b8844,
 reserved_string.text.[run_dawn_near],곧 새벽이 옵니다!,db040312b99be141,db040312b99be141,Dawn is almost here!
 reserved_string.text.[run_elite_warning],강력한 적이 나타났다!,0b83b911eda4c739,0b83b911eda4c739,A powerful enemy appears!
 reserved_string.text.[run_fallen],등불이 꺼졌다…,245490232f2e79a5,245490232f2e79a5,The lantern has gone out…
@@ -223,6 +224,12 @@ reserved_string.text.[upgrade_maxed],최대,ee3b70e7b026e0a7,ee3b70e7b026e0a7,MA
 reserved_string.text.[upgrade_not_enough],금화가 부족해요,c18eaaaf07d73f96,c18eaaaf07d73f96,Not enough Gold
 reserved_string.text.[upgrade_overflow_warning],보상 일부가 들어갈 자리가 없어 사라지거나 우편으로 가요. 그래도 살까요?,c07ece1a089ef58e,c07ece1a089ef58e,Some rewards have no room and will be lost or sent by mail. Buy anyway?
 reserved_string.text.[upgrade_title],등불 제단,ffe4fe18ee6a0f04,ffe4fe18ee6a0f04,Lantern Shrine
+upgrade.bonus.[upgrade_greed],원정 금화 +{value}%,,8ef9763594bee3ab,
+upgrade.bonus.[upgrade_haste],재사용 시간 −{value}%,,c6327e02c02a6cdd,
+upgrade.bonus.[upgrade_magnet],줍는 범위 +{value}%,,6f7505b2b6673ec8,
+upgrade.bonus.[upgrade_might],피해 +{value}%,,bc6b9d369ff66113,
+upgrade.bonus.[upgrade_swiftness],이동 속도 +{value}%,,d5794b9af4a95284,
+upgrade.bonus.[upgrade_vitality],최대 체력 +{value},,49b57a3150c5b822,
 upgrade.desc.[upgrade_greed],레벨마다 원정 금화 +{value}%,1aa78de518d3d2c0,1aa78de518d3d2c0,Each level: run Gold +{value}%
 upgrade.desc.[upgrade_haste],레벨마다 무기 재사용 시간 −{value}%,847895b10fd2c1e9,847895b10fd2c1e9,Each level: weapon cooldown −{value}%
 upgrade.desc.[upgrade_magnet],레벨마다 줍는 범위 +{value}%,744af24e30dd5efb,744af24e30dd5efb,Each level: pickup range +{value}%

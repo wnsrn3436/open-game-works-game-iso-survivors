@@ -935,6 +935,8 @@ message UpgradeRow {
   int32 order = 5;
   // Effect text; {value} is per_level shown as percent or flat
   string desc = 6;
+  // Effect text of the levels a run starts with; {value} is per_level times the level, shown as percent or flat
+  string bonus = 7;
 }
 
 message UpgradeTable {

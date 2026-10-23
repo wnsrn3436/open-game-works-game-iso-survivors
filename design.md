@@ -37,16 +37,18 @@
 |---|---|---|
 | `scene/title/title` | Game name and tagline over the night graveyard backdrop during boot. Terms popup `prefab/common/terms_popup` for a new user | After login, `scene/run/run` when a run the app left can resume (`CommonRunSave`), otherwise `scene/lobby/lobby` |
 | `scene/lobby/lobby` | Root panel `prefab/lobby/lobby_panel`: game name, gold, record, `원정 시작` (start run, first focus, breathing), `등불 제단` (lantern shrine) with a line when the gold covers an upgrade, `설정` (options). Shrine panel `prefab/lobby/upgrade_panel`. Options panel `prefab/lobby/option_panel` | Start run → `scene/run/run` |
-| `scene/run/run` | The 3D field, the player with the lantern light, the horde, projectiles, gems, chests, soups and props (props tinted darker than the horde). Root panel `prefab/run/hud_panel`: health bar and numbers, XP bar, level, timer, kills, run gold so far, weapon and passive icons with levels, the shrine upgrade icons with levels the run started with (only when it has any), a small health bar under the player, the move hint (until the first move), the start status, the red warning banners, the gold notice and the fall title. Level-up popup `prefab/run/levelup_popup`. Pause popup `prefab/run/pause_popup`. Result panel `prefab/run/result_panel` | Result `야영지로` → `scene/lobby/lobby`; result `다시 출발` → a new `scene/run/run` |
+| `scene/run/run` | The 3D field, the player with the lantern light, the horde, projectiles (lantern bolts drawn as streaks of light), gems (a deeper blue glow than the horde), chests, soups and props (props tinted darker than the horde). Root panel `prefab/run/hud_panel`: health bar and numbers, XP bar, level, timer, kills, run gold so far, weapon and passive icons with levels, the `등불 제단의 가호` (The lantern shrine's blessing) plate with the icon and the effect of each shrine upgrade the run started with (e.g. `최대 체력 +15`; only when it has any), a small health bar under the player, the move hint (until the first move), the start status, the red warning banners, the gold notice and the fall title. Level-up popup `prefab/run/levelup_popup`. Pause popup `prefab/run/pause_popup`. Result panel `prefab/run/result_panel` | Result `야영지로` → `scene/lobby/lobby`; result `다시 출발` → a new `scene/run/run` |
 
 - Terms popup: the `모두 동의합니다` (I agree to all) checkbox turns both consent checkboxes on or off together; confirm is disabled until both are on, and the hint line above it says so
 - Camp: pressing start twice changes the scene once. The back input on the root panel opens the quit confirmation; on the shrine and options panels it closes the panel
 - Shrine: a buy press is checked before it is sent (the step is the next level, it is not bought yet, the gold covers it). A refused press plays the refuse sound and shows a toast with the reason; a row the gold does not cover shows its cost in blood red and the `금화가 부족해요` (not enough gold) line. A press while a purchase waits for the server is ignored. On success: coin sound, `<name> 강화 완료!` toast, the row swells with a gold glow. A purchase whose reward would be discarded or mailed asks first with a system popup
 - Run start: until the server answers `StartPlaySession`, the HUD shows `원정 준비 중` (Getting the run ready) and nothing moves. On failure, core shows an error and the scene returns to the camp. A new run whose loadout has shrine upgrades shows the gold notice `등불 제단의 가호가 함께합니다` (The lantern shrine's blessing is with you) and the shrine upgrade plate
+- Feedback: a move press, turn or release puffs dust at the player's feet (`prefab/run/step_effect`); the lantern flashes each time the lantern bolt fires (`prefab/run/fire_effect`); each weapon hit shows a bright impact flash with sparks (`prefab/run/hit_effect`)
+- Damage numbers: at most 3 start in a frame, the biggest hits first, and at most 18 live at once; a number starts only where no living number stands within 1.8 m on the ground, so numbers do not overlap
 - Hurt: a contact hit plays the hurt sound, a short shake and a red screen flash, and the player model glows blood red while it is invulnerable (`[hurt_invuln]`). The small bar under the player and the HUD bar drop at once. At or below `[low_health_permille]` of the maximum health both bars pulse, the health numbers turn red and `체력이 위험해요!` (Health is low!) shows under the player until health rises again
 - During a run: the back input and `pause` open the pause popup (`계속하기` continue, `원정 포기` give up). The HUD receives `pause` with `InputCore.is_just_pressed`, so a press in a frame where the world is stopped is not lost. While the pause or level-up popup is open, game time (`TimeCore.set_paused`), the world and the pooled effects stop. The pause popup does not open during a pick, the fall wait or the result
-- Level-up popup: the back input does nothing; the run stays held until a card is picked. Pending picks (several level-ups at once, a chest) open one after another
-- Run end: a fall plays the fall sound and shake, the field fades to a blood red tint, the hero model tips over and the fall title `등불이 꺼졌다…` (The lantern went out…) shows over the field (`원정을 포기했다…` (You gave up the run…) for a give-up); after `[run_end_delay]` the result is sent with `FinishPlaySession`. On success the result panel opens with the gold of the `ItemChange` of that response. When the play session expired or is unknown to the server, the gold line says `이번 원정은 기록하지 못했어요` (This run was not recorded) without a core error popup; other rejections keep the core error handling and show the same line
+- Level-up popup: card names and texts wrap only between words (a Korean line never ends with a cut word). The back input does nothing; the run stays held until a card is picked. Pending picks (several level-ups at once, a chest) open one after another
+- Run end: a fall plays the fall sound and shake, the field fades to a blood red tint, the hero model tips over and the fall title `등불이 꺼졌다…` (The lantern went out…) shows over the field (`원정을 포기했다…` (You gave up the run…) for a give-up); after `[run_end_delay]` the result is sent with `FinishPlaySession`. During that wait a move input (press, turn or release) or a `pause`/back press pops the fall title; from `[run_end_skip_after]` into the wait it also ends the wait, so the result is sent at once. The wait before the dawn result does not take input. On success the result panel opens with the gold of the `ItemChange` of that response. When the play session expired or is unknown to the server, the gold line says `이번 원정은 기록하지 못했어요` (This run was not recorded) without a core error popup; other rejections keep the core error handling and show the same line
 - Result panel: the title is `새벽이 밝았다!` (Dawn has broken!) at dawn, `원정을 포기했다` (You gave up the run) after a give-up and `어둠에 쓰러졌다` (Fell in the dark) after a fall. `다시 출발` has the first focus. Either button works once; a second press is ignored. The back input goes to the camp
 - Resume: the run state is saved every `[run_save_interval]` of run time, after each pick and when the scene exits. A run the app left resumes on the next start with the pause popup open, as long as its play session can still finish (`play_session_mode.max_duration`)
 
@@ -62,6 +64,7 @@
 
 - `wave` rows by `order`, one per minute from `wave.start`. Every `wave.spawn_interval`, `wave.spawn_count` enemies spawn on a ring of `[spawn_radius]` around the player, picked by `wave.enemies` weights, while the live count is below `wave.max_alive`. Health = `enemy.health` × `wave.health_permille` ÷ 1000
 - Opening threat: a player who stands still from the start takes the first contact hit within 20000ms of run time and falls no sooner than 10000ms after that hit (regression test `client/tests/run/test_run_world.gd`, seeds 1~5). The first waves (`wave_1`, `wave_2`) and `[hurt_invuln]` set it
+- Standing still loses: a player who never moves falls within 150000ms of run time, whatever cards it takes (same test file, seeds 1~5, first card of every pick). The spawn rates of `wave_2`~`wave_4`, `enemy.damage` and the small aura knockback (`weapon_level.speed` of the aura) set it
 - `wave.elite` arrives once at the wave start with the warning banner; an elite (`enemy.elite`) drops a chest
 - Enemies walk to the player at `enemy.speed`, push apart by `[separation]`, take knockback reduced by `enemy.knockback_resist`; one farther than `[despawn_radius]` moves back onto the ring ahead of the player
 - A defeated enemy drops a gem of `enemy.xp`; a non-elite drops a soup with `[heal_drop_permille]` chance (heals `[heal_amount]`)
@@ -71,7 +74,7 @@
 - 5 weapons (`weapon`, `weapon_level` by level 1~5), up to `[weapon_slots]` owned. Start weapon: reserved ID `[start_weapon]` → `[weapon_lantern_bolt]`. Damage = `weapon_level.damage` × (1000 + might bonus) ÷ 1000. Cooldown = `weapon_level.cooldown` × (1000 − haste bonus) ÷ 1000, the cut at most 1000 − `[min_cooldown_permille]`
   - Bolt: `count` bolts at the nearest enemies within `[bolt_range]`, speed `speed`, radius `area`, `pierce` hits, life `lifetime`
   - Orbit: `count` scythes circle at radius `area`, `speed` rad/s; each enemy is hit at most once per `cooldown`, hit radius `[blade_radius]`
-  - Aura: enemies within radius `area` take damage once per `cooldown` and are pushed `speed` m
+  - Aura: enemies within radius `area` take damage once per `cooldown` and are pushed `speed` m (small, so the aura does not hold the horde off a player who stands still)
   - Axe: `count` axes in the move direction spread by `[axe_spread]`, speed `speed`, radius `area`, `pierce` hits, life `lifetime`
   - Lightning: `count` strikes on random enemies within `[lightning_range]`, each hitting every enemy within `area`
 - 5 passives (`passive`), up to `[passive_slots]` owned, level 1~5; `passive.per_level` × level of `passive.stat`
@@ -79,8 +82,8 @@
 
 ### XP and picks
 
-- XP from level L to L+1 = `[xp_base]` + (L − 1) × `[xp_step]`. A gem within the pickup radius (`[pickup_radius]` × (1000 + magnet bonus) ÷ 1000) moves to the player at `[magnet_speed]`; it is taken within `[player_radius]` + `[gem_reach]`
-- A level-up or an opened chest holds the run for a pick of `[levelup_choices]` (chest `[chest_choices]`) different cards from: owned weapons and passives below level 5, new weapons and passives while a slot is free. When none is left, the card is the soup (heals `[levelup_heal]`)
+- XP from level L to L+1 = `[xp_base]` + (L − 1) × `[xp_step]`. Early pace: a player who walks the four screen directions in 5000ms legs gets the first level-up within 15000ms of run time and is at level 3 or more at 60000ms (regression test `client/tests/run/test_run_world.gd`, seeds 1~5). `[xp_base]`, `[xp_step]`, `[pickup_radius]` and `[bolt_range]` (kills land on screen, near enough to walk through the gems) set it. A gem within the pickup radius (`[pickup_radius]` × (1000 + magnet bonus) ÷ 1000) moves to the player at `[magnet_speed]`; it is taken within `[player_radius]` + `[gem_reach]`
+- A level-up or an opened chest holds the run for a pick of `[levelup_choices]` (chest `[chest_choices]`) different cards from: owned weapons and passives below level 5, new weapons and passives while a slot is free. When none is left, the level-up heals `[levelup_heal]` at once (the soup) without opening the popup, so a full build is not stopped at every level-up
 
 ### run and record
 
@@ -126,6 +129,7 @@
 | `no_response_permille` | 0 | 150 | |
 | `scene_load_ms` | 0 | 3000 | |
 | `restart_delay_ms` | 2000 | 60000 | `game_setting.run_end_delay` |
+| `feedback_per_input` | 1 | 1000 | |
 
 ## tuning targets
 
@@ -138,7 +142,7 @@
 ## art direction
 
 - style: stylized low-poly 3D with hand-painted textures; chunky, readable silhouettes for the isometric camera (`records/setup/art-direction.md`)
-- hex palette: night `#1B1A2E` (background, panels), moss `#3E5C3A` (ground, cloak), lantern gold `#C9A227` (light, titles, primary buttons, gold), blood red `#8E1F2F` (health bar, hurt flash, warnings), bone `#E8E1D0` (text, skeletons)
+- hex palette: night `#1B1A2E` (background, panels), moss `#3E5C3A` (ground, cloak), lantern gold `#C9A227` (light, titles, primary buttons, gold), blood red `#8E1F2F` (health bar, hurt flash, warnings), bone `#E8E1D0` (text, skeletons). XP gems glow a deep blue so they read apart from the horde and the props
 - mood: a tense night siege that turns into a power fantasy; the warm lantern light around the player pushes back the dark (a gold omni light on the player, cool moonlight and fog on the field)
 - outline: no 3D outline; UI text has a dark outline so it reads over the field
 - proportions: player 0.8x1.8x0.8 m; bat 1.0x0.6, ghoul 0.8x1.5, skeleton 0.9x1.7, wraith 0.9x1.8, grave brute 1.6x2.4, bone knight 1.8x2.8 m. Field props stay low (gravestones, rocks, a few lantern posts) so they do not hide the player

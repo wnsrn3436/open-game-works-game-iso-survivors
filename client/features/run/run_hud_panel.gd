@@ -1,12 +1,13 @@
 class_name RunHudPanel
 extends UIPanel
 ## Root panel of the run: the health bar and its numbers, the XP bar and the level, the run timer, kills, the run gold
-## so far, the icons and levels of the owned weapons and passives and of the shrine upgrades the run started with, the
-## move hint, the start status, the warning banner and the gold notice. A small health bar follows the player on screen;
-## at low health both health bars pulse, the health text turns red and a warning line shows under the player. When the
-## player falls, the fall title shows over the field. It draws `RunStateChangedEvent`, `RunBannerEvent`,
-## `RunPlayerDrawnEvent` and `RunFallenEvent`. A back input or the `pause` action asks the run scene
-## to pause; the UI keeps running while the run world is stopped, so a `pause` press there is not lost.
+## so far, the icons and levels of the owned weapons and passives, the shrine upgrades the run started with under a
+## title with the effect each gives, the move hint, the start status, the warning banner and the gold notice. A small
+## health bar follows the player on screen; at low health both health bars pulse, the health text turns red and a
+## warning line shows under the player. When the player falls, the fall title shows over the field and pops at each
+## input until the result. It draws `RunStateChangedEvent`, `RunBannerEvent`, `RunPlayerDrawnEvent`, `RunFallenEvent`
+## and `RunRespondedEvent`. A back input or the `pause` action asks the run scene to pause; the UI keeps running while
+## the run world is stopped, so a `pause` press there is not lost.
 
 const _PAUSE: StringName = &"pause"
 
@@ -36,6 +37,7 @@ enum SlotKind { WEAPON, PASSIVE, UPGRADE }
 @export var player_fill: Control
 @export var low_health_label: Label
 @export var blessing_plate: Control
+@export var blessing_title: Label
 @export var blessing_icons: Array[TextureRect] = []
 @export var blessing_levels: Array[Label] = []
 
@@ -68,6 +70,7 @@ func prepare(_reason: UICore.PanelOpenReason, _cache: UIPanelCache) -> bool:
 	hp_fill.self_modulate = RunConstants.HEALTH_COLOR
 	player_fill.self_modulate = RunConstants.HEALTH_COLOR
 	LocalizationCore.bind_text(low_health_label, ReservedString.run_low_health())
+	LocalizationCore.bind_text(blessing_title, ReservedString.run_blessing_title())
 	xp_fill.self_modulate = RunConstants.XP_COLOR
 	gold_icon.texture = _texture(ResourceKey.ICON__GOLD)
 	kills_icon.texture = _texture(ResourceKey.ICON__KILLS)
@@ -76,6 +79,7 @@ func prepare(_reason: UICore.PanelOpenReason, _cache: UIPanelCache) -> bool:
 	EventCore.subscribe(RunBannerEvent, _on_banner)
 	EventCore.subscribe(RunPlayerDrawnEvent, _on_player_drawn)
 	EventCore.subscribe(RunFallenEvent, _on_fallen)
+	EventCore.subscribe(RunRespondedEvent, _on_responded)
 	EventCore.subscribe(InputPromptChangedEvent, _on_input_prompt_changed)
 	banner_label.visible = false
 	notice_label.visible = false
@@ -187,6 +191,12 @@ func _on_fallen(event: RunFallenEvent) -> void:
 	TweenCore.play_preset(ResourceKey.TWEEN__RUN__RESULT_IN, scope, fall_label)
 
 
+## An input while the fall title shows: the title pops, the answer to that input until the result opens.
+func _on_responded(_event: RunRespondedEvent) -> void:
+	if _fallen:
+		TweenCore.play_preset(ResourceKey.TWEEN__RUN__HUD_POP, scope, fall_label)
+
+
 func _write_timer(time_ms: int) -> void:
 	var seconds: int = UtilCore.floor_div(time_ms, RunConstants.MS_PER_SECOND)
 	if seconds == _seconds:
@@ -206,11 +216,19 @@ func _draw_slots(ids: PackedInt32Array, levels: PackedInt32Array, icons: Array[T
 	for i: int in icons.size():
 		var owned: bool = i < ids.size()
 		icons[i].visible = owned
+		if kind == SlotKind.UPGRADE:
+			(icons[i].get_parent() as Control).visible = owned
 		if not owned:
 			continue
 		icons[i].texture = _texture(RunHudPanel._icon_of(kind, ids[i]))
-		if i < labels.size():
-			_format_args.clear()
+		if i >= labels.size():
+			continue
+		_format_args.clear()
+		if kind == SlotKind.UPGRADE:
+			var upgrade: GameData.UpgradeRow = GameData.UpgradeTable.get_row(ids[i])
+			_format_args.set_int("value", CommonStatText.shown_value(upgrade.stat, upgrade.per_level * levels[i]))
+			labels[i].text = LocalizationCore.format(upgrade.bonus, _format_args)
+		else:
 			_format_args.set_int("level", levels[i])
 			labels[i].text = LocalizationCore.format(ReservedString.run_slot_level(), _format_args)
 

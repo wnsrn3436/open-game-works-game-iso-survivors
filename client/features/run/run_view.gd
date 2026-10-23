@@ -4,8 +4,11 @@ extends Node3D
 ## blades, the aura, gems, chests and soups as multimeshes, the field props around the player, and the pooled effects
 ## and damage numbers of the event buffers. Enemies and projectiles are drawn between the last two ticks; the player
 ## is drawn ahead of the last tick with the held move, so it answers the input without a tick of delay. The player
-## model glows blood red while it is invulnerable after a hit and tips over when it falls. Damage numbers start on a
-## ring of spots around the hit so the numbers of close hits do not cover each other.
+## model glows blood red while it is invulnerable after a hit and tips over when it falls. Lantern bolts are drawn
+## stretched along their flight as streaks of light, the lantern flashes when it fires, and dust puffs at the feet
+## when the move starts, turns or stops. The damage numbers of a frame are the biggest hits, and a number starts only
+## where no living number stands, so close numbers do not cover each other. Gems glow a deeper blue than the
+## enemies and props.
 
 @export var player: Node3D
 @export var player_model: Node3D
@@ -14,6 +17,8 @@ extends Node3D
 @export var aura: Node3D
 @export var ground: Node3D
 @export var effects: Node3D
+## The lantern light of the player; the fire flash starts at it.
+@export var lantern: Node3D
 
 var _scope: Scope = null
 var _enemy_meshes: Array[MultiMeshInstance3D] = []
@@ -37,7 +42,16 @@ var _prop_chunk: Vector2i = RunConstants.NO_CHUNK
 var _numbers: int = 0
 var _spin: float = 0.0
 var _number_done: Callable = Callable()
-var _number_seq: int = 0
+## Game time of the view in ms, to know which damage number spots are still taken.
+var _clock_ms: int = 0
+## How long a damage number lives: the length of its tween preset.
+var _number_life_ms: int = 0
+var _spot_x: PackedFloat32Array = PackedFloat32Array()
+var _spot_z: PackedFloat32Array = PackedFloat32Array()
+var _spot_until: PackedInt64Array = PackedInt64Array()
+var _spot_next: int = 0
+## Hit events of the frame already tried for a damage number.
+var _hit_tried: PackedByteArray = PackedByteArray()
 var _player_meshes: Array[MeshInstance3D] = []
 var _hurt_overlay: StandardMaterial3D = null
 var _hurt_shown: bool = false
@@ -69,7 +83,8 @@ static func model_keys() -> PackedStringArray:
 static func pooled_keys() -> PackedStringArray:
 	return PackedStringArray([
 		ResourceKey.PREFAB__RUN__DAMAGE_NUMBER, ResourceKey.PREFAB__RUN__HIT_EFFECT, ResourceKey.PREFAB__RUN__DEATH_EFFECT,
-		ResourceKey.PREFAB__RUN__STRIKE_EFFECT, ResourceKey.PREFAB__RUN__LEVEL_EFFECT, ResourceKey.PREFAB__RUN__PICKUP_EFFECT])
+		ResourceKey.PREFAB__RUN__STRIKE_EFFECT, ResourceKey.PREFAB__RUN__LEVEL_EFFECT, ResourceKey.PREFAB__RUN__PICKUP_EFFECT,
+		ResourceKey.PREFAB__RUN__FIRE_EFFECT, ResourceKey.PREFAB__RUN__STEP_EFFECT])
 
 
 ## Builds the multimeshes from the loaded models. Called once in `on_prepare` of the scene.
@@ -91,6 +106,7 @@ func setup(scope: Scope) -> void:
 	_blades = _make_multimesh(blade_key, RunConstants.MAX_WEAPONS * RunConstants.MAX_WEAPONS, false)
 	_blade_base = _base_of(blade_key)
 	_gems = _make_multimesh(ResourceKey.MODEL__XP_GEM, RunConstants.MAX_GEMS, false)
+	_gems.multimesh.mesh = RunView._dimmed_mesh(_gems.multimesh.mesh, RunConstants.GEM_EMISSION_SCALE)
 	_gem_base = _base_of(ResourceKey.MODEL__XP_GEM)
 	_chests = _make_multimesh(ResourceKey.MODEL__CHEST, RunConstants.MAX_PICKUPS, false)
 	_chest_base = _base_of(ResourceKey.MODEL__CHEST)
@@ -108,6 +124,13 @@ func setup(scope: Scope) -> void:
 	_hurt_overlay.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	_hurt_overlay.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
 	_hurt_overlay.albedo_color = RunConstants.PLAYER_HURT_COLOR
+	_number_life_ms = RunView._length_of(ResourceCore.get_loaded(ResourceKey.TWEEN__RUN__DAMAGE_NUMBER,
+		TweenCore.get_preset_kind(), _scope) as TweenDefinition)
+	_spot_x.resize(RunConstants.MAX_DAMAGE_NUMBERS)
+	_spot_z.resize(RunConstants.MAX_DAMAGE_NUMBERS)
+	_spot_until.resize(RunConstants.MAX_DAMAGE_NUMBERS)
+	_spot_until.fill(0)
+	_hit_tried.resize(RunConstants.MAX_HIT_EVENTS)
 
 
 ## Draws `world` `weight` of a tick after its last tick, with the held move `move` for the player.
@@ -124,6 +147,7 @@ func draw(world: RunWorld, weight: float, move: Vector2, frame_ms: int) -> void:
 	_draw_hurt(world.is_hurt() and world.phase == RunWorld.Phase.PLAYING)
 	ground.position = Vector3(px, 0.0, pz)
 	_spin += float(frame_ms) / RunConstants.MS_PER_SECOND_F
+	_clock_ms += frame_ms
 	_draw_enemies(world, weight)
 	_draw_projectiles(world, weight)
 	_draw_blades(world)
@@ -136,16 +160,12 @@ func draw(world: RunWorld, weight: float, move: Vector2, frame_ms: int) -> void:
 
 ## Starts the effects and damage numbers of the event buffers of `world`.
 func play_events(world: RunWorld) -> void:
-	var numbers: int = mini(world.hit_count, RunConstants.DAMAGE_NUMBERS_PER_FRAME)
-	for i: int in numbers:
-		if _numbers >= RunConstants.MAX_DAMAGE_NUMBERS:
-			break
+	for i: int in mini(world.hit_count, RunConstants.HIT_EFFECTS_PER_FRAME):
 		var at: Vector3 = Vector3(world.hit_x[i], RunConstants.NUMBER_HEIGHT, world.hit_z[i])
-		var number: RunDamageNumber = _borrow(ResourceKey.PREFAB__RUN__DAMAGE_NUMBER) as RunDamageNumber
-		if number != null:
-			_numbers += 1
-			number.show_amount(at + _number_offset(), world.hit_amount[i], _number_done)
 		_play_effect(ResourceKey.PREFAB__RUN__HIT_EFFECT, at)
+	_play_numbers(world)
+	if world.fired_kinds & (1 << GameData.WeaponKind.BOLT):
+		_play_effect(ResourceKey.PREFAB__RUN__FIRE_EFFECT, lantern.global_position)
 	for i: int in mini(world.death_count, RunConstants.DEATH_EFFECTS_PER_FRAME):
 		_play_effect(ResourceKey.PREFAB__RUN__DEATH_EFFECT, Vector3(world.death_x[i], 0.0, world.death_z[i]))
 	for i: int in world.strike_count:
@@ -162,14 +182,65 @@ func play_fall() -> void:
 	TweenCore.play_preset(ResourceKey.TWEEN__RUN__PLAYER_FALL, _scope, player_body)
 
 
-## The next spot of the ring of damage number spots: around the hit on the ground and a step higher each lap of the
-## ring, so numbers started close in time and place stand apart.
-func _number_offset() -> Vector3:
-	var slot: int = _number_seq % RunConstants.NUMBER_SPOTS
-	var lap: int = UtilCore.floor_div(_number_seq, RunConstants.NUMBER_SPOTS) % RunConstants.NUMBER_LAPS
-	_number_seq += 1
-	var angle: float = TAU * float(slot * RunConstants.NUMBER_SPOT_STRIDE % RunConstants.NUMBER_SPOTS) / float(RunConstants.NUMBER_SPOTS)
-	return Vector3(cos(angle) * RunConstants.NUMBER_SPREAD, float(lap) * RunConstants.NUMBER_LIFT, sin(angle) * RunConstants.NUMBER_SPREAD)
+## Dust at the feet of the player: the move started, turned or stopped.
+func play_step() -> void:
+	_play_effect(ResourceKey.PREFAB__RUN__STEP_EFFECT, player.position)
+
+
+## Damage numbers of the biggest hits of the frame, each where no living number stands.
+func _play_numbers(world: RunWorld) -> void:
+	_hit_tried.fill(0)
+	var started: int = 0
+	for attempt: int in mini(world.hit_count, RunConstants.NUMBER_TRIES_PER_FRAME):
+		if started >= RunConstants.DAMAGE_NUMBERS_PER_FRAME or _numbers >= RunConstants.MAX_DAMAGE_NUMBERS:
+			return
+		var best: int = -1
+		for i: int in world.hit_count:
+			if _hit_tried[i] == 0 and (best < 0 or world.hit_amount[i] > world.hit_amount[best]):
+				best = i
+		_hit_tried[best] = 1
+		if not _spot_free(world.hit_x[best], world.hit_z[best]):
+			continue
+		var number: RunDamageNumber = _borrow(ResourceKey.PREFAB__RUN__DAMAGE_NUMBER) as RunDamageNumber
+		if number == null:
+			return
+		_take_spot(world.hit_x[best], world.hit_z[best])
+		_numbers += 1
+		started += 1
+		number.show_amount(Vector3(world.hit_x[best], RunConstants.NUMBER_HEIGHT, world.hit_z[best]), world.hit_amount[best],
+			_number_done)
+
+
+## Whether no living damage number stands within `[NUMBER_GAP]` of (`x`, `z`).
+func _spot_free(x: float, z: float) -> bool:
+	var gap_sq: float = RunConstants.NUMBER_GAP * RunConstants.NUMBER_GAP
+	for s: int in _spot_until.size():
+		if _spot_until[s] > _clock_ms:
+			var dx: float = _spot_x[s] - x
+			var dz: float = _spot_z[s] - z
+			if dx * dx + dz * dz < gap_sq:
+				return false
+	return true
+
+
+func _take_spot(x: float, z: float) -> void:
+	_spot_x[_spot_next] = x
+	_spot_z[_spot_next] = z
+	_spot_until[_spot_next] = _clock_ms + _number_life_ms
+	_spot_next = (_spot_next + 1) % _spot_until.size()
+
+
+## The length in ms of `definition`: the end of its latest change, over its steps one after another.
+static func _length_of(definition: TweenDefinition) -> int:
+	if definition == null:
+		return 0
+	var total: int = 0
+	for step: TweenStep in definition.steps:
+		var longest: int = 0
+		for change: TweenChange in step.changes:
+			longest = maxi(longest, change.delay + change.duration)
+		total += longest
+	return total
 
 
 ## Puts the blood red glow on the player model while `hurt`.
@@ -234,7 +305,8 @@ func _draw_projectiles(world: RunWorld, weight: float) -> void:
 			axes += 1
 		else:
 			var yaw: float = atan2(world.proj_vx[p], world.proj_vz[p])
-			bolt_mm.set_instance_transform(bolts, Transform3D(Basis(Vector3.UP, yaw), at) * _bolt_base)
+			var streak: Basis = Basis(Vector3.UP, yaw) * Basis.from_scale(RunConstants.BOLT_STRETCH)
+			bolt_mm.set_instance_transform(bolts, Transform3D(streak, at) * _bolt_base)
 			bolts += 1
 	bolt_mm.visible_instance_count = bolts
 	axe_mm.visible_instance_count = axes
@@ -336,6 +408,20 @@ func _make_multimesh(key: String, count: int, colors: bool) -> MultiMeshInstance
 	node.multimesh = mm
 	add_child(node)
 	return node
+
+
+## A copy of `mesh` whose surface materials glow `scale` times as bright, so a glow keeps its color under the bloom.
+static func _dimmed_mesh(mesh: Mesh, scale: float) -> Mesh:
+	if mesh == null:
+		return mesh
+	var copy: Mesh = mesh.duplicate() as Mesh
+	for s: int in copy.get_surface_count():
+		var material: BaseMaterial3D = copy.surface_get_material(s) as BaseMaterial3D
+		if material != null:
+			material = material.duplicate() as BaseMaterial3D
+			material.emission_energy_multiplier *= scale
+			copy.surface_set_material(s, material)
+	return copy
 
 
 ## A copy of `mesh` whose surface materials take the instance color as albedo tint when `tint`.

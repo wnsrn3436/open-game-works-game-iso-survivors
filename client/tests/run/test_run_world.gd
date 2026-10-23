@@ -2,9 +2,9 @@ extends UnitTestCase
 ## The run simulation: the same seed and inputs give the same run; the start weapon, health and level; XP gems raise
 ## the level and queue a pick; picks raise or add weapons and passives within the slots and the top levels; the waves
 ## spawn enemies; contact hurts the player and a fall ends the run; dawn ends the run at `[run_duration]`; a saved
-## state loads back to the same run. A player who stands still from the start is hit early and falls only a while
-## later; the hurt and low health states the view shows; a give-up is told apart from a fall; the shrine upgrades of
-## the loadout are listed.
+## state loads back to the same run. A player who stands still from the start is hit early, falls only a while later
+## and falls within the still limit; a walking player levels up early; the hurt and low health states the view shows;
+## a give-up is told apart from a fall; the shrine upgrades of the loadout are listed.
 
 const _SEED: int = 4242
 ## `design.md` `### enemies and waves`: a player who stands still from the start takes the first contact hit within
@@ -12,6 +12,15 @@ const _SEED: int = 4242
 const _STILL_FIRST_HIT_MS: int = 20000
 const _STILL_FALL_AFTER_MS: int = 10000
 const _STILL_SEEDS: int = 5
+## `design.md` `### enemies and waves`: a player who never moves falls within 150000ms of run time, whatever cards it
+## takes, so the auto weapons alone do not carry a run.
+const _STILL_FALL_LIMIT_MS: int = 150000
+## `design.md` `### XP and picks`: a player who walks the four screen directions in 5000ms legs gets the first level-up
+## within 15000ms of run time and is at level 3 or more at 60000ms.
+const _LEG_MS: int = 5000
+const _LEGS_FIRST_LEVEL_MS: int = 15000
+const _LEGS_CHECK_MS: int = 60000
+const _LEGS_LEVEL_AT_CHECK: int = 3
 
 
 func before_each() -> void:
@@ -223,6 +232,36 @@ func test_a_still_player_is_hit_early_and_falls_a_while_later() -> void:
 			world.clear_events()
 		assert_between(first_hit, 1, _STILL_FIRST_HIT_MS, "seed %d: the first contact hit of a still player" % seed_value)
 		assert_gte(world.time_ms - first_hit, _STILL_FALL_AFTER_MS, "seed %d: the fall comes a while after the first hit" % seed_value)
+
+
+func test_a_still_player_falls_within_the_still_limit() -> void:
+	for seed_value: int in range(1, _STILL_SEEDS + 1):
+		var world: RunWorld = RunWorld.new(loadout(seed_value))
+		while world.phase == RunWorld.Phase.PLAYING and world.time_ms <= _STILL_FALL_LIMIT_MS:
+			while world.is_waiting_pick():
+				world.apply_choice(world.roll_choices(GameSetting.levelup_choices())[0])
+			world.step(Vector2.ZERO)
+			world.clear_events()
+		assert_eq(world.phase, RunWorld.Phase.DEAD, "seed %d: a still player falls" % seed_value)
+		assert_lte(world.time_ms, _STILL_FALL_LIMIT_MS, "seed %d: the fall of a still player" % seed_value)
+
+
+func test_a_walking_player_levels_up_early() -> void:
+	var right: Vector2 = Vector2(RunConstants.ISO_RIGHT.x, RunConstants.ISO_RIGHT.z)
+	var down: Vector2 = -Vector2(RunConstants.ISO_UP.x, RunConstants.ISO_UP.z)
+	var legs: PackedVector2Array = PackedVector2Array([right, down, -right, -down])
+	for seed_value: int in range(1, _STILL_SEEDS + 1):
+		var world: RunWorld = RunWorld.new(loadout(seed_value))
+		var first_level: int = -1
+		while world.phase == RunWorld.Phase.PLAYING and world.time_ms < _LEGS_CHECK_MS:
+			while world.is_waiting_pick():
+				if first_level < 0:
+					first_level = world.time_ms
+				world.apply_choice(world.roll_choices(GameSetting.levelup_choices())[0])
+			world.step(legs[UtilCore.floor_mod(UtilCore.floor_div(world.time_ms, _LEG_MS), legs.size())])
+			world.clear_events()
+		assert_between(first_level, 1, _LEGS_FIRST_LEVEL_MS, "seed %d: the first level-up of a walking player" % seed_value)
+		assert_gte(world.level, _LEGS_LEVEL_AT_CHECK, "seed %d: the level of a walking player at 60 s" % seed_value)
 
 
 func test_a_hit_hurts_for_the_hurt_invulnerability() -> void:

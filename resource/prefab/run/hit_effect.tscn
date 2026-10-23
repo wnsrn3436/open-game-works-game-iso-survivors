@@ -2,11 +2,15 @@
 
 [ext_resource type="Script" path="res://features/run/run_effect.gd" id="1_r"]
 [ext_resource type="PackedScene" path="res://resource/particle/run/hit_spark.tscn" id="2_r"]
+[ext_resource type="PackedScene" path="res://resource/particle/run/impact_flash.tscn" id="3_r"]
 
-[node name="HitEffect" type="Node3D" node_paths=PackedStringArray("particles")]
+[node name="HitEffect" type="Node3D" node_paths=PackedStringArray("particles", "flash")]
 script = ExtResource("1_r")
 auto_return = true
 life_tween = "tween/run/effect_life"
 particles = NodePath("Particles")
+flash = NodePath("Flash")
 
 [node name="Particles" parent="." instance=ExtResource("2_r")]
+
+[node name="Flash" parent="." instance=ExtResource("3_r")]

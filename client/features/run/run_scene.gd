@@ -4,10 +4,12 @@ extends SceneBase
 ## game time with the move input, draws it with `RunView`, plays the hit, level-up, hurt and dawn feedback, opens the
 ## level-up popup for each pending pick, and when the player falls or dawn breaks plays the fall (red tint, the hero
 ## tips over, the fall title) or the dawn, sends the result with `FinishPlaySession` and opens the result panel. A run
-## that starts with shrine upgrades shows the blessing notice when it first plays. The HUD is the root panel; it follows `RunStateChangedEvent`. The
-## pause popup and the level-up popup hold game time with `TimeCore.set_paused` while they are open. The run state is
-## saved with `CommonRunSave` every `[run_save_interval]` of run time, after each pick and when the scene exits; a run
-## the app left resumes from it with the pause popup open.
+## that starts with shrine upgrades shows the blessing notice when it first plays. Dust puffs at the feet when the move
+## starts, turns or stops. During the fall wait an input is answered: the fall title pops, and from
+## `[run_end_skip_after]` into the wait the input also ends the wait, so the result opens at once. The HUD is the root
+## panel; it follows `RunStateChangedEvent`. The pause popup and the level-up popup hold game time with
+## `TimeCore.set_paused` while they are open. The run state is saved with `CommonRunSave` every `[run_save_interval]`
+## of run time, after each pick and when the scene exits; a run the app left resumes from it with the pause popup open.
 
 enum Stage { STARTING, PLAYING, ENDING, SAVING, RESULT, LEAVING }
 
@@ -270,6 +272,7 @@ func _process(_delta: float) -> void:
 			save_run()
 		_check_end()
 	elif _stage == Stage.ENDING:
+		_read_end_input()
 		_end_wait_ms -= frame_ms
 		if _end_wait_ms <= 0:
 			_stage = Stage.SAVING
@@ -282,11 +285,31 @@ func _read_move() -> Vector2:
 	if raw != _input:
 		_input = raw
 		EventCore.publish(EventCore.acquire(RunRespondedEvent))
+		view.play_step()
 		if raw != Vector2.ZERO and not _moved:
 			_moved = true
 	var ground: Vector3 = RunConstants.ISO_RIGHT * raw.x - RunConstants.ISO_UP * raw.y
 	_move = Vector2(ground.x, ground.z).limit_length(1.0)
 	return _move
+
+
+## A move input that changed during the fall wait is answered with `_answer_end_input`.
+func _read_end_input() -> void:
+	var raw: Vector2 = InputCore.get_vector(_LEFT, _RIGHT, _UP, _DOWN)
+	if raw == _input:
+		return
+	_input = raw
+	_answer_end_input()
+
+
+## An input during the fall wait: the HUD pops the fall title; from `[run_end_skip_after]` into the wait the wait ends.
+## The wait before dawn's result is not answered.
+func _answer_end_input() -> void:
+	if _world.phase != RunWorld.Phase.DEAD:
+		return
+	EventCore.publish(EventCore.acquire(RunRespondedEvent))
+	if GameSetting.run_end_delay() - _end_wait_ms >= GameSetting.run_end_skip_after():
+		_end_wait_ms = 0
 
 
 ## When half a tick or more has passed since the last tick, one more tick runs with the move held before this frame,
@@ -430,14 +453,19 @@ func _publish_state(always: bool) -> void:
 	EventCore.publish(event)
 
 
-## Opens the level-up popup for the next pending pick; a chest pick first.
+## Opens the level-up popup for the next pending pick; a chest pick first. When nothing is left to raise, the only card
+## is the heal: it is taken at once without the popup, so a full build is not stopped at every level-up.
 func _open_pick() -> void:
+	var chest: bool = _world.pending_chests > 0
+	var choices: Array[RunChoice] = _world.roll_choices(GameSetting.chest_choices() if chest else GameSetting.levelup_choices())
+	if choices.size() == 1 and choices[0].kind == RunChoice.Kind.HEAL:
+		_take_heal(choices[0])
+		return
 	_picking = true
 	_set_paused(true)
-	var chest: bool = _world.pending_chests > 0
 	var param: RunLevelupParam = RunLevelupParam.new()
 	param.chest = chest
-	param.choices = _world.roll_choices(GameSetting.chest_choices() if chest else GameSetting.levelup_choices())
+	param.choices = choices
 	param.on_pick = _on_pick
 	UICore.open_popup(ResourceKey.PREFAB__RUN__LEVELUP_POPUP, param, Callable())
 	EventCore.publish(EventCore.acquire(RunChoicesShownEvent))
@@ -458,6 +486,16 @@ func _on_pick(choice: RunChoice) -> void:
 		_open_pick()
 	elif not _picking:
 		_set_paused(false)
+
+
+## Takes the heal card of a pick that offers nothing else.
+func _take_heal(choice: RunChoice) -> void:
+	_world.apply_choice(choice)
+	_play_sound(ReservedSound.run_heal())
+	var picked: RunPickedEvent = EventCore.acquire(RunPickedEvent) as RunPickedEvent
+	picked.id = choice.id
+	EventCore.publish(picked)
+	_publish_state(true)
 
 
 ## Sends the finished run. The result panel opens when the server answers, or with the run unsaved when it refuses it.
@@ -530,8 +568,12 @@ func _show_result(saved: bool) -> void:
 	EventCore.publish(finished)
 
 
-## `event` is `null` when the run asks for itself (a resumed run starts paused).
-func _on_pause_requested(_event: RunPauseRequestedEvent) -> void:
+## `event` is `null` when the run asks for itself (a resumed run starts paused). During the fall wait the press is
+## answered as an input of that wait.
+func _on_pause_requested(event: RunPauseRequestedEvent) -> void:
+	if _stage == Stage.ENDING and event != null:
+		_answer_end_input()
+		return
 	if _stage != Stage.PLAYING or _paused or _picking:
 		return
 	_set_paused(true)

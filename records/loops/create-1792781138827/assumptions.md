@@ -41,3 +41,27 @@
 ## Which first reward time can the run reach when the metric counts the time before the run?
 - decision: `first_reward_ms` range 5000~60000 (was 5000~30000). The first level-up itself was moved earlier with `[xp_base]` 3 (was 5): 12.1~16.1 s of run time for a still player, earlier for a moving one
 - evidence: `first_reward_ms` is the `play_at` of the first reward since the telemetry start, and the title, terms popup and camp are `free` scenes where device time counts. In all three measure instances of iteration 1 the playing agent made its first input 22706~28910ms after the start and started the run at about 32000~59000ms of `play_at` (`records/loops/create-1792781138827/evidence/measure-1/*.json`), so no first level-up time can bring the median under 30000ms. This raises a time value without changing that cause; 60000 holds the measured pre-run time plus the in-run first level-up target of about 15 s
+
+## How fast should the first level-ups come for a player who walks around?
+- decision: a player who walks the four screen directions in 5000ms legs gets the first level-up within 15000ms of run time and is at level 3 or more at 60000ms (regression test `test_a_walking_player_levels_up_early`, seeds 1~5). Set by `[xp_base]` 2 (was 3), `[xp_step]` 5 (was 8), `[pickup_radius]` 2.8 (was 1.7) and `[bolt_range]` 10.0 (was 14.0), so kills land on screen near enough to walk through the gems
+- evidence: judge defect `early-xp-pace-slow` (Lv 1 at 0:32; the reference's first level-up popup is at 00:21 of a video whose run timer shows only 00:15 at 15000ms). Reproduced on instance `mvlic24l3f51f6`: 27 kills but 24 gems still on the field and only Lv 2 at 0:29. With the new values the regression probe gives a first level-up at 5700~12500ms for the 5 s leg walk (was 11350~38150ms), and instance `mvlj112x8de07d` reached Lv 2 at 0:08 and Lv 3 at 0:14 with the same walk
+
+## How long may a player who never moves survive?
+- decision: at most 150000ms of run time, whatever cards it takes (regression test `test_a_still_player_falls_within_the_still_limit`, seeds 1~5, first card of every pick). Set by `wave_2` 700ms × 4 (max 70), `wave_3` 600ms × 5 (max 110, health 1300‰), `wave_4` 550ms × 5 (max 130, health 1400‰), contact damage bat 4 / ghoul 6 / skeleton 10 (was 3 / 5 / 8) and the aura knockback 0.10~0.15 m (was 0.35~0.5 m)
+- evidence: play defect `standing-still-survives` (2:59 without moving). The regression probe showed that the aura knockback held the horde off a still player with the aura (one seed survived 249.8 s at Lv 24); after the change the still fall comes at 24150~132350ms over 8 seeds, while the DEV bot that walks to gems keeps 82~140 health at 3:00
+
+## Is the low fps of the performance check caused by the content? (needs human)
+- decision: no content change for `run-fps-below-target` and `lobby-fps-below-target`; it is the instance window of the host being slowed down
+- evidence: on instance `mvli8pkc8073a9` the camp (17 draw calls, 132 primitives) ran at 60 fps right after the start and fell to 12~18 fps within about 20 s of idle while `frame_ms` (process time) rose from 0.6~1.6 ms to 13~17 ms. In the run, turning off the whole 3D world, glow, fog, the moon shadow, the effects, the UI and half render scale with a temporary DEV probe left the fps at 12~18. The same fall from 60 fps happened on instance `mvli0npc171014`, which stayed in the camp and never started a run. The host was not in low power mode, no thermal warning was recorded and it had 12 GB free memory at that time. Bringing the window of instance `mvli0n7a2be451` to the front with `osascript` did not change its 12~25 fps, so the throttling cause (for example macOS App Nap or background QoS of an unfocused Godot window) is not confirmed
+
+## Can a level-up that offers only the soup open a popup?
+- decision: no; when every slot is full and every owned weapon and passive is at level 5, the level-up heals `[levelup_heal]` at once without the popup
+- evidence: with the faster XP curve the late-run fixture reached Lv 60 at 10:01 and opened a soup-only popup that held the run (capture `mvlj11jyc07141-1792793657972`); genre convention (the reference grants a pickup without a choice when nothing is left to raise)
+
+## What should answer an input during the fall wait?
+- decision: a move input (press, turn or release) or a `pause`/back press pops the fall title; from `[run_end_skip_after]` 600ms into the wait it also ends the wait so the result opens at once. The wait before the dawn result takes no input
+- evidence: judge defect `fall-input-latency` (373 ms). Reproduced on instance `mvlic24l3f51f6`: `key_down D`, `key_up D` and `key 1` during the fall wait had `latency_ms` null. After the change, on instance `mvlj112x8de07d` the same inputs had latency 0~2 ms with a tween feedback, and a `P` press at 700 ms into the wait opened the result panel within 100 ms
+
+## Can a move release get feedback when the next move press comes in the same frame?
+- decision: no content change; the dust puff of a release is counted only when a game frame passes between the release and the next press
+- evidence: on instance `mvlj112x8de07d` a `key_up` followed by a step got `{'Tween': 1, 'Effect': 1}`, but a `key_up` put in right before the next `key_down` with no step between got `{}`, because both inputs reach the run in the same step and the telemetry gives the feedback only to the last input. The judge's 5 s leg walk puts the two inputs in back to back

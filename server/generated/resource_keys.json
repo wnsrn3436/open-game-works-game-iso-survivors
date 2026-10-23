@@ -115,6 +115,18 @@
     "path": "res://resource/particle/run/pickup.tscn",
     "variants": 1
   },
+  "particle/run/impact_flash": {
+    "path": "res://resource/particle/run/impact_flash.tscn",
+    "variants": 1
+  },
+  "particle/run/muzzle_flash": {
+    "path": "res://resource/particle/run/muzzle_flash.tscn",
+    "variants": 1
+  },
+  "particle/run/step_dust": {
+    "path": "res://resource/particle/run/step_dust.tscn",
+    "variants": 1
+  },
   "nine_slice/ui/panel_frame": {
     "path": "res://resource/nine_slice/ui/panel_frame.png",
     "variants": 1
@@ -381,6 +393,14 @@
   },
   "prefab/run/pickup_effect": {
     "path": "res://resource/prefab/run/pickup_effect.tscn",
+    "variants": 1
+  },
+  "prefab/run/fire_effect": {
+    "path": "res://resource/prefab/run/fire_effect.tscn",
+    "variants": 1
+  },
+  "prefab/run/step_effect": {
+    "path": "res://resource/prefab/run/step_effect.tscn",
     "variants": 1
   },
   "tween/run/damage_number": {

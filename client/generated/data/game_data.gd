@@ -2441,6 +2441,8 @@ class UpgradeRow extends RefCounted:
 	var order: int = 0
 	## Effect text; {value} is per_level shown as percent or flat
 	var desc: String = ""
+	## Effect text of the levels a run starts with; {value} is per_level times the level, shown as percent or flat
+	var bonus: String = ""
 
 
 class UpgradeTable extends RefCounted:
@@ -6029,6 +6031,8 @@ static func _read_upgrade_row(bytes: PackedByteArray) -> UpgradeRow:
 				row.order = r.int32(wire)
 			6:
 				row.desc = r.string(wire)
+			7:
+				row.bonus = r.string(wire)
 			_:
 				r.skip(wire)
 	if r.failed:

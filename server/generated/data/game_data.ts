@@ -3430,6 +3430,10 @@ export class ReservedStringAccessor {
     return this.Table.get_row(1789223552).text;
   }
 
+  run_blessing_title(): string {
+    return this.Table.get_row(511731561).text;
+  }
+
   run_dawn_near(): string {
     return this.Table.get_row(996683534).text;
   }

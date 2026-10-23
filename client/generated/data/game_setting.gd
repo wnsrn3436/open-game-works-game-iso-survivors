@@ -73,6 +73,8 @@ static var _has_test_run_duration: bool = false
 static var _test_run_duration: int = 0
 static var _has_test_run_end_delay: bool = false
 static var _test_run_end_delay: int = 0
+static var _has_test_run_end_skip_after: bool = false
+static var _test_run_end_skip_after: int = 0
 static var _has_test_run_save_interval: bool = false
 static var _test_run_save_interval: int = 0
 static var _has_test_run_tick: bool = false
@@ -307,6 +309,12 @@ static func run_end_delay() -> int:
 	return _parse_int(GameData.GameSettingTable.get_row(379332051).value)
 
 
+static func run_end_skip_after() -> int:
+	if _has_test_run_end_skip_after:
+		return _test_run_end_skip_after
+	return _parse_int(GameData.GameSettingTable.get_row(2144343618).value)
+
+
 static func run_save_interval() -> int:
 	if _has_test_run_save_interval:
 		return _test_run_save_interval
@@ -410,6 +418,7 @@ static func _clear_tests() -> void:
 	_has_test_player_speed = false
 	_has_test_run_duration = false
 	_has_test_run_end_delay = false
+	_has_test_run_end_skip_after = false
 	_has_test_run_save_interval = false
 	_has_test_run_tick = false
 	_has_test_separation = false

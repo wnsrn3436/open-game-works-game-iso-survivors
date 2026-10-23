@@ -38,7 +38,7 @@ ui_root = NodePath("UI")
 camera = NodePath("World/Camera")
 view = NodePath("World")
 
-[node name="World" type="Node3D" parent="." node_paths=PackedStringArray("player", "player_model", "player_body", "aura", "ground", "effects")]
+[node name="World" type="Node3D" parent="." node_paths=PackedStringArray("player", "player_model", "player_body", "aura", "ground", "effects", "lantern")]
 script = ExtResource("4_r")
 player = NodePath("Player")
 player_model = NodePath("Player/Model")
@@ -46,6 +46,7 @@ player_body = NodePath("Player/Model/Hero")
 aura = NodePath("Player/Aura")
 ground = NodePath("Ground")
 effects = NodePath("Effects")
+lantern = NodePath("Player/Lantern")
 
 [node name="Environment" type="WorldEnvironment" parent="World"]
 environment = SubResource("env")

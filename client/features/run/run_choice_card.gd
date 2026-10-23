@@ -1,6 +1,7 @@
 class_name RunChoiceCard
 extends Button
-## One card of the level-up popup: the icon, the name, a "new" tag or the level it gives, and what it does.
+## One card of the level-up popup: the icon, the name, a "new" tag or the level it gives, and what it does. The name
+## and the text wrap only between words, so a Korean line does not end with a word cut off.
 
 @export var icon_rect: TextureRect
 @export var tag_label: Label
@@ -19,20 +20,21 @@ func show_choice(choice: RunChoice, texture: Texture2D) -> void:
 	match choice.kind:
 		RunChoice.Kind.WEAPON:
 			var weapon: GameData.WeaponRow = GameData.WeaponTable.get_row(choice.id)
-			name_label.text = LocalizationCore.get_text(weapon.name)
-			desc_label.text = LocalizationCore.get_text(weapon.desc) if choice.level == 1 \
-				else RunChoiceCard.weapon_change_text(choice.id, choice.level, _format_args)
+			name_label.text = RunChoiceCard.keep_words(LocalizationCore.get_text(weapon.name))
+			desc_label.text = RunChoiceCard.keep_words(LocalizationCore.get_text(weapon.desc) if choice.level == 1 \
+				else RunChoiceCard.weapon_change_text(choice.id, choice.level, _format_args))
 		RunChoice.Kind.PASSIVE:
 			var passive: GameData.PassiveRow = GameData.PassiveTable.get_row(choice.id)
-			name_label.text = LocalizationCore.get_text(passive.name)
+			name_label.text = RunChoiceCard.keep_words(LocalizationCore.get_text(passive.name))
 			_format_args.clear()
 			_format_args.set_int("value", CommonStatText.shown_value(passive.stat, passive.per_level))
-			desc_label.text = LocalizationCore.format(passive.desc, _format_args)
+			desc_label.text = RunChoiceCard.keep_words(LocalizationCore.format(passive.desc, _format_args))
 		RunChoice.Kind.HEAL:
-			name_label.text = LocalizationCore.get_text(ReservedString.levelup_heal_name())
+			name_label.text = RunChoiceCard.keep_words(LocalizationCore.get_text(ReservedString.levelup_heal_name()))
 			_format_args.clear()
 			_format_args.set_int("amount", GameSetting.levelup_heal())
-			desc_label.text = LocalizationCore.format(ReservedString.levelup_heal_desc(), _format_args)
+			var heal: String = LocalizationCore.format(ReservedString.levelup_heal_desc(), _format_args)
+			desc_label.text = RunChoiceCard.keep_words(heal)
 	if choice.kind == RunChoice.Kind.HEAL or choice.level == 1:
 		tag_label.text = LocalizationCore.get_text(ReservedString.levelup_new())
 		tag_label.visible = choice.kind != RunChoice.Kind.HEAL
@@ -41,6 +43,21 @@ func show_choice(choice: RunChoice, texture: Texture2D) -> void:
 		_format_args.set_int("level", choice.level)
 		tag_label.text = LocalizationCore.format(ReservedString.levelup_level(), _format_args)
 		tag_label.visible = true
+
+
+## `text` with a word joiner between each two letters of a word, so the line breaking of the label breaks only at
+## spaces and line ends; Korean text otherwise breaks between any two syllables.
+static func keep_words(text: String) -> String:
+	var out: PackedStringArray = PackedStringArray()
+	for i: int in text.length():
+		out.append(text[i])
+		if i + 1 < text.length() and RunChoiceCard._is_letter(text[i]) and RunChoiceCard._is_letter(text[i + 1]):
+			out.append(RunConstants.WORD_JOINER)
+	return "".join(out)
+
+
+static func _is_letter(c: String) -> bool:
+	return c != " " and c != "\n"
 
 
 ## The lines of what weapon `weapon_id` gains from level `to` − 1 to `to`.

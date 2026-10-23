@@ -600,6 +600,10 @@ static func run_blessing() -> String:
 	return GameData.ReservedStringTable.get_row(1789223552).text
 
 
+static func run_blessing_title() -> String:
+	return GameData.ReservedStringTable.get_row(511731561).text
+
+
 static func run_dawn_near() -> String:
 	return GameData.ReservedStringTable.get_row(996683534).text
 
