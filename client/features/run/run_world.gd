@@ -110,6 +110,8 @@ var _tick_ms: int = 1
 var _dt: float = 0.0
 var _duration_ms: int = 0
 var _dawn_warned: bool = false
+## Time left of the player's invulnerability after a hit.
+var _invuln_ms: int = 0
 
 ## Bonuses of the passives and the loadout upgrades by `RunStat`.
 var _might: int = 0
@@ -770,6 +772,9 @@ func _cell_of(value: float, origin: float) -> int:
 
 
 func _touch_player() -> void:
+	if _invuln_ms > 0:
+		_invuln_ms -= _tick_ms
+		return
 	var player_r: float = GameSetting.player_radius()
 	for i: int in enemy_count:
 		if enemy_hp[i] <= 0 or _enemy_contact[i] > 0:
@@ -781,7 +786,9 @@ func _touch_player() -> void:
 		if dx * dx + dz * dz <= reach * reach:
 			hp -= row.damage
 			_enemy_contact[i] = GameSetting.contact_interval()
+			_invuln_ms = GameSetting.hurt_invuln()
 			events |= EVENT_HURT
+			return
 
 
 # --- weapons

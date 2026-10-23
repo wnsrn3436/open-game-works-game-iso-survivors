@@ -89,8 +89,10 @@ const PREVIEW_GOLD: int = 187 # DEV preview text only; no game rule reads it
 ## Frames a DEV screen command waits for the run to start or a popup to open.
 const DEV_WAIT_FRAMES: int = 600 # DEV command time limit; no game rule reads it
 ## The DEV bot keeps away from enemies inside this distance and walks to gems inside the second one, in m.
-const BOT_DANGER_RADIUS: float = 3.0 # DEV bot play style; no game rule reads it
+const BOT_DANGER_RADIUS: float = 4.0 # DEV bot play style; no game rule reads it
 const BOT_GEM_RADIUS: float = 14.0 # DEV bot play style; no game rule reads it
+## How much more the DEV bot weighs keeping away from enemies than walking to a gem.
+const BOT_AWAY_WEIGHT: float = 1.5 # DEV bot play style; no game rule reads it
 ## The DEV bot holds a move key when the wanted direction leans this far along that screen axis.
 const BOT_KEY_THRESHOLD: float = 0.38 # DEV bot play style; no game rule reads it
 ## Format version of the saved run state; a saved state of another version starts a new run.

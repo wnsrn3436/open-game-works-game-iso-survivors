@@ -2,8 +2,8 @@ Level row of a weapon,Level from 1,Damage per hit,Time between attacks (Orbit: p
 All,Client,Client,Client,Client,Client,Client,Client,Client
 id,int,int,duration,int,float,float,int,duration
 id,level,damage,cooldown,count,area,speed,pierce,lifetime
-[weapon_lantern_bolt],1,10,1100ms,1,0.3,14.0,1,1400ms
-[weapon_lantern_bolt],2,10,1100ms,2,0.3,14.0,1,1400ms
+[weapon_lantern_bolt],1,12,1000ms,1,0.3,14.0,1,1400ms
+[weapon_lantern_bolt],2,12,1000ms,2,0.3,14.0,1,1400ms
 [weapon_lantern_bolt],3,14,1000ms,2,0.3,15.0,1,1400ms
 [weapon_lantern_bolt],4,14,900ms,3,0.35,15.0,2,1400ms
 [weapon_lantern_bolt],5,20,800ms,4,0.35,16.0,2,1400ms

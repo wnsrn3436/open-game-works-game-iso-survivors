@@ -103,6 +103,7 @@ static var _ids: Dictionary[String, int] = {
 	"[heal_drop_permille]": 1493983011,
 	"[hit_knockback]": 2121056374,
 	"[hurt_flash]": 1055760622,
+	"[hurt_invuln]": 601011872,
 	"[item_gold]": 193154693,
 	"[knockback_decay]": 818343624,
 	"[lang_en]": 1451596248,
@@ -440,6 +441,11 @@ static func set_setting_hit_knockback(value: float) -> void:
 static func set_setting_hurt_flash(value: int) -> void:
 	GameSetting._test_hurt_flash = value
 	GameSetting._has_test_hurt_flash = true
+
+
+static func set_setting_hurt_invuln(value: int) -> void:
+	GameSetting._test_hurt_invuln = value
+	GameSetting._has_test_hurt_invuln = true
 
 
 static func set_setting_knockback_decay(value: float) -> void:

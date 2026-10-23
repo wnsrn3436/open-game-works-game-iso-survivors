@@ -41,6 +41,8 @@ static var _has_test_hit_knockback: bool = false
 static var _test_hit_knockback: float = 0.0
 static var _has_test_hurt_flash: bool = false
 static var _test_hurt_flash: int = 0
+static var _has_test_hurt_invuln: bool = false
+static var _test_hurt_invuln: int = 0
 static var _has_test_knockback_decay: bool = false
 static var _test_knockback_decay: float = 0.0
 static var _has_test_levelup_choices: bool = false
@@ -205,6 +207,12 @@ static func hurt_flash() -> int:
 	if _has_test_hurt_flash:
 		return _test_hurt_flash
 	return _parse_int(GameData.GameSettingTable.get_row(1055760622).value)
+
+
+static func hurt_invuln() -> int:
+	if _has_test_hurt_invuln:
+		return _test_hurt_invuln
+	return _parse_int(GameData.GameSettingTable.get_row(601011872).value)
 
 
 static func knockback_decay() -> float:
@@ -378,6 +386,7 @@ static func _clear_tests() -> void:
 	_has_test_heal_drop_permille = false
 	_has_test_hit_knockback = false
 	_has_test_hurt_flash = false
+	_has_test_hurt_invuln = false
 	_has_test_knockback_decay = false
 	_has_test_levelup_choices = false
 	_has_test_levelup_heal = false

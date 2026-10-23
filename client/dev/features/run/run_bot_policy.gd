@@ -21,7 +21,7 @@ static func direction(world: RunWorld) -> Vector2:
 		if d2 < best:
 			best = d2
 			toward = offset.normalized()
-	var move: Vector2 = away.normalized() + toward
+	var move: Vector2 = away.normalized() * RunConstants.BOT_AWAY_WEIGHT + toward
 	if move.length_squared() <= 0.0:
 		return Vector2.ZERO
 	return move.normalized()

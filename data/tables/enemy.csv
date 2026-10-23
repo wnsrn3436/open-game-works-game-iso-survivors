@@ -2,8 +2,8 @@ Enemy kind,Model,Health at wave health 1000 permille,m/s,Damage per contact hit,
 All,Client,Client,Client,Client,Client,Client,Client,Client,Client
 id(key),reskey,int,float,int,int,float,float,bool,int
 id,model,health,speed,damage,xp,radius,scale,elite,knockback_resist
-[enemy_bat],model/enemy_bat,6,3.3,4,1,0.35,1.0,false,0
-[enemy_ghoul],model/enemy_ghoul,14,2.2,6,1,0.45,1.0,false,100
+[enemy_bat],model/enemy_bat,6,3.3,3,1,0.35,1.0,false,0
+[enemy_ghoul],model/enemy_ghoul,12,2.2,5,1,0.45,1.0,false,100
 [enemy_skeleton],model/enemy_skeleton,30,2.4,8,2,0.45,1.0,false,200
 [enemy_wraith],model/enemy_wraith,48,3.0,10,2,0.5,1.0,false,300
 [enemy_brute],model/enemy_brute,160,1.8,16,4,0.8,1.0,false,700

@@ -100,6 +100,7 @@ const ID_VALUES: ReadonlyMap<string, number> = new Map([
   ["[heal_drop_permille]", 1493983011],
   ["[hit_knockback]", 2121056374],
   ["[hurt_flash]", 1055760622],
+  ["[hurt_invuln]", 601011872],
   ["[item_gold]", 193154693],
   ["[knockback_decay]", 818343624],
   ["[lang_en]", 1451596248],

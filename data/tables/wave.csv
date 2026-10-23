@@ -2,8 +2,8 @@ One minute of a run,Order from 1,Run time the wave starts,Time between spawns,En
 All,Client,Client,Client,Client,Client,Client,Client,Client
 id(key),int,duration,duration,int,int,int,"array<{enemy: ref<enemy.id>, weight: int}>",ref<enemy.id>?
 id,order,start,spawn_interval,spawn_count,max_alive,health_permille,enemies,elite
-[wave_1],1,0m,900ms,2,40,1000,"[enemy_bat] 3, [enemy_ghoul] 7",null
-[wave_2],2,1m,800ms,3,60,1000,"[enemy_bat] 4, [enemy_ghoul] 6",null
+[wave_1],1,0m,1500ms,2,25,1000,"[enemy_bat] 3, [enemy_ghoul] 7",null
+[wave_2],2,1m,1100ms,3,45,1000,"[enemy_bat] 4, [enemy_ghoul] 6",null
 [wave_3],3,2m,750ms,3,80,1100,"[enemy_bat] 3, [enemy_ghoul] 5, [enemy_skeleton] 2",null
 [wave_4],4,3m,700ms,4,100,1150,"[enemy_ghoul] 5, [enemy_skeleton] 4, [enemy_bat] 2",null
 [wave_5],5,4m,650ms,4,120,1200,"[enemy_skeleton] 5, [enemy_ghoul] 3, [enemy_wraith] 2",[enemy_bone_knight]
