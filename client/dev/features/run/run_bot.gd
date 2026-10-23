@@ -157,7 +157,7 @@ func _open_result_preview(args: PackedStringArray, saved: bool) -> RunCommandRes
 	return _result(ok, "" if ok else "\"the result did not open\"")
 
 
-## `run.fast_forward`: runs the run on screen `ms` of run time faster than real time with the bot policy, picking every
+## `run.fast_forward`: runs the run on screen `ms` of run time faster than real time, walking to the gems, picking every
 ## level-up card with it. Health is filled back each tick (a DEV cheat), so the run reaches that time. Game time is held
 ## meanwhile and the view sees none of the skipped events. The run is saved at the end, so a restart resumes it there.
 func fast_forward(args: PackedStringArray) -> RunCommandResult:
@@ -176,7 +176,7 @@ func fast_forward(args: PackedStringArray) -> RunCommandResult:
 			while world.is_waiting_pick():
 				var choices: Array[RunChoice] = world.roll_choices(GameSetting.levelup_choices())
 				world.apply_choice(choices[RunBotPolicy.pick(choices, world)])
-			world.step(RunBotPolicy.direction(world))
+			world.step(RunBotPolicy.collect_direction(world))
 			world.hp = world.max_hp
 		world.clear_events()
 		await (Engine.get_main_loop() as SceneTree).process_frame

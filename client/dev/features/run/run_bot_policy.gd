@@ -27,6 +27,22 @@ static func direction(world: RunWorld) -> Vector2:
 	return move.normalized()
 
 
+## The move direction of the fast forward, whose health is kept full: to the nearest gem anywhere on the field, and away
+## from close enemies only when no gem is left.
+static func collect_direction(world: RunWorld) -> Vector2:
+	var best: float = -1.0
+	var toward: Vector2 = Vector2.ZERO
+	for g: int in world.gem_count:
+		var offset: Vector2 = Vector2(world.gem_x[g] - world.player_x, world.gem_z[g] - world.player_z)
+		var d2: float = offset.length_squared()
+		if best < 0.0 or d2 < best:
+			best = d2
+			toward = offset.normalized()
+	if best >= 0.0:
+		return toward
+	return RunBotPolicy.direction(world)
+
+
 ## Index of the card the bot picks among `choices`.
 static func pick(choices: Array[RunChoice], world: RunWorld) -> int:
 	var best: int = 0

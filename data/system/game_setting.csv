@@ -20,7 +20,7 @@ id,target,data_type,value
 [hurt_invuln],Client,duration,400ms
 [hurt_flash],Client,duration,180ms
 [xp_base],Client,int,5
-[xp_step],Client,int,10
+[xp_step],Client,int,8
 [weapon_slots],Client,int,4
 [passive_slots],Client,int,4
 [levelup_choices],Client,int,3
