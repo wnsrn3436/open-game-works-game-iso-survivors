@@ -1,6 +1,193 @@
 {
   "defects": [
     {
+      "id": "early-xp-pace-slow",
+      "severity": "major",
+      "owner": "data",
+      "where": "vs reference: progression",
+      "what": "Lv 1 at 0:32 in the first run, and Lv 2 only by 0:27 in the second run. Both are later than the reference's level-up at 00:21.",
+      "why": "worse than the reference game, so `vs reference` is `fail`",
+      "evidence": [
+        "ref frames 19000–22000 ms; B mvlgnomafe63e4 capture 1792790005382 (0:32, Lv 1); mvlgop1515ebff capture 1792790726389 (0:27, Lv 2)",
+        "records/loops/create-1792781138827/judge-2-1.md"
+      ],
+      "source": "judge",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 1,
+      "oscillation": 0
+    },
+    {
+      "id": "attack-feedback-weak",
+      "severity": "major",
+      "owner": "client content",
+      "where": "vs reference: game feel",
+      "what": "Same as `A`, apart from the HP bar under the player. There is no slash or impact effect at the level of the whip arc, and the telemetry shows no feedback on inputs in the interval.",
+      "why": "worse than the reference game, so `vs reference` is `fail`",
+      "evidence": [
+        "ref frame 15000 ms; B mvlgnomafe63e4 capture 1792789861070 (0:12); compare interval 95877–370530: feedback_per_input B 0",
+        "records/loops/create-1792781138827/judge-2-1.md"
+      ],
+      "source": "judge",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "code-drawn-ui-flat",
+      "severity": "major",
+      "owner": "client content",
+      "where": "HP bar under the player",
+      "what": "A flat dark-red rectangle with a fill.",
+      "why": "A code-drawn box in the field (`presentation`).",
+      "evidence": [
+        "mvlgnomafe63e4 1792789764046",
+        "ref frames 0, 5000, 21000 ms; B mvlgnomafe63e4 captures 1792789764046, 1792790381040",
+        "records/loops/create-1792781138827/judge-2-1.md"
+      ],
+      "source": "judge",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "run-fps-below-target",
+      "severity": "major",
+      "owner": "client content",
+      "where": "scene/run/run",
+      "what": "fps 5 percentile 16 is below targetFps 60 (2 samples)",
+      "why": "the run must hold targetFps; the 5th percentile is 16 (hostLoad memory 99.9%)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-2.json#performance",
+        "records/loops/create-1792781138827/evidence/check-2/performance-macos/samples.json"
+      ],
+      "source": "check",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 1,
+      "oscillation": 0
+    },
+    {
+      "id": "damage-numbers-overlap",
+      "severity": "major",
+      "owner": "client content",
+      "where": "scene/run/run",
+      "what": "hold D 3200ms then hold W 3000ms in steps → Timer 10:06, HP 68/100, kills 4,514, gold 1,188",
+      "why": "Damage numbers (19/27/30/63) stack and overlap near the player, hard to read; enemies are plain boxes, tough to tell enemies from gems and scenery (blue and lilac cubes of the same palette)",
+      "evidence": [
+        "captures/mvlhf2mp000630-1792790995592.png",
+        "records/loops/create-1792781138827/play-2-4.md:17"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 1,
+      "oscillation": 0
+    },
+    {
+      "id": "lobby-fps-below-target",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "scene/lobby/lobby",
+      "what": "fps 5 percentile 35 is below targetFps 60 (3 samples)",
+      "why": "the camp must hold targetFps; the 5th percentile is 35 (hostLoad memory 99.9%)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-2.json#performance",
+        "records/loops/create-1792781138827/evidence/check-2/performance-macos/samples.json"
+      ],
+      "source": "check",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 1,
+      "oscillation": 0
+    },
+    {
+      "id": "standing-still-survives",
+      "severity": "minor",
+      "owner": "data",
+      "where": "~190000",
+      "what": "run → standing still for 2:50",
+      "why": "the player survived 2:59 with no movement at all, killing 581 enemies with the auto weapons",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:27"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "meta-upgrade-not-visible",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "~350000",
+      "what": "run → tap_anchor upgrade_close, lobby_play",
+      "why": "the new run showed health 115/115 (+15 from vitality) and a small plate under the weapon row with 2 icons marked 1 and 1",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:24"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 1,
+      "oscillation": 0
+    },
+    {
+      "id": "fall-input-latency",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "first-failure interval",
+      "what": "input_latency_ms 373 in the interval that includes the low-HP and fall sequence (whole session 20 vs A 2).",
+      "why": "Inputs are slower to respond around the fall (`game feel`).",
+      "evidence": [
+        "`ogw telemetry compare` interval 370530–767404"
+      ],
+      "source": "judge",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "levelup-card-text-wrap",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "level-up",
+      "what": "60 steps after the pick → second level-up at 0:24 with Lv 3, health 72/100, kills 27; cards `낙뢰`, `등불 탄환 Lv 2`, `질풍 장화`. The description of `낙뢰` wraps to `다` alone on a second line",
+      "why": "consistent with the first popup; health already lost 28 in 24 s",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792791180545.png",
+        "records/loops/create-1792781138827/play-2-3.md:25"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "play-guide-anchor-key-form",
+      "severity": "minor",
+      "owner": "design",
+      "where": "~310000",
+      "what": "lobby → tap_anchor upgrade_buy upgrade_vitality (no brackets)",
+      "why": "`ok:false`, the key was rejected; the guide wrote the key as `[upgrade_vitality]`, and with brackets it worked",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:22"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
       "id": "opening-no-threat",
       "severity": "major",
       "owner": "data",
@@ -13,7 +200,7 @@
         "records/loops/create-1792781138827/judge-1-1.md"
       ],
       "source": "judge",
-      "status": "open",
+      "status": "fixed",
       "refusedReason": null,
       "repeatedDefect": 0,
       "oscillation": 0
@@ -33,7 +220,7 @@
         "`mvldzxt6027bf0-1792786300717` (10:06, 184/200), `mvldzxt6027bf0-1792786369873` (10:10, 40/200), `mvldzxt6027bf0-1792786394742` (10:12, 0/200)"
       ],
       "source": "play",
-      "status": "open",
+      "status": "fixed",
       "refusedReason": null,
       "repeatedDefect": 0,
       "oscillation": 0
@@ -49,24 +236,7 @@
         "records/loops/create-1792781138827/check-1.json#UI quality"
       ],
       "source": "check",
-      "status": "open",
-      "refusedReason": null,
-      "repeatedDefect": 0,
-      "oscillation": 0
-    },
-    {
-      "id": "run-fps-below-target",
-      "severity": "major",
-      "owner": "client content",
-      "where": "scene/run/run",
-      "what": "fps 5 percentile 41 is below targetFps 60 (2 samples)",
-      "why": "the run must hold targetFps on the target Macs; the 5th percentile is 41",
-      "evidence": [
-        "records/loops/create-1792781138827/check-1.json#performance",
-        "records/loops/create-1792781138827/evidence/check-1/performance-macos/samples.json"
-      ],
-      "source": "check",
-      "status": "open",
+      "status": "fixed",
       "refusedReason": null,
       "repeatedDefect": 0,
       "oscillation": 0
@@ -82,43 +252,7 @@
         "records/loops/create-1792781138827/measure-1.json#scene_load_ms"
       ],
       "source": "check",
-      "status": "open",
-      "refusedReason": null,
-      "repeatedDefect": 0,
-      "oscillation": 0
-    },
-    {
-      "id": "early-xp-pace-slow",
-      "severity": "major",
-      "owner": "data",
-      "where": "first_reward_ms",
-      "what": "value 79355 out of 5000..30000",
-      "why": "the first reward must come within the target range of design.md",
-      "evidence": [
-        "records/loops/create-1792781138827/measure-1.json#first_reward_ms",
-        "captures/mvle0pdkc59058-1792785564359.png",
-        "records/loops/create-1792781138827/play-1-1.md:22",
-        "`ogw telemetry mvldzqoec49a81` rewards at play 118069 and 157619"
-      ],
-      "source": "check",
-      "status": "open",
-      "refusedReason": null,
-      "repeatedDefect": 0,
-      "oscillation": 0
-    },
-    {
-      "id": "damage-numbers-overlap",
-      "severity": "major",
-      "owner": "client content",
-      "where": "scene/run/run",
-      "what": "step 200 (D held) → many damage numbers (19, 27, 30, 63) stacked at the same spots around the player",
-      "why": "numbers overlap into unreadable blobs, e.g. `3019`, `2719`. Enemies (pink/red tall boxes) look much like the lavender building blocks around them, so which blocks are enemies is hard to tell",
-      "evidence": [
-        "captures/mvle1uqt3a7cf4-1792785315783.png",
-        "records/loops/create-1792781138827/play-1-4.md:18"
-      ],
-      "source": "play",
-      "status": "open",
+      "status": "fixed",
       "refusedReason": null,
       "repeatedDefect": 0,
       "oscillation": 0
@@ -146,7 +280,7 @@
         "records/loops/create-1792781138827/evidence/check-1/ui-macos/0050-en-display_16_9-lobby.open_lobby-1000.json"
       ],
       "source": "check",
-      "status": "open",
+      "status": "fixed",
       "refusedReason": null,
       "repeatedDefect": 0,
       "oscillation": 0
@@ -163,7 +297,7 @@
         "records/loops/create-1792781138827/play-1-4.md:21"
       ],
       "source": "play",
-      "status": "open",
+      "status": "fixed",
       "refusedReason": null,
       "repeatedDefect": 0,
       "oscillation": 0
@@ -179,7 +313,7 @@
         "`mvldzxt6027bf0-1792786394742` (10:12, 0/200), telemetry Fail at play 1065030, panel at 1066730"
       ],
       "source": "judge",
-      "status": "open",
+      "status": "fixed",
       "refusedReason": null,
       "repeatedDefect": 0,
       "oscillation": 0
@@ -196,45 +330,251 @@
         "records/loops/create-1792781138827/play-1-2.md:23"
       ],
       "source": "play",
-      "status": "open",
-      "refusedReason": null,
-      "repeatedDefect": 0,
-      "oscillation": 0
-    },
-    {
-      "id": "meta-upgrade-not-visible",
-      "severity": "minor",
-      "owner": "client content",
-      "where": "second run HUD",
-      "what": "Nothing on the run HUD shows the permanent upgrade bought with the first run's gold (health 100/100, the same start as the first run)",
-      "why": "The player cannot see that the meta purchase changed anything",
-      "evidence": [
-        "`mvle08ri4493c4-1792786466359` (0:00), `mvle08ri4493c4-1792786763384` (0:29)"
-      ],
-      "source": "judge",
-      "status": "open",
-      "refusedReason": null,
-      "repeatedDefect": 0,
-      "oscillation": 0
-    },
-    {
-      "id": "lobby-fps-below-target",
-      "severity": "minor",
-      "owner": "client content",
-      "where": "scene/lobby/lobby",
-      "what": "fps 5 percentile 57 is below targetFps 60 (3 samples)",
-      "why": "the camp must hold targetFps; the 5th percentile is 57",
-      "evidence": [
-        "records/loops/create-1792781138827/check-1.json#performance",
-        "records/loops/create-1792781138827/evidence/check-1/performance-macos/samples.json"
-      ],
-      "source": "check",
-      "status": "open",
+      "status": "fixed",
       "refusedReason": null,
       "repeatedDefect": 0,
       "oscillation": 0
     }
   ],
-  "previous": null,
-  "recordedBy": "iteration-1"
+  "previous": {
+    "defects": [
+      {
+        "id": "opening-no-threat",
+        "severity": "major",
+        "owner": "data",
+        "where": "first minute of a run",
+        "what": "No threat: standing still from 0:26 to 0:56 cost 0 health, and the first hit came at about 1:10",
+        "why": "There is no challenge that can fail in the opening, so the first minute has no tension",
+        "evidence": [
+          "`mvldzqoec49a81-1792786007963` (0:56, 100/100), `mvldzqoec49a81-1792786185633` (1:10, 97/100)",
+          "Captures `mvldzqoec49a81-1792786007963` (0:56, 100/100, 68 kills), `mvldzqoec49a81-1792786185633` (1:10, 97/100), `mvldzxt6027bf0-1792786394742` (10:12, 0/200), `mvldzxt6027bf0-1792786417980` (result panel). Telemetry `mvldzxt6027bf0`: Fail at play 1065030, Goal (panel) at 1066730. Reference frames 496000–503000ms",
+          "records/loops/create-1792781138827/judge-1-1.md"
+        ],
+        "source": "judge",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "hurt-not-visible",
+        "severity": "major",
+        "owner": "client content",
+        "where": "run 0:56",
+        "what": "none (standing still) → health fell from 100 to 6/100 in about 16 s of standing still; second level-up popup (거인의 심장, 회전 낫, 낙뢰 Lv 2)",
+        "why": "health dropped fast with no on-screen warning; the red bar frame is a placeholder and does not show the drop clearly (only the number 6/100)",
+        "evidence": [
+          "captures/mvle0pdkc59058-1792785804824.png",
+          "records/loops/create-1792781138827/play-1-1.md:25",
+          "captures/mvle1gaxa545f2-1792785739698.png",
+          "records/loops/create-1792781138827/play-1-3.md:23",
+          "`mvldzxt6027bf0-1792786300717` (10:06, 184/200), `mvldzxt6027bf0-1792786369873` (10:10, 40/200), `mvldzxt6027bf0-1792786394742` (10:12, 0/200)"
+        ],
+        "source": "play",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "levelup-capture-popup-not-open",
+        "severity": "major",
+        "owner": "client content",
+        "where": "scene/run/run",
+        "what": "run.open_levelup failed: \"the popup did not open\" (ko, macbook_pro_14_notch)",
+        "why": "the UI quality check cannot capture the level-up popup on any screen, so its layout is not checked",
+        "evidence": [
+          "records/loops/create-1792781138827/check-1.json#UI quality"
+        ],
+        "source": "check",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "run-fps-below-target",
+        "severity": "major",
+        "owner": "client content",
+        "where": "scene/run/run",
+        "what": "fps 5 percentile 41 is below targetFps 60 (2 samples)",
+        "why": "the run must hold targetFps on the target Macs; the 5th percentile is 41",
+        "evidence": [
+          "records/loops/create-1792781138827/check-1.json#performance",
+          "records/loops/create-1792781138827/evidence/check-1/performance-macos/samples.json"
+        ],
+        "source": "check",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "scene-load-slow",
+        "severity": "major",
+        "owner": "design",
+        "where": "scene_load_ms",
+        "what": "value 6248 out of 0..3000",
+        "why": "scene load must end within the loading time limit (3000ms)",
+        "evidence": [
+          "records/loops/create-1792781138827/measure-1.json#scene_load_ms"
+        ],
+        "source": "check",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "early-xp-pace-slow",
+        "severity": "major",
+        "owner": "data",
+        "where": "first_reward_ms",
+        "what": "value 79355 out of 5000..30000",
+        "why": "the first reward must come within the target range of design.md",
+        "evidence": [
+          "records/loops/create-1792781138827/measure-1.json#first_reward_ms",
+          "captures/mvle0pdkc59058-1792785564359.png",
+          "records/loops/create-1792781138827/play-1-1.md:22",
+          "`ogw telemetry mvldzqoec49a81` rewards at play 118069 and 157619"
+        ],
+        "source": "check",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "damage-numbers-overlap",
+        "severity": "major",
+        "owner": "client content",
+        "where": "scene/run/run",
+        "what": "step 200 (D held) → many damage numbers (19, 27, 30, 63) stacked at the same spots around the player",
+        "why": "numbers overlap into unreadable blobs, e.g. `3019`, `2719`. Enemies (pink/red tall boxes) look much like the lavender building blocks around them, so which blocks are enemies is hard to tell",
+        "evidence": [
+          "captures/mvle1uqt3a7cf4-1792785315783.png",
+          "records/loops/create-1792781138827/play-1-4.md:18"
+        ],
+        "source": "play",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "lobby-title-gold-overlap",
+        "severity": "major",
+        "owner": "client content",
+        "where": "scene/lobby/lobby",
+        "what": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (ko, macbook_air_13, lobby.open_lobby, text scale 1000)",
+        "why": "UI quality requires no overlap on every supported screen and language",
+        "evidence": [
+          "records/loops/create-1792781138827/check-1.json#UI quality",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0001-ko-macbook_air_13-lobby.open_lobby-1000.png",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0001-ko-macbook_air_13-lobby.open_lobby-1000.json",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0010-ko-macbook_pro_14_notch-lobby.open_lobby-1000.png",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0010-ko-macbook_pro_14_notch-lobby.open_lobby-1000.json",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0018-ko-display_16_9-lobby.open_lobby-1000.png",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0018-ko-display_16_9-lobby.open_lobby-1000.json",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0034-en-macbook_air_13-lobby.open_lobby-1000.png",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0034-en-macbook_air_13-lobby.open_lobby-1000.json",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0042-en-macbook_pro_14_notch-lobby.open_lobby-1000.png",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0042-en-macbook_pro_14_notch-lobby.open_lobby-1000.json",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0050-en-display_16_9-lobby.open_lobby-1000.png",
+          "records/loops/create-1792781138827/evidence/check-1/ui-macos/0050-en-display_16_9-lobby.open_lobby-1000.json"
+        ],
+        "source": "check",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "giveup-result-title",
+        "severity": "major",
+        "owner": "data",
+        "where": "scene/run/result",
+        "what": "key P, tap_anchor pause_give_up → result panel `어둠에 쓰러졌다` after about 3s: survived 10분 8초, kills 4,420, level 45, gold +1,165",
+        "why": "the panel opens fine, but a big `PANELFRAME` placeholder text covers the middle lines (kills, level) and the two buttons carry `BUTTON_PRIMARY` text over `다시 출발` / `야영지로`. A deliberate give-up is titled `어둠에 쓰러졌다` (fell in the dark), which does not say it was a give-up",
+        "evidence": [
+          "captures/mvle1uqt3a7cf4-1792785358888.png",
+          "records/loops/create-1792781138827/play-1-4.md:21"
+        ],
+        "source": "play",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "death-no-presentation",
+        "severity": "minor",
+        "owner": "client content",
+        "where": "fall → result panel",
+        "what": "At health 0 the field shows no death presentation (no tint, no title, no player reaction) before the result panel",
+        "why": "The fall has no moment of its own. The reference shows a red-tinted `GAME OVER` over the field",
+        "evidence": [
+          "`mvldzxt6027bf0-1792786394742` (10:12, 0/200), telemetry Fail at play 1065030, panel at 1066730"
+        ],
+        "source": "judge",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "difficulty-cliff",
+        "severity": "minor",
+        "owner": "data",
+        "where": "result",
+        "what": "idle for about 30 game seconds → Fell at 39s. The panel shows survived time 39s, kills 32, level 2, gold +11. Only 3 hits in about 11s of standing still took the HP from 100 to 0, so the fall comes fast",
+        "why": "stats are readable, but the placeholder frame text sits behind them; standing still dies quickly",
+        "evidence": [
+          "captures/mvle10cgbb9f15-1792785944077.png",
+          "records/loops/create-1792781138827/play-1-2.md:23"
+        ],
+        "source": "play",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "meta-upgrade-not-visible",
+        "severity": "minor",
+        "owner": "client content",
+        "where": "second run HUD",
+        "what": "Nothing on the run HUD shows the permanent upgrade bought with the first run's gold (health 100/100, the same start as the first run)",
+        "why": "The player cannot see that the meta purchase changed anything",
+        "evidence": [
+          "`mvle08ri4493c4-1792786466359` (0:00), `mvle08ri4493c4-1792786763384` (0:29)"
+        ],
+        "source": "judge",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      },
+      {
+        "id": "lobby-fps-below-target",
+        "severity": "minor",
+        "owner": "client content",
+        "where": "scene/lobby/lobby",
+        "what": "fps 5 percentile 57 is below targetFps 60 (3 samples)",
+        "why": "the camp must hold targetFps; the 5th percentile is 57",
+        "evidence": [
+          "records/loops/create-1792781138827/check-1.json#performance",
+          "records/loops/create-1792781138827/evidence/check-1/performance-macos/samples.json"
+        ],
+        "source": "check",
+        "status": "open",
+        "refusedReason": null,
+        "repeatedDefect": 0,
+        "oscillation": 0
+      }
+    ],
+    "previous": null,
+    "recordedBy": "iteration-1"
+  },
+  "recordedBy": "iteration-2"
 }

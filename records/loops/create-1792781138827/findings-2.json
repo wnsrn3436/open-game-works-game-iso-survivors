@@ -1,0 +1,616 @@
+{
+  "findings": [
+    {
+      "severity": "major",
+      "owner": "data",
+      "why": "worse than the reference game, so `vs reference` is `fail`",
+      "id": "early-xp-pace-slow",
+      "drop": null,
+      "source": "judge",
+      "where": "vs reference: progression",
+      "what": "Lv 1 at 0:32 in the first run, and Lv 2 only by 0:27 in the second run. Both are later than the reference's level-up at 00:21.",
+      "evidence": [
+        "ref frames 19000–22000 ms; B mvlgnomafe63e4 capture 1792790005382 (0:32, Lv 1); mvlgop1515ebff capture 1792790726389 (0:27, Lv 2)",
+        "records/loops/create-1792781138827/judge-2-1.md"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "worse than the reference game, so `vs reference` is `fail`",
+      "id": "attack-feedback-weak",
+      "drop": null,
+      "source": "judge",
+      "where": "vs reference: game feel",
+      "what": "Same as `A`, apart from the HP bar under the player. There is no slash or impact effect at the level of the whip arc, and the telemetry shows no feedback on inputs in the interval.",
+      "evidence": [
+        "ref frame 15000 ms; B mvlgnomafe63e4 capture 1792789861070 (0:12); compare interval 95877–370530: feedback_per_input B 0",
+        "records/loops/create-1792781138827/judge-2-1.md"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "A code-drawn box in the field (`presentation`).",
+      "id": "code-drawn-ui-flat",
+      "drop": null,
+      "source": "judge",
+      "where": "HP bar under the player",
+      "what": "A flat dark-red rectangle with a fill.",
+      "evidence": [
+        "mvlgnomafe63e4 1792789764046"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "worse than the reference game, so `vs reference` is `fail`",
+      "id": "code-drawn-ui-flat",
+      "drop": null,
+      "source": "judge",
+      "where": "vs reference: presentation",
+      "what": "Same as `A`, plus a flat code-drawn HP bar under the player.",
+      "evidence": [
+        "ref frames 0, 5000, 21000 ms; B mvlgnomafe63e4 captures 1792789764046, 1792790381040",
+        "records/loops/create-1792781138827/judge-2-1.md"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the run must hold targetFps; the 5th percentile is 16 (hostLoad memory 99.9%)",
+      "id": "run-fps-below-target",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "fps 5 percentile 16 is below targetFps 60 (2 samples)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-2.json#performance",
+        "records/loops/create-1792781138827/evidence/check-2/performance-macos/samples.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "Damage numbers (19/27/30/63) stack and overlap near the player, hard to read; enemies are plain boxes, tough to tell enemies from gems and scenery (blue and lilac cubes of the same palette)",
+      "id": "damage-numbers-overlap",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "hold D 3200ms then hold W 3000ms in steps → Timer 10:06, HP 68/100, kills 4,514, gold 1,188",
+      "evidence": [
+        "captures/mvlhf2mp000630-1792790995592.png",
+        "records/loops/create-1792781138827/play-2-4.md:17"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the camp must hold targetFps; the 5th percentile is 35 (hostLoad memory 99.9%)",
+      "id": "lobby-fps-below-target",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "fps 5 percentile 35 is below targetFps 60 (3 samples)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-2.json#performance",
+        "records/loops/create-1792781138827/evidence/check-2/performance-macos/samples.json"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "the player survived 2:59 with no movement at all, killing 581 enemies with the auto weapons",
+      "id": "standing-still-survives",
+      "drop": null,
+      "source": "play",
+      "where": "~190000",
+      "what": "run → standing still for 2:50",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:27"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the new run showed health 115/115 (+15 from vitality) and a small plate under the weapon row with 2 icons marked 1 and 1",
+      "id": "meta-upgrade-not-visible",
+      "drop": null,
+      "source": "play",
+      "where": "~350000",
+      "what": "run → tap_anchor upgrade_close, lobby_play",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:24"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "Inputs are slower to respond around the fall (`game feel`).",
+      "id": "fall-input-latency",
+      "drop": null,
+      "source": "judge",
+      "where": "first-failure interval",
+      "what": "input_latency_ms 373 in the interval that includes the low-HP and fall sequence (whole session 20 vs A 2).",
+      "evidence": [
+        "`ogw telemetry compare` interval 370530–767404"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "consistent with the first popup; health already lost 28 in 24 s",
+      "id": "levelup-card-text-wrap",
+      "drop": null,
+      "source": "play",
+      "where": "level-up",
+      "what": "60 steps after the pick → second level-up at 0:24 with Lv 3, health 72/100, kills 27; cards `낙뢰`, `등불 탄환 Lv 2`, `질풍 장화`. The description of `낙뢰` wraps to `다` alone on a second line",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792791180545.png",
+        "records/loops/create-1792781138827/play-2-3.md:25"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "design",
+      "why": "`ok:false`, the key was rejected; the guide wrote the key as `[upgrade_vitality]`, and with brackets it worked",
+      "id": "play-guide-anchor-key-form",
+      "drop": null,
+      "source": "play",
+      "where": "~310000",
+      "what": "lobby → tap_anchor upgrade_buy upgrade_vitality (no brackets)",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:22"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "terms popup opened. Buttons show a stretched placeholder texture (\"BUTTON\" letters smear across the rows), the confirm button is dim until both are on, and a large \"TITLE\" placeholder text sits behind the popup",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "0",
+      "what": "title → tap_anchor terms_agree_all, terms_confirm",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:15"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "the camp shows the title `아이소 서바이버즈`, the gold, and 3 buttons. Large \"LOBBY\" placeholder letters fill the background and the `원정 시작` label overlaps the stretched \"BUTTON PRIMARY\" texture",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "~14000",
+      "what": "lobby → (after confirm)",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:16"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "the run loaded in about 0.5s and the HUD appeared: health 100/100, a weapon icon, kills, gold, a timer. The ground has \"GROUND\" placeholder text tiled across it, and the HUD frames show \"PLATE\" and \"BAR_FRAME\" placeholder text",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "~30000",
+      "what": "run → tap_anchor lobby_play, key_down D",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:17"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "level-up came at 0:13 (Lv 2) and 0:25 (Lv 3), the run stopped with the 3-card popup, and the timer did not advance until a card was picked with key `2` or `1`. Cards show `새로 얻기` or `Lv N`, an icon and a description. The icons are plain colored squares with the ID text, and the frame art behind the descriptions is garbled so the lines are hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "~110000",
+      "what": "run → stand still after releasing D",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:18"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "at 2:21 it reached Lv 4 with 417 kills and 30/100 health. `체력이 위험해요!` showed under the player and the number turned red",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "~190000",
+      "what": "run → standing still, picking card 1 each time",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:19"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "the run survived with 14/100 at 2:50 (Lv 5, 541 kills) and the fall came at 2:59; the result `어둠에 쓰러졌다` showed 2분 59초, 처치 581, 레벨 6, 금화 +162 with `다시 출발` and `야영지로`. The panel frame texture (\"PANEL_FRAME\") covers the stat lines and the primary button label `다시 출발` is overprinted by \"BUTTON PRIMARY\"",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "~270000",
+      "what": "run → standing still",
+      "evidence": [
+        "major",
+        "records/loops/create-1792781138827/play-2-1.md:20"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "the shrine opened with 6 rows, gold 162, levels and costs (50, 40, 100, 30, 60, 80). Each `강화` button is overprinted by \"BUTTON PRIMARY\"",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "~300000",
+      "what": "lobby → tap_anchor result_lobby, lobby_upgrades",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-2-1.md:21"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "gold went 162 → 74, might and vitality at Lv 1/5, and the haste press (cost 100) showed a small `금화가 부족해요` strip over the middle of the panel; costs rose to 120 and 100. Rows without enough gold show red cost and `금화가 부족해요`",
+      "id": null,
+      "drop": "the feedback row gives severity `none` (play-2-1.md rows start with an extra number column, so the tool read the columns shifted)",
+      "source": "play",
+      "where": "~340000",
+      "what": "lobby → tap_anchor upgrade_buy [upgrade_vitality], [upgrade_might], [upgrade_haste]",
+      "evidence": [
+        "records/loops/create-1792781138827/play-2-1.md:23"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "pause opened and closed with both keys, give up ended the run with `원정을 포기했다` at 10초, 처치 7, 금화 +2 (the +2 was granted)",
+      "id": null,
+      "drop": "the feedback row gives severity `none` (play-2-1.md rows start with an extra number column, so the tool read the columns shifted)",
+      "source": "play",
+      "where": "~320000",
+      "what": "run → key P, tap_anchor pause_resume, key Escape, tap_anchor pause_give_up",
+      "evidence": [
+        "records/loops/create-1792781138827/play-2-1.md:25"
+      ]
+    },
+    {
+      "severity": null,
+      "owner": null,
+      "why": "game time advanced about 1 ms of run time per 1 ms of real time (a 10000 ms step took about 10s), so a long run needs minutes of waiting",
+      "id": null,
+      "drop": "the feedback row gives severity `none` (play-2-1.md rows start with an extra number column, so the tool read the columns shifted)",
+      "source": "play",
+      "where": "~30000-300000",
+      "what": "run → step mode, `ogw step`",
+      "evidence": [
+        "records/loops/create-1792781138827/play-2-1.md:26"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "The popup buttons and checkboxes are stretched placeholder textures (`BUTTON` letters smeared across each button). Labels stay readable but overlap the smear. Layout is usable",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "terms popup",
+      "what": "none (first capture) → `이용약관 동의` popup shows over a placeholder `TITLE` text",
+      "evidence": [
+        "captures/mvlheodhb1819c-1792790908131.png",
+        "records/loops/create-1792781138827/play-2-2.md:18"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "Placeholder art still on screen. The primary button label is hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "camp",
+      "what": "none → Camp shows the title `아이소 서바이버즈`, gold 0, and three buttons. A giant black `LOBBY` placeholder fills the background. The `원정 시작` label is drawn over a `BUTTON PRIMARY` texture, which makes it hard to read",
+      "evidence": [
+        "captures/mvlheodhb1819c-1792790919131.png",
+        "records/loops/create-1792781138827/play-2-2.md:20"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "Information is complete, but the overlapping text is hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "shrine",
+      "what": "tap_anchor lobby_upgrades → Six rows with Lv 0/N, effect, cost (30 to 100) and `금화가 부족해요`. The `BUTTON PRIMARY` texture overlaps the `강화` label and the not-enough-gold text. `서두름` effect text wraps and runs under a white placeholder bar",
+      "evidence": [
+        "captures/mvlheodhb1819c-1792790926015.png",
+        "records/loops/create-1792781138827/play-2-2.md:21"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "Run starts quickly. HUD shows the health bar, kill and gold counters",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "camp to run",
+      "what": "tap_anchor lobby_play (step mode on) → The run scene loaded in about 500ms (telemetry). Timer 0:00, move hint `WASD 로 움직이세요. 공격은 자동이에요` at the bottom. HUD frames carry placeholder `BAR_FRAME` and `PLATE` text",
+      "evidence": [
+        "captures/mvlheodhb1819c-1792790935210.png",
+        "records/loops/create-1792781138827/play-2-2.md:23"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "Popup works and the run is held. Card text is hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "level-up",
+      "what": "W, A, S, D held in turn (3s each) → Level-up popup at Lv 2 with 3 cards: spinning blade (new), lantern bolt Lv 2, gale boots (new). Card art is a flat colour square with the ID text. The description text overlaps a large white `CARD` placeholder frame and the 2-line text is partly unreadable",
+      "evidence": [
+        "captures/mvlheodhb1819c-1792791087654.png",
+        "records/loops/create-1792781138827/play-2-2.md:25"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "Steady damage while standing still. Cards are readable only partly (same placeholder overlap)",
+      "id": null,
+      "drop": "health falling while standing still is the intended threat from the `opening-no-threat` fix; the observation reports no defect",
+      "source": "play",
+      "where": "level-up",
+      "what": "not moving, steps of 200ms → Lv 3 popup. Health was 56/100 after about 12s of standing still, so health fell from 100 to 56",
+      "evidence": [
+        "captures/mvlheodhb1819c-1792791208529.png",
+        "records/loops/create-1792781138827/play-2-2.md:27"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "Result data is complete. Placeholder art on screen",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "result",
+      "what": "wait about 3s → Result panel `어둠에 쓰러졌다`: survived 1m14s, kills 160, level 4, gold +47, with `다시 출발` and `야영지로`. A large `PANEL_FRAME` placeholder strip runs behind the stats text. The `다시 출발` label overlaps the `BUTTON PRIMARY` texture",
+      "evidence": [
+        "captures/mvlheodhb1819c-1792791431310.png",
+        "records/loops/create-1792781138827/play-2-2.md:31"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "labels are readable but the button art is placeholder, looks broken",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "terms",
+      "what": "capture → terms popup opens on a flat dark screen with a large grey \"TITLE\" placeholder text behind it. The three row buttons and `확인` show a stretched \"BUTTON\" placeholder image behind the labels, and `보기` is hardly readable on its \"BUTTON\" art",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792790920967.png",
+        "records/loops/create-1792781138827/play-2-3.md:16"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "label of the main button is hard to read, background is placeholder",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "camp",
+      "what": "capture → gold 0 at top right, title, `첫 원정을 떠나 새벽까지 버텨 보세요`, three buttons. A huge black \"LOBBY\" placeholder text sits behind the buttons; the primary button `원정 시작` shows the \"BUTTON PRIMARY\" placeholder art that overlaps its label so the label is hard to read",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792790932532.png",
+        "records/loops/create-1792781138827/play-2-3.md:18"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "overlapping text, hard to tell which part is the button",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "shrine",
+      "what": "tap_anchor lobby_upgrades → panel opens in under 1 s with six rows (level, effect, cost 50/40/100/30/60/80). Every row shows `금화가 부족해요` printed on top of the white placeholder frame and the \"BUTTON PRIMARY\" art, so the cost, the not-enough label and the buy label overlap. Row icons are plain colour squares with the ID text (UPGRADE_MIGHT etc.)",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792790939182.png",
+        "records/loops/create-1792781138827/play-2-3.md:19"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "readable and playable, but placeholder visuals fill the screen",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "run",
+      "what": "tap_anchor lobby_play → loading about 0.6 s per telemetry (scene/run/run 580 ms), run starts at 0:00. Move hint `WASD 로 움직이세요. 공격은 자동이에요` shows at the bottom. Player is a glowing block with a red bar below. The ground is covered with tiled \"GROUND\" placeholder text and the HUD panels (top left, top right) show a stretched \"PLATE\" placeholder, with `100/100` health and kills/gold counters",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792790955189.png",
+        "records/loops/create-1792781138827/play-2-3.md:21"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "card descriptions are cut by the placeholder frame, hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "level-up",
+      "what": "after 40 more steps with A held → popup opens at Lv 2, timer 0:15; three cards `새로 얻기` with `거인의 심장`, `투척 도끼`, `성화 오라`; hint `1 2 3 로도 고를 수 있어요`. Card art is a white \"PRIMARY\" frame placeholder and descriptions are partly covered by it (`몸 주위의 불꽃이 가까운 적을 계…`)",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792791067982.png",
+        "records/loops/create-1792781138827/play-2-3.md:23"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "stats readable but crossed by the placeholder frame",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "result (give up)",
+      "what": "12 steps after give up → title `원정을 포기했다`, survived 25 s, kills 32, level 3, gold +10. A large white \"PANEL FRAME\" placeholder is drawn across the middle of the panel behind the stat lines, and the `다시 출발` button shows \"BUTTON PRIMARY\" art over its label",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792791212879.png",
+        "records/loops/create-1792781138827/play-2-3.md:27"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "player at 100 HP dies in about 26 s when standing still, which is quick but expected without moving",
+      "id": null,
+      "drop": "the feedback itself says a still player dying in about 26 s is expected; the rest is placeholder art (`requested`)",
+      "source": "play",
+      "where": "death",
+      "what": "stood still in free mode, pressed 1 every 5 s for level-ups → run ended in about 26 s of survival. Result title `어둠에 쓰러졌다`, kills 24, level 3, gold +8, `최고 기록!`. I did not capture the fall moment itself (red field, `등불이 꺼졌다…`), only the result panel. Same placeholder \"PANEL FRAME\" and \"BUTTON\" art as in the give-up result",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792791422169.png",
+        "records/loops/create-1792781138827/play-2-3.md:30"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the numbers add up and save; record text partly sits on the placeholder letters",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "camp",
+      "what": "tap_anchor result_lobby → camp opened in about 3 s; gold 18 (10 + 8), `최고 생존 26초 · 최다 처치 32`, `원정 2회 · 새벽 맞이 0회` are shown, and the record line overlaps the black \"LOBBY\" placeholder",
+      "evidence": [
+        "captures/mvlhev4u85ad06-1792791432103.png",
+        "records/loops/create-1792781138827/play-2-3.md:31"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "Placeholder art shows: buttons render debug text \"BUTTON_PRIMARY\", HUD panel shows stretched \"PLATE\", bar shows \"BAR_FRAME\", ground shows \"GROUND\" tiles; the button labels are hard to read over it",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "none (instance start) → Opens on pause popup at 10:00, Lv 46, 100/100 HP, 4,466 kills, 1,176 gold; popup text `일시 정지`, `계속하기`, `원정 포기`",
+      "evidence": [
+        "captures/mvlhf2mp000630-1792790936129.png",
+        "records/loops/create-1792781138827/play-2-4.md:14"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "Dense ring of enemies hugging the player; damage taken at once on resume",
+      "id": null,
+      "drop": "the `late_run_horde` fixture resumes with the horde already around the player, as the moment description asks",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "key_down D, step 200 x2 → After 400ms game time timer still 10:00, HP 84/100 (lost 16 in 400ms), kills 4,475",
+      "evidence": [
+        "captures/mvlhf2mp000630-1792790948641.png",
+        "records/loops/create-1792781138827/play-2-4.md:16"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "Cannot tell weapons apart except by colour",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "steps → Weapon/passive icons all level 5 and drawn with tiny unreadable debug labels (`WEAPON_LANTERN_BOLT` etc.)",
+      "evidence": [
+        "captures/mvlhf2mp000630-1792790995592.png",
+        "records/loops/create-1792781138827/play-2-4.md:19"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "Hard to read the buttons; the popup looks unfinished",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "run (paused, resumed)",
+      "what": "none → Pause popup over the field, run timer 0:00. HUD frames and plates are placeholder art. The text `BAR_FRAME`, `PLATE`, `BUTTON_PRIMARY` and `GROUND` is stretched and blurred over the HP bar, the plates and the pause buttons. The `계속하기` label is overprinted by `BUTTON_PRIMARY`",
+      "evidence": [
+        "captures/mvlhfe9d7ab951-1792790951876.png",
+        "records/loops/create-1792781138827/play-2-5.md:15"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "Movement responds; the ground texture is a placeholder and distracts",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "run",
+      "what": "key_down D, step 600ms → The player moved on the field and the timer stayed 0:00. The ground is covered with the repeated word `GROUND`",
+      "evidence": [
+        "captures/mvlhfe9d7ab951-1792790963763.png",
+        "records/loops/create-1792781138827/play-2-5.md:17"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "The cards cannot be read well",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "levelup",
+      "what": "none → Level-up popup at 0:14 with 3 cards (거인의 심장, 투척 도끼, 질풍 장화). The run stopped, and the card art is the ID text on a flat color square. The card name and description are overprinted by a large stretched `ABILITY_CARD`-like placeholder. The description text is partly hidden, e.g. `움직이는 방향으로 도끼를…` is cut",
+      "evidence": [
+        "captures/mvlhfe9d7ab951-1792791042458.png",
+        "records/loops/create-1792781138827/play-2-5.md:19"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "The same overprint problem; the description contrast is low",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures, cards) has status `placeholder` or `requested` in resources.csv",
+      "source": "play",
+      "where": "levelup",
+      "what": "none → Second popup at 0:26, Lv 3, HP 75/100, kills 32, gold 10. The cards are 등불 탄환 Lv2, 바람의 깃털, 성화 오라. The `기수 +1` description on the first card is nearly invisible against the placeholder overlay",
+      "evidence": [
+        "captures/mvlhfe9d7ab951-1792791106772.png",
+        "records/loops/create-1792781138827/play-2-5.md:21"
+      ]
+    }
+  ],
+  "discarded": []
+}
