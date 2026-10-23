@@ -1,0 +1,226 @@
+{
+  "findings": [
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the run must hold targetFps; the 5th percentile is 15 (hostLoad memory 83.4%)",
+      "id": "run-fps-below-target",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "fps 5 percentile 15 is below targetFps 60 (2 samples)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-3.json#performance",
+        "records/loops/create-1792781138827/evidence/check-3/performance-macos/samples.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "data",
+      "why": "A player who never moves has lost only 26 health in 1:40 after taking one weapon of each kind. Early difficulty is low, and moving does not seem needed",
+      "id": "standing-still-survives",
+      "drop": null,
+      "source": "play",
+      "where": "run",
+      "what": "standing still, no movement from 0:24 to 1:40 → At 1:40 Lv12, kills 319, gold 89, health 74/100. 8 passives and weapons owned; enemies crowd around the player; aura ring and scythe kill them. Many blue gems lie uncollected within view",
+      "evidence": [
+        "captures/mvllohojba6a6b-1792798535402.png",
+        "records/loops/create-1792781138827/play-3-1.md:24"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "a held-down card key press gave no problem. The player was not killed until 1:19 even though the player stood still with 3~4 weapons from 0:44 on. It is not clear whether standing still was punished at all before then",
+      "id": "standing-still-survives",
+      "drop": null,
+      "source": "play",
+      "where": "79000",
+      "what": "scene/run/run → key 1 pressed every step while the player stood still",
+      "evidence": [
+        "records/loops/create-1792781138827/play-3-2.md:23"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "Level-ups are very frequent early. Several popups interrupt the run within 15 s",
+      "id": "early-levelup-too-frequent",
+      "drop": null,
+      "source": "play",
+      "where": "levelup",
+      "what": "key 2 at Lv3 (0:21) → Next level-up (scythe, hatchet, feather) comes about 3 s later, at Lv4 0:24",
+      "evidence": [
+        "captures/mvllohojba6a6b-1792798420448.png",
+        "records/loops/create-1792781138827/play-3-1.md:22"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "Level 3 popup at 0:33, then Level 4 at 0:36 and Level 5 at 0:44. Level-ups arrive every 3~8 seconds and the player stops to pick each time. Card pool repeats cards (`투척 도끼 Lv 2`, `낙뢰`, `질풍 장화` offered in several popups)",
+      "id": "early-levelup-too-frequent",
+      "drop": null,
+      "source": "play",
+      "where": "33000",
+      "what": "scene/run/run → step",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-3-2.md:20"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the low-health warning shows as written; the bolts and the ring of weapons are hard to tell apart from the enemy colours at this density",
+      "id": "enemy-field-contrast",
+      "drop": null,
+      "source": "play",
+      "where": "run 11:05",
+      "what": "held A/W/D/S in turn, 5000ms per key → HP 49/200, `체력이 위험해요!` under the player, numbers red; Lv 58",
+      "evidence": [
+        "captures/mvllp1sqffedcb-1792798291328.png",
+        "records/loops/create-1792781138827/play-3-4.md:18"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "Approaching threats are harder to spot than in the reference's green field with dark enemies.",
+      "id": "enemy-field-contrast",
+      "drop": null,
+      "source": "judge",
+      "where": "run field",
+      "what": "The field is dark navy, and enemies (bats, zombies) are drawn in low contrast against it. A bat at 0:04 near the right edge is barely visible.",
+      "evidence": [
+        "mvlk6fnac8e67f-1792795733371` (0:04), `mvlk7doa181852-1792796632225"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "popup is clear. Lv 2 came after only 2 kills and the XP bar looked almost empty in the capture just before, so the XP bar did not show how close the level-up was",
+      "id": "xp-bar-unreadable",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "key_down D+S, stepped → level-up popup at 0:06 (Lv 2) with 2 kills; cards 낙뢰, 성화 오라, 등불 탄환 and hint `1 2 3 로도 고를 수 있어요`",
+      "evidence": [
+        "captures/mvllov46c1f92d-1792798277303.png",
+        "records/loops/create-1792781138827/play-3-3.md:21"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "The row already shows `금화가 부족해요` in red, so the toast is redundant. It is small and covers the row text",
+      "id": "shrine-toast-overlap",
+      "drop": null,
+      "source": "play",
+      "where": "shrine",
+      "what": "tap_anchor lobby_upgrades, upgrade_buy [upgrade_vitality] with 0 gold → Six rows show level, effect and cost. The press buys nothing. A dim full-width toast band with tiny text `금화가 부족해요` sits across the middle of the panel and overlaps the row text",
+      "evidence": [
+        "captures/mvllohojba6a6b-1792798105561.png",
+        "records/loops/create-1792781138827/play-3-1.md:18"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "purchase works: gold 52 → 12, row Lv 1/5, next cost 40 → 100. The toast `생명력 강화 완료!` is small text on a thin dark band in the middle of the panel, over the row text, and is easy to miss",
+      "id": "shrine-toast-overlap",
+      "drop": null,
+      "source": "play",
+      "where": "83000",
+      "what": "scene/lobby/lobby → tap_anchor upgrade_buy [upgrade_vitality]",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-3-2.md:25"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "buy buttons stay bright yellow although every row says not enough gold, so the unaffordable state is carried only by small red text; the toast band covers row text",
+      "id": "shrine-toast-overlap",
+      "drop": null,
+      "source": "play",
+      "where": "scene/lobby/lobby",
+      "what": "tap_anchor lobby_upgrades then upgrade_buy [upgrade_might] with 0 gold → shrine panel with six rows; the press showed a `금화가 부족해요` toast as a dark full-width band across the middle that overlaps the 서두름/자력 rows",
+      "evidence": [
+        "captures/mvllov46c1f92d-1792798129035.png",
+        "records/loops/create-1792781138827/play-3-3.md:18"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "every `강화` button keeps the same bright yellow whether the row is affordable or not; only the cost number and the small red `금화가 부족해요` line differ",
+      "id": "shrine-unaffordable-button-state",
+      "drop": null,
+      "source": "play",
+      "where": "83000",
+      "what": "scene/lobby/lobby → upgrade panel",
+      "evidence": [
+        "minor",
+        "records/loops/create-1792781138827/play-3-2.md:26"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "The hint the guide describes was not seen. It may have been gone already or may be missing",
+      "id": "move-hint-missing",
+      "drop": null,
+      "source": "play",
+      "where": "run",
+      "what": "key_down D, 2s → Timer 0:02. The player moved right. The first enemy (a ghoul) showed at the bottom. No move hint was visible at the bottom",
+      "evidence": [
+        "captures/mvllpcfbb96863-1792798162815.png",
+        "records/loops/create-1792781138827/play-3-5.md:18"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the camp must hold targetFps; the 5th percentile is 33 (hostLoad memory 83.4%)",
+      "id": "lobby-fps-below-target",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "fps 5 percentile 33 is below targetFps 60 (3 samples)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-3.json#performance",
+        "records/loops/create-1792781138827/evidence/check-3/performance-macos/samples.json"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "Slow for the play tool, not for a player",
+      "id": null,
+      "drop": "the real time of `ogw step` is a property of the play tool, not of the game; the feedback says so itself",
+      "source": "play",
+      "where": "run",
+      "what": "step mode on, 200 ms steps → Each `ogw step 200` took about 1 s of real time. 25 steps took about 30 s",
+      "evidence": [
+        "records/loops/create-1792781138827/play-3-1.md:23"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the HP fell by about 96 in 25s while moving; the player is surrounded and the gems pile up unused on the left side",
+      "id": null,
+      "drop": "health falling fast while surrounded at 10:25 is the late-run pressure the `late_run_horde` moment is about; no defect is reported",
+      "source": "play",
+      "where": "run 10:25",
+      "what": "held A/S/D/W in turn, 6000ms per key → HP 104/200, Lv 57 reached with no popup, kills 5,218",
+      "evidence": [
+        "captures/mvllp1sqffedcb-1792798190239.png",
+        "records/loops/create-1792781138827/play-3-4.md:17"
+      ]
+    }
+  ],
+  "discarded": []
+}

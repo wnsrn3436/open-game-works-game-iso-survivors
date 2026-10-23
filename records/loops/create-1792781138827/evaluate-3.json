@@ -1,0 +1,55 @@
+{
+  "commit": "63e74d427edecb9926483151b3737863b3378717",
+  "baseline": "ba948bce7498a0cafc6bb61c262bed7329b18f23",
+  "plays": [
+    {
+      "result": "records/loops/create-1792781138827/play-3-1.md",
+      "instance": "mvllohojba6a6b",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/create-1792781138827/play-3-2.md",
+      "instance": "mvlloojn2e78c5",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/create-1792781138827/play-3-3.md",
+      "instance": "mvllov46c1f92d",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/create-1792781138827/play-3-4.md",
+      "instance": "mvllp1sqffedcb",
+      "platform": "macos",
+      "moment": "late_run_horde",
+      "status": "done"
+    },
+    {
+      "result": "records/loops/create-1792781138827/play-3-5.md",
+      "instance": "mvllpcfbb96863",
+      "platform": "macos",
+      "moment": "second_run_after_meta_upgrade",
+      "status": "done"
+    }
+  ],
+  "judges": [
+    {
+      "kind": "main",
+      "result": "records/loops/create-1792781138827/judge-3-1.md",
+      "A": "ba948bce7498a0cafc6bb61c262bed7329b18f23",
+      "B": "63e74d427edecb9926483151b3737863b3378717",
+      "instanceSide": "B",
+      "omittedMoments": [],
+      "vsBaseline": "better",
+      "vsReference": "pass",
+      "status": "done"
+    }
+  ],
+  "measure": "records/loops/create-1792781138827/measure-3.json"
+}

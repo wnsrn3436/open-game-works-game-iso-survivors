@@ -1,0 +1,732 @@
+{
+  "runs": [
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors",
+      "startedAt": 1792799363957,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlmgajbbc46e9"
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --fixture client/dev/bot/fixtures/late_run_horde.json",
+      "startedAt": 1792799364592,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlmgb0v2d3338"
+    },
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792799365220,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlmgajbbc46e9",
+      "startedAt": 1792799383933,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 list_commands",
+      "startedAt": 1792799386543,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_state",
+      "startedAt": 1792799387179,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799391662,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgbhm107435 tap_anchor lobby_upgrades",
+      "startedAt": 1792799392327,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgbhm107435 tap_anchor upgrade_buy [upgrade_vitality]",
+      "startedAt": 1792799393984,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlmgbhm107435",
+      "startedAt": 1792799394595,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgbhm107435 key Escape 0",
+      "startedAt": 1792799402247,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799402888,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799408552,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799414232,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799419881,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799425547,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799431221,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799436876,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799442525,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlmgb0v2d3338",
+      "startedAt": 1792799455028,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799455029,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 get_state",
+      "startedAt": 1792799458146,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 run.state",
+      "startedAt": 1792799458769,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 get_stats",
+      "startedAt": 1792799459399,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgc0d4e2293 key P 0",
+      "startedAt": 1792799464169,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgc0d4e2293 key_down A",
+      "startedAt": 1792799464798,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799465685,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 get_stats",
+      "startedAt": 1792799468445,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 get_stats",
+      "startedAt": 1792799470105,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 get_stats",
+      "startedAt": 1792799471771,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlmgc0d4e2293",
+      "startedAt": 1792799473452,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgc0d4e2293 key_up A",
+      "startedAt": 1792799474363,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 get_state",
+      "startedAt": 1792799474957,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799476351,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 list_ui",
+      "startedAt": 1792799478845,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgc0d4e2293 tap_anchor pause_resume",
+      "startedAt": 1792799483019,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgc0d4e2293 key_down A",
+      "startedAt": 1792799483638,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799487021,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 get_stats",
+      "startedAt": 1792799488274,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 get_stats",
+      "startedAt": 1792799489935,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgc0d4e2293 get_stats",
+      "startedAt": 1792799491603,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlmgc0d4e2293",
+      "startedAt": 1792799493276,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgc0d4e2293 key_up A",
+      "startedAt": 1792799494338,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgc0d4e2293 key_down W",
+      "startedAt": 1792799494938,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799497758,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlmgc0d4e2293",
+      "startedAt": 1792799498600,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgc0d4e2293 key_up W",
+      "startedAt": 1792799499671,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799508455,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799519126,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799529794,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlmgbhm107435 on",
+      "startedAt": 1792799537086,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgbhm107435 tap_anchor lobby_play",
+      "startedAt": 1792799537690,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 500",
+      "startedAt": 1792799538451,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_state",
+      "startedAt": 1792799539645,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799540311,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799540470,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlmgbhm107435",
+      "startedAt": 1792799540952,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlmgbhm107435 key_down D",
+      "startedAt": 1792799548541,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 200",
+      "startedAt": 1792799549146,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlmgbhm107435",
+      "startedAt": 1792799550000,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799551115,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799551154,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799552205,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799552865,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799553931,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799554565,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799555617,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799556247,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799557319,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799557948,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799559007,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799559642,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799561603,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799562193,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799562232,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799563287,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799563888,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799564942,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799565553,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799566601,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799567200,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799568258,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799568870,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799569928,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799570531,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799571564,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799572171,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799572836,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799573215,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799573815,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799574875,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799575486,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799576528,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799577133,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799578207,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799578846,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799579907,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799580519,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799581563,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799582166,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799583240,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799583503,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799583873,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799584942,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799585550,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799586607,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799587254,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799588301,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799588899,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799589946,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799590554,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799591592,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlmgbhm107435 400",
+      "startedAt": 1792799592205,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 run.state",
+      "startedAt": 1792799593260,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799594157,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799604810,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799615423,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799626062,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799636686,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --regression client/tests/run/test_zz_probe.gd",
+      "startedAt": 1792799643244,
+      "exitCode": null,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlmgbhm107435 get_stats",
+      "startedAt": 1792799647357,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}
