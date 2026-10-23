@@ -1,0 +1,26 @@
+Level step of a permanent upgrade; extension of shop_product,,
+All,All,All
+id(key),ref<upgrade.id>,int
+id,upgrade,level
+[shop_might_1],[upgrade_might],1
+[shop_might_2],[upgrade_might],2
+[shop_might_3],[upgrade_might],3
+[shop_might_4],[upgrade_might],4
+[shop_might_5],[upgrade_might],5
+[shop_vitality_1],[upgrade_vitality],1
+[shop_vitality_2],[upgrade_vitality],2
+[shop_vitality_3],[upgrade_vitality],3
+[shop_vitality_4],[upgrade_vitality],4
+[shop_vitality_5],[upgrade_vitality],5
+[shop_haste_1],[upgrade_haste],1
+[shop_haste_2],[upgrade_haste],2
+[shop_haste_3],[upgrade_haste],3
+[shop_magnet_1],[upgrade_magnet],1
+[shop_magnet_2],[upgrade_magnet],2
+[shop_magnet_3],[upgrade_magnet],3
+[shop_swiftness_1],[upgrade_swiftness],1
+[shop_swiftness_2],[upgrade_swiftness],2
+[shop_swiftness_3],[upgrade_swiftness],3
+[shop_greed_1],[upgrade_greed],1
+[shop_greed_2],[upgrade_greed],2
+[shop_greed_3],[upgrade_greed],3

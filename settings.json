@@ -60,7 +60,8 @@
       "ScreenEffectCore",
       "InputCore",
       "SoundCore",
-      "QualityCore"
+      "QualityCore",
+      "NativeUiCore"
     ],
     "server": [
       "play-session",

@@ -1,0 +1,58 @@
+{
+  "steps": [
+    {
+      "kind": "setup",
+      "command": "run.open_run",
+      "args": [],
+      "timeoutMs": 120000
+    },
+    {
+      "kind": "setup",
+      "command": "run.fast_forward",
+      "args": [
+        "75000"
+      ],
+      "timeoutMs": 60000
+    },
+    {
+      "kind": "setup",
+      "command": "run.fast_forward",
+      "args": [
+        "75000"
+      ],
+      "timeoutMs": 60000
+    },
+    {
+      "kind": "setup",
+      "command": "set_server_time_offset",
+      "args": [
+        "150000"
+      ],
+      "timeoutMs": 10000
+    },
+    {
+      "kind": "setup",
+      "command": "run.fall",
+      "args": [],
+      "timeoutMs": 60000
+    },
+    {
+      "kind": "setup",
+      "command": "lobby.open_lobby",
+      "args": [],
+      "timeoutMs": 60000
+    },
+    {
+      "kind": "setup",
+      "command": "lobby.buy_upgrade",
+      "args": [],
+      "timeoutMs": 60000
+    },
+    {
+      "kind": "setup",
+      "command": "run.open_run",
+      "args": [],
+      "timeoutMs": 120000
+    }
+  ]
+}

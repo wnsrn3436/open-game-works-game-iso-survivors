@@ -1,0 +1,357 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/button.png" id="1_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/button_primary.png" id="2_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/focus_ring.png" id="3_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/panel_frame.png" id="4_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/card.png" id="5_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/plate.png" id="6_r"]
+[ext_resource type="Script" path="res://features/run/run_result_panel.gd" id="7_r"]
+[ext_resource type="Script" path="res://core/ui_core/ui_button.gd" id="8_r"]
+[ext_resource type="Script" path="res://core/ui_core/ui_anchor.gd" id="9_r"]
+
+[sub_resource type="StyleBoxTexture" id="btn_normal"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+texture = ExtResource("1_r")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+
+[sub_resource type="StyleBoxTexture" id="btn_hover"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+texture = ExtResource("1_r")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+modulate_color = Color(1.2, 1.12, 1.0, 1.0)
+
+[sub_resource type="StyleBoxTexture" id="btn_pressed"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+texture = ExtResource("1_r")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+modulate_color = Color(0.75, 0.7, 0.64, 1.0)
+
+[sub_resource type="StyleBoxTexture" id="btn_disabled"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+texture = ExtResource("1_r")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+modulate_color = Color(0.5, 0.5, 0.55, 0.85)
+
+[sub_resource type="StyleBoxTexture" id="pbtn_normal"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+texture = ExtResource("2_r")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+
+[sub_resource type="StyleBoxTexture" id="pbtn_hover"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+texture = ExtResource("2_r")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+modulate_color = Color(1.15, 1.1, 1.0, 1.0)
+
+[sub_resource type="StyleBoxTexture" id="pbtn_pressed"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+texture = ExtResource("2_r")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+modulate_color = Color(0.8, 0.75, 0.66, 1.0)
+
+[sub_resource type="StyleBoxTexture" id="pbtn_disabled"]
+content_margin_left = 18.0
+content_margin_top = 18.0
+content_margin_right = 18.0
+content_margin_bottom = 18.0
+texture = ExtResource("2_r")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+modulate_color = Color(0.5, 0.5, 0.55, 0.85)
+
+[sub_resource type="StyleBoxTexture" id="btn_focus"]
+expand_margin_left = 8.0
+expand_margin_top = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 8.0
+texture = ExtResource("3_r")
+texture_margin_left = 32.0
+texture_margin_top = 32.0
+texture_margin_right = 32.0
+texture_margin_bottom = 32.0
+modulate_color = Color(1.0, 0.85, 0.42, 1.0)
+draw_center = false
+
+[sub_resource type="StyleBoxTexture" id="frame"]
+texture = ExtResource("4_r")
+texture_margin_left = 40.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="card"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+texture = ExtResource("5_r")
+texture_margin_left = 40.0
+texture_margin_top = 48.0
+texture_margin_right = 40.0
+texture_margin_bottom = 48.0
+
+[sub_resource type="StyleBoxTexture" id="card_hover"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+texture = ExtResource("5_r")
+texture_margin_left = 40.0
+texture_margin_top = 48.0
+texture_margin_right = 40.0
+texture_margin_bottom = 48.0
+modulate_color = Color(1.2, 1.15, 1.0, 1.0)
+
+[sub_resource type="StyleBoxTexture" id="card_pressed"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+texture = ExtResource("5_r")
+texture_margin_left = 40.0
+texture_margin_top = 48.0
+texture_margin_right = 40.0
+texture_margin_bottom = 48.0
+modulate_color = Color(0.8, 0.76, 0.7, 1.0)
+
+[sub_resource type="StyleBoxTexture" id="plate"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+texture = ExtResource("6_r")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxTexture" id="row"]
+content_margin_left = 12.0
+content_margin_top = 12.0
+content_margin_right = 12.0
+content_margin_bottom = 12.0
+texture = ExtResource("5_r")
+texture_margin_left = 40.0
+texture_margin_top = 48.0
+texture_margin_right = 40.0
+texture_margin_bottom = 48.0
+
+[node name="ResultPanel" type="Control" node_paths=PackedStringArray("initial_focus", "title_label", "time_label", "kills_label", "level_label", "gold_label", "gold_icon", "best_label", "hint_label", "again_button", "lobby_button", "again_click", "lobby_click")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_r")
+back_policy = 2
+dim = true
+initial_focus = NodePath("Frame/Box/Buttons/Again")
+title_label = NodePath("Frame/Box/Title")
+time_label = NodePath("Frame/Box/Time")
+kills_label = NodePath("Frame/Box/Kills")
+level_label = NodePath("Frame/Box/Level")
+gold_label = NodePath("Frame/Box/GoldRow/Gold")
+gold_icon = NodePath("Frame/Box/GoldRow/Icon")
+best_label = NodePath("Frame/Box/Best")
+hint_label = NodePath("Frame/Box/Hint")
+again_button = NodePath("Frame/Box/Buttons/Again")
+lobby_button = NodePath("Frame/Box/Buttons/Lobby")
+again_click = NodePath("Frame/Box/Buttons/Again/UIButton")
+lobby_click = NodePath("Frame/Box/Buttons/Lobby/UIButton")
+
+[node name="Frame" type="Panel" parent="."]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -430.0
+offset_right = 500.0
+offset_bottom = 430.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("frame")
+
+[node name="Box" type="VBoxContainer" parent="Frame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_left = 56.0
+offset_top = 44.0
+offset_right = -56.0
+offset_bottom = -44.0
+alignment = 1
+theme_override_constants/separation = 14
+
+[node name="Title" type="Label" parent="Frame/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.788, 0.635, 0.153, 1.0)
+theme_override_font_sizes/font_size = 90
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 14
+
+[node name="Time" type="Label" parent="Frame/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 5
+
+[node name="Kills" type="Label" parent="Frame/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 5
+
+[node name="Level" type="Label" parent="Frame/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 5
+
+[node name="GoldRow" type="HBoxContainer" parent="Frame/Box"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="Icon" type="TextureRect" parent="Frame/Box/GoldRow"]
+custom_minimum_size = Vector2(56.0, 56.0)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+size_flags_vertical = 4
+
+[node name="Gold" type="Label" parent="Frame/Box/GoldRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 46
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 6
+
+[node name="Best" type="Label" parent="Frame/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
+theme_override_constants/outline_size = 6
+
+[node name="Hint" type="Label" parent="Frame/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.68, 0.76, 1.0)
+theme_override_font_sizes/font_size = 28
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Buttons" type="HBoxContainer" parent="Frame/Box"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 28
+
+[node name="Again" type="Button" parent="Frame/Box/Buttons"]
+custom_minimum_size = Vector2(390.0, 104.0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.13, 0.1, 0.07, 1.0)
+theme_override_colors/font_hover_color = Color(0.13, 0.1, 0.07, 1.0)
+theme_override_colors/font_focus_color = Color(0.13, 0.1, 0.07, 1.0)
+theme_override_colors/font_pressed_color = Color(0.13, 0.1, 0.07, 1.0)
+theme_override_colors/font_disabled_color = Color(0.7, 0.68, 0.76, 1.0)
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("pbtn_normal")
+theme_override_styles/hover = SubResource("pbtn_hover")
+theme_override_styles/pressed = SubResource("pbtn_pressed")
+theme_override_styles/disabled = SubResource("pbtn_disabled")
+theme_override_styles/focus = SubResource("btn_focus")
+
+[node name="UIButton" type="Node" parent="Frame/Box/Buttons/Again"]
+script = ExtResource("8_r")
+
+[node name="UIAnchor" type="Node" parent="Frame/Box/Buttons/Again"]
+script = ExtResource("9_r")
+anchor_name = "result_again"
+
+[node name="Lobby" type="Button" parent="Frame/Box/Buttons"]
+custom_minimum_size = Vector2(390.0, 104.0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_colors/font_hover_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_colors/font_focus_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_colors/font_pressed_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_colors/font_disabled_color = Color(0.7, 0.68, 0.76, 1.0)
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("btn_normal")
+theme_override_styles/hover = SubResource("btn_hover")
+theme_override_styles/pressed = SubResource("btn_pressed")
+theme_override_styles/disabled = SubResource("btn_disabled")
+theme_override_styles/focus = SubResource("btn_focus")
+
+[node name="UIButton" type="Node" parent="Frame/Box/Buttons/Lobby"]
+script = ExtResource("8_r")
+
+[node name="UIAnchor" type="Node" parent="Frame/Box/Buttons/Lobby"]
+script = ExtResource("9_r")
+anchor_name = "result_lobby"

@@ -1,0 +1,30 @@
+,,,,
+All,Client,Client,Client,Client
+id(key),enum<InputPromptFamily>,string,reskey?,tstring<id>
+id,family,input,icon,name
+[prompt_key_w],KeyboardMouse,W,null,W
+[prompt_key_a],KeyboardMouse,A,null,A
+[prompt_key_s],KeyboardMouse,S,null,S
+[prompt_key_d],KeyboardMouse,D,null,D
+[prompt_key_1],KeyboardMouse,1,null,1
+[prompt_key_2],KeyboardMouse,2,null,2
+[prompt_key_3],KeyboardMouse,3,null,3
+[prompt_key_p],KeyboardMouse,P,null,P
+[prompt_key_escape],KeyboardMouse,Escape,null,Esc
+[prompt_pad_dpad_up],Generic,dpad_up,null,십자키 위
+[prompt_pad_dpad_down],Generic,dpad_down,null,십자키 아래
+[prompt_pad_dpad_left],Generic,dpad_left,null,십자키 왼쪽
+[prompt_pad_dpad_right],Generic,dpad_right,null,십자키 오른쪽
+[prompt_pad_x],Generic,x,null,X
+[prompt_pad_y],Generic,y,null,Y
+[prompt_pad_rb],Generic,right_shoulder,null,RB
+[prompt_pad_start],Generic,start,null,Start
+[prompt_pad_b],Generic,b,null,B
+[prompt_touch_move_up],Touch,move_up,null,W
+[prompt_touch_move_left],Touch,move_left,null,A
+[prompt_touch_move_down],Touch,move_down,null,S
+[prompt_touch_move_right],Touch,move_right,null,D
+[prompt_touch_menu_pick_1],Touch,menu_pick_1,null,1
+[prompt_touch_menu_pick_2],Touch,menu_pick_2,null,2
+[prompt_touch_menu_pick_3],Touch,menu_pick_3,null,3
+[prompt_touch_pause],Touch,pause,null,P

@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"name": "nothing survived", "input": {"survived_ms": 0, "kills": 0, "dawn": false, "greed_permille": 0, "interval_ms": 10000, "per_interval": 1, "per_kill_permille": 250, "dawn_bonus": 200}, "expected": 0},
+    {"name": "three minutes and 207 kills", "input": {"survived_ms": 180000, "kills": 207, "dawn": false, "greed_permille": 0, "interval_ms": 10000, "per_interval": 1, "per_kill_permille": 250, "dawn_bonus": 200}, "expected": 69},
+    {"name": "a partial interval and kills below one gold", "input": {"survived_ms": 19999, "kills": 3, "dawn": false, "greed_permille": 0, "interval_ms": 10000, "per_interval": 1, "per_kill_permille": 250, "dawn_bonus": 200}, "expected": 1},
+    {"name": "dawn with greed", "input": {"survived_ms": 900000, "kills": 4000, "dawn": true, "greed_permille": 300, "interval_ms": 10000, "per_interval": 1, "per_kill_permille": 250, "dawn_bonus": 200}, "expected": 1677},
+    {"name": "greed rounds down", "input": {"survived_ms": 25000, "kills": 10, "dawn": false, "greed_permille": 100, "interval_ms": 10000, "per_interval": 1, "per_kill_permille": 250, "dawn_bonus": 200}, "expected": 4},
+    {"name": "two gold per interval", "input": {"survived_ms": 60000, "kills": 0, "dawn": false, "greed_permille": 0, "interval_ms": 10000, "per_interval": 2, "per_kill_permille": 250, "dawn_bonus": 200}, "expected": 12}
+  ]
+}

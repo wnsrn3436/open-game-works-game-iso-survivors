@@ -1,0 +1,11 @@
+,,,,
+All,Client,All,All,All
+id(key),tstring<id>,enum<ItemType>,long,enum<ItemOverflow>
+id,name,type,max_amount,overflow
+[item_gold],금화,Currency,9999999,Discard
+[upgrade_might],힘,Goods,5,Reject
+[upgrade_vitality],생명력,Goods,5,Reject
+[upgrade_haste],서두름,Goods,3,Reject
+[upgrade_magnet],자력,Goods,3,Reject
+[upgrade_swiftness],신속,Goods,3,Reject
+[upgrade_greed],탐욕,Goods,3,Reject

@@ -1,0 +1,4 @@
+[gd_scene format=3]
+
+[node name="lightning_impact" type="GPUParticles3D"]
+emitting = false

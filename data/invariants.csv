@@ -1,0 +1,9 @@
+kind,table,column,group,min,max,child_table,child_column
+order_column,language,order,,,,,
+child_exists,upgrade,id,,,,item,id
+child_exists,upgrade_step,id,,,,shop_product,id
+child_exists,weapon,id,,,,weapon_level,id
+order_column,weapon,order,,,,,
+order_column,passive,order,,,,,
+order_column,upgrade,order,,,,,
+order_column,wave,order,,,,,

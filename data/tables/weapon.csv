@@ -1,0 +1,9 @@
+Weapon of a run,Shown name,What the weapon does,Card icon,Projectile or effect model,,Order in lists,Highest level,Sound when it fires
+All,Client,Client,Client,Client,Client,Client,Client,Client
+id(key),tstring<id>,tstring<id>,reskey,reskey,enum<WeaponKind>,int,int,reskey
+id,name,desc,icon,model,kind,order,max_level,sound
+[weapon_lantern_bolt],등불 탄환,가장 가까운 적에게 빛 탄환을 쏩니다,icon/weapon_lantern_bolt,model/weapon_lantern_bolt,Bolt,1,5,sfx/bolt_fire
+[weapon_spinning_blade],회전 낫,낫이 몸 주위를 돌며 닿는 적을 벱니다,icon/weapon_spinning_blade,model/weapon_spinning_blade,Orbit,2,5,sfx/blade_hit
+[weapon_holy_aura],성화 오라,몸 주위의 불꽃이 가까운 적을 계속 태웁니다,icon/weapon_holy_aura,model/weapon_holy_aura,Aura,3,5,sfx/aura_pulse
+[weapon_throwing_axe],투척 도끼,움직이는 방향으로 도끼를 던져 여러 적을 꿰뚫습니다,icon/weapon_throwing_axe,model/weapon_throwing_axe,Axe,4,5,sfx/axe_throw
+[weapon_lightning],낙뢰,주변의 적에게 번개를 떨어뜨립니다,icon/weapon_lightning,model/weapon_lightning,Lightning,5,5,sfx/lightning

@@ -1,0 +1,434 @@
+{
+  "app_icon/main": {
+    "path": "res://resource/app_icon/main.png",
+    "variants": 1
+  },
+  "splash/main": {
+    "path": "res://resource/splash/main.png",
+    "variants": 1
+  },
+  "font/main": {
+    "path": "res://resource/font/main.ttf",
+    "variants": 1
+  },
+  "background/title": {
+    "path": "res://resource/background/title.png",
+    "variants": 1
+  },
+  "background/lobby": {
+    "path": "res://resource/background/lobby.png",
+    "variants": 1
+  },
+  "texture/ground": {
+    "path": "res://resource/texture/ground.png",
+    "variants": 1
+  },
+  "model/hero": {
+    "path": "res://resource/model/hero.glb",
+    "variants": 1
+  },
+  "model/enemy_bat": {
+    "path": "res://resource/model/enemy_bat.glb",
+    "variants": 1
+  },
+  "model/enemy_ghoul": {
+    "path": "res://resource/model/enemy_ghoul.glb",
+    "variants": 1
+  },
+  "model/enemy_skeleton": {
+    "path": "res://resource/model/enemy_skeleton.glb",
+    "variants": 1
+  },
+  "model/enemy_wraith": {
+    "path": "res://resource/model/enemy_wraith.glb",
+    "variants": 1
+  },
+  "model/enemy_brute": {
+    "path": "res://resource/model/enemy_brute.glb",
+    "variants": 1
+  },
+  "model/enemy_bone_knight": {
+    "path": "res://resource/model/enemy_bone_knight.glb",
+    "variants": 1
+  },
+  "model/weapon_lantern_bolt": {
+    "path": "res://resource/model/weapon_lantern_bolt.glb",
+    "variants": 1
+  },
+  "model/weapon_spinning_blade": {
+    "path": "res://resource/model/weapon_spinning_blade.glb",
+    "variants": 1
+  },
+  "model/weapon_holy_aura": {
+    "path": "res://resource/model/weapon_holy_aura.glb",
+    "variants": 1
+  },
+  "model/weapon_throwing_axe": {
+    "path": "res://resource/model/weapon_throwing_axe.glb",
+    "variants": 1
+  },
+  "model/weapon_lightning": {
+    "path": "res://resource/model/weapon_lightning.glb",
+    "variants": 1
+  },
+  "model/xp_gem": {
+    "path": "res://resource/model/xp_gem.glb",
+    "variants": 1
+  },
+  "model/chest": {
+    "path": "res://resource/model/chest.glb",
+    "variants": 1
+  },
+  "model/heal_soup": {
+    "path": "res://resource/model/heal_soup.glb",
+    "variants": 1
+  },
+  "model/prop_gravestone": {
+    "path": "res://resource/model/prop_gravestone.glb",
+    "variants": 1
+  },
+  "model/prop_rock": {
+    "path": "res://resource/model/prop_rock.glb",
+    "variants": 1
+  },
+  "model/prop_lantern_post": {
+    "path": "res://resource/model/prop_lantern_post.glb",
+    "variants": 1
+  },
+  "particle/run/hit_spark": {
+    "path": "res://resource/particle/run/hit_spark.tscn",
+    "variants": 1
+  },
+  "particle/run/enemy_death": {
+    "path": "res://resource/particle/run/enemy_death.tscn",
+    "variants": 1
+  },
+  "particle/run/level_up": {
+    "path": "res://resource/particle/run/level_up.tscn",
+    "variants": 1
+  },
+  "particle/run/lightning_impact": {
+    "path": "res://resource/particle/run/lightning_impact.tscn",
+    "variants": 1
+  },
+  "particle/run/pickup": {
+    "path": "res://resource/particle/run/pickup.tscn",
+    "variants": 1
+  },
+  "nine_slice/ui/panel_frame": {
+    "path": "res://resource/nine_slice/ui/panel_frame.png",
+    "variants": 1
+  },
+  "nine_slice/ui/button": {
+    "path": "res://resource/nine_slice/ui/button.png",
+    "variants": 1
+  },
+  "nine_slice/ui/button_primary": {
+    "path": "res://resource/nine_slice/ui/button_primary.png",
+    "variants": 1
+  },
+  "nine_slice/ui/focus_ring": {
+    "path": "res://resource/nine_slice/ui/focus_ring.png",
+    "variants": 1
+  },
+  "nine_slice/ui/card": {
+    "path": "res://resource/nine_slice/ui/card.png",
+    "variants": 1
+  },
+  "nine_slice/ui/bar_frame": {
+    "path": "res://resource/nine_slice/ui/bar_frame.png",
+    "variants": 1
+  },
+  "nine_slice/ui/bar_fill": {
+    "path": "res://resource/nine_slice/ui/bar_fill.png",
+    "variants": 1
+  },
+  "nine_slice/ui/plate": {
+    "path": "res://resource/nine_slice/ui/plate.png",
+    "variants": 1
+  },
+  "icon/gold": {
+    "path": "res://resource/icon/gold.png",
+    "variants": 1
+  },
+  "icon/kills": {
+    "path": "res://resource/icon/kills.png",
+    "variants": 1
+  },
+  "icon/timer": {
+    "path": "res://resource/icon/timer.png",
+    "variants": 1
+  },
+  "icon/heal_soup": {
+    "path": "res://resource/icon/heal_soup.png",
+    "variants": 1
+  },
+  "icon/weapon_lantern_bolt": {
+    "path": "res://resource/icon/weapon_lantern_bolt.png",
+    "variants": 1
+  },
+  "icon/weapon_spinning_blade": {
+    "path": "res://resource/icon/weapon_spinning_blade.png",
+    "variants": 1
+  },
+  "icon/weapon_holy_aura": {
+    "path": "res://resource/icon/weapon_holy_aura.png",
+    "variants": 1
+  },
+  "icon/weapon_throwing_axe": {
+    "path": "res://resource/icon/weapon_throwing_axe.png",
+    "variants": 1
+  },
+  "icon/weapon_lightning": {
+    "path": "res://resource/icon/weapon_lightning.png",
+    "variants": 1
+  },
+  "icon/passive_might": {
+    "path": "res://resource/icon/passive_might.png",
+    "variants": 1
+  },
+  "icon/passive_haste": {
+    "path": "res://resource/icon/passive_haste.png",
+    "variants": 1
+  },
+  "icon/passive_vitality": {
+    "path": "res://resource/icon/passive_vitality.png",
+    "variants": 1
+  },
+  "icon/passive_magnet": {
+    "path": "res://resource/icon/passive_magnet.png",
+    "variants": 1
+  },
+  "icon/passive_swiftness": {
+    "path": "res://resource/icon/passive_swiftness.png",
+    "variants": 1
+  },
+  "icon/upgrade_might": {
+    "path": "res://resource/icon/upgrade_might.png",
+    "variants": 1
+  },
+  "icon/upgrade_vitality": {
+    "path": "res://resource/icon/upgrade_vitality.png",
+    "variants": 1
+  },
+  "icon/upgrade_haste": {
+    "path": "res://resource/icon/upgrade_haste.png",
+    "variants": 1
+  },
+  "icon/upgrade_magnet": {
+    "path": "res://resource/icon/upgrade_magnet.png",
+    "variants": 1
+  },
+  "icon/upgrade_swiftness": {
+    "path": "res://resource/icon/upgrade_swiftness.png",
+    "variants": 1
+  },
+  "icon/upgrade_greed": {
+    "path": "res://resource/icon/upgrade_greed.png",
+    "variants": 1
+  },
+  "bgm/lobby": {
+    "path": "res://resource/bgm/lobby.ogg",
+    "variants": 1
+  },
+  "bgm/run": {
+    "path": "res://resource/bgm/run.ogg",
+    "variants": 1
+  },
+  "sfx/ui_click": {
+    "path": "res://resource/sfx/ui_click.wav",
+    "variants": 2
+  },
+  "sfx/enemy_hit": {
+    "path": "res://resource/sfx/enemy_hit.wav",
+    "variants": 3
+  },
+  "sfx/enemy_die": {
+    "path": "res://resource/sfx/enemy_die.wav",
+    "variants": 3
+  },
+  "sfx/gem_pickup": {
+    "path": "res://resource/sfx/gem_pickup.wav",
+    "variants": 3
+  },
+  "sfx/level_up": {
+    "path": "res://resource/sfx/level_up.wav",
+    "variants": 1
+  },
+  "sfx/upgrade_pick": {
+    "path": "res://resource/sfx/upgrade_pick.wav",
+    "variants": 1
+  },
+  "sfx/player_hurt": {
+    "path": "res://resource/sfx/player_hurt.wav",
+    "variants": 2
+  },
+  "sfx/chest_open": {
+    "path": "res://resource/sfx/chest_open.wav",
+    "variants": 1
+  },
+  "sfx/elite_roar": {
+    "path": "res://resource/sfx/elite_roar.wav",
+    "variants": 1
+  },
+  "sfx/heal": {
+    "path": "res://resource/sfx/heal.wav",
+    "variants": 1
+  },
+  "sfx/dawn": {
+    "path": "res://resource/sfx/dawn.wav",
+    "variants": 1
+  },
+  "sfx/player_death": {
+    "path": "res://resource/sfx/player_death.wav",
+    "variants": 1
+  },
+  "sfx/upgrade_buy": {
+    "path": "res://resource/sfx/upgrade_buy.wav",
+    "variants": 1
+  },
+  "sfx/refuse": {
+    "path": "res://resource/sfx/refuse.wav",
+    "variants": 1
+  },
+  "sfx/bolt_fire": {
+    "path": "res://resource/sfx/bolt_fire.wav",
+    "variants": 2
+  },
+  "sfx/blade_hit": {
+    "path": "res://resource/sfx/blade_hit.wav",
+    "variants": 2
+  },
+  "sfx/aura_pulse": {
+    "path": "res://resource/sfx/aura_pulse.wav",
+    "variants": 1
+  },
+  "sfx/axe_throw": {
+    "path": "res://resource/sfx/axe_throw.wav",
+    "variants": 2
+  },
+  "sfx/lightning": {
+    "path": "res://resource/sfx/lightning.wav",
+    "variants": 2
+  },
+  "scene/title/title": {
+    "path": "res://resource/scene/title/title.tscn",
+    "variants": 1
+  },
+  "scene/lobby/lobby": {
+    "path": "res://resource/scene/lobby/lobby.tscn",
+    "variants": 1
+  },
+  "scene/run/run": {
+    "path": "res://resource/scene/run/run.tscn",
+    "variants": 1
+  },
+  "prefab/common/loading_screen": {
+    "path": "res://resource/prefab/common/loading_screen.tscn",
+    "variants": 1
+  },
+  "prefab/common/terms_popup": {
+    "path": "res://resource/prefab/common/terms_popup.tscn",
+    "variants": 1
+  },
+  "prefab/lobby/lobby_panel": {
+    "path": "res://resource/prefab/lobby/lobby_panel.tscn",
+    "variants": 1
+  },
+  "prefab/lobby/upgrade_panel": {
+    "path": "res://resource/prefab/lobby/upgrade_panel.tscn",
+    "variants": 1
+  },
+  "prefab/lobby/option_panel": {
+    "path": "res://resource/prefab/lobby/option_panel.tscn",
+    "variants": 1
+  },
+  "prefab/run/hud_panel": {
+    "path": "res://resource/prefab/run/hud_panel.tscn",
+    "variants": 1
+  },
+  "prefab/run/levelup_popup": {
+    "path": "res://resource/prefab/run/levelup_popup.tscn",
+    "variants": 1
+  },
+  "prefab/run/pause_popup": {
+    "path": "res://resource/prefab/run/pause_popup.tscn",
+    "variants": 1
+  },
+  "prefab/run/result_panel": {
+    "path": "res://resource/prefab/run/result_panel.tscn",
+    "variants": 1
+  },
+  "prefab/run/damage_number": {
+    "path": "res://resource/prefab/run/damage_number.tscn",
+    "variants": 1
+  },
+  "prefab/run/hit_effect": {
+    "path": "res://resource/prefab/run/hit_effect.tscn",
+    "variants": 1
+  },
+  "prefab/run/death_effect": {
+    "path": "res://resource/prefab/run/death_effect.tscn",
+    "variants": 1
+  },
+  "prefab/run/strike_effect": {
+    "path": "res://resource/prefab/run/strike_effect.tscn",
+    "variants": 1
+  },
+  "prefab/run/level_effect": {
+    "path": "res://resource/prefab/run/level_effect.tscn",
+    "variants": 1
+  },
+  "prefab/run/pickup_effect": {
+    "path": "res://resource/prefab/run/pickup_effect.tscn",
+    "variants": 1
+  },
+  "tween/run/damage_number": {
+    "path": "res://resource/tween/run/damage_number.tres",
+    "variants": 1
+  },
+  "tween/run/hud_pop": {
+    "path": "res://resource/tween/run/hud_pop.tres",
+    "variants": 1
+  },
+  "tween/run/card_in": {
+    "path": "res://resource/tween/run/card_in.tres",
+    "variants": 1
+  },
+  "tween/run/hurt_flash": {
+    "path": "res://resource/tween/run/hurt_flash.tres",
+    "variants": 1
+  },
+  "tween/run/level_flash": {
+    "path": "res://resource/tween/run/level_flash.tres",
+    "variants": 1
+  },
+  "tween/run/dawn_flash": {
+    "path": "res://resource/tween/run/dawn_flash.tres",
+    "variants": 1
+  },
+  "tween/run/banner": {
+    "path": "res://resource/tween/run/banner.tres",
+    "variants": 1
+  },
+  "tween/run/result_in": {
+    "path": "res://resource/tween/run/result_in.tres",
+    "variants": 1
+  },
+  "tween/run/effect_life": {
+    "path": "res://resource/tween/run/effect_life.tres",
+    "variants": 1
+  },
+  "tween/run/strike": {
+    "path": "res://resource/tween/run/strike.tres",
+    "variants": 1
+  },
+  "tween/lobby/upgrade_bought": {
+    "path": "res://resource/tween/lobby/upgrade_bought.tres",
+    "variants": 1
+  },
+  "tween/lobby/play_pulse": {
+    "path": "res://resource/tween/lobby/play_pulse.tres",
+    "variants": 1
+  }
+}

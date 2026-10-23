@@ -1,0 +1,5 @@
+,,
+All,Client,Client
+id(key),tstring<id>,tstring<id>
+id,title,body
+[mail_shop_grant],구매 보상,보관함이 가득 차서 구매한 보상을 우편으로 보냈어요
