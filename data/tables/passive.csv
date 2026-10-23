@@ -1,0 +1,9 @@
+Passive power of a run,Shown name,Effect text; {value} is per_level as percent or flat,Card icon,,"Effect per level: permille for percent stats, flat for health",Order in lists,Highest level
+All,Client,Client,Client,Client,Client,Client,Client
+id(key),tstring<id>,tstring<id>,reskey,enum<RunStat>,int,int,int
+id,name,desc,icon,stat,per_level,order,max_level
+[passive_might],분노의 불씨,레벨마다 모든 피해 +{value}%,icon/passive_might,Might,100,1,5
+[passive_haste],바람의 깃털,레벨마다 무기 재사용 시간 −{value}%,icon/passive_haste,Haste,80,2,5
+[passive_vitality],거인의 심장,레벨마다 최대 체력 +{value},icon/passive_vitality,Vitality,20,3,5
+[passive_magnet],자석 부적,레벨마다 줍는 범위 +{value}%,icon/passive_magnet,Magnet,250,4,5
+[passive_swiftness],질풍 장화,레벨마다 이동 속도 +{value}%,icon/passive_swiftness,Swiftness,80,5,5

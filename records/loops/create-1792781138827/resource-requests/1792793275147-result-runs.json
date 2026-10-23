@@ -1,0 +1,1212 @@
+{
+  "runs": [
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors particle/run/impact_flash",
+      "startedAt": 1792794299902,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors particle/run/muzzle_flash",
+      "startedAt": 1792794300525,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw generation methods open-game-works-game-iso-survivors particle/run/step_dust",
+      "startedAt": 1792794301151,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/impact_flash --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvljfj1r83b65b/ba66006b-c17f-4c49-a179-7ef35001fce5/scratchpad/particles/impact_flash.tscn",
+      "startedAt": 1792794412568,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/muzzle_flash --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvljfj1r83b65b/ba66006b-c17f-4c49-a179-7ef35001fce5/scratchpad/particles/muzzle_flash.tscn",
+      "startedAt": 1792794413409,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource finalize open-game-works-game-iso-survivors particle/run/step_dust --method procedural --file /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvljfj1r83b65b/ba66006b-c17f-4c49-a179-7ef35001fce5/scratchpad/particles/step_dust.tscn",
+      "startedAt": 1792794414251,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792794417822,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --commit 6489f96",
+      "startedAt": 1792794434769,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvljin5g6d8e18"
+    },
+    {
+      "command": "ogw job wait mvljin5g6d8e18",
+      "startedAt": 1792794436776,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvljinzic83102 run.open_run",
+      "startedAt": 1792794447738,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792794448853,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvljinzic83102 run.state",
+      "startedAt": 1792794456210,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvljinzic83102 --script /private/tmp/claude-501/-Users-jungu-projects-coggs-worktrees-open-game-works-game-iso-survivors-agent-mvljfj1r83b65b/ba66006b-c17f-4c49-a179-7ef35001fce5/scratchpad/walk.json --video",
+      "startedAt": 1792794456802,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvljinzic83102 run.state",
+      "startedAt": 1792794492533,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvljinzic83102 key 1 0",
+      "startedAt": 1792794493130,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvljinzic83102 on",
+      "startedAt": 1792794493853,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794494571,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvljinzic83102 key_down D",
+      "startedAt": 1792794499794,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794500352,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794501167,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794502163,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794503082,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794504051,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794504969,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794505990,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794506780,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794507798,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794508749,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794509697,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794510590,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794511516,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794512288,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794513347,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794514199,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794515180,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794516022,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794516944,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794517783,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794518900,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794519849,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794520825,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794521742,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794522766,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794523692,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794524682,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794525350,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794526395,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794527320,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794528358,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794529129,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794530123,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794530990,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794531987,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794532763,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794533718,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794534549,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794535573,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794536284,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794537347,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794538145,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794539113,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794539986,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794540939,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794541633,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794542674,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794543462,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvljinzic83102 key_up D",
+      "startedAt": 1792794544426,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794545081,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794545877,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794546844,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794547600,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794548593,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794549311,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794550383,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794551252,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794552321,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794553007,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794554067,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794554744,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794555805,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794556761,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794557764,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794558749,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794559787,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794560754,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794561731,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794562673,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794563653,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794564488,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljinzic83102 33",
+      "startedAt": 1792794565473,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljinzic83102",
+      "startedAt": 1792794566200,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvljinzic83102",
+      "startedAt": 1792794615459,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource sync open-game-works-game-iso-survivors",
+      "startedAt": 1792794616172,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792794617007,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --commit c70be2c",
+      "startedAt": 1792794627548,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvljmrwg216f22"
+    },
+    {
+      "command": "ogw job wait mvljmrwg216f22",
+      "startedAt": 1792794628097,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvljmsr14c9bd5 list_commands",
+      "startedAt": 1792794643768,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvljmsr14c9bd5 run.open_run",
+      "startedAt": 1792794649678,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvljmsr14c9bd5 run.fast_forward 10000",
+      "startedAt": 1792794650765,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvljmsr14c9bd5 run.state",
+      "startedAt": 1792794651384,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvljmsr14c9bd5 on",
+      "startedAt": 1792794651989,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvljmsr14c9bd5 key_down D",
+      "startedAt": 1792794652564,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794653140,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794653777,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794654815,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794655442,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794656467,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794657103,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794658130,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794658775,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794659792,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794660431,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794661452,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794662090,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794663112,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794663748,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794664767,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794665416,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794666432,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794667054,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794668081,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794668882,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794669874,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794670584,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794671616,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794672318,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794673340,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794674045,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794674990,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794675675,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794676695,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794677367,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794678362,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794679029,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794680025,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794680823,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794681817,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794682565,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794683551,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794684326,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794685341,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794686273,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794687189,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794687987,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794688922,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794689708,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794690768,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794691545,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794692572,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794693459,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794694423,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794695151,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794696067,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794697066,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794698032,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794698895,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794699842,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794700681,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794701609,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794702545,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794703623,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794704487,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvljmsr14c9bd5 key_up D",
+      "startedAt": 1792794705475,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794706105,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794707031,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794708012,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794708913,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794709904,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794710748,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794711721,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794712781,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794713748,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794714750,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794715729,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794716432,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794717416,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794718377,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794719428,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794720313,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794721349,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794722118,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794723165,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794724093,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794725015,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794725956,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794726899,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794727765,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794728768,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794729476,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794730525,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794731483,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794732474,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794733246,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794734162,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794734952,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794735941,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794736874,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvljmsr14c9bd5 16",
+      "startedAt": 1792794737792,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvljmsr14c9bd5",
+      "startedAt": 1792794738650,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvljmsr14c9bd5",
+      "startedAt": 1792794773998,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792794787940,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

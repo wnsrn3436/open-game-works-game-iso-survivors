@@ -1,0 +1,1540 @@
+{
+  "runs": [
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792790899867,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792790902497,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvlhegsqd9f446",
+      "startedAt": 1792790903495,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor terms_agree_all",
+      "startedAt": 1792790908169,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor terms_confirm",
+      "startedAt": 1792790910346,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792790914408,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor lobby_play",
+      "startedAt": 1792790919544,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlhegsqd9f446 on",
+      "startedAt": 1792790923483,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key_down D",
+      "startedAt": 1792790924491,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790925822,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790927471,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790928825,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790930236,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790931524,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792790933115,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvlhegsqd9f446",
+      "startedAt": 1792790934296,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790942702,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790944141,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790945324,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790946362,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790947703,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790948970,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790950140,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790951472,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790952722,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790953947,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790955299,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790956565,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790957887,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790959118,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790960497,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790961866,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790963165,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790964438,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790965709,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790966911,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790968126,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790969228,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790970373,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790971601,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790972888,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790974054,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790975326,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790976716,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790978022,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790979355,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790980698,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790981899,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790983074,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790984320,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790985627,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790986853,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790988195,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790989378,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790990669,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790991912,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792790993249,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790997900,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792790999183,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791030321,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791031293,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791032314,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791033392,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791034339,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791035302,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791036277,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791037239,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791038079,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791038948,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791040003,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791040940,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791041971,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791042943,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791043933,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791044738,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791045713,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791046536,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791047478,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791048329,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791049271,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791050228,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791051292,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791052307,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791053408,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791054427,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791055441,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791056326,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791057286,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791058281,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791059303,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791060344,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791061162,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791062167,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791063123,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791064048,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791064956,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791065924,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791066949,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791067824,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791068797,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791069748,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791070867,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791071976,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791073015,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791074011,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791075051,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791076085,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791077143,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791078098,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791079190,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791080335,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791081340,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791082367,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791083271,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791084258,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791085198,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791086180,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791087148,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791088141,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791089068,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791090474,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791091538,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791092945,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791093952,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791094891,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791095937,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791096922,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791097892,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791098905,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791099888,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791100850,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791101887,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791102911,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791103839,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791104872,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791105966,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791106931,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791107899,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791108847,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791109820,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791110887,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791111794,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791112646,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791113669,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791114616,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791115559,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791116443,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791117395,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791118310,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791119361,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791120332,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791121343,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791122230,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791123167,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791124150,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791125040,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791126031,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791126946,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 2 0",
+      "startedAt": 1792791134577,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 200",
+      "startedAt": 1792791135502,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791136660,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key_up D",
+      "startedAt": 1792791137543,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 2000",
+      "startedAt": 1792791138259,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 15000",
+      "startedAt": 1792791144554,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 15000",
+      "startedAt": 1792791190620,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 15000",
+      "startedAt": 1792791191541,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 15000",
+      "startedAt": 1792791192502,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 15000",
+      "startedAt": 1792791193476,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791194462,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791200482,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791201441,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791212449,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791213250,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791224299,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791225224,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791236131,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791237049,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791248103,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791248889,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791259843,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791260668,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791271743,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791272710,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791313693,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791314541,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791325610,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791326444,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791337485,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791338304,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791349269,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791350076,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791361059,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 10000",
+      "startedAt": 1792791361955,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791372856,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvlhegsqd9f446",
+      "startedAt": 1792791373835,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791378685,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 5000",
+      "startedAt": 1792791379581,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791415503,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 5000",
+      "startedAt": 1792791416518,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791422542,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 5000",
+      "startedAt": 1792791423318,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791429223,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 5000",
+      "startedAt": 1792791429996,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791435900,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 5000",
+      "startedAt": 1792791436891,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 1 0",
+      "startedAt": 1792791442836,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 5000",
+      "startedAt": 1792791443649,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791449603,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 6000",
+      "startedAt": 1792791454531,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 2500",
+      "startedAt": 1792791491336,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791492204,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 2 0",
+      "startedAt": 1792791498230,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 4000",
+      "startedAt": 1792791499125,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 2 0",
+      "startedAt": 1792791504046,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 4000",
+      "startedAt": 1792791505026,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 2 0",
+      "startedAt": 1792791510010,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 4000",
+      "startedAt": 1792791510895,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 2 0",
+      "startedAt": 1792791515923,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 4000",
+      "startedAt": 1792791516834,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 2 0",
+      "startedAt": 1792791521792,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 4000",
+      "startedAt": 1792791522759,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 2 0",
+      "startedAt": 1792791527594,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 4000",
+      "startedAt": 1792791528562,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 2 0",
+      "startedAt": 1792791533609,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 4000",
+      "startedAt": 1792791534567,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key 2 0",
+      "startedAt": 1792791539519,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlhegsqd9f446 4000",
+      "startedAt": 1792791540406,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791545370,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlhegsqd9f446 off",
+      "startedAt": 1792791550911,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor result_lobby",
+      "startedAt": 1792791551630,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor lobby_upgrades",
+      "startedAt": 1792791555505,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791557430,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor upgrade_buy upgrade_vitality",
+      "startedAt": 1792791562683,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor upgrade_buy upgrade_might",
+      "startedAt": 1792791564522,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor upgrade_buy upgrade_haste",
+      "startedAt": 1792791566265,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791567982,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor upgrade_close",
+      "startedAt": 1792791568678,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor lobby_play",
+      "startedAt": 1792791570503,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791574313,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key P 0",
+      "startedAt": 1792791581155,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791582995,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor pause_resume",
+      "startedAt": 1792791583879,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 key Escape 0",
+      "startedAt": 1792791585821,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor pause_give_up",
+      "startedAt": 1792791587760,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791591802,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor result_lobby",
+      "startedAt": 1792791595940,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor lobby_upgrades",
+      "startedAt": 1792791599934,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor upgrade_buy [upgrade_vitality]",
+      "startedAt": 1792791601892,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor upgrade_buy upgrade_vitality",
+      "startedAt": 1792791603861,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791604662,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor upgrade_buy [upgrade_might]",
+      "startedAt": 1792791608244,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor upgrade_buy [upgrade_haste]",
+      "startedAt": 1792791610056,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791611874,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor upgrade_close",
+      "startedAt": 1792791612732,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlhegsqd9f446 tap_anchor lobby_play",
+      "startedAt": 1792791614646,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlhegsqd9f446",
+      "startedAt": 1792791618596,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

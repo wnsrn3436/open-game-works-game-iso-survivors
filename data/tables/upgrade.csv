@@ -1,0 +1,10 @@
+Permanent upgrade bought with gold; extension of item,Stat it raises,"Effect per level: permille for percent stats, flat for health",Shrine icon,Display order in the lantern shrine,Effect text; {value} is per_level shown as percent or flat,"Effect text of the levels a run starts with; {value} is per_level times the level, shown as percent or flat"
+All,All,All,Client,Client,Client,Client
+id(key),enum<RunStat>,int,reskey,int,tstring<id>,tstring<id>
+id,stat,per_level,icon,order,desc,bonus
+[upgrade_might],Might,50,icon/upgrade_might,1,레벨마다 모든 피해 +{value}%,피해 +{value}%
+[upgrade_vitality],Vitality,15,icon/upgrade_vitality,2,레벨마다 최대 체력 +{value},최대 체력 +{value}
+[upgrade_haste],Haste,40,icon/upgrade_haste,3,레벨마다 무기 재사용 시간 −{value}%,재사용 시간 −{value}%
+[upgrade_magnet],Magnet,200,icon/upgrade_magnet,4,레벨마다 줍는 범위 +{value}%,줍는 범위 +{value}%
+[upgrade_swiftness],Swiftness,50,icon/upgrade_swiftness,5,레벨마다 이동 속도 +{value}%,이동 속도 +{value}%
+[upgrade_greed],Greed,100,icon/upgrade_greed,6,레벨마다 원정 금화 +{value}%,원정 금화 +{value}%

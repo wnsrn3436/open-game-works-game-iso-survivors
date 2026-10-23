@@ -1,0 +1,3383 @@
+{
+  "commit": "ba948bce7498a0cafc6bb61c262bed7329b18f23",
+  "checks": [
+    {
+      "name": "regression test",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "static check",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": [
+        {
+          "where": "data/glossary.csv:5:5",
+          "message": "data check translation_missing glossary \"등불 제단\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:6:5",
+          "message": "data check translation_missing glossary \"원정\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:7:5",
+          "message": "data check translation_missing glossary \"야영지\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:8:5",
+          "message": "data check translation_missing glossary \"새벽\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:9:5",
+          "message": "data check translation_missing glossary \"금화\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:10:5",
+          "message": "data check translation_missing glossary \"힘\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:11:5",
+          "message": "data check translation_missing glossary \"생명력\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:12:5",
+          "message": "data check translation_missing glossary \"서두름\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:13:5",
+          "message": "data check translation_missing glossary \"자력\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:14:5",
+          "message": "data check translation_missing glossary \"신속\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:15:5",
+          "message": "data check translation_missing glossary \"탐욕\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:16:5",
+          "message": "data check translation_missing glossary \"등불 탄환\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:17:5",
+          "message": "data check translation_missing glossary \"회전 낫\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:18:5",
+          "message": "data check translation_missing glossary \"성화 오라\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:19:5",
+          "message": "data check translation_missing glossary \"투척 도끼\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:20:5",
+          "message": "data check translation_missing glossary \"낙뢰\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:21:5",
+          "message": "data check translation_missing glossary \"분노의 불씨\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:22:5",
+          "message": "data check translation_missing glossary \"바람의 깃털\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:23:5",
+          "message": "data check translation_missing glossary \"거인의 심장\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:24:5",
+          "message": "data check translation_missing glossary \"자석 부적\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:25:5",
+          "message": "data check translation_missing glossary \"질풍 장화\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:26:5",
+          "message": "data check translation_missing glossary \"W\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:27:5",
+          "message": "data check translation_missing glossary \"A\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:28:5",
+          "message": "data check translation_missing glossary \"S\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:29:5",
+          "message": "data check translation_missing glossary \"D\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:30:5",
+          "message": "data check translation_missing glossary \"1\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:31:5",
+          "message": "data check translation_missing glossary \"2\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:32:5",
+          "message": "data check translation_missing glossary \"3\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:33:5",
+          "message": "data check translation_missing glossary \"P\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:34:5",
+          "message": "data check translation_missing glossary \"Esc\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:35:5",
+          "message": "data check translation_missing glossary \"십자키 위\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:36:5",
+          "message": "data check translation_missing glossary \"십자키 아래\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:37:5",
+          "message": "data check translation_missing glossary \"십자키 왼쪽\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:38:5",
+          "message": "data check translation_missing glossary \"십자키 오른쪽\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:39:5",
+          "message": "data check translation_missing glossary \"X\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:40:5",
+          "message": "data check translation_missing glossary \"Y\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:41:5",
+          "message": "data check translation_missing glossary \"RB\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:42:5",
+          "message": "data check translation_missing glossary \"Start\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:43:5",
+          "message": "data check translation_missing glossary \"B\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:44:5",
+          "message": "data check translation_missing glossary \"W\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:45:5",
+          "message": "data check translation_missing glossary \"A\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:46:5",
+          "message": "data check translation_missing glossary \"S\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:47:5",
+          "message": "data check translation_missing glossary \"D\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:48:5",
+          "message": "data check translation_missing glossary \"1\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:49:5",
+          "message": "data check translation_missing glossary \"2\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:50:5",
+          "message": "data check translation_missing glossary \"3\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:51:5",
+          "message": "data check translation_missing glossary \"P\" has no en cell",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:2:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_key_1] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:3:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_key_2] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:4:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_key_3] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:5:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_key_a] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:6:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_key_d] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:7:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_key_escape] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:8:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_key_p] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:9:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_key_s] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:10:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_key_w] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:11:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_pad_b] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:12:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_pad_dpad_down] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:13:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_pad_dpad_left] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:14:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_pad_dpad_right] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:15:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_pad_dpad_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:16:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_pad_rb] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:17:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_pad_start] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:18:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_pad_x] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:19:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_pad_y] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:20:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_touch_menu_pick_1] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:21:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_touch_menu_pick_2] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:22:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_touch_menu_pick_3] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:23:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_touch_move_down] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:24:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_touch_move_left] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:25:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_touch_move_right] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:26:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_touch_move_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:27:5",
+          "message": "data check translation_missing input_prompt.name.[prompt_touch_pause] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:28:5",
+          "message": "data check translation_missing item.name.[item_gold] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:29:5",
+          "message": "data check translation_missing item.name.[upgrade_greed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:30:5",
+          "message": "data check translation_missing item.name.[upgrade_haste] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:31:5",
+          "message": "data check translation_missing item.name.[upgrade_magnet] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:32:5",
+          "message": "data check translation_missing item.name.[upgrade_might] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:33:5",
+          "message": "data check translation_missing item.name.[upgrade_swiftness] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:34:5",
+          "message": "data check translation_missing item.name.[upgrade_vitality] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:35:5",
+          "message": "data check translation_missing language.name.[lang_en] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:36:5",
+          "message": "data check translation_missing language.name.[lang_ko] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:37:5",
+          "message": "data check translation_missing mail_template.body.[mail_shop_grant] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:38:5",
+          "message": "data check translation_missing mail_template.title.[mail_shop_grant] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:39:5",
+          "message": "data check translation_missing passive.desc.[passive_haste] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:40:5",
+          "message": "data check translation_missing passive.desc.[passive_magnet] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:41:5",
+          "message": "data check translation_missing passive.desc.[passive_might] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:42:5",
+          "message": "data check translation_missing passive.desc.[passive_swiftness] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:43:5",
+          "message": "data check translation_missing passive.desc.[passive_vitality] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:44:5",
+          "message": "data check translation_missing passive.name.[passive_haste] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:45:5",
+          "message": "data check translation_missing passive.name.[passive_magnet] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:46:5",
+          "message": "data check translation_missing passive.name.[passive_might] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:47:5",
+          "message": "data check translation_missing passive.name.[passive_swiftness] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:48:5",
+          "message": "data check translation_missing passive.name.[passive_vitality] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:49:5",
+          "message": "data check translation_missing reserved_string.text.[app_name] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:50:5",
+          "message": "data check translation_missing reserved_string.text.[auth_age_confirm] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:51:5",
+          "message": "data check translation_missing reserved_string.text.[auth_age_invalid] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:52:5",
+          "message": "data check translation_missing reserved_string.text.[auth_age_month] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:53:5",
+          "message": "data check translation_missing reserved_string.text.[auth_age_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:54:5",
+          "message": "data check translation_missing reserved_string.text.[auth_age_year] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:55:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_back] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:56:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_body] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:57:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_code] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:58:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_confirm] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:59:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_done] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:60:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_failed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:61:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_google] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:62:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_rate_limited] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:63:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_retry] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:64:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_submit] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:65:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:66:5",
+          "message": "data check translation_missing reserved_string.text.[auth_deletion_user_id] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:67:5",
+          "message": "data check translation_missing reserved_string.text.[auth_go_to_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:68:5",
+          "message": "data check translation_missing reserved_string.text.[auth_google_desktop_done] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:69:5",
+          "message": "data check translation_missing reserved_string.text.[auth_privacy_ad_personalization] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:70:5",
+          "message": "data check translation_missing reserved_string.text.[auth_privacy_analytics] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:71:5",
+          "message": "data check translation_missing reserved_string.text.[auth_privacy_confirm] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:72:5",
+          "message": "data check translation_missing reserved_string.text.[auth_privacy_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:73:5",
+          "message": "data check translation_missing reserved_string.text.[auth_push_ad] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:74:5",
+          "message": "data check translation_missing reserved_string.text.[auth_push_ad_denied] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:75:5",
+          "message": "data check translation_missing reserved_string.text.[auth_push_ad_granted] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:76:5",
+          "message": "data check translation_missing reserved_string.text.[auth_push_confirm] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:77:5",
+          "message": "data check translation_missing reserved_string.text.[auth_push_night] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:78:5",
+          "message": "data check translation_missing reserved_string.text.[auth_push_night_denied] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:79:5",
+          "message": "data check translation_missing reserved_string.text.[auth_push_night_granted] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:80:5",
+          "message": "data check translation_missing reserved_string.text.[auth_push_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:81:5",
+          "message": "data check translation_missing reserved_string.text.[auth_recover_back] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:82:5",
+          "message": "data check translation_missing reserved_string.text.[auth_recover_guest] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:83:5",
+          "message": "data check translation_missing reserved_string.text.[auth_recover_linked] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:84:5",
+          "message": "data check translation_missing reserved_string.text.[auth_recover_login_apple] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:85:5",
+          "message": "data check translation_missing reserved_string.text.[auth_recover_login_google] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:86:5",
+          "message": "data check translation_missing reserved_string.text.[auth_recover_new] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:87:5",
+          "message": "data check translation_missing reserved_string.text.[auth_recover_new_confirm] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:88:5",
+          "message": "data check translation_missing reserved_string.text.[auth_recover_new_ok] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:89:5",
+          "message": "data check translation_missing reserved_string.text.[auth_session_replaced] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:90:5",
+          "message": "data check translation_missing reserved_string.text.[auth_terms_agree_privacy] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:91:5",
+          "message": "data check translation_missing reserved_string.text.[auth_terms_agree_terms] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:92:5",
+          "message": "data check translation_missing reserved_string.text.[auth_terms_confirm] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:93:5",
+          "message": "data check translation_missing reserved_string.text.[auth_terms_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:94:5",
+          "message": "data check translation_missing reserved_string.text.[auth_terms_view] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:95:5",
+          "message": "data check translation_missing reserved_string.text.[auth_tracking_usage] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:96:5",
+          "message": "data check translation_missing reserved_string.text.[auth_web_link_body] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:97:5",
+          "message": "data check translation_missing reserved_string.text.[auth_web_link_failed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:98:5",
+          "message": "data check translation_missing reserved_string.text.[auth_web_link_google] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:99:5",
+          "message": "data check translation_missing reserved_string.text.[auth_web_link_later] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:100:5",
+          "message": "data check translation_missing reserved_string.text.[bootstrap_age_blocked] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:101:5",
+          "message": "data check translation_missing reserved_string.text.[bootstrap_banned] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:102:5",
+          "message": "data check translation_missing reserved_string.text.[bootstrap_banned_deletion] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:103:5",
+          "message": "data check translation_missing reserved_string.text.[bootstrap_banned_deletion_code] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:104:5",
+          "message": "data check translation_missing reserved_string.text.[bootstrap_banned_deletion_failed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:105:5",
+          "message": "data check translation_missing reserved_string.text.[bootstrap_banned_permanent] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:106:5",
+          "message": "data check translation_missing reserved_string.text.[bootstrap_fatal_error] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:107:5",
+          "message": "data check translation_missing reserved_string.text.[bootstrap_login_failed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:108:5",
+          "message": "data check translation_missing reserved_string.text.[bootstrap_restart] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:109:5",
+          "message": "data check translation_missing reserved_string.text.[common_terms_agree_all] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:110:5",
+          "message": "data check translation_missing reserved_string.text.[common_terms_agree_both] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:111:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_app_update_required] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:112:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_data_update_required] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:113:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_download_failed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:114:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_go_to_store] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:115:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_invalid_file] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:116:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_later] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:117:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_no_space] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:118:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_recommended] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:119:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_restart] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:120:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_retry] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:121:5",
+          "message": "data check translation_missing reserved_string.text.[game_update_save_failed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:122:5",
+          "message": "data check translation_missing reserved_string.text.[levelup_chest_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:123:5",
+          "message": "data check translation_missing reserved_string.text.[levelup_heal_desc] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:124:5",
+          "message": "data check translation_missing reserved_string.text.[levelup_heal_name] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:125:5",
+          "message": "data check translation_missing reserved_string.text.[levelup_level] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:126:5",
+          "message": "data check translation_missing reserved_string.text.[levelup_new] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:127:5",
+          "message": "data check translation_missing reserved_string.text.[levelup_pick_hint] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:128:5",
+          "message": "data check translation_missing reserved_string.text.[levelup_subtitle] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:129:5",
+          "message": "data check translation_missing reserved_string.text.[levelup_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:130:5",
+          "message": "data check translation_missing reserved_string.text.[loading_text] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:131:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_best] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:132:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_gold] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:133:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_no_record] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:134:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_options] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:135:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_play] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:136:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_runs] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:137:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_upgrade_ready] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:138:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_upgrades] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:139:5",
+          "message": "data check translation_missing reserved_string.text.[network_confirm] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:140:5",
+          "message": "data check translation_missing reserved_string.text.[network_error_banned] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:141:5",
+          "message": "data check translation_missing reserved_string.text.[network_error_connection] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:142:5",
+          "message": "data check translation_missing reserved_string.text.[network_error_feature_disabled] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:143:5",
+          "message": "data check translation_missing reserved_string.text.[network_error_general] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:144:5",
+          "message": "data check translation_missing reserved_string.text.[network_error_invalid_response] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:145:5",
+          "message": "data check translation_missing reserved_string.text.[network_error_maintenance] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:146:5",
+          "message": "data check translation_missing reserved_string.text.[network_error_rate_limited] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:147:5",
+          "message": "data check translation_missing reserved_string.text.[network_error_session] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:148:5",
+          "message": "data check translation_missing reserved_string.text.[network_error_timeout] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:149:5",
+          "message": "data check translation_missing reserved_string.text.[network_go_to_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:150:5",
+          "message": "data check translation_missing reserved_string.text.[network_retry] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:151:5",
+          "message": "data check translation_missing reserved_string.text.[option_cancel] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:152:5",
+          "message": "data check translation_missing reserved_string.text.[option_close] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:153:5",
+          "message": "data check translation_missing reserved_string.text.[option_copied] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:154:5",
+          "message": "data check translation_missing reserved_string.text.[option_copy_code] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:155:5",
+          "message": "data check translation_missing reserved_string.text.[option_copy_url] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:156:5",
+          "message": "data check translation_missing reserved_string.text.[option_copy_user_id] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:157:5",
+          "message": "data check translation_missing reserved_string.text.[option_deletion_info] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:158:5",
+          "message": "data check translation_missing reserved_string.text.[option_deletion_issue] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:159:5",
+          "message": "data check translation_missing reserved_string.text.[option_failed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:160:5",
+          "message": "data check translation_missing reserved_string.text.[option_licenses] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:161:5",
+          "message": "data check translation_missing reserved_string.text.[option_privacy] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:162:5",
+          "message": "data check translation_missing reserved_string.text.[option_privacy_choices] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:163:5",
+          "message": "data check translation_missing reserved_string.text.[option_terms] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:164:5",
+          "message": "data check translation_missing reserved_string.text.[option_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:165:5",
+          "message": "data check translation_missing reserved_string.text.[option_user_id] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:166:5",
+          "message": "data check translation_missing reserved_string.text.[option_withdraw] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:167:5",
+          "message": "data check translation_missing reserved_string.text.[option_withdraw_confirm] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:168:5",
+          "message": "data check translation_missing reserved_string.text.[option_withdraw_ok] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:169:5",
+          "message": "data check translation_missing reserved_string.text.[pause_give_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:170:5",
+          "message": "data check translation_missing reserved_string.text.[pause_give_up_note] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:171:5",
+          "message": "data check translation_missing reserved_string.text.[pause_resume] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:172:5",
+          "message": "data check translation_missing reserved_string.text.[pause_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:173:5",
+          "message": "data check translation_missing reserved_string.text.[result_again] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:174:5",
+          "message": "data check translation_missing reserved_string.text.[result_dawn] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:175:5",
+          "message": "data check translation_missing reserved_string.text.[result_fallen] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:176:5",
+          "message": "data check translation_missing reserved_string.text.[result_gold] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:177:5",
+          "message": "data check translation_missing reserved_string.text.[result_kills] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:178:5",
+          "message": "data check translation_missing reserved_string.text.[result_level] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:179:5",
+          "message": "data check translation_missing reserved_string.text.[result_lobby] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:180:5",
+          "message": "data check translation_missing reserved_string.text.[result_new_best] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:181:5",
+          "message": "data check translation_missing reserved_string.text.[result_saving] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:182:5",
+          "message": "data check translation_missing reserved_string.text.[result_time] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:183:5",
+          "message": "data check translation_missing reserved_string.text.[result_unsaved] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:184:5",
+          "message": "data check translation_missing reserved_string.text.[result_upgrade_hint] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:185:5",
+          "message": "data check translation_missing reserved_string.text.[run_dawn_near] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:186:5",
+          "message": "data check translation_missing reserved_string.text.[run_elite_warning] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:187:5",
+          "message": "data check translation_missing reserved_string.text.[run_gold] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:188:5",
+          "message": "data check translation_missing reserved_string.text.[run_hint_move] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:189:5",
+          "message": "data check translation_missing reserved_string.text.[run_hp] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:190:5",
+          "message": "data check translation_missing reserved_string.text.[run_kills] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:191:5",
+          "message": "data check translation_missing reserved_string.text.[run_level] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:192:5",
+          "message": "data check translation_missing reserved_string.text.[run_slot_level] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:193:5",
+          "message": "data check translation_missing reserved_string.text.[run_starting] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:194:5",
+          "message": "data check translation_missing reserved_string.text.[run_timer] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:195:5",
+          "message": "data check translation_missing reserved_string.text.[scene_prepare_failed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:196:5",
+          "message": "data check translation_missing reserved_string.text.[scene_restart] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:197:5",
+          "message": "data check translation_missing reserved_string.text.[scene_retry] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:198:5",
+          "message": "data check translation_missing reserved_string.text.[stat_area_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:199:5",
+          "message": "data check translation_missing reserved_string.text.[stat_cooldown_down] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:200:5",
+          "message": "data check translation_missing reserved_string.text.[stat_count_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:201:5",
+          "message": "data check translation_missing reserved_string.text.[stat_damage_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:202:5",
+          "message": "data check translation_missing reserved_string.text.[stat_pierce_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:203:5",
+          "message": "data check translation_missing reserved_string.text.[stat_speed_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:204:5",
+          "message": "data check translation_missing reserved_string.text.[title_name] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:205:5",
+          "message": "data check translation_missing reserved_string.text.[title_tagline] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:206:5",
+          "message": "data check translation_missing reserved_string.text.[ui_exit_cancel] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:207:5",
+          "message": "data check translation_missing reserved_string.text.[ui_exit_confirm] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:208:5",
+          "message": "data check translation_missing reserved_string.text.[ui_exit_quit] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:209:5",
+          "message": "data check translation_missing reserved_string.text.[ui_licenses_close] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:210:5",
+          "message": "data check translation_missing reserved_string.text.[ui_licenses_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:211:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_bought] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:212:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_buy] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:213:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_close] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:214:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_cost] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:215:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_desc] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:216:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_level] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:217:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_maxed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:218:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_not_enough] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:219:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_overflow_warning] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:220:5",
+          "message": "data check translation_missing reserved_string.text.[upgrade_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:221:5",
+          "message": "data check translation_missing upgrade.desc.[upgrade_greed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:222:5",
+          "message": "data check translation_missing upgrade.desc.[upgrade_haste] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:223:5",
+          "message": "data check translation_missing upgrade.desc.[upgrade_magnet] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:224:5",
+          "message": "data check translation_missing upgrade.desc.[upgrade_might] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:225:5",
+          "message": "data check translation_missing upgrade.desc.[upgrade_swiftness] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:226:5",
+          "message": "data check translation_missing upgrade.desc.[upgrade_vitality] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:227:5",
+          "message": "data check translation_missing weapon.desc.[weapon_holy_aura] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:228:5",
+          "message": "data check translation_missing weapon.desc.[weapon_lantern_bolt] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:229:5",
+          "message": "data check translation_missing weapon.desc.[weapon_lightning] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:230:5",
+          "message": "data check translation_missing weapon.desc.[weapon_spinning_blade] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:231:5",
+          "message": "data check translation_missing weapon.desc.[weapon_throwing_axe] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:232:5",
+          "message": "data check translation_missing weapon.name.[weapon_holy_aura] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:233:5",
+          "message": "data check translation_missing weapon.name.[weapon_lantern_bolt] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:234:5",
+          "message": "data check translation_missing weapon.name.[weapon_lightning] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:235:5",
+          "message": "data check translation_missing weapon.name.[weapon_spinning_blade] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:236:5",
+          "message": "data check translation_missing weapon.name.[weapon_throwing_axe] has no en translation",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "name": "no blocker",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "full flow",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "performance",
+      "platform": "macos",
+      "result": "fail",
+      "failures": [
+        {
+          "where": "scene/run/run",
+          "message": "fps 5 percentile 41 is below targetFps 60 (2 samples)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-1/performance-macos/samples.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "fps 5 percentile 57 is below targetFps 60 (3 samples)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-1/performance-macos/samples.json"
+          ]
+        }
+      ],
+      "warnings": [],
+      "hostLoad": {
+        "cpuMaxPercent": 83.4,
+        "memoryMaxPercent": 99.9,
+        "instancesMax": 3
+      }
+    },
+    {
+      "name": "UI quality",
+      "platform": "macos",
+      "result": "fail",
+      "failures": [
+        {
+          "where": "scene/lobby/lobby",
+          "message": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (ko, macbook_air_13, lobby.open_lobby, text scale 1000)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0001-ko-macbook_air_13-lobby.open_lobby-1000.png",
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0001-ko-macbook_air_13-lobby.open_lobby-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (ko, macbook_pro_14_notch, lobby.open_lobby, text scale 1000)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0010-ko-macbook_pro_14_notch-lobby.open_lobby-1000.png",
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0010-ko-macbook_pro_14_notch-lobby.open_lobby-1000.json"
+          ]
+        },
+        {
+          "where": "scene/run/run",
+          "message": "run.open_levelup failed: \"the popup did not open\" (ko, macbook_pro_14_notch)",
+          "evidence": []
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (ko, display_16_9, lobby.open_lobby, text scale 1000)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0018-ko-display_16_9-lobby.open_lobby-1000.png",
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0018-ko-display_16_9-lobby.open_lobby-1000.json"
+          ]
+        },
+        {
+          "where": "scene/run/run",
+          "message": "run.open_levelup failed: \"the popup did not open\" (ko, display_16_9)",
+          "evidence": []
+        },
+        {
+          "where": "scene/run/run",
+          "message": "run.open_levelup failed: \"the popup did not open\" (ko, ultrawide_21_9)",
+          "evidence": []
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (en, macbook_air_13, lobby.open_lobby, text scale 1000)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0034-en-macbook_air_13-lobby.open_lobby-1000.png",
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0034-en-macbook_air_13-lobby.open_lobby-1000.json"
+          ]
+        },
+        {
+          "where": "scene/run/run",
+          "message": "run.open_levelup failed: \"the popup did not open\" (en, macbook_air_13)",
+          "evidence": []
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (en, macbook_pro_14_notch, lobby.open_lobby, text scale 1000)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0042-en-macbook_pro_14_notch-lobby.open_lobby-1000.png",
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0042-en-macbook_pro_14_notch-lobby.open_lobby-1000.json"
+          ]
+        },
+        {
+          "where": "scene/run/run",
+          "message": "run.open_levelup failed: \"the popup did not open\" (en, macbook_pro_14_notch)",
+          "evidence": []
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (en, display_16_9, lobby.open_lobby, text scale 1000)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0050-en-display_16_9-lobby.open_lobby-1000.png",
+            "records/loops/create-1792781138827/evidence/check-1/ui-macos/0050-en-display_16_9-lobby.open_lobby-1000.json"
+          ]
+        },
+        {
+          "where": "scene/run/run",
+          "message": "run.open_levelup failed: \"the popup did not open\" (en, display_16_9)",
+          "evidence": []
+        },
+        {
+          "where": "scene/run/run",
+          "message": "run.open_levelup failed: \"the popup did not open\" (en, ultrawide_21_9)",
+          "evidence": []
+        },
+        {
+          "where": "scene/run/run",
+          "message": "run.open_levelup failed: \"the popup did not open\" (ko, macbook_air_13, gamepad)",
+          "evidence": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "no placeholder",
+      "platform": null,
+      "result": "fail",
+      "failures": [
+        {
+          "where": "resource/resources.csv:2",
+          "message": "placeholder app_icon/main",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:3",
+          "message": "placeholder splash/main",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:4",
+          "message": "placeholder font/main",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:5",
+          "message": "placeholder background/title",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:6",
+          "message": "placeholder background/lobby",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:7",
+          "message": "placeholder texture/ground",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:8",
+          "message": "placeholder model/hero",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:9",
+          "message": "placeholder model/enemy_bat",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:10",
+          "message": "placeholder model/enemy_ghoul",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:11",
+          "message": "placeholder model/enemy_skeleton",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:12",
+          "message": "placeholder model/enemy_wraith",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:13",
+          "message": "placeholder model/enemy_brute",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:14",
+          "message": "placeholder model/enemy_bone_knight",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:15",
+          "message": "placeholder model/weapon_lantern_bolt",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:16",
+          "message": "placeholder model/weapon_spinning_blade",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:17",
+          "message": "placeholder model/weapon_holy_aura",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:18",
+          "message": "placeholder model/weapon_throwing_axe",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:19",
+          "message": "placeholder model/weapon_lightning",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:20",
+          "message": "placeholder model/xp_gem",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:21",
+          "message": "placeholder model/chest",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:22",
+          "message": "placeholder model/heal_soup",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:23",
+          "message": "placeholder model/prop_gravestone",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:24",
+          "message": "placeholder model/prop_rock",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:25",
+          "message": "placeholder model/prop_lantern_post",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:26",
+          "message": "placeholder particle/run/hit_spark",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:27",
+          "message": "placeholder particle/run/enemy_death",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:28",
+          "message": "placeholder particle/run/level_up",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:29",
+          "message": "placeholder particle/run/lightning_impact",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:30",
+          "message": "placeholder particle/run/pickup",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:31",
+          "message": "placeholder nine_slice/ui/panel_frame",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:32",
+          "message": "placeholder nine_slice/ui/button",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:33",
+          "message": "placeholder nine_slice/ui/button_primary",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:34",
+          "message": "placeholder nine_slice/ui/focus_ring",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:35",
+          "message": "placeholder nine_slice/ui/card",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:36",
+          "message": "placeholder nine_slice/ui/bar_frame",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:37",
+          "message": "placeholder nine_slice/ui/bar_fill",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:38",
+          "message": "placeholder nine_slice/ui/plate",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:39",
+          "message": "placeholder icon/gold",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:40",
+          "message": "placeholder icon/kills",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:41",
+          "message": "placeholder icon/timer",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:42",
+          "message": "placeholder icon/heal_soup",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:43",
+          "message": "placeholder icon/weapon_lantern_bolt",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:44",
+          "message": "placeholder icon/weapon_spinning_blade",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:45",
+          "message": "placeholder icon/weapon_holy_aura",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:46",
+          "message": "placeholder icon/weapon_throwing_axe",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:47",
+          "message": "placeholder icon/weapon_lightning",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:48",
+          "message": "placeholder icon/passive_might",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:49",
+          "message": "placeholder icon/passive_haste",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:50",
+          "message": "placeholder icon/passive_vitality",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:51",
+          "message": "placeholder icon/passive_magnet",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:52",
+          "message": "placeholder icon/passive_swiftness",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:53",
+          "message": "placeholder icon/upgrade_might",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:54",
+          "message": "placeholder icon/upgrade_vitality",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:55",
+          "message": "placeholder icon/upgrade_haste",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:56",
+          "message": "placeholder icon/upgrade_magnet",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:57",
+          "message": "placeholder icon/upgrade_swiftness",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:58",
+          "message": "placeholder icon/upgrade_greed",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:59",
+          "message": "placeholder bgm/lobby",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:60",
+          "message": "placeholder bgm/run",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:61",
+          "message": "placeholder sfx/ui_click",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:62",
+          "message": "placeholder sfx/enemy_hit",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:63",
+          "message": "placeholder sfx/enemy_die",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:64",
+          "message": "placeholder sfx/gem_pickup",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:65",
+          "message": "placeholder sfx/level_up",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:66",
+          "message": "placeholder sfx/upgrade_pick",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:67",
+          "message": "placeholder sfx/player_hurt",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:68",
+          "message": "placeholder sfx/chest_open",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:69",
+          "message": "placeholder sfx/elite_roar",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:70",
+          "message": "placeholder sfx/heal",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:71",
+          "message": "placeholder sfx/dawn",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:72",
+          "message": "placeholder sfx/player_death",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:73",
+          "message": "placeholder sfx/upgrade_buy",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:74",
+          "message": "placeholder sfx/refuse",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:75",
+          "message": "placeholder sfx/bolt_fire",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:76",
+          "message": "placeholder sfx/blade_hit",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:77",
+          "message": "placeholder sfx/aura_pulse",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:78",
+          "message": "placeholder sfx/axe_throw",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:79",
+          "message": "placeholder sfx/lightning",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:2",
+          "message": "translation_missing en input_prompt.name.[prompt_key_1]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:3",
+          "message": "translation_missing en input_prompt.name.[prompt_key_2]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:4",
+          "message": "translation_missing en input_prompt.name.[prompt_key_3]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:5",
+          "message": "translation_missing en input_prompt.name.[prompt_key_a]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:6",
+          "message": "translation_missing en input_prompt.name.[prompt_key_d]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:7",
+          "message": "translation_missing en input_prompt.name.[prompt_key_escape]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:8",
+          "message": "translation_missing en input_prompt.name.[prompt_key_p]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:9",
+          "message": "translation_missing en input_prompt.name.[prompt_key_s]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:10",
+          "message": "translation_missing en input_prompt.name.[prompt_key_w]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:11",
+          "message": "translation_missing en input_prompt.name.[prompt_pad_b]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:12",
+          "message": "translation_missing en input_prompt.name.[prompt_pad_dpad_down]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:13",
+          "message": "translation_missing en input_prompt.name.[prompt_pad_dpad_left]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:14",
+          "message": "translation_missing en input_prompt.name.[prompt_pad_dpad_right]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:15",
+          "message": "translation_missing en input_prompt.name.[prompt_pad_dpad_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:16",
+          "message": "translation_missing en input_prompt.name.[prompt_pad_rb]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:17",
+          "message": "translation_missing en input_prompt.name.[prompt_pad_start]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:18",
+          "message": "translation_missing en input_prompt.name.[prompt_pad_x]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:19",
+          "message": "translation_missing en input_prompt.name.[prompt_pad_y]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:20",
+          "message": "translation_missing en input_prompt.name.[prompt_touch_menu_pick_1]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:21",
+          "message": "translation_missing en input_prompt.name.[prompt_touch_menu_pick_2]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:22",
+          "message": "translation_missing en input_prompt.name.[prompt_touch_menu_pick_3]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:23",
+          "message": "translation_missing en input_prompt.name.[prompt_touch_move_down]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:24",
+          "message": "translation_missing en input_prompt.name.[prompt_touch_move_left]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:25",
+          "message": "translation_missing en input_prompt.name.[prompt_touch_move_right]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:26",
+          "message": "translation_missing en input_prompt.name.[prompt_touch_move_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:27",
+          "message": "translation_missing en input_prompt.name.[prompt_touch_pause]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:28",
+          "message": "translation_missing en item.name.[item_gold]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:29",
+          "message": "translation_missing en item.name.[upgrade_greed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:30",
+          "message": "translation_missing en item.name.[upgrade_haste]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:31",
+          "message": "translation_missing en item.name.[upgrade_magnet]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:32",
+          "message": "translation_missing en item.name.[upgrade_might]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:33",
+          "message": "translation_missing en item.name.[upgrade_swiftness]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:34",
+          "message": "translation_missing en item.name.[upgrade_vitality]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:35",
+          "message": "translation_missing en language.name.[lang_en]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:36",
+          "message": "translation_missing en language.name.[lang_ko]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:37",
+          "message": "translation_missing en mail_template.body.[mail_shop_grant]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:38",
+          "message": "translation_missing en mail_template.title.[mail_shop_grant]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:39",
+          "message": "translation_missing en passive.desc.[passive_haste]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:40",
+          "message": "translation_missing en passive.desc.[passive_magnet]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:41",
+          "message": "translation_missing en passive.desc.[passive_might]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:42",
+          "message": "translation_missing en passive.desc.[passive_swiftness]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:43",
+          "message": "translation_missing en passive.desc.[passive_vitality]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:44",
+          "message": "translation_missing en passive.name.[passive_haste]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:45",
+          "message": "translation_missing en passive.name.[passive_magnet]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:46",
+          "message": "translation_missing en passive.name.[passive_might]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:47",
+          "message": "translation_missing en passive.name.[passive_swiftness]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:48",
+          "message": "translation_missing en passive.name.[passive_vitality]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:49",
+          "message": "translation_missing en reserved_string.text.[app_name]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:50",
+          "message": "translation_missing en reserved_string.text.[auth_age_confirm]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:51",
+          "message": "translation_missing en reserved_string.text.[auth_age_invalid]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:52",
+          "message": "translation_missing en reserved_string.text.[auth_age_month]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:53",
+          "message": "translation_missing en reserved_string.text.[auth_age_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:54",
+          "message": "translation_missing en reserved_string.text.[auth_age_year]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:55",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_back]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:56",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_body]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:57",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_code]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:58",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_confirm]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:59",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_done]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:60",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_failed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:61",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_google]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:62",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_rate_limited]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:63",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_retry]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:64",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_submit]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:65",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:66",
+          "message": "translation_missing en reserved_string.text.[auth_deletion_user_id]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:67",
+          "message": "translation_missing en reserved_string.text.[auth_go_to_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:68",
+          "message": "translation_missing en reserved_string.text.[auth_google_desktop_done]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:69",
+          "message": "translation_missing en reserved_string.text.[auth_privacy_ad_personalization]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:70",
+          "message": "translation_missing en reserved_string.text.[auth_privacy_analytics]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:71",
+          "message": "translation_missing en reserved_string.text.[auth_privacy_confirm]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:72",
+          "message": "translation_missing en reserved_string.text.[auth_privacy_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:73",
+          "message": "translation_missing en reserved_string.text.[auth_push_ad]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:74",
+          "message": "translation_missing en reserved_string.text.[auth_push_ad_denied]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:75",
+          "message": "translation_missing en reserved_string.text.[auth_push_ad_granted]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:76",
+          "message": "translation_missing en reserved_string.text.[auth_push_confirm]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:77",
+          "message": "translation_missing en reserved_string.text.[auth_push_night]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:78",
+          "message": "translation_missing en reserved_string.text.[auth_push_night_denied]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:79",
+          "message": "translation_missing en reserved_string.text.[auth_push_night_granted]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:80",
+          "message": "translation_missing en reserved_string.text.[auth_push_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:81",
+          "message": "translation_missing en reserved_string.text.[auth_recover_back]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:82",
+          "message": "translation_missing en reserved_string.text.[auth_recover_guest]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:83",
+          "message": "translation_missing en reserved_string.text.[auth_recover_linked]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:84",
+          "message": "translation_missing en reserved_string.text.[auth_recover_login_apple]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:85",
+          "message": "translation_missing en reserved_string.text.[auth_recover_login_google]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:86",
+          "message": "translation_missing en reserved_string.text.[auth_recover_new]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:87",
+          "message": "translation_missing en reserved_string.text.[auth_recover_new_confirm]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:88",
+          "message": "translation_missing en reserved_string.text.[auth_recover_new_ok]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:89",
+          "message": "translation_missing en reserved_string.text.[auth_session_replaced]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:90",
+          "message": "translation_missing en reserved_string.text.[auth_terms_agree_privacy]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:91",
+          "message": "translation_missing en reserved_string.text.[auth_terms_agree_terms]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:92",
+          "message": "translation_missing en reserved_string.text.[auth_terms_confirm]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:93",
+          "message": "translation_missing en reserved_string.text.[auth_terms_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:94",
+          "message": "translation_missing en reserved_string.text.[auth_terms_view]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:95",
+          "message": "translation_missing en reserved_string.text.[auth_tracking_usage]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:96",
+          "message": "translation_missing en reserved_string.text.[auth_web_link_body]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:97",
+          "message": "translation_missing en reserved_string.text.[auth_web_link_failed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:98",
+          "message": "translation_missing en reserved_string.text.[auth_web_link_google]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:99",
+          "message": "translation_missing en reserved_string.text.[auth_web_link_later]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:100",
+          "message": "translation_missing en reserved_string.text.[bootstrap_age_blocked]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:101",
+          "message": "translation_missing en reserved_string.text.[bootstrap_banned]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:102",
+          "message": "translation_missing en reserved_string.text.[bootstrap_banned_deletion]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:103",
+          "message": "translation_missing en reserved_string.text.[bootstrap_banned_deletion_code]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:104",
+          "message": "translation_missing en reserved_string.text.[bootstrap_banned_deletion_failed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:105",
+          "message": "translation_missing en reserved_string.text.[bootstrap_banned_permanent]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:106",
+          "message": "translation_missing en reserved_string.text.[bootstrap_fatal_error]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:107",
+          "message": "translation_missing en reserved_string.text.[bootstrap_login_failed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:108",
+          "message": "translation_missing en reserved_string.text.[bootstrap_restart]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:109",
+          "message": "translation_missing en reserved_string.text.[common_terms_agree_all]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:110",
+          "message": "translation_missing en reserved_string.text.[common_terms_agree_both]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:111",
+          "message": "translation_missing en reserved_string.text.[game_update_app_update_required]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:112",
+          "message": "translation_missing en reserved_string.text.[game_update_data_update_required]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:113",
+          "message": "translation_missing en reserved_string.text.[game_update_download_failed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:114",
+          "message": "translation_missing en reserved_string.text.[game_update_go_to_store]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:115",
+          "message": "translation_missing en reserved_string.text.[game_update_invalid_file]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:116",
+          "message": "translation_missing en reserved_string.text.[game_update_later]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:117",
+          "message": "translation_missing en reserved_string.text.[game_update_no_space]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:118",
+          "message": "translation_missing en reserved_string.text.[game_update_recommended]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:119",
+          "message": "translation_missing en reserved_string.text.[game_update_restart]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:120",
+          "message": "translation_missing en reserved_string.text.[game_update_retry]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:121",
+          "message": "translation_missing en reserved_string.text.[game_update_save_failed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:122",
+          "message": "translation_missing en reserved_string.text.[levelup_chest_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:123",
+          "message": "translation_missing en reserved_string.text.[levelup_heal_desc]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:124",
+          "message": "translation_missing en reserved_string.text.[levelup_heal_name]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:125",
+          "message": "translation_missing en reserved_string.text.[levelup_level]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:126",
+          "message": "translation_missing en reserved_string.text.[levelup_new]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:127",
+          "message": "translation_missing en reserved_string.text.[levelup_pick_hint]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:128",
+          "message": "translation_missing en reserved_string.text.[levelup_subtitle]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:129",
+          "message": "translation_missing en reserved_string.text.[levelup_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:130",
+          "message": "translation_missing en reserved_string.text.[loading_text]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:131",
+          "message": "translation_missing en reserved_string.text.[lobby_best]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:132",
+          "message": "translation_missing en reserved_string.text.[lobby_gold]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:133",
+          "message": "translation_missing en reserved_string.text.[lobby_no_record]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:134",
+          "message": "translation_missing en reserved_string.text.[lobby_options]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:135",
+          "message": "translation_missing en reserved_string.text.[lobby_play]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:136",
+          "message": "translation_missing en reserved_string.text.[lobby_runs]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:137",
+          "message": "translation_missing en reserved_string.text.[lobby_upgrade_ready]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:138",
+          "message": "translation_missing en reserved_string.text.[lobby_upgrades]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:139",
+          "message": "translation_missing en reserved_string.text.[network_confirm]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:140",
+          "message": "translation_missing en reserved_string.text.[network_error_banned]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:141",
+          "message": "translation_missing en reserved_string.text.[network_error_connection]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:142",
+          "message": "translation_missing en reserved_string.text.[network_error_feature_disabled]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:143",
+          "message": "translation_missing en reserved_string.text.[network_error_general]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:144",
+          "message": "translation_missing en reserved_string.text.[network_error_invalid_response]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:145",
+          "message": "translation_missing en reserved_string.text.[network_error_maintenance]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:146",
+          "message": "translation_missing en reserved_string.text.[network_error_rate_limited]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:147",
+          "message": "translation_missing en reserved_string.text.[network_error_session]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:148",
+          "message": "translation_missing en reserved_string.text.[network_error_timeout]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:149",
+          "message": "translation_missing en reserved_string.text.[network_go_to_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:150",
+          "message": "translation_missing en reserved_string.text.[network_retry]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:151",
+          "message": "translation_missing en reserved_string.text.[option_cancel]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:152",
+          "message": "translation_missing en reserved_string.text.[option_close]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:153",
+          "message": "translation_missing en reserved_string.text.[option_copied]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:154",
+          "message": "translation_missing en reserved_string.text.[option_copy_code]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:155",
+          "message": "translation_missing en reserved_string.text.[option_copy_url]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:156",
+          "message": "translation_missing en reserved_string.text.[option_copy_user_id]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:157",
+          "message": "translation_missing en reserved_string.text.[option_deletion_info]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:158",
+          "message": "translation_missing en reserved_string.text.[option_deletion_issue]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:159",
+          "message": "translation_missing en reserved_string.text.[option_failed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:160",
+          "message": "translation_missing en reserved_string.text.[option_licenses]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:161",
+          "message": "translation_missing en reserved_string.text.[option_privacy]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:162",
+          "message": "translation_missing en reserved_string.text.[option_privacy_choices]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:163",
+          "message": "translation_missing en reserved_string.text.[option_terms]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:164",
+          "message": "translation_missing en reserved_string.text.[option_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:165",
+          "message": "translation_missing en reserved_string.text.[option_user_id]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:166",
+          "message": "translation_missing en reserved_string.text.[option_withdraw]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:167",
+          "message": "translation_missing en reserved_string.text.[option_withdraw_confirm]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:168",
+          "message": "translation_missing en reserved_string.text.[option_withdraw_ok]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:169",
+          "message": "translation_missing en reserved_string.text.[pause_give_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:170",
+          "message": "translation_missing en reserved_string.text.[pause_give_up_note]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:171",
+          "message": "translation_missing en reserved_string.text.[pause_resume]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:172",
+          "message": "translation_missing en reserved_string.text.[pause_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:173",
+          "message": "translation_missing en reserved_string.text.[result_again]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:174",
+          "message": "translation_missing en reserved_string.text.[result_dawn]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:175",
+          "message": "translation_missing en reserved_string.text.[result_fallen]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:176",
+          "message": "translation_missing en reserved_string.text.[result_gold]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:177",
+          "message": "translation_missing en reserved_string.text.[result_kills]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:178",
+          "message": "translation_missing en reserved_string.text.[result_level]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:179",
+          "message": "translation_missing en reserved_string.text.[result_lobby]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:180",
+          "message": "translation_missing en reserved_string.text.[result_new_best]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:181",
+          "message": "translation_missing en reserved_string.text.[result_saving]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:182",
+          "message": "translation_missing en reserved_string.text.[result_time]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:183",
+          "message": "translation_missing en reserved_string.text.[result_unsaved]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:184",
+          "message": "translation_missing en reserved_string.text.[result_upgrade_hint]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:185",
+          "message": "translation_missing en reserved_string.text.[run_dawn_near]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:186",
+          "message": "translation_missing en reserved_string.text.[run_elite_warning]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:187",
+          "message": "translation_missing en reserved_string.text.[run_gold]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:188",
+          "message": "translation_missing en reserved_string.text.[run_hint_move]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:189",
+          "message": "translation_missing en reserved_string.text.[run_hp]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:190",
+          "message": "translation_missing en reserved_string.text.[run_kills]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:191",
+          "message": "translation_missing en reserved_string.text.[run_level]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:192",
+          "message": "translation_missing en reserved_string.text.[run_slot_level]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:193",
+          "message": "translation_missing en reserved_string.text.[run_starting]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:194",
+          "message": "translation_missing en reserved_string.text.[run_timer]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:195",
+          "message": "translation_missing en reserved_string.text.[scene_prepare_failed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:196",
+          "message": "translation_missing en reserved_string.text.[scene_restart]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:197",
+          "message": "translation_missing en reserved_string.text.[scene_retry]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:198",
+          "message": "translation_missing en reserved_string.text.[stat_area_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:199",
+          "message": "translation_missing en reserved_string.text.[stat_cooldown_down]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:200",
+          "message": "translation_missing en reserved_string.text.[stat_count_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:201",
+          "message": "translation_missing en reserved_string.text.[stat_damage_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:202",
+          "message": "translation_missing en reserved_string.text.[stat_pierce_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:203",
+          "message": "translation_missing en reserved_string.text.[stat_speed_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:204",
+          "message": "translation_missing en reserved_string.text.[title_name]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:205",
+          "message": "translation_missing en reserved_string.text.[title_tagline]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:206",
+          "message": "translation_missing en reserved_string.text.[ui_exit_cancel]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:207",
+          "message": "translation_missing en reserved_string.text.[ui_exit_confirm]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:208",
+          "message": "translation_missing en reserved_string.text.[ui_exit_quit]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:209",
+          "message": "translation_missing en reserved_string.text.[ui_licenses_close]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:210",
+          "message": "translation_missing en reserved_string.text.[ui_licenses_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:211",
+          "message": "translation_missing en reserved_string.text.[upgrade_bought]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:212",
+          "message": "translation_missing en reserved_string.text.[upgrade_buy]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:213",
+          "message": "translation_missing en reserved_string.text.[upgrade_close]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:214",
+          "message": "translation_missing en reserved_string.text.[upgrade_cost]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:215",
+          "message": "translation_missing en reserved_string.text.[upgrade_desc]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:216",
+          "message": "translation_missing en reserved_string.text.[upgrade_level]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:217",
+          "message": "translation_missing en reserved_string.text.[upgrade_maxed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:218",
+          "message": "translation_missing en reserved_string.text.[upgrade_not_enough]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:219",
+          "message": "translation_missing en reserved_string.text.[upgrade_overflow_warning]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:220",
+          "message": "translation_missing en reserved_string.text.[upgrade_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:221",
+          "message": "translation_missing en upgrade.desc.[upgrade_greed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:222",
+          "message": "translation_missing en upgrade.desc.[upgrade_haste]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:223",
+          "message": "translation_missing en upgrade.desc.[upgrade_magnet]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:224",
+          "message": "translation_missing en upgrade.desc.[upgrade_might]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:225",
+          "message": "translation_missing en upgrade.desc.[upgrade_swiftness]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:226",
+          "message": "translation_missing en upgrade.desc.[upgrade_vitality]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:227",
+          "message": "translation_missing en weapon.desc.[weapon_holy_aura]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:228",
+          "message": "translation_missing en weapon.desc.[weapon_lantern_bolt]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:229",
+          "message": "translation_missing en weapon.desc.[weapon_lightning]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:230",
+          "message": "translation_missing en weapon.desc.[weapon_spinning_blade]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:231",
+          "message": "translation_missing en weapon.desc.[weapon_throwing_axe]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:232",
+          "message": "translation_missing en weapon.name.[weapon_holy_aura]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:233",
+          "message": "translation_missing en weapon.name.[weapon_lantern_bolt]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:234",
+          "message": "translation_missing en weapon.name.[weapon_lightning]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:235",
+          "message": "translation_missing en weapon.name.[weapon_spinning_blade]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:236",
+          "message": "translation_missing en weapon.name.[weapon_throwing_axe]",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:5",
+          "message": "translation_missing en glossary 등불 제단",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:6",
+          "message": "translation_missing en glossary 원정",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:7",
+          "message": "translation_missing en glossary 야영지",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:8",
+          "message": "translation_missing en glossary 새벽",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:9",
+          "message": "translation_missing en glossary 금화",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:10",
+          "message": "translation_missing en glossary 힘",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:11",
+          "message": "translation_missing en glossary 생명력",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:12",
+          "message": "translation_missing en glossary 서두름",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:13",
+          "message": "translation_missing en glossary 자력",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:14",
+          "message": "translation_missing en glossary 신속",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:15",
+          "message": "translation_missing en glossary 탐욕",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:16",
+          "message": "translation_missing en glossary 등불 탄환",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:17",
+          "message": "translation_missing en glossary 회전 낫",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:18",
+          "message": "translation_missing en glossary 성화 오라",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:19",
+          "message": "translation_missing en glossary 투척 도끼",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:20",
+          "message": "translation_missing en glossary 낙뢰",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:21",
+          "message": "translation_missing en glossary 분노의 불씨",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:22",
+          "message": "translation_missing en glossary 바람의 깃털",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:23",
+          "message": "translation_missing en glossary 거인의 심장",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:24",
+          "message": "translation_missing en glossary 자석 부적",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:25",
+          "message": "translation_missing en glossary 질풍 장화",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:26",
+          "message": "translation_missing en glossary W",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:27",
+          "message": "translation_missing en glossary A",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:28",
+          "message": "translation_missing en glossary S",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:29",
+          "message": "translation_missing en glossary D",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:30",
+          "message": "translation_missing en glossary 1",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:31",
+          "message": "translation_missing en glossary 2",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:32",
+          "message": "translation_missing en glossary 3",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:33",
+          "message": "translation_missing en glossary P",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:34",
+          "message": "translation_missing en glossary Esc",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:35",
+          "message": "translation_missing en glossary 십자키 위",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:36",
+          "message": "translation_missing en glossary 십자키 아래",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:37",
+          "message": "translation_missing en glossary 십자키 왼쪽",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:38",
+          "message": "translation_missing en glossary 십자키 오른쪽",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:39",
+          "message": "translation_missing en glossary X",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:40",
+          "message": "translation_missing en glossary Y",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:41",
+          "message": "translation_missing en glossary RB",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:42",
+          "message": "translation_missing en glossary Start",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:43",
+          "message": "translation_missing en glossary B",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:44",
+          "message": "translation_missing en glossary W",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:45",
+          "message": "translation_missing en glossary A",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:46",
+          "message": "translation_missing en glossary S",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:47",
+          "message": "translation_missing en glossary D",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:48",
+          "message": "translation_missing en glossary 1",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:49",
+          "message": "translation_missing en glossary 2",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:50",
+          "message": "translation_missing en glossary 3",
+          "evidence": []
+        },
+        {
+          "where": "data/glossary.csv:51",
+          "message": "translation_missing en glossary P",
+          "evidence": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "row simulation",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    }
+  ],
+  "gate": "pass"
+}

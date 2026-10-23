@@ -1,0 +1,26 @@
+,,,,,,,,,,,,
+All,Client,All,All,All,All,All,All,All,All,All,All,All
+id(key),tstring<id>,"array<{item_id: ref<item.id>, amount: long}>","array<{item_id: ref<item.id>, amount: long}>",bool,int,int?,enum<ResetCycle>?,datetime?,datetime?,ref<live_event.id>?,requirement,ref<offer.id>?
+id,name,cost,reward,extra_grant,max_quantity,limit_count,reset,start_at,end_at,live_event,requirement,offer
+[shop_might_1],,[item_gold] 50,[upgrade_might] 1,false,1,1,null,null,null,null,,null
+[shop_might_2],,[item_gold] 120,[upgrade_might] 1,false,1,1,null,null,null,null,,null
+[shop_might_3],,[item_gold] 240,[upgrade_might] 1,false,1,1,null,null,null,null,,null
+[shop_might_4],,[item_gold] 400,[upgrade_might] 1,false,1,1,null,null,null,null,,null
+[shop_might_5],,[item_gold] 620,[upgrade_might] 1,false,1,1,null,null,null,null,,null
+[shop_vitality_1],,[item_gold] 40,[upgrade_vitality] 1,false,1,1,null,null,null,null,,null
+[shop_vitality_2],,[item_gold] 100,[upgrade_vitality] 1,false,1,1,null,null,null,null,,null
+[shop_vitality_3],,[item_gold] 200,[upgrade_vitality] 1,false,1,1,null,null,null,null,,null
+[shop_vitality_4],,[item_gold] 340,[upgrade_vitality] 1,false,1,1,null,null,null,null,,null
+[shop_vitality_5],,[item_gold] 520,[upgrade_vitality] 1,false,1,1,null,null,null,null,,null
+[shop_haste_1],,[item_gold] 100,[upgrade_haste] 1,false,1,1,null,null,null,null,,null
+[shop_haste_2],,[item_gold] 260,[upgrade_haste] 1,false,1,1,null,null,null,null,,null
+[shop_haste_3],,[item_gold] 520,[upgrade_haste] 1,false,1,1,null,null,null,null,,null
+[shop_magnet_1],,[item_gold] 30,[upgrade_magnet] 1,false,1,1,null,null,null,null,,null
+[shop_magnet_2],,[item_gold] 90,[upgrade_magnet] 1,false,1,1,null,null,null,null,,null
+[shop_magnet_3],,[item_gold] 200,[upgrade_magnet] 1,false,1,1,null,null,null,null,,null
+[shop_swiftness_1],,[item_gold] 60,[upgrade_swiftness] 1,false,1,1,null,null,null,null,,null
+[shop_swiftness_2],,[item_gold] 160,[upgrade_swiftness] 1,false,1,1,null,null,null,null,,null
+[shop_swiftness_3],,[item_gold] 340,[upgrade_swiftness] 1,false,1,1,null,null,null,null,,null
+[shop_greed_1],,[item_gold] 80,[upgrade_greed] 1,false,1,1,null,null,null,null,,null
+[shop_greed_2],,[item_gold] 220,[upgrade_greed] 1,false,1,1,null,null,null,null,,null
+[shop_greed_3],,[item_gold] 460,[upgrade_greed] 1,false,1,1,null,null,null,null,,null

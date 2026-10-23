@@ -1,0 +1,55 @@
+{
+  "commit": "ba948bce7498a0cafc6bb61c262bed7329b18f23",
+  "baseline": null,
+  "plays": [
+    {
+      "result": "records/loops/create-1792781138827/play-1-1.md",
+      "instance": "mvle0pdkc59058",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/create-1792781138827/play-1-2.md",
+      "instance": "mvle10cgbb9f15",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/create-1792781138827/play-1-3.md",
+      "instance": "mvle1gaxa545f2",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/create-1792781138827/play-1-4.md",
+      "instance": "mvle1uqt3a7cf4",
+      "platform": "macos",
+      "moment": "late_run_horde",
+      "status": "done"
+    },
+    {
+      "result": "records/loops/create-1792781138827/play-1-5.md",
+      "instance": "mvle2d7h36f4d1",
+      "platform": "macos",
+      "moment": "second_run_after_meta_upgrade",
+      "status": "done"
+    }
+  ],
+  "judges": [
+    {
+      "kind": "main",
+      "result": "records/loops/create-1792781138827/judge-1-1.md",
+      "A": "ba948bce7498a0cafc6bb61c262bed7329b18f23",
+      "B": null,
+      "instanceSide": "A",
+      "omittedMoments": [],
+      "vsBaseline": null,
+      "vsReference": "fail",
+      "status": "done"
+    }
+  ],
+  "measure": "records/loops/create-1792781138827/measure-1.json"
+}

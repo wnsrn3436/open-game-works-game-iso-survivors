@@ -1,0 +1,918 @@
+{
+  "findings": [
+    {
+      "severity": "major",
+      "owner": "data",
+      "why": "There is no challenge that can fail in the opening, so the first minute has no tension",
+      "id": "opening-no-threat",
+      "drop": null,
+      "source": "judge",
+      "where": "first minute of a run",
+      "what": "No threat: standing still from 0:26 to 0:56 cost 0 health, and the first hit came at about 1:10",
+      "evidence": [
+        "`mvldzqoec49a81-1792786007963` (0:56, 100/100), `mvldzqoec49a81-1792786185633` (1:10, 97/100)"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "data",
+      "why": "worse than the reference game, so `vs reference` is `fail`",
+      "id": "opening-no-threat",
+      "drop": null,
+      "source": "judge",
+      "where": "vs reference: tension and release",
+      "what": "In the first run there is nothing that can fail for over a minute. Standing still from 0:26 to 0:56 cost 0 health while kills rose from 22 to 68, and the first hit came at about 1:10 (97/100). At the late-run moment the player died buried under enemy boxes. The frame at health 0/200 shows the field unchanged: no tint, no death pose, and the player not visible. The result panel then opens. In the reference at 496000–504000ms the field turns red with `GAME OVER` over the visible character before the results. Reward after success is present: the level-up pick logged Sound 5, CameraShake 1, Tween 8, Effect 8",
+      "evidence": [
+        "Captures `mvldzqoec49a81-1792786007963` (0:56, 100/100, 68 kills), `mvldzqoec49a81-1792786185633` (1:10, 97/100), `mvldzxt6027bf0-1792786394742` (10:12, 0/200), `mvldzxt6027bf0-1792786417980` (result panel). Telemetry `mvldzxt6027bf0`: Fail at play 1065030, Goal (panel) at 1066730. Reference frames 496000–503000ms",
+        "records/loops/create-1792781138827/judge-1-1.md"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "health dropped fast with no on-screen warning; the red bar frame is a placeholder and does not show the drop clearly (only the number 6/100)",
+      "id": "hurt-not-visible",
+      "drop": null,
+      "source": "play",
+      "where": "run 0:56",
+      "what": "none (standing still) → health fell from 100 to 6/100 in about 16 s of standing still; second level-up popup (거인의 심장, 회전 낫, 낙뢰 Lv 2)",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785804824.png",
+        "records/loops/create-1792781138827/play-1-1.md:25"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the damage grew fast; I did not see which contact took the health",
+      "id": "hurt-not-visible",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "held D → at 0:39 HP fell from 100 to 45 within 12 seconds after the level-up while the player walked straight; kills 37, gold 12. The player is surrounded by enemies with a hit number `9` shown",
+      "evidence": [
+        "captures/mvle1gaxa545f2-1792785739698.png",
+        "records/loops/create-1792781138827/play-1-3.md:23"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "The cause of failure is visible only as the health number; the player cannot see the hits land",
+      "id": "hurt-not-visible",
+      "drop": null,
+      "source": "judge",
+      "where": "late run, moment of death",
+      "what": "The player box is hidden under enemy boxes, and health went from 184 to 0 in 6s with nothing showing on the player",
+      "evidence": [
+        "`mvldzxt6027bf0-1792786300717` (10:06, 184/200), `mvldzxt6027bf0-1792786369873` (10:10, 40/200), `mvldzxt6027bf0-1792786394742` (10:12, 0/200)"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the UI quality check cannot capture the level-up popup on any screen, so its layout is not checked",
+      "id": "levelup-capture-popup-not-open",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "run.open_levelup failed: \"the popup did not open\" (ko, macbook_pro_14_notch)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the UI quality check cannot capture the level-up popup on any screen, so its layout is not checked",
+      "id": "levelup-capture-popup-not-open",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "run.open_levelup failed: \"the popup did not open\" (ko, display_16_9)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the UI quality check cannot capture the level-up popup on any screen, so its layout is not checked",
+      "id": "levelup-capture-popup-not-open",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "run.open_levelup failed: \"the popup did not open\" (ko, ultrawide_21_9)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the UI quality check cannot capture the level-up popup on any screen, so its layout is not checked",
+      "id": "levelup-capture-popup-not-open",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "run.open_levelup failed: \"the popup did not open\" (en, macbook_air_13)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the UI quality check cannot capture the level-up popup on any screen, so its layout is not checked",
+      "id": "levelup-capture-popup-not-open",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "run.open_levelup failed: \"the popup did not open\" (en, macbook_pro_14_notch)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the UI quality check cannot capture the level-up popup on any screen, so its layout is not checked",
+      "id": "levelup-capture-popup-not-open",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "run.open_levelup failed: \"the popup did not open\" (en, display_16_9)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the UI quality check cannot capture the level-up popup on any screen, so its layout is not checked",
+      "id": "levelup-capture-popup-not-open",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "run.open_levelup failed: \"the popup did not open\" (en, ultrawide_21_9)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the UI quality check cannot capture the level-up popup on any screen, so its layout is not checked",
+      "id": "levelup-capture-popup-not-open",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "run.open_levelup failed: \"the popup did not open\" (ko, macbook_air_13, gamepad)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the run must hold targetFps on the target Macs; the 5th percentile is 41",
+      "id": "run-fps-below-target",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "fps 5 percentile 41 is below targetFps 60 (2 samples)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#performance",
+        "records/loops/create-1792781138827/evidence/check-1/performance-macos/samples.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "design",
+      "why": "scene load must end within the loading time limit (3000ms)",
+      "id": "scene-load-slow",
+      "drop": null,
+      "source": "check",
+      "where": "scene_load_ms",
+      "what": "value 6248 out of 0..3000",
+      "evidence": [
+        "records/loops/create-1792781138827/measure-1.json#scene_load_ms"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "data",
+      "why": "the first reward must come within the target range of design.md",
+      "id": "early-xp-pace-slow",
+      "drop": null,
+      "source": "check",
+      "where": "first_reward_ms",
+      "what": "value 79355 out of 5000..30000",
+      "evidence": [
+        "records/loops/create-1792781138827/measure-1.json#first_reward_ms"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "no danger for the first 30 s, then 40 s to the first level-up felt slow",
+      "id": "early-xp-pace-slow",
+      "drop": null,
+      "source": "play",
+      "where": "run 0:20-0:30",
+      "what": "key_down S then A → 13 kills at 0:20, 20 kills at 0:30, health stayed 100/100, still `Lv 1`",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785564359.png",
+        "records/loops/create-1792781138827/play-1-1.md:22"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "That is a long gap with no visible growth early in the run",
+      "id": "early-xp-pace-slow",
+      "drop": null,
+      "source": "judge",
+      "where": "level 2 → 3",
+      "what": "39.5s between the first and second level-up in the first run",
+      "evidence": [
+        "`ogw telemetry mvldzqoec49a81` rewards at play 118069 and 157619"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "numbers overlap into unreadable blobs, e.g. `3019`, `2719`. Enemies (pink/red tall boxes) look much like the lavender building blocks around them, so which blocks are enemies is hard to tell",
+      "id": "damage-numbers-overlap",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "step 200 (D held) → many damage numbers (19, 27, 30, 63) stacked at the same spots around the player",
+      "evidence": [
+        "captures/mvle1uqt3a7cf4-1792785315783.png",
+        "records/loops/create-1792781138827/play-1-4.md:18"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no overlap on every supported screen and language",
+      "id": "lobby-title-gold-overlap",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (ko, macbook_air_13, lobby.open_lobby, text scale 1000)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0001-ko-macbook_air_13-lobby.open_lobby-1000.png",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0001-ko-macbook_air_13-lobby.open_lobby-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no overlap on every supported screen and language",
+      "id": "lobby-title-gold-overlap",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (ko, macbook_pro_14_notch, lobby.open_lobby, text scale 1000)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0010-ko-macbook_pro_14_notch-lobby.open_lobby-1000.png",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0010-ko-macbook_pro_14_notch-lobby.open_lobby-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no overlap on every supported screen and language",
+      "id": "lobby-title-gold-overlap",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (ko, display_16_9, lobby.open_lobby, text scale 1000)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0018-ko-display_16_9-lobby.open_lobby-1000.png",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0018-ko-display_16_9-lobby.open_lobby-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no overlap on every supported screen and language",
+      "id": "lobby-title-gold-overlap",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (en, macbook_air_13, lobby.open_lobby, text scale 1000)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0034-en-macbook_air_13-lobby.open_lobby-1000.png",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0034-en-macbook_air_13-lobby.open_lobby-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no overlap on every supported screen and language",
+      "id": "lobby-title-gold-overlap",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (en, macbook_pro_14_notch, lobby.open_lobby, text scale 1000)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0042-en-macbook_pro_14_notch-lobby.open_lobby-1000.png",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0042-en-macbook_pro_14_notch-lobby.open_lobby-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no overlap on every supported screen and language",
+      "id": "lobby-title-gold-overlap",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "overlap UICore/Panel/SafeAreaRoot/LobbyPanel/Title UICore/Panel/SafeAreaRoot/LobbyPanel/GoldPlate/Row/Gold in prefab/lobby/lobby_panel (en, display_16_9, lobby.open_lobby, text scale 1000)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#UI quality",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0050-en-display_16_9-lobby.open_lobby-1000.png",
+        "records/loops/create-1792781138827/evidence/check-1/ui-macos/0050-en-display_16_9-lobby.open_lobby-1000.json"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "The fall has no moment of its own. The reference shows a red-tinted `GAME OVER` over the field",
+      "id": "death-no-presentation",
+      "drop": null,
+      "source": "judge",
+      "where": "fall → result panel",
+      "what": "At health 0 the field shows no death presentation (no tint, no title, no player reaction) before the result panel",
+      "evidence": [
+        "`mvldzxt6027bf0-1792786394742` (10:12, 0/200), telemetry Fail at play 1065030, panel at 1066730"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "stats are readable, but the placeholder frame text sits behind them; standing still dies quickly",
+      "id": "difficulty-cliff",
+      "drop": null,
+      "source": "play",
+      "where": "result",
+      "what": "idle for about 30 game seconds → Fell at 39s. The panel shows survived time 39s, kills 32, level 2, gold +11. Only 3 hits in about 11s of standing still took the HP from 100 to 0, so the fall comes fast",
+      "evidence": [
+        "captures/mvle10cgbb9f15-1792785944077.png",
+        "records/loops/create-1792781138827/play-1-2.md:23"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "The player cannot see that the meta purchase changed anything",
+      "id": "meta-upgrade-not-visible",
+      "drop": null,
+      "source": "judge",
+      "where": "second run HUD",
+      "what": "Nothing on the run HUD shows the permanent upgrade bought with the first run's gold (health 100/100, the same start as the first run)",
+      "evidence": [
+        "`mvle08ri4493c4-1792786466359` (0:00), `mvle08ri4493c4-1792786763384` (0:29)"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "data",
+      "why": "the panel opens fine, but a big `PANELFRAME` placeholder text covers the middle lines (kills, level) and the two buttons carry `BUTTON_PRIMARY` text over `다시 출발` / `야영지로`. A deliberate give-up is titled `어둠에 쓰러졌다` (fell in the dark), which does not say it was a give-up",
+      "id": "giveup-result-title",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/result",
+      "what": "key P, tap_anchor pause_give_up → result panel `어둠에 쓰러졌다` after about 3s: survived 10분 8초, kills 4,420, level 45, gold +1,165",
+      "evidence": [
+        "captures/mvle1uqt3a7cf4-1792785358888.png",
+        "records/loops/create-1792781138827/play-1-4.md:21"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the camp must hold targetFps; the 5th percentile is 57",
+      "id": "lobby-fps-below-target",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "fps 5 percentile 57 is below targetFps 60 (3 samples)",
+      "evidence": [
+        "records/loops/create-1792781138827/check-1.json#performance",
+        "records/loops/create-1792781138827/evidence/check-1/performance-macos/samples.json"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "placeholder art is still in place of final art; the label text is hard to read over it",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "terms popup",
+      "what": "none → popup `이용약관 동의` opens with a huge `TITLE` placeholder text behind it and stretched `BUTTON` placeholder art on every button",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785234462.png",
+        "records/loops/create-1792781138827/play-1-1.md:15"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the buttons and the gold box are readable but look unfinished",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "camp",
+      "what": "none → camp shows gold 0, the title `아이소 서바이버즈`, three buttons; a huge `LOBBY` placeholder fills the background; `원정 시작` label sits on top of stretched `BUTTON_PRIMARY` art",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785251282.png",
+        "records/loops/create-1792781138827/play-1-1.md:17"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "clear what each row does; button labels are hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "shrine",
+      "what": "tap_anchor lobby_upgrades → six rows with level, effect and cost (might 50, vitality 40, haste 100, magnet 30, swiftness 60, greed 80), all showing `금화가 부족해요` at 0 gold; the buy buttons have the `BUTTON_PRIMARY` placeholder art over the label `강화`",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785261957.png",
+        "records/loops/create-1792781138827/play-1-1.md:18"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the guide writes the key as `[upgrade_might]`; the key only worked with the square brackets (`[upgrade_magnet]`), so the key form in the guide is easy to get wrong",
+      "id": null,
+      "drop": "the play guide gives the key as `[upgrade_might]` and the tool accepted that form; the unbracketed key was a typing slip, not a game defect",
+      "source": "play",
+      "where": "shrine",
+      "what": "tap_anchor upgrade_buy upgrade_might → tool answered `the anchor key is not an ID name or an integer of at least 1`",
+      "evidence": [
+        "records/loops/create-1792781138827/play-1-1.md:19"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the load took under 2 s; the ground text pattern makes the field look busy",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run 0:00",
+      "what": "tap_anchor lobby_play → the run opened at 0:00 with the move hint `WASD 로 움직이세요. 공격은 자동이에요`, health 100/100, one weapon icon, `Lv 1`; the player is a lit pillar on a ground tiled with `GROUND` placeholder text",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785278012.png",
+        "records/loops/create-1792781138827/play-1-1.md:20"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "enemies and gems cannot be told apart at a glance",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run 0:10",
+      "what": "key_down D, 10 s of steps → player moved right; 4 kills, 2 gold; the enemies, gems and the player are all similar light-blue boxes",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785312603.png",
+        "records/loops/create-1792781138827/play-1-1.md:21"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the choice is readable by title; description of a card hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run 0:40 level-up",
+      "what": "key_down A → level-up popup `레벨 업!` opened at 0:40 with three cards (낙뢰 new, 등불 탄환 Lv 2, 질풍 장화 new); game stopped behind it; card art shows an ID name as text (`WEAPON_LIGHTNING`) over a stretched `CARD` placeholder; the description text is cut by the placeholder art",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785675573.png",
+        "records/loops/create-1792781138827/play-1-1.md:23"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the numbers are readable but the placeholder text is distracting; `다시 출발` text overlaps stretched art",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "fall",
+      "what": "none → after 1:13 the result panel `어둠에 쓰러졌다` opened with survived time 1분 13초, kills 95, level 3, gold +30; a large `PANEL_FRAME` placeholder text sits in the middle of the panel and the numbers are drawn over it",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785922780.png",
+        "records/loops/create-1792781138827/play-1-1.md:27"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "with step mode on the panel waits for game time; result panel showed `생존 시간 0초`, kills 0, gold +0",
+      "id": null,
+      "drop": "the give-up was pressed right after a restart at 0:00, so 0s/0 kills/0 gold is correct, and step mode holds game time by design, so the panel waits for a step",
+      "source": "play",
+      "where": "pause",
+      "what": "key P then tap_anchor pause_give_up → P paused the run (step failed with `game time is paused`, as in the guide); give up ended the run, and in step mode the result panel did not show until time was stepped (tap on `result_lobby` failed with `anchor is not there or not visible`)",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792785970763.png",
+        "records/loops/create-1792781138827/play-1-1.md:29"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "buying works and the gold carries over; the toast is a thin dark band with tiny text",
+      "id": null,
+      "drop": "a purchase without enough gold showing a toast is the intended feedback; the toast frame is placeholder art (`requested`)",
+      "source": "play",
+      "where": "shrine",
+      "what": "tap_anchor upgrade_buy [upgrade_magnet] → the camp had 30 gold from the first fall; magnet went to Lv 1/3, its cost to 90, gold to 0; an extra press on a row with no gold shows `금화가 부족해요` as a toast across the screen",
+      "evidence": [
+        "captures/mvle0pdkc59058-1792786013587.png",
+        "records/loops/create-1792781138827/play-1-1.md:31"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "labels hard to read but legible; looks unfinished",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "terms",
+      "what": "none → Terms popup shows over title. Button textures show stretched placeholder \"BUTTON\" text over the real labels",
+      "evidence": [
+        "captures/mvle10cgbb9f15-1792785254995.png",
+        "records/loops/create-1792781138827/play-1-2.md:15"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "start label is hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "lobby",
+      "what": "tap_anchor terms_agree_all, terms_confirm → Camp opens with gold 0, title, three buttons. Start button text overlaps the \"BUTTON PRIMARY\" placeholder texture, and the right-hand LOBBY / GROUND / PLATE texts are placeholder art",
+      "evidence": [
+        "captures/mvle10cgbb9f15-1792785272955.png",
+        "records/loops/create-1792781138827/play-1-2.md:16"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "information is complete; button label is hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "lobby shrine",
+      "what": "tap_anchor lobby_upgrades → Six rows show Lv, effect and cost, and each reads `금화가 부족해요` at 0 gold. The buy button text overlaps the placeholder texture",
+      "evidence": [
+        "captures/mvle10cgbb9f15-1792785281441.png",
+        "records/loops/create-1792781138827/play-1-2.md:17"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "readable enough",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run",
+      "what": "tap_anchor lobby_play → Run starts at 0:00 with the move hint at the bottom. HP 100/100, weapon slot 1. The HUD panel and XP bar use placeholder textures",
+      "evidence": [
+        "captures/mvle10cgbb9f15-1792785293198.png",
+        "records/loops/create-1792781138827/play-1-2.md:18"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the weapon kills on its own with no damage taken; gems not seen",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run",
+      "what": "key_down W, 100 steps → Timer 0:22, 14 kills, 5 gold, Lv 1, HP still 100/100. No blue gem was visible on the field",
+      "evidence": [
+        "captures/mvle10cgbb9f15-1792785500025.png",
+        "records/loops/create-1792781138827/play-1-2.md:20"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the card effect text is overlapped by the placeholder art and hard to read",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run",
+      "what": "idle → At 0:28 the level-up popup opened at Lv 2 with 3 cards (wind feather, spark of rage, giant's heart), each with a placeholder texture over the text; the hint reads `1 2 3 로도 고를 수 있어요`",
+      "evidence": [
+        "captures/mvle10cgbb9f15-1792785682231.png",
+        "records/loops/create-1792781138827/play-1-2.md:21"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the screen is readable but looks unfinished",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/title/title",
+      "what": "none → the terms popup showed placeholder art: the buttons are filled with the text `BUTTON`, the row frames are stretched",
+      "evidence": [
+        "captures/mvle1gaxa545f2-1792785268717.png",
+        "records/loops/create-1792781138827/play-1-3.md:15"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "labels hard to read on the start button",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/lobby/lobby",
+      "what": "tap_anchor terms_agree_all, terms_confirm → camp opened; gold 0, three buttons shown. The big `LOBBY` block letters, `PLATE`/`BUTTON_PRIMARY` texts and a stretched gold label are placeholder art. The `원정 시작` label overlaps the `BUTTON_PRIMARY` text",
+      "evidence": [
+        "captures/mvle1gaxa545f2-1792785280268.png",
+        "records/loops/create-1792781138827/play-1-3.md:16"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the hint is clear; the HUD looks unfinished",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "tap_anchor lobby_play → the run opened at 0:00 with the move hint `WASD 로 움직이세요. 공격은 자동이에요`; HP 100/100, Lv 1, kills 0. HUD panels show placeholder `LATE`/`BAR_FRAME` art. The `GROUND` text tiles the floor",
+      "evidence": [
+        "captures/mvle1gaxa545f2-1792785295621.png",
+        "records/loops/create-1792781138827/play-1-3.md:17"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "cannot tell what to avoid or collect",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "held D → at 0:17 kills 12, gold 4. Enemies and scenery are all lavender boxes of similar color, so enemies cannot be told from scenery; no blue XP gem can be picked out",
+      "evidence": [
+        "captures/mvle1gaxa545f2-1792785452962.png",
+        "records/loops/create-1792781138827/play-1-3.md:19"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "no readable progress toward the level-up",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "held D → at 0:25 kills 20, Lv 1 still. The XP bar at the top is a placeholder-stretched strip and its fill cannot be read",
+      "evidence": [
+        "captures/mvle1gaxa545f2-1792785524072.png",
+        "records/loops/create-1792781138827/play-1-3.md:20"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the text can be read but with effort",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "held D → the level-up popup opened at 0:27 (Lv 2) after about 23 kills; three cards `거인의 심장`, `회전 낫`, `분노의 불씨` with the hint `1 2 3 로도 고를 수 있어요`. Card names and descriptions are drawn over a stretched white placeholder frame; the `회전 낫` description wraps and runs across the frame",
+      "evidence": [
+        "captures/mvle1gaxa545f2-1792785628954.png",
+        "records/loops/create-1792781138827/play-1-3.md:21"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the numbers are readable but the panel looks unfinished",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "held D → the run ended at 43 seconds; the result panel `어둠에 쓰러졌다` shows survived 43s, kills 41, level 2, gold +14, with `다시 출발` and `야영지로`. The stretched `PANEL_FRAME` art covers the stats rows; the `다시 출발` label overlaps `BUTTON_PRIMARY` text",
+      "evidence": [
+        "captures/mvle1gaxa545f2-1792785813095.png",
+        "records/loops/create-1792781138827/play-1-3.md:24"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the costs are clear; with 14 gold from a 43s run, the cheapest upgrade (30) needs about two runs of this length",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/lobby/lobby",
+      "what": "tap_anchor result_lobby, lobby_upgrades → the shrine panel showed gold 14 and six rows with the costs 50, 40, 100, 30, 60, 80, each with `금화가 부족해요`. Cost numbers are red and overlap the placeholder button art; every buy button reads `강화` over `BUTTON_PRIMARY`",
+      "evidence": [
+        "captures/mvle1gaxa545f2-1792785829745.png",
+        "records/loops/create-1792781138827/play-1-3.md:25"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "the button labels are overprinted by placeholder texture text `BUTTON_PRIMARY` / `BUTTON`; `계속하기` is hard to read. Gauge frame shows `BAR_FRAME` and the tray shows `PLATE` as stretched placeholder text",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "none (capture on resume) → pause popup over the late-run field. Title `일시 정지`, buttons `계속하기` and `원정 포기`, note that gold is kept on giving up",
+      "evidence": [
+        "captures/mvle1uqt3a7cf4-1792785300179.png",
+        "records/loops/create-1792781138827/play-1-4.md:16"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "resume worked at once. Wide floor text `GROUND` repeats across the field",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "tap_anchor pause_resume, key_down D, step 200 → run resumed, timer 10:04, kills 4,385, gold 1,156. A bright player box sits at the centre of a lit platform",
+      "evidence": [
+        "captures/mvle1uqt3a7cf4-1792785315783.png",
+        "records/loops/create-1792781138827/play-1-4.md:17"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the horde is dense and fills the screen, but the framerate and input still held up and no error was logged (`ogw log`: no error log). The player stays at screen centre, so a move to the right cannot be read from the player; only the field shifts",
+      "id": null,
+      "drop": "camera follow keeps the player centred as in the reference game; the ground that would show the field moving is placeholder art (`requested`)",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "step 200 x10 (D held), key_up D → timer 10:06, health 168/200 (down 32), kills 4,403",
+      "evidence": [
+        "captures/mvle1uqt3a7cf4-1792785340665.png",
+        "records/loops/create-1792781138827/play-1-4.md:19"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "restart is quick and the reset is clean. The weapon and passive icons show their ID names in tiny text (`WEAPON_LANTERN_BOLT`) instead of art",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "tap_anchor result_again → new run at 0:05 after about 500ms of loading, Lv 1, health 100/100, kills 1, gold 0, one weapon (`WEAPON_LANTERN_BOLT` 1). Move hint `WASD 로 움직이세요. 공격은 자동이에요` at the bottom",
+      "evidence": [
+        "captures/mvle1uqt3a7cf4-1792785366185.png",
+        "records/loops/create-1792781138827/play-1-4.md:22"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "placeholder art text covers the button labels",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run (pause popup, fixture start)",
+      "what": "none → The run opens on the pause popup at 0:00 with `계속하기` and `원정 포기`. Button labels sit over large placeholder text (\"BUTTON_PRIMARY\", \"BUTTON\") and the Korean labels are hard to read",
+      "evidence": [
+        "captures/mvle2d7h36f4d1-1792785316961.png",
+        "records/loops/create-1792781138827/play-1-5.md:14"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "unfinished placeholder art on the HUD",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run HUD",
+      "what": "none → The health bar shows \"BAR_FRAME\", the weapon slot and the kills/gold panel show a large \"PLATE\" in the middle, and the weapon icon shows tiny debug text",
+      "evidence": [
+        "captures/mvle2d7h36f4d1-1792785316961.png",
+        "records/loops/create-1792781138827/play-1-5.md:15"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "movement reads clearly, but the player is a plain block",
+      "id": null,
+      "drop": "camera follow keeps the player centred as in the reference game; the player look is placeholder art (`requested`)",
+      "source": "play",
+      "where": "run",
+      "what": "key_down D, step 5x200ms → Timer 0:01. The player held its place on the screen (the camera follows) and the ground moved. The player looks like a glowing white block with a red glow",
+      "evidence": [
+        "captures/mvle2d7h36f4d1-1792785338268.png",
+        "records/loops/create-1792781138827/play-1-5.md:17"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "the XP gain and the gem drops cannot be told apart on screen",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run",
+      "what": "key_down S held → Timer 0:16, 9 kills, gold 3, Lv 1, health 100/100. The XP bar at the top does not visibly change, and no blue gem is seen on screen",
+      "evidence": [
+        "captures/mvle2d7h36f4d1-1792785479597.png",
+        "records/loops/create-1792781138827/play-1-5.md:20"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": null,
+      "why": "placeholder look; the ground text is as bright as the enemies and makes them harder to find",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "play",
+      "where": "run",
+      "what": "none → The ground is covered by repeated \"GROUND\" text and the obstacle blocks are all one color",
+      "evidence": [
+        "captures/mvle2d7h36f4d1-1792785479597.png",
+        "records/loops/create-1792781138827/play-1-5.md:22"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "You cannot tell what to avoid, what to pick up or what the weapon hits. Hits are shown only by floating numbers",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "judge",
+      "where": "run field, all times",
+      "what": "Player, enemies, XP gems and obstacles are all the same lavender box with no texture",
+      "evidence": [
+        "`mvldzqoec49a81-1792786007963` (0:56), `mvldzxt6027bf0-1792786300717` (10:06)"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "worse than the reference game, so `vs reference` is `fail`",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "judge",
+      "where": "vs reference: game feel",
+      "what": "Telemetry shows a fast response: `input_latency_ms` averages 14.9 and peaks at 35, and 12 of 13 movement `key_down` inputs got feedback (Sound/Tween/Effect). On screen, though, the shot and its target cannot be told apart. Enemies, XP gems and obstacles are all the same lavender box, so a hit shows only as a white damage number (`12`) away from the player. In the reference at 10000–17000ms the whip arc, bat sprites and blue gems are each distinct.",
+      "evidence": [
+        "`ogw telemetry mvldzqoec49a81`: 31 inputs, latency mean 14.9 / max 35, feedback per input mean 6.42, 13 zero-feedback inputs (12 `key_up`, 1 `key_down` at run start). Captures `mvldzqoec49a81-1792785349205` (0:08), `mvldzqoec49a81-1792785430118` (0:14). Reference frames 10000–17000ms",
+        "records/loops/create-1792781138827/judge-1-1.md"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": null,
+      "why": "worse than the reference game, so `vs reference` is `fail`",
+      "id": null,
+      "drop": "every resource the observation refers to (models, nine-slices, icons, textures) has status `requested` in resources.csv",
+      "source": "judge",
+      "where": "vs reference: presentation",
+      "what": "I did not judge the placeholders (`BUTTON`, `PLATE`, `BAR_FRAME`, `PANEL_FRAME`, `GROUND`, `TIMER`, `KILLS`, `GOLD`, card icons). What remains in the first 30000ms is the run field. The player, every enemy, the XP gems and the obstacles are untextured lavender boxes made in code, with one color and no silhouette difference. Damage numbers are plain white digits. The reference first 30000ms has pixel-art menus, distinct bat and character sprites, blue gem sprites and a red health bar under the character",
+      "evidence": [
+        "Captures `mvldzqoec49a81-1792785269673` (0:02), `mvldzqoec49a81-1792785551911` (0:25), `mvldzqoec49a81-1792786007963` (0:56). Reference frames 0–27000ms",
+        "records/loops/create-1792781138827/judge-1-1.md"
+      ]
+    }
+  ],
+  "discarded": []
+}

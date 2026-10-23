@@ -1,0 +1,34 @@
+syntax = "proto3";
+package game;
+
+import "ogw/options.proto";
+
+option (ogw.core_errors) = "StartPlaySession:GAME_ERROR_LEVEL_NOT_FOUND";
+option (ogw.core_errors) = "BuyShopProduct:GAME_ERROR_UPGRADE_ORDER";
+
+service Game {
+}
+
+// What one run starts from. `prepare_play_session` builds it from the user's permanent upgrade levels; the client
+// simulation reads the upgrade effects from it and makes its random from `seed`.
+message PlaySessionLoadout {
+  // Base of the simulation random (`play_session_simulation`).
+  int64 seed = 1;
+  // `upgrade` ID values the user has at level 1 or more, in `upgrade.order`.
+  repeated int32 upgrade_ids = 2;
+  // The level of each `upgrade_ids` entry, at the same index.
+  repeated int32 upgrade_levels = 3;
+}
+
+// The result of one finished run. The client simulation decides it; `verify_play_session` checks it against the play
+// session time and `game_setting` before `apply_play_session` counts it and grants the run gold.
+message PlaySessionResult {
+  // Run time the player survived, in ms of game time. `[run_duration]` when the run reached dawn.
+  int64 survived_ms = 1 [(ogw.v) = {min: 0, max: 3600000}];
+  // Enemies the player defeated.
+  int32 kills = 2 [(ogw.v) = {min: 0, max: 1000000}];
+  // Level the player reached. A run starts at level 1.
+  int32 level = 3 [(ogw.v) = {min: 1, max: 1000}];
+  // The run reached dawn: the player survived `[run_duration]`.
+  bool dawn = 4;
+}

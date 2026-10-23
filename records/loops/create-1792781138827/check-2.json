@@ -1,0 +1,524 @@
+{
+  "commit": "f0bf583821e0c4d6ab2ddfbcb050f942b49b090b",
+  "checks": [
+    {
+      "name": "regression test",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "static check",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": [
+        {
+          "where": "data/translations/en.csv:176:5",
+          "message": "data check translation_missing reserved_string.text.[result_gave_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:186:5",
+          "message": "data check translation_missing reserved_string.text.[run_blessing] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:189:5",
+          "message": "data check translation_missing reserved_string.text.[run_fallen] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:190:5",
+          "message": "data check translation_missing reserved_string.text.[run_gave_up] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:196:5",
+          "message": "data check translation_missing reserved_string.text.[run_low_health] has no en translation",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "name": "no blocker",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "full flow",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "performance",
+      "platform": "macos",
+      "result": "fail",
+      "failures": [
+        {
+          "where": "scene/run/run",
+          "message": "fps 5 percentile 16 is below targetFps 60 (2 samples)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-2/performance-macos/samples.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "fps 5 percentile 35 is below targetFps 60 (3 samples)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-2/performance-macos/samples.json"
+          ]
+        }
+      ],
+      "warnings": [],
+      "hostLoad": {
+        "cpuMaxPercent": 59.2,
+        "memoryMaxPercent": 99.9,
+        "instancesMax": 3
+      }
+    },
+    {
+      "name": "UI quality",
+      "platform": "macos",
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "no placeholder",
+      "platform": null,
+      "result": "fail",
+      "failures": [
+        {
+          "where": "resource/resources.csv:2",
+          "message": "placeholder app_icon/main",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:3",
+          "message": "placeholder splash/main",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:4",
+          "message": "placeholder font/main",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:5",
+          "message": "placeholder background/title",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:6",
+          "message": "placeholder background/lobby",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:7",
+          "message": "placeholder texture/ground",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:8",
+          "message": "placeholder model/hero",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:9",
+          "message": "placeholder model/enemy_bat",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:10",
+          "message": "placeholder model/enemy_ghoul",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:11",
+          "message": "placeholder model/enemy_skeleton",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:12",
+          "message": "placeholder model/enemy_wraith",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:13",
+          "message": "placeholder model/enemy_brute",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:14",
+          "message": "placeholder model/enemy_bone_knight",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:15",
+          "message": "placeholder model/weapon_lantern_bolt",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:16",
+          "message": "placeholder model/weapon_spinning_blade",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:17",
+          "message": "placeholder model/weapon_holy_aura",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:18",
+          "message": "placeholder model/weapon_throwing_axe",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:19",
+          "message": "placeholder model/weapon_lightning",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:20",
+          "message": "placeholder model/xp_gem",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:21",
+          "message": "placeholder model/chest",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:22",
+          "message": "placeholder model/heal_soup",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:23",
+          "message": "placeholder model/prop_gravestone",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:24",
+          "message": "placeholder model/prop_rock",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:25",
+          "message": "placeholder model/prop_lantern_post",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:26",
+          "message": "placeholder particle/run/hit_spark",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:27",
+          "message": "placeholder particle/run/enemy_death",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:28",
+          "message": "placeholder particle/run/level_up",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:29",
+          "message": "placeholder particle/run/lightning_impact",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:30",
+          "message": "placeholder particle/run/pickup",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:31",
+          "message": "placeholder nine_slice/ui/panel_frame",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:32",
+          "message": "placeholder nine_slice/ui/button",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:33",
+          "message": "placeholder nine_slice/ui/button_primary",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:34",
+          "message": "placeholder nine_slice/ui/focus_ring",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:35",
+          "message": "placeholder nine_slice/ui/card",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:36",
+          "message": "placeholder nine_slice/ui/bar_frame",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:37",
+          "message": "placeholder nine_slice/ui/bar_fill",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:38",
+          "message": "placeholder nine_slice/ui/plate",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:39",
+          "message": "placeholder icon/gold",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:40",
+          "message": "placeholder icon/kills",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:41",
+          "message": "placeholder icon/timer",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:42",
+          "message": "placeholder icon/heal_soup",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:43",
+          "message": "placeholder icon/weapon_lantern_bolt",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:44",
+          "message": "placeholder icon/weapon_spinning_blade",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:45",
+          "message": "placeholder icon/weapon_holy_aura",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:46",
+          "message": "placeholder icon/weapon_throwing_axe",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:47",
+          "message": "placeholder icon/weapon_lightning",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:48",
+          "message": "placeholder icon/passive_might",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:49",
+          "message": "placeholder icon/passive_haste",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:50",
+          "message": "placeholder icon/passive_vitality",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:51",
+          "message": "placeholder icon/passive_magnet",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:52",
+          "message": "placeholder icon/passive_swiftness",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:53",
+          "message": "placeholder icon/upgrade_might",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:54",
+          "message": "placeholder icon/upgrade_vitality",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:55",
+          "message": "placeholder icon/upgrade_haste",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:56",
+          "message": "placeholder icon/upgrade_magnet",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:57",
+          "message": "placeholder icon/upgrade_swiftness",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:58",
+          "message": "placeholder icon/upgrade_greed",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:59",
+          "message": "placeholder bgm/lobby",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:60",
+          "message": "placeholder bgm/run",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:61",
+          "message": "placeholder sfx/ui_click",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:62",
+          "message": "placeholder sfx/enemy_hit",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:63",
+          "message": "placeholder sfx/enemy_die",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:64",
+          "message": "placeholder sfx/gem_pickup",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:65",
+          "message": "placeholder sfx/level_up",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:66",
+          "message": "placeholder sfx/upgrade_pick",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:67",
+          "message": "placeholder sfx/player_hurt",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:68",
+          "message": "placeholder sfx/chest_open",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:69",
+          "message": "placeholder sfx/elite_roar",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:70",
+          "message": "placeholder sfx/heal",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:71",
+          "message": "placeholder sfx/dawn",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:72",
+          "message": "placeholder sfx/player_death",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:73",
+          "message": "placeholder sfx/upgrade_buy",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:74",
+          "message": "placeholder sfx/refuse",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:75",
+          "message": "placeholder sfx/bolt_fire",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:76",
+          "message": "placeholder sfx/blade_hit",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:77",
+          "message": "placeholder sfx/aura_pulse",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:78",
+          "message": "placeholder sfx/axe_throw",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:79",
+          "message": "placeholder sfx/lightning",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:176",
+          "message": "translation_missing en reserved_string.text.[result_gave_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:186",
+          "message": "translation_missing en reserved_string.text.[run_blessing]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:189",
+          "message": "translation_missing en reserved_string.text.[run_fallen]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:190",
+          "message": "translation_missing en reserved_string.text.[run_gave_up]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:196",
+          "message": "translation_missing en reserved_string.text.[run_low_health]",
+          "evidence": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "row simulation",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    }
+  ],
+  "gate": "pass"
+}

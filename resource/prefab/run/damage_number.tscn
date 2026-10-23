@@ -1,0 +1,19 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://features/run/run_damage_number.gd" id="1_r"]
+
+[node name="DamageNumber" type="Node3D" node_paths=PackedStringArray("label")]
+script = ExtResource("1_r")
+auto_return = true
+label = NodePath("Label")
+
+[node name="Label" type="Label3D" parent="."]
+pixel_size = 0.008
+billboard = 1
+no_depth_test = true
+render_priority = 10
+outline_render_priority = 9
+modulate = Color(0.91, 0.882, 0.816, 1.0)
+outline_modulate = Color(0.08, 0.04, 0.06, 1.0)
+font_size = 54
+outline_size = 16

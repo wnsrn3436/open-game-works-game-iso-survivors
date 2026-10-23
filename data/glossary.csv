@@ -1,0 +1,51 @@
+source,id_name,note,source_hash,en
+한국어,[lang_ko],Name of the Korean language in its own language,ea3252281bc3bcec,한국어
+English,[lang_en],Name of the English language,ba118bf7fc9c1aed,English
+아이소 서바이버즈,,Game title (records/setup/name.md),4ed5db6a4142a709,Iso Survivors
+등불 제단,,Lobby shop where gold buys permanent upgrades,0a5ec1f85f96919a,Lantern Shrine
+원정,,One run from the start until death or dawn,d1b7c23e77585881,Run
+야영지,,The lobby: the camp between runs,b15874ebadc024f5,Camp
+새벽,,The run end at 15:00 when the sun rises and the player survives,d0a36389c6b198a1,Dawn
+금화,[item_gold],Item name: currency earned in runs,031a3f7ceea0e467,Gold
+힘,[upgrade_might],Item name: permanent upgrade of the lantern shrine,68de24edc341fabd,Might
+생명력,[upgrade_vitality],Item name: permanent upgrade of the lantern shrine,4672fdd8d67ecb3b,Vitality
+서두름,[upgrade_haste],Item name: permanent upgrade of the lantern shrine,1f07bb1303788da0,Haste
+자력,[upgrade_magnet],Item name: permanent upgrade of the lantern shrine,0aa352d2d28580ef,Magnet
+신속,[upgrade_swiftness],Item name: permanent upgrade of the lantern shrine,31f02f124ad510e2,Swiftness
+탐욕,[upgrade_greed],Item name: permanent upgrade of the lantern shrine,fc04f60ba88bae7b,Greed
+등불 탄환,[weapon_lantern_bolt],Weapon name,113b1ba1f7ab9a29,Lantern Bolt
+회전 낫,[weapon_spinning_blade],Weapon name,605f2ecf8a5811f3,Spinning Blade
+성화 오라,[weapon_holy_aura],Weapon name,cc854a1099e545d2,Holy Aura
+투척 도끼,[weapon_throwing_axe],Weapon name,0d5d02ea15f5a39b,Throwing Axe
+낙뢰,[weapon_lightning],Weapon name,e737246a49e34cdf,Lightning Strike
+분노의 불씨,[passive_might],Passive power name,0571a1e0ecd59021,Ember of Fury
+바람의 깃털,[passive_haste],Passive power name,a1170fb4c44f8426,Wind Feather
+거인의 심장,[passive_vitality],Passive power name,9f18fdf70f9dd291,Giant's Heart
+자석 부적,[passive_magnet],Passive power name,03cd69c7982ff17c,Magnet Charm
+질풍 장화,[passive_swiftness],Passive power name,8c91511c868d3c62,Gale Boots
+W,[prompt_key_w],Input prompt name of W,fcb5f40df9be6bae,W
+A,[prompt_key_a],Input prompt name of A,559aead08264d579,A
+S,[prompt_key_s],Input prompt name of S,8de0b3c47f112c59,S
+D,[prompt_key_d],Input prompt name of D,3f39d5c348e5b79d,D
+1,[prompt_key_1],Input prompt name of 1,6b86b273ff34fce1,1
+2,[prompt_key_2],Input prompt name of 2,d4735e3a265e16ee,2
+3,[prompt_key_3],Input prompt name of 3,4e07408562bedb8b,3
+P,[prompt_key_p],Input prompt name of P,5c62e091b8c0565f,P
+Esc,[prompt_key_escape],Input prompt name of Escape,52f878edb34fa14f,Esc
+십자키 위,[prompt_pad_dpad_up],Input prompt name of dpad_up,60eebf8cb06aa832,D-pad Up
+십자키 아래,[prompt_pad_dpad_down],Input prompt name of dpad_down,4d81ef13d0713c5d,D-pad Down
+십자키 왼쪽,[prompt_pad_dpad_left],Input prompt name of dpad_left,a23e3f8016ef1fc8,D-pad Left
+십자키 오른쪽,[prompt_pad_dpad_right],Input prompt name of dpad_right,12c895f81b90c1a2,D-pad Right
+X,[prompt_pad_x],Input prompt name of x,4b68ab3847feda7d,X
+Y,[prompt_pad_y],Input prompt name of y,18f5384d58bcb1bb,Y
+RB,[prompt_pad_rb],Input prompt name of right_shoulder,eac8a36c12c94b93,RB
+Start,[prompt_pad_start],Input prompt name of start,e4bb9f1ece9af926,Start
+B,[prompt_pad_b],Input prompt name of b,df7e70e5021544f4,B
+W,[prompt_touch_move_up],Input prompt name of move_up,fcb5f40df9be6bae,W
+A,[prompt_touch_move_left],Input prompt name of move_left,559aead08264d579,A
+S,[prompt_touch_move_down],Input prompt name of move_down,8de0b3c47f112c59,S
+D,[prompt_touch_move_right],Input prompt name of move_right,3f39d5c348e5b79d,D
+1,[prompt_touch_menu_pick_1],Input prompt name of menu_pick_1,6b86b273ff34fce1,1
+2,[prompt_touch_menu_pick_2],Input prompt name of menu_pick_2,d4735e3a265e16ee,2
+3,[prompt_touch_menu_pick_3],Input prompt name of menu_pick_3,4e07408562bedb8b,3
+P,[prompt_touch_pause],Input prompt name of pause,5c62e091b8c0565f,P

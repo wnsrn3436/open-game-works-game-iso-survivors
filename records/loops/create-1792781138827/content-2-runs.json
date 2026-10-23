@@ -1,0 +1,1708 @@
+{
+  "runs": [
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors",
+      "startedAt": 1792787304174,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlf9t4zff2441"
+    },
+    {
+      "command": "ogw job wait mvlf9t4zff2441",
+      "startedAt": 1792787326453,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_state",
+      "startedAt": 1792787329589,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvlf9u7p8d10cd",
+      "startedAt": 1792787330376,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_stats",
+      "startedAt": 1792787334065,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd run.open_levelup",
+      "startedAt": 1792787334914,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvlf9u7p8d10cd",
+      "startedAt": 1792787336264,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_stats",
+      "startedAt": 1792787336968,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd run.open_pause",
+      "startedAt": 1792787337736,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd run.open_levelup",
+      "startedAt": 1792787339051,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd run.open_result",
+      "startedAt": 1792787364265,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd run.open_levelup",
+      "startedAt": 1792787365916,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd lobby.open_lobby",
+      "startedAt": 1792787396846,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd run.open_levelup",
+      "startedAt": 1792787398065,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_state",
+      "startedAt": 1792787435513,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvlf9u7p8d10cd",
+      "startedAt": 1792787436345,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlf9u7p8d10cd tap_anchor pause_resume",
+      "startedAt": 1792787465489,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_stats",
+      "startedAt": 1792787466381,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_stats",
+      "startedAt": 1792787470254,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_stats",
+      "startedAt": 1792787474078,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_stats",
+      "startedAt": 1792787477950,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_stats",
+      "startedAt": 1792787481768,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_state",
+      "startedAt": 1792787490153,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlf9u7p8d10cd",
+      "startedAt": 1792787491012,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlf9u7p8d10cd get_stats",
+      "startedAt": 1792787521395,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlf9u7p8d10cd",
+      "startedAt": 1792787595638,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --fixture client/dev/bot/fixtures/late_run_horde.json",
+      "startedAt": 1792787596513,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlfg2pi033ab3"
+    },
+    {
+      "command": "ogw settings get harness maxConcurrentInstances",
+      "startedAt": 1792787597209,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlfg2pi033ab3",
+      "startedAt": 1792787611228,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfg3qy9ec633 tap_anchor pause_resume",
+      "startedAt": 1792787616697,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 get_stats",
+      "startedAt": 1792787619593,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 set_step_mode on",
+      "startedAt": 1792787620492,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlfg3qy9ec633 on",
+      "startedAt": 1792787621104,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 run.fast_forward 30000",
+      "startedAt": 1792787621797,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlfg3qy9ec633 off",
+      "startedAt": 1792787622529,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 get_stats",
+      "startedAt": 1792787625194,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 get_stats",
+      "startedAt": 1792787627882,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 get_stats",
+      "startedAt": 1792787630572,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 get_state",
+      "startedAt": 1792787643525,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlfg3qy9ec633",
+      "startedAt": 1792787644345,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfg3qy9ec633 key 1 100",
+      "startedAt": 1792787648637,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 get_state",
+      "startedAt": 1792787650847,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 run.fast_forward 30000",
+      "startedAt": 1792787651684,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 get_stats",
+      "startedAt": 1792787652639,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 get_stats",
+      "startedAt": 1792787654346,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfg3qy9ec633 get_stats",
+      "startedAt": 1792787656826,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlfg3qy9ec633",
+      "startedAt": 1792787690020,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --fixture client/dev/bot/fixtures/late_run_horde.json",
+      "startedAt": 1792787690863,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlfi3ige88e47"
+    },
+    {
+      "command": "ogw job wait mvlfi3ige88e47",
+      "startedAt": 1792787708541,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfi4hrd2cb33 tap_anchor pause_resume",
+      "startedAt": 1792787712691,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 run.profile",
+      "startedAt": 1792787714445,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_state",
+      "startedAt": 1792787718246,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 run.profile",
+      "startedAt": 1792787718985,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_stats",
+      "startedAt": 1792787719738,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfi4hrd2cb33 key 1 100",
+      "startedAt": 1792787720522,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_state",
+      "startedAt": 1792787724366,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 run.profile",
+      "startedAt": 1792787725130,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_stats",
+      "startedAt": 1792787725890,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfi4hrd2cb33 key 1 100",
+      "startedAt": 1792787726642,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_state",
+      "startedAt": 1792787730481,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 run.profile",
+      "startedAt": 1792787731286,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_stats",
+      "startedAt": 1792787732055,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfi4hrd2cb33 key 1 100",
+      "startedAt": 1792787732797,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_state",
+      "startedAt": 1792787736629,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 run.profile",
+      "startedAt": 1792787737496,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_stats",
+      "startedAt": 1792787738365,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfi4hrd2cb33 key 1 100",
+      "startedAt": 1792787739083,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvlfi4hrd2cb33",
+      "startedAt": 1792787754719,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfi4hrd2cb33 key 1 100",
+      "startedAt": 1792787755459,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_stats",
+      "startedAt": 1792787756382,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfi4hrd2cb33 key 1 100",
+      "startedAt": 1792787760364,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_stats",
+      "startedAt": 1792787761218,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfi4hrd2cb33 key 1 100",
+      "startedAt": 1792787765028,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfi4hrd2cb33 get_stats",
+      "startedAt": 1792787765830,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlfi4hrd2cb33",
+      "startedAt": 1792787769643,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlfi4hrd2cb33",
+      "startedAt": 1792787807608,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource sync open-game-works-game-iso-survivors",
+      "startedAt": 1792788192703,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw data open-game-works-game-iso-survivors",
+      "startedAt": 1792788194068,
+      "exitCode": 0,
+      "summary": {
+        "glossaryMissing": []
+      }
+    },
+    {
+      "command": "ogw contract open-game-works-game-iso-survivors",
+      "startedAt": 1792788195521,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --regression client/tests/run/test_tmp_probe.gd",
+      "startedAt": 1792788214307,
+      "exitCode": 1,
+      "summary": {
+        "checks": [
+          {
+            "name": "regression test",
+            "result": "fail"
+          }
+        ]
+      }
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --regression client/tests/run",
+      "startedAt": 1792788262519,
+      "exitCode": 0,
+      "summary": {
+        "checks": [
+          {
+            "name": "regression test",
+            "result": "pass"
+          }
+        ]
+      }
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors",
+      "startedAt": 1792788274196,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlfulme1f0307"
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --static",
+      "startedAt": 1792788274814,
+      "exitCode": 1,
+      "summary": {
+        "checks": [
+          {
+            "name": "static check",
+            "result": "fail"
+          }
+        ]
+      }
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --static",
+      "startedAt": 1792788288634,
+      "exitCode": 0,
+      "summary": {
+        "checks": [
+          {
+            "name": "static check",
+            "result": "pass"
+          }
+        ]
+      }
+    },
+    {
+      "command": "ogw job wait mvlfulme1f0307",
+      "startedAt": 1792788302406,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvlfuml40af389",
+      "startedAt": 1792788306633,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 lobby.open_lobby",
+      "startedAt": 1792788307288,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlfuml40af389",
+      "startedAt": 1792788308021,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.open_pause",
+      "startedAt": 1792788308810,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.open_levelup",
+      "startedAt": 1792788310092,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.open_result",
+      "startedAt": 1792788311988,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.open_levelup",
+      "startedAt": 1792788313838,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.open_pause",
+      "startedAt": 1792788344787,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.open_result_unsaved",
+      "startedAt": 1792788345793,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.open_levelup",
+      "startedAt": 1792788348396,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvlfuml40af389",
+      "startedAt": 1792788351252,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 list_commands",
+      "startedAt": 1792788359835,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw settings get core QACore.commandTimeoutMs",
+      "startedAt": 1792788360643,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.open_result",
+      "startedAt": 1792788361297,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 get_state",
+      "startedAt": 1792788364141,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.open_levelup",
+      "startedAt": 1792788364936,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 get_state",
+      "startedAt": 1792788396011,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.state",
+      "startedAt": 1792788402647,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfuml40af389 run.state",
+      "startedAt": 1792788405447,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlfuml40af389",
+      "startedAt": 1792788406445,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlfuml40af389",
+      "startedAt": 1792788444443,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors",
+      "startedAt": 1792788452298,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlfyf1d2ee6ea"
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --fixture client/dev/bot/fixtures/second_run_after_meta_upgrade.json",
+      "startedAt": 1792788453074,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlfyfmmaf5756"
+    },
+    {
+      "command": "ogw job wait mvlfyf1d2ee6ea",
+      "startedAt": 1792788488268,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlfyfmmaf5756",
+      "startedAt": 1792788488977,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlfyf1d2ee6ea",
+      "startedAt": 1792788493046,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfygrh3c1008 run.state",
+      "startedAt": 1792788493759,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfygrh3c1008 tap_anchor pause_resume",
+      "startedAt": 1792788494562,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlfygrh3c1008",
+      "startedAt": 1792788496310,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 lobby.open_lobby",
+      "startedAt": 1792788528832,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_pause",
+      "startedAt": 1792788529631,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_levelup",
+      "startedAt": 1792788531399,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_result",
+      "startedAt": 1792788534158,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_levelup",
+      "startedAt": 1792788536876,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_pause",
+      "startedAt": 1792788539253,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_result_unsaved",
+      "startedAt": 1792788541769,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_levelup",
+      "startedAt": 1792788544686,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_levelup",
+      "startedAt": 1792788547664,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_run",
+      "startedAt": 1792788550327,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 lobby.open_lobby",
+      "startedAt": 1792788553071,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.open_levelup",
+      "startedAt": 1792788554527,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvlfyg5pd85300",
+      "startedAt": 1792788556653,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlfyg5pd85300",
+      "startedAt": 1792788557407,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfyg5pd85300 key 1 100",
+      "startedAt": 1792788566498,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 lobby.open_lobby",
+      "startedAt": 1792788567934,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlfyg5pd85300 on",
+      "startedAt": 1792788569359,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfyg5pd85300 tap_anchor lobby_play",
+      "startedAt": 1792788570034,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 1000",
+      "startedAt": 1792788570914,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 1000",
+      "startedAt": 1792788571737,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 1000",
+      "startedAt": 1792788572642,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788573553,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788574411,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788575421,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788576207,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788576944,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788577803,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788578691,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788579530,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788580477,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788581270,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788582165,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788582865,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788583669,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788584421,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788585163,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788586006,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788586802,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788587670,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788588424,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788589250,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788590073,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788590847,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788591715,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788592615,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788593466,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788594246,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788595219,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788595950,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788596748,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788597639,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788598379,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788603412,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788604252,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788605118,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfyg5pd85300 tap_anchor pause_give_up",
+      "startedAt": 1792788612195,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788613023,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlfyg5pd85300 off",
+      "startedAt": 1792788615997,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788619806,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlfyg5pd85300",
+      "startedAt": 1792788620682,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlfyg5pd85300 on",
+      "startedAt": 1792788630627,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfyg5pd85300 tap_anchor result_again",
+      "startedAt": 1792788631405,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 200",
+      "startedAt": 1792788632230,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 200",
+      "startedAt": 1792788633469,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 200",
+      "startedAt": 1792788634707,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 200",
+      "startedAt": 1792788635850,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788636986,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788637788,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788640848,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788641691,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788642417,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788645458,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788646205,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788647025,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788650017,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788651278,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788652155,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788655307,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788656009,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788656820,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788659703,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788660494,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788661199,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788664152,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788664952,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788665676,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788699079,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfyg5pd85300 key 1 100",
+      "startedAt": 1792788699872,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788700760,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788701616,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788704457,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788705255,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788706066,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788708890,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788709707,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788710558,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788713676,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788714442,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788715367,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788718476,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788719356,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788720212,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788723094,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788723919,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788724656,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788758035,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlfyg5pd85300 key 1 100",
+      "startedAt": 1792788758786,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788759541,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 2000",
+      "startedAt": 1792788760261,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 get_state",
+      "startedAt": 1792788763289,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788764139,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlfyg5pd85300",
+      "startedAt": 1792788767703,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 1200",
+      "startedAt": 1792788768557,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788770726,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 400",
+      "startedAt": 1792788788629,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788790271,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 400",
+      "startedAt": 1792788791225,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788792426,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 400",
+      "startedAt": 1792788793194,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788794576,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 400",
+      "startedAt": 1792788795451,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788796831,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 400",
+      "startedAt": 1792788797651,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788799098,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 400",
+      "startedAt": 1792788799881,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788801305,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 400",
+      "startedAt": 1792788802145,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788803624,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 400",
+      "startedAt": 1792788804655,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlfyg5pd85300 run.state",
+      "startedAt": 1792788806026,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlfyg5pd85300 700",
+      "startedAt": 1792788806744,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlfyg5pd85300",
+      "startedAt": 1792788808392,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlfyg5pd85300",
+      "startedAt": 1792788818636,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlfygrh3c1008",
+      "startedAt": 1792788819350,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw resource sync open-game-works-game-iso-survivors",
+      "startedAt": 1792788820073,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --fixture client/dev/bot/fixtures/second_run_after_meta_upgrade.json",
+      "startedAt": 1792788821412,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlg6but3d4a94"
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --fixture client/dev/bot/fixtures/late_run_horde.json",
+      "startedAt": 1792788822082,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvlg6cdbd36882"
+    },
+    {
+      "command": "ogw job wait mvlg6but3d4a94",
+      "startedAt": 1792788836243,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvlg6cdbd36882",
+      "startedAt": 1792788836920,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlg6ctg827e56 on",
+      "startedAt": 1792788841285,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlg6ctg827e56 tap_anchor pause_resume",
+      "startedAt": 1792788841966,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlg6ctg827e56 200",
+      "startedAt": 1792788842665,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlg6ctg827e56",
+      "startedAt": 1792788843570,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvlg6dby717a34 on",
+      "startedAt": 1792788844593,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvlg6dby717a34 tap_anchor pause_resume",
+      "startedAt": 1792788845372,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvlg6dby717a34 1000",
+      "startedAt": 1792788846068,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlg6dby717a34 get_state",
+      "startedAt": 1792788847792,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvlg6dby717a34",
+      "startedAt": 1792788848527,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlg6ctg827e56 get_stats",
+      "startedAt": 1792788861610,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvlg6ctg827e56",
+      "startedAt": 1792788862404,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvlg6ctg827e56",
+      "startedAt": 1792788863124,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlg6ctg827e56",
+      "startedAt": 1792788863858,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvlg6dby717a34 get_stats",
+      "startedAt": 1792788864635,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvlg6dby717a34",
+      "startedAt": 1792788865466,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvlg6dby717a34",
+      "startedAt": 1792788866157,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvlg6dby717a34",
+      "startedAt": 1792788866873,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw data open-game-works-game-iso-survivors",
+      "startedAt": 1792788872244,
+      "exitCode": 0,
+      "summary": {
+        "glossaryMissing": []
+      }
+    },
+    {
+      "command": "ogw contract open-game-works-game-iso-survivors",
+      "startedAt": 1792788873629,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --regression",
+      "startedAt": 1792788874638,
+      "exitCode": 0,
+      "summary": {
+        "checks": [
+          {
+            "name": "regression test",
+            "result": "pass"
+          }
+        ]
+      }
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --static",
+      "startedAt": 1792788882836,
+      "exitCode": 0,
+      "summary": {
+        "checks": [
+          {
+            "name": "static check",
+            "result": "pass"
+          }
+        ]
+      }
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792788924768,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

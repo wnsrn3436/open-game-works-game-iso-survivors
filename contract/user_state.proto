@@ -1,0 +1,16 @@
+syntax = "proto3";
+package game;
+
+// The run record of the user. No row before the first finished run.
+message RunRecordUserState {
+  // Finished runs, dawn or not.
+  int32 runs = 1;
+  // Runs that reached dawn.
+  int32 dawns = 2;
+  // Longest survived run time in ms of game time.
+  int64 best_survived_ms = 3;
+  // Most enemies defeated in one run.
+  int32 best_kills = 4;
+  // Enemies defeated in all runs.
+  int64 total_kills = 5;
+}

@@ -1,0 +1,8 @@
+,,
+All,None,All
+id(key),string,string
+id,target,value
+[shop_grant_mail],Server,[mail_shop_grant]
+[run_mode],All,[mode_run]
+[gold],All,[item_gold]
+[start_weapon],Client,[weapon_lantern_bolt]

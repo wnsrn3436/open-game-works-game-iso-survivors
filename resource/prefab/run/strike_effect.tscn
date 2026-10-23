@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://features/run/run_effect.gd" id="1_r"]
+[ext_resource type="PackedScene" path="res://resource/model/weapon_lightning.glb" id="2_r"]
+[ext_resource type="PackedScene" path="res://resource/particle/run/lightning_impact.tscn" id="3_r"]
+
+[node name="StrikeEffect" type="Node3D" node_paths=PackedStringArray("particles")]
+script = ExtResource("1_r")
+auto_return = true
+life_tween = "tween/run/strike"
+particles = NodePath("Particles")
+
+[node name="Bolt" parent="." instance=ExtResource("2_r")]
+
+[node name="Particles" parent="." instance=ExtResource("3_r")]

@@ -1,0 +1,169 @@
+{
+  "commit": "63e74d427edecb9926483151b3737863b3378717",
+  "checks": [
+    {
+      "name": "regression test",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "static check",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": [
+        {
+          "where": "data/translations/en.csv:187:5",
+          "message": "data check translation_missing reserved_string.text.[run_blessing_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:227:5",
+          "message": "data check translation_missing upgrade.bonus.[upgrade_greed] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:228:5",
+          "message": "data check translation_missing upgrade.bonus.[upgrade_haste] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:229:5",
+          "message": "data check translation_missing upgrade.bonus.[upgrade_magnet] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:230:5",
+          "message": "data check translation_missing upgrade.bonus.[upgrade_might] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:231:5",
+          "message": "data check translation_missing upgrade.bonus.[upgrade_swiftness] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:232:5",
+          "message": "data check translation_missing upgrade.bonus.[upgrade_vitality] has no en translation",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "name": "no blocker",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "full flow",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "performance",
+      "platform": "macos",
+      "result": "fail",
+      "failures": [
+        {
+          "where": "scene/run/run",
+          "message": "fps 5 percentile 15 is below targetFps 60 (2 samples)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-3/performance-macos/samples.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "fps 5 percentile 33 is below targetFps 60 (3 samples)",
+          "evidence": [
+            "records/loops/create-1792781138827/evidence/check-3/performance-macos/samples.json"
+          ]
+        }
+      ],
+      "warnings": [],
+      "hostLoad": {
+        "cpuMaxPercent": 58.8,
+        "memoryMaxPercent": 83.4,
+        "instancesMax": 4
+      }
+    },
+    {
+      "name": "UI quality",
+      "platform": "macos",
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "no placeholder",
+      "platform": null,
+      "result": "fail",
+      "failures": [
+        {
+          "where": "resource/resources.csv:31",
+          "message": "placeholder particle/run/impact_flash",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:32",
+          "message": "placeholder particle/run/muzzle_flash",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:33",
+          "message": "placeholder particle/run/step_dust",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:187",
+          "message": "translation_missing en reserved_string.text.[run_blessing_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:227",
+          "message": "translation_missing en upgrade.bonus.[upgrade_greed]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:228",
+          "message": "translation_missing en upgrade.bonus.[upgrade_haste]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:229",
+          "message": "translation_missing en upgrade.bonus.[upgrade_magnet]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:230",
+          "message": "translation_missing en upgrade.bonus.[upgrade_might]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:231",
+          "message": "translation_missing en upgrade.bonus.[upgrade_swiftness]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:232",
+          "message": "translation_missing en upgrade.bonus.[upgrade_vitality]",
+          "evidence": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "row simulation",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    }
+  ],
+  "gate": "pass"
+}

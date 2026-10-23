@@ -1,0 +1,106 @@
+[gd_scene format=3]
+
+[sub_resource type="Gradient" id="Gradient_7qndc"]
+offsets = PackedFloat32Array(0, 0.5, 1)
+colors = PackedColorArray(0.36, 0.25, 0.5, 0.9, 0.23, 0.16, 0.33, 0.7, 0.11, 0.1, 0.18, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_neoan"]
+gradient = SubResource("Gradient_7qndc")
+
+[sub_resource type="Curve" id="Curve_kotjw"]
+_data = [Vector2(0, 0.5), 0.0, 0.0, 0, 0, Vector2(0.4, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_xwf40"]
+curve = SubResource("Curve_kotjw")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_js1ra"]
+emission_shape = 1
+emission_sphere_radius = 0.25
+direction = Vector3(0, 1, 0)
+spread = 60.0
+initial_velocity_min = 0.6
+initial_velocity_max = 1.4
+gravity = Vector3(0, 0.5, 0)
+damping_min = 1.5
+damping_max = 3.0
+scale_min = 0.7
+scale_max = 1.2
+scale_curve = SubResource("CurveTexture_xwf40")
+color_ramp = SubResource("GradientTexture1D_neoan")
+sub_emitter_mode = 4
+sub_emitter_amount_at_start = 1
+
+[sub_resource type="Gradient" id="Gradient_24hy8"]
+offsets = PackedFloat32Array(0, 1, 0.3)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0.9)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vylb5"]
+gradient = SubResource("Gradient_24hy8")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yjf7w"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("GradientTexture2D_vylb5")
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_rn4v1"]
+material = SubResource("StandardMaterial3D_yjf7w")
+size = Vector2(0.55, 0.55)
+
+[sub_resource type="Gradient" id="Gradient_uwxxc"]
+offsets = PackedFloat32Array(0, 0.7, 1)
+colors = PackedColorArray(0.91, 0.88, 0.82, 1, 0.8, 0.76, 0.66, 1, 0.7, 0.66, 0.58, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nr7cq"]
+gradient = SubResource("Gradient_uwxxc")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_iiylq"]
+emission_shape = 1
+emission_sphere_radius = 0.15
+direction = Vector3(0, 1, 0)
+spread = 70.0
+initial_velocity_min = 1.5
+initial_velocity_max = 2.5
+angular_velocity_min = -360.0
+angular_velocity_max = 360.0
+gravity = Vector3(0, -12, 0)
+scale_min = 0.6
+color_ramp = SubResource("GradientTexture1D_nr7cq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5tit"]
+transparency = 1
+vertex_color_use_as_albedo = true
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="BoxMesh_2em1d"]
+material = SubResource("StandardMaterial3D_d5tit")
+size = Vector3(0.06, 0.04, 0.05)
+
+[node name="enemy_death" type="GPUParticles3D" unique_id=1086177823]
+emitting = false
+amount = 12
+sub_emitter = NodePath("BoneChips")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+fixed_fps = 0
+visibility_aabb = AABB(-1, -0.2, -1, 2, 1.6, 2)
+process_material = SubResource("ParticleProcessMaterial_js1ra")
+draw_pass_1 = SubResource("QuadMesh_rn4v1")
+
+[node name="BoneChips" type="GPUParticles3D" parent="." unique_id=1903068659]
+emitting = false
+lifetime = 0.5
+fixed_fps = 0
+visibility_aabb = AABB(-1, -0.2, -1, 2, 1.4, 2)
+process_material = SubResource("ParticleProcessMaterial_iiylq")
+draw_pass_1 = SubResource("BoxMesh_2em1d")
