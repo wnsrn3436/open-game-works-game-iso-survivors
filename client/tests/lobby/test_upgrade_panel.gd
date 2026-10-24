@@ -1,5 +1,6 @@
 extends UnitTestCase
-## The lantern shrine panel: each upgrade row shows its level and the cost of its next step; a buy press without
+## The lantern shrine panel: each upgrade row shows its level, one level pip per level and the cost of its next step
+## on its buy button; a buy press without
 ## enough gold sends no request and says why; a buy press the gold covers sends `BuyShopProduct` of the next step once,
 ## and a second press while it waits sends nothing.
 
@@ -99,7 +100,7 @@ func buy_requests() -> Array[CoreContract.BuyShopProductRequest]:
 	return out
 
 
-func test_every_upgrade_row_shows_its_level_and_next_cost() -> void:
+func test_every_upgrade_row_shows_its_level_pips_and_next_cost() -> void:
 	var panel: LobbyUpgradePanel = await open_panel()
 	var rows: Array[GameData.UpgradeRow] = CommonUpgrades.upgrades()
 	for i: int in rows.size():
@@ -109,9 +110,10 @@ func test_every_upgrade_row_shows_its_level_and_next_cost() -> void:
 		args.set_int("level", 0)
 		args.set_int("max", CommonUpgrades.max_level(rows[i].id))
 		assert_eq(entry.level_label.text, LocalizationCore.format(ReservedString.upgrade_level(), args))
+		assert_eq(entry.pips_box.get_child_count(), CommonUpgrades.max_level(rows[i].id), "one pip per level")
 		args.clear()
 		args.set_int("cost", CommonUpgrades.cost(CommonUpgrades.next_step(rows[i].id).id))
-		assert_eq(entry.cost_label.text, LocalizationCore.format(ReservedString.upgrade_cost(), args))
+		assert_eq(entry.buy_button.text, LocalizationCore.format(ReservedString.upgrade_cost(), args))
 
 
 func test_a_buy_without_enough_gold_sends_nothing() -> void:

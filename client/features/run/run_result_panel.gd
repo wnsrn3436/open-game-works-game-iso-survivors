@@ -12,6 +12,9 @@ extends UIPanel
 @export var best_label: Label
 @export var hint_label: Label
 @export var gold_icon: TextureRect
+@export var time_icon: TextureRect
+@export var kills_icon: TextureRect
+@export var level_icon: TextureRect
 @export var again_button: Button
 @export var lobby_button: Button
 @export var again_click: UIButton
@@ -35,8 +38,10 @@ func prepare(_reason: UICore.PanelOpenReason, _cache: UIPanelCache) -> bool:
 	LocalizationCore.bind_text(hint_label, ReservedString.result_upgrade_hint())
 	again_click.set_on_click(_on_again)
 	lobby_click.set_on_click(_on_lobby)
-	if ResourceCore.is_loaded(ResourceKey.ICON__GOLD, ResourceCore.BaseKind.TEXTURE_2D):
-		gold_icon.texture = ResourceCore.get_loaded(ResourceKey.ICON__GOLD, ResourceCore.BaseKind.TEXTURE_2D, scope) as Texture2D
+	gold_icon.texture = _texture(ResourceKey.ICON__GOLD)
+	time_icon.texture = _texture(ResourceKey.ICON__TIMER)
+	kills_icon.texture = _texture(ResourceKey.ICON__KILLS)
+	level_icon.texture = _texture(ResourceKey.ICON__UI_LEVEL)
 	_format_args.clear()
 	_format_args.set_int("time", _param.survived_ms)
 	time_label.text = LocalizationCore.format(ReservedString.result_time(), _format_args)
@@ -88,3 +93,9 @@ func _on_lobby() -> void:
 		return
 	_leaving = true
 	_param.on_lobby.call()
+
+
+func _texture(key: String) -> Texture2D:
+	if not ResourceCore.is_loaded(key, ResourceCore.BaseKind.TEXTURE_2D):
+		return null
+	return ResourceCore.get_loaded(key, ResourceCore.BaseKind.TEXTURE_2D, scope) as Texture2D

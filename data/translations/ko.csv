@@ -128,14 +128,22 @@ reserved_string.text.[levelup_pick_hint],{action:menu_pick_1} {action:menu_pick_
 reserved_string.text.[levelup_subtitle],하나를 고르세요,951bd4e47be6ef49,951bd4e47be6ef49,하나를 고르세요
 reserved_string.text.[levelup_title],레벨 업!,474ac456d6432b23,474ac456d6432b23,레벨 업!
 reserved_string.text.[loading_text],불러오는 중,5b7e88929ec0ed88,5b7e88929ec0ed88,불러오는 중
-reserved_string.text.[lobby_best],최고 생존 {time:duration} · 최다 처치 {kills:n},469a9178bbc4c5bb,469a9178bbc4c5bb,최고 생존 {time:duration} · 최다 처치 {kills:n}
+reserved_string.text.[lobby_badge],{count:n},4cf22236bf8d7cd8,4cf22236bf8d7cd8,{count:n}
+reserved_string.text.[lobby_goal],새벽까지 {time:duration} 버티면 승리,597394e3476354c5,597394e3476354c5,새벽까지 {time:duration} 버티면 승리
 reserved_string.text.[lobby_gold],{gold:n},653f8333cadc3c9f,653f8333cadc3c9f,{gold:n}
 reserved_string.text.[lobby_no_record],첫 원정을 떠나 새벽까지 버텨 보세요,610882756ab6201a,610882756ab6201a,첫 원정을 떠나 새벽까지 버텨 보세요
 reserved_string.text.[lobby_options],설정,115bced49291a6a0,115bced49291a6a0,설정
 reserved_string.text.[lobby_play],원정 시작,e7408ef7dcb50dbf,e7408ef7dcb50dbf,원정 시작
-reserved_string.text.[lobby_runs],원정 {runs}회 · 새벽 맞이 {dawns}회,31c91bc4b91d3a29,31c91bc4b91d3a29,원정 {runs}회 · 새벽 맞이 {dawns}회
+reserved_string.text.[lobby_record_title],나의 기록,49d481f329c9ff23,49d481f329c9ff23,나의 기록
+reserved_string.text.[lobby_stat_best_kills],최다 처치,b6bff95ba3ba2acb,b6bff95ba3ba2acb,최다 처치
+reserved_string.text.[lobby_stat_best_time],최고 생존,06649ea805f701b9,06649ea805f701b9,최고 생존
+reserved_string.text.[lobby_stat_dawns],새벽 맞이,5f110e5be42b5b8b,5f110e5be42b5b8b,새벽 맞이
+reserved_string.text.[lobby_stat_runs],원정,d1b7c23e77585881,d1b7c23e77585881,원정
 reserved_string.text.[lobby_upgrade_ready],금화로 살 수 있는 강화가 있어요,98050806355ace85,98050806355ace85,금화로 살 수 있는 강화가 있어요
 reserved_string.text.[lobby_upgrades],등불 제단,0a5ec1f85f96919a,0a5ec1f85f96919a,등불 제단
+reserved_string.text.[lobby_value_count],{count:n},4cf22236bf8d7cd8,4cf22236bf8d7cd8,{count:n}
+reserved_string.text.[lobby_value_time],{time:duration},982ff53667fff379,982ff53667fff379,{time:duration}
+reserved_string.text.[lobby_value_times],{count:n}회,6b0ab97ed67e8074,6b0ab97ed67e8074,{count:n}회
 reserved_string.text.[network_confirm],확인,1aacb54c49924296,1aacb54c49924296,확인
 reserved_string.text.[network_error_banned],계정 이용이 제한되었습니다.,f8bd4d9d2cb9e96c,f8bd4d9d2cb9e96c,계정 이용이 제한되었습니다.
 reserved_string.text.[network_error_connection],서버에 연결할 수 없습니다.,67e5ccaadfed98b7,67e5ccaadfed98b7,서버에 연결할 수 없습니다.

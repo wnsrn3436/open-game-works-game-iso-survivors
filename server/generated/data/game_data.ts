@@ -3178,8 +3178,12 @@ export class ReservedStringAccessor {
     return this.Table.get_row(1638779652).text;
   }
 
-  lobby_best(): string {
-    return this.Table.get_row(2036726659).text;
+  lobby_badge(): string {
+    return this.Table.get_row(686882294).text;
+  }
+
+  lobby_goal(): string {
+    return this.Table.get_row(1916894101).text;
   }
 
   lobby_gold(): string {
@@ -3198,8 +3202,24 @@ export class ReservedStringAccessor {
     return this.Table.get_row(1703238938).text;
   }
 
-  lobby_runs(): string {
-    return this.Table.get_row(1339058380).text;
+  lobby_record_title(): string {
+    return this.Table.get_row(1193054559).text;
+  }
+
+  lobby_stat_best_kills(): string {
+    return this.Table.get_row(1710859684).text;
+  }
+
+  lobby_stat_best_time(): string {
+    return this.Table.get_row(1490371688).text;
+  }
+
+  lobby_stat_dawns(): string {
+    return this.Table.get_row(1336517869).text;
+  }
+
+  lobby_stat_runs(): string {
+    return this.Table.get_row(841901827).text;
   }
 
   lobby_upgrade_ready(): string {
@@ -3208,6 +3228,18 @@ export class ReservedStringAccessor {
 
   lobby_upgrades(): string {
     return this.Table.get_row(1971290436).text;
+  }
+
+  lobby_value_count(): string {
+    return this.Table.get_row(1285861647).text;
+  }
+
+  lobby_value_time(): string {
+    return this.Table.get_row(1362311880).text;
+  }
+
+  lobby_value_times(): string {
+    return this.Table.get_row(250616346).text;
   }
 
   network_confirm(): string {

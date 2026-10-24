@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" path="res://resource/nine_slice/ui/focus_ring.png" id="tex_nine_slice_ui_focus_ring"]
 [ext_resource type="Texture2D" path="res://resource/nine_slice/ui/panel_frame.png" id="tex_nine_slice_ui_panel_frame"]
 [ext_resource type="Texture2D" path="res://resource/nine_slice/ui/plate.png" id="tex_nine_slice_ui_plate"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/title_ribbon.png" id="tex_nine_slice_ui_title_ribbon"]
 
 [sub_resource type="StyleBoxTexture" id="btn_normal"]
 content_margin_left = 24.0
@@ -64,6 +65,17 @@ texture_margin_top = 40
 texture_margin_right = 40
 texture_margin_bottom = 40
 
+[sub_resource type="StyleBoxTexture" id="ribbon"]
+content_margin_left = 96.0
+content_margin_top = 8.0
+content_margin_right = 96.0
+content_margin_bottom = 16.0
+texture = ExtResource("tex_nine_slice_ui_title_ribbon")
+texture_margin_left = 80
+texture_margin_top = 24
+texture_margin_right = 80
+texture_margin_bottom = 24
+
 [sub_resource type="StyleBoxTexture" id="plate"]
 content_margin_left = 28.0
 content_margin_right = 28.0
@@ -116,10 +128,26 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0.078, 0.067, 0.059, 0.98)
+color = Color(0.03, 0.03, 0.07, 0.72)
 
 [node name="SafeAreaIgnore" type="Node" parent="Background"]
 script = ExtResource("2_script")
+
+[node name="Frame" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -700.0
+offset_top = -420.0
+offset_right = 700.0
+offset_bottom = 420.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("frame")
 
 [node name="Box" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -129,9 +157,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -620.0
-offset_top = -450.0
+offset_top = -370.0
 offset_right = 620.0
-offset_bottom = 450.0
+offset_bottom = 370.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 16
@@ -139,8 +167,16 @@ alignment = 1
 
 [node name="Title" type="Label" parent="Box"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("ribbon")
 theme_override_colors/font_color = Color(0.788, 0.635, 0.153, 1)
 theme_override_font_sizes/font_size = 64
+theme_override_colors/font_outline_color = Color(0.788, 0.635, 0.153, 1)
+theme_override_constants/outline_size = 5
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 13
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -149,6 +185,12 @@ layout_mode = 2
 autowrap_mode = 3
 theme_override_colors/font_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -168,6 +210,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")
@@ -189,6 +233,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")
@@ -210,6 +256,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")
@@ -231,6 +279,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")
@@ -252,6 +302,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")
@@ -273,6 +325,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")
@@ -294,6 +348,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")
@@ -315,6 +371,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")
@@ -333,6 +391,12 @@ layout_mode = 2
 autowrap_mode = 3
 theme_override_colors/font_color = Color(0.62, 0.66, 0.75, 1)
 theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(0.62, 0.66, 0.75, 1)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -351,6 +415,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 30
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")
@@ -372,6 +438,8 @@ theme_override_colors/font_hover_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_colors/font_pressed_color = Color(1, 0.827, 0.302, 1)
 theme_override_colors/font_focus_color = Color(0.957, 0.922, 0.867, 1)
 theme_override_font_sizes/font_size = 30
+theme_override_colors/font_outline_color = Color(0.957, 0.922, 0.867, 1)
+theme_override_constants/outline_size = 2
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")

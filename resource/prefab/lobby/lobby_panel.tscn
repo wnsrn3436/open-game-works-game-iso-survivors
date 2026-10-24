@@ -9,6 +9,9 @@
 [ext_resource type="Script" path="res://features/lobby/lobby_panel.gd" id="7_r"]
 [ext_resource type="Script" path="res://core/ui_core/ui_button.gd" id="8_r"]
 [ext_resource type="Script" path="res://core/ui_core/ui_anchor.gd" id="9_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/top_bar.png" id="10_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/title_ribbon.png" id="11_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/badge.png" id="12_r"]
 
 [sub_resource type="StyleBoxTexture" id="btn_normal"]
 content_margin_left = 18.0
@@ -181,8 +184,49 @@ texture_margin_top = 48.0
 texture_margin_right = 40.0
 texture_margin_bottom = 48.0
 
-[node name="LobbyPanel" type="Control" node_paths=PackedStringArray("initial_focus", "title_label", "gold_label", "gold_icon", "record_label", "detail_label", "upgrade_ready_label", "play_button", "upgrade_button", "option_button", "play_click", "upgrade_click", "option_click")]
-layout_mode = 3
+[sub_resource type="StyleBoxTexture" id="top_bar"]
+texture = ExtResource("10_r")
+texture_margin_left = 48.0
+texture_margin_top = 16.0
+texture_margin_right = 48.0
+texture_margin_bottom = 40.0
+
+[sub_resource type="StyleBoxTexture" id="ribbon"]
+content_margin_left = 64.0
+content_margin_top = 8.0
+content_margin_right = 64.0
+content_margin_bottom = 14.0
+texture = ExtResource("11_r")
+texture_margin_left = 80.0
+texture_margin_top = 24.0
+texture_margin_right = 80.0
+texture_margin_bottom = 24.0
+
+[sub_resource type="StyleBoxTexture" id="badge"]
+content_margin_left = 10.0
+content_margin_top = 4.0
+content_margin_right = 10.0
+content_margin_bottom = 6.0
+texture = ExtResource("12_r")
+texture_margin_left = 24.0
+texture_margin_top = 24.0
+texture_margin_right = 24.0
+texture_margin_bottom = 24.0
+
+[sub_resource type="StyleBoxTexture" id="record_frame"]
+content_margin_left = 40.0
+content_margin_top = 30.0
+content_margin_right = 40.0
+content_margin_bottom = 36.0
+texture = ExtResource("4_r")
+texture_margin_left = 40.0
+texture_margin_top = 40.0
+texture_margin_right = 40.0
+texture_margin_bottom = 40.0
+modulate_color = Color(1.0, 1.0, 1.0, 0.94)
+
+[node name="LobbyPanel" type="Control" node_paths=PackedStringArray("initial_focus", "title_label", "gold_label", "gold_icon", "record_title_label", "no_record_label", "stats_box", "stat_icons", "stat_names", "stat_values", "hero_rect", "emblem_rect", "record_card", "actions", "upgrade_ready_label", "badge", "badge_label", "goal_label", "option_label", "play_button", "upgrade_button", "option_button", "play_click", "upgrade_click", "option_click")]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -190,180 +234,516 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("7_r")
-initial_focus = NodePath("Menu/Play")
-title_label = NodePath("Title")
-gold_label = NodePath("GoldPlate/Row/Gold")
-gold_icon = NodePath("GoldPlate/Row/Icon")
-record_label = NodePath("Menu/Record")
-detail_label = NodePath("Menu/Detail")
-upgrade_ready_label = NodePath("Menu/UpgradeReady")
-play_button = NodePath("Menu/Play")
-upgrade_button = NodePath("Menu/Upgrades")
-option_button = NodePath("Menu/Options")
-play_click = NodePath("Menu/Play/UIButton")
-upgrade_click = NodePath("Menu/Upgrades/UIButton")
-option_click = NodePath("Menu/Options/UIButton")
+initial_focus = NodePath("Actions/Box/Play")
+title_label = NodePath("TopBar/Title")
+gold_label = NodePath("TopBar/GoldPlate/Row/Gold")
+gold_icon = NodePath("TopBar/GoldPlate/Row/Icon")
+record_title_label = NodePath("RecordCard/Box/Header")
+no_record_label = NodePath("RecordCard/Box/NoRecord")
+stats_box = NodePath("RecordCard/Box/Stats")
+stat_icons = [NodePath("RecordCard/Box/Stats/Time/Icon"), NodePath("RecordCard/Box/Stats/Kills/Icon"), NodePath("RecordCard/Box/Stats/Runs/Icon"), NodePath("RecordCard/Box/Stats/Dawns/Icon")]
+stat_names = [NodePath("RecordCard/Box/Stats/Time/Name"), NodePath("RecordCard/Box/Stats/Kills/Name"), NodePath("RecordCard/Box/Stats/Runs/Name"), NodePath("RecordCard/Box/Stats/Dawns/Name")]
+stat_values = [NodePath("RecordCard/Box/Stats/Time/Value"), NodePath("RecordCard/Box/Stats/Kills/Value"), NodePath("RecordCard/Box/Stats/Runs/Value"), NodePath("RecordCard/Box/Stats/Dawns/Value")]
+hero_rect = NodePath("Hero")
+emblem_rect = NodePath("TopBar/Emblem")
+record_card = NodePath("RecordCard")
+actions = NodePath("Actions")
+upgrade_ready_label = NodePath("Actions/Box/UpgradeReady")
+badge = NodePath("Actions/Box/Upgrades/Badge")
+badge_label = NodePath("Actions/Box/Upgrades/Badge/Count")
+goal_label = NodePath("Actions/Box/Goal")
+option_label = NodePath("TopBar/OptionLabel")
+play_button = NodePath("Actions/Box/Play")
+upgrade_button = NodePath("Actions/Box/Upgrades")
+option_button = NodePath("TopBar/Options")
+play_click = NodePath("Actions/Box/Play/UIButton")
+upgrade_click = NodePath("Actions/Box/Upgrades/UIButton")
+option_click = NodePath("TopBar/Options/UIButton")
 
-[node name="Title" type="Label" parent="."]
+[node name="Hero" type="TextureRect" parent="."]
 layout_mode = 1
+anchor_left = 0.5
+anchor_top = 1
+anchor_right = 0.5
+anchor_bottom = 1
+offset_left = -420.0
+offset_top = -900.0
+offset_right = 260.0
+offset_bottom = -16.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TopBar" type="Panel" parent="."]
+layout_mode = 1
+anchor_right = 1.0
+offset_bottom = 136.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("top_bar")
+
+[node name="Emblem" type="TextureRect" parent="TopBar"]
+layout_mode = 1
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = -14.0
+offset_right = 668.0
+offset_bottom = 192.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Title" type="Label" parent="TopBar"]
+layout_mode = 1
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 20.0
+offset_right = 648.0
+offset_bottom = 118.0
 theme_override_colors/font_color = Color(0.788, 0.635, 0.153, 1.0)
-theme_override_font_sizes/font_size = 116
+theme_override_font_sizes/font_size = 60
+theme_override_colors/font_outline_color = Color(0.788, 0.635, 0.153, 1.0)
+theme_override_constants/outline_size = 5
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_outline_size = 12
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 14
-anchor_left = 0.5
-anchor_top = 0
-anchor_right = 0.5
-anchor_bottom = 0
-offset_left = -800.0
-offset_top = 136.0
-offset_right = 800.0
-offset_bottom = 296.0
 
-[node name="GoldPlate" type="Panel" parent="."]
+[node name="GoldPlate" type="PanelContainer" parent="TopBar"]
 layout_mode = 1
 anchor_left = 1
 anchor_top = 0
 anchor_right = 1
 anchor_bottom = 0
-offset_left = -380.0
-offset_top = 40.0
-offset_right = -40.0
-offset_bottom = 124.0
+offset_left = -560.0
+offset_top = 28.0
+offset_right = -156.0
+offset_bottom = 108.0
+mouse_filter = 2
 theme_override_styles/panel = SubResource("plate")
+
+[node name="Row" type="HBoxContainer" parent="TopBar/GoldPlate"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 2
+theme_override_constants/separation = 12
+
+[node name="Icon" type="TextureRect" parent="TopBar/GoldPlate/Row"]
+custom_minimum_size = Vector2(60.0, 60.0)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+size_flags_vertical = 4
+
+[node name="Gold" type="Label" parent="TopBar/GoldPlate/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 46
+theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_constants/outline_size = 4
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 9
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Options" type="Button" parent="TopBar"]
+layout_mode = 1
+anchor_left = 1
+anchor_top = 0
+anchor_right = 1
+anchor_bottom = 0
+offset_left = -130.0
+offset_top = 20.0
+offset_right = -40.0
+offset_bottom = 110.0
+focus_mode = 2
+icon_alignment = 1
+expand_icon = true
+theme_override_styles/normal = SubResource("btn_normal")
+theme_override_styles/hover = SubResource("btn_hover")
+theme_override_styles/pressed = SubResource("btn_pressed")
+theme_override_styles/disabled = SubResource("btn_disabled")
+theme_override_styles/focus = SubResource("btn_focus")
+
+[node name="UIButton" type="Node" parent="TopBar/Options"]
+script = ExtResource("8_r")
+
+[node name="UIAnchor" type="Node" parent="TopBar/Options"]
+script = ExtResource("9_r")
+anchor_name = "lobby_options"
+
+[node name="OptionLabel" type="Label" parent="TopBar"]
+layout_mode = 1
+anchor_left = 1
+anchor_top = 0
+anchor_right = 1
+anchor_bottom = 0
+offset_left = -150.0
+offset_top = 110.0
+offset_right = -20.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RecordCard" type="PanelContainer" parent="."]
+layout_mode = 1
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 64.0
+offset_top = 232.0
+offset_right = 584.0
+offset_bottom = 712.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("record_frame")
+
+[node name="Box" type="VBoxContainer" parent="RecordCard"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 18
+
+[node name="Header" type="Label" parent="RecordCard/Box"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("ribbon")
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 34
+theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NoRecord" type="Label" parent="RecordCard/Box"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 30
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Stats" type="VBoxContainer" parent="RecordCard/Box"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+alignment = 1
+theme_override_constants/separation = 16
+
+[node name="Time" type="HBoxContainer" parent="RecordCard/Box/Stats"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="Icon" type="TextureRect" parent="RecordCard/Box/Stats/Time"]
+custom_minimum_size = Vector2(60.0, 60.0)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+size_flags_vertical = 4
+
+[node name="Name" type="Label" parent="RecordCard/Box/Stats/Time"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.72, 0.7, 0.78, 1.0)
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(0.72, 0.7, 0.78, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
+vertical_alignment = 1
+
+[node name="Value" type="Label" parent="RecordCard/Box/Stats/Time"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 36
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Kills" type="HBoxContainer" parent="RecordCard/Box/Stats"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="Icon" type="TextureRect" parent="RecordCard/Box/Stats/Kills"]
+custom_minimum_size = Vector2(60.0, 60.0)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+size_flags_vertical = 4
+
+[node name="Name" type="Label" parent="RecordCard/Box/Stats/Kills"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.72, 0.7, 0.78, 1.0)
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(0.72, 0.7, 0.78, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
+vertical_alignment = 1
+
+[node name="Value" type="Label" parent="RecordCard/Box/Stats/Kills"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 36
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Runs" type="HBoxContainer" parent="RecordCard/Box/Stats"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="Icon" type="TextureRect" parent="RecordCard/Box/Stats/Runs"]
+custom_minimum_size = Vector2(60.0, 60.0)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+size_flags_vertical = 4
+
+[node name="Name" type="Label" parent="RecordCard/Box/Stats/Runs"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.72, 0.7, 0.78, 1.0)
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(0.72, 0.7, 0.78, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
+vertical_alignment = 1
+
+[node name="Value" type="Label" parent="RecordCard/Box/Stats/Runs"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 36
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Dawns" type="HBoxContainer" parent="RecordCard/Box/Stats"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="Icon" type="TextureRect" parent="RecordCard/Box/Stats/Dawns"]
+custom_minimum_size = Vector2(60.0, 60.0)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+size_flags_vertical = 4
+
+[node name="Name" type="Label" parent="RecordCard/Box/Stats/Dawns"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.72, 0.7, 0.78, 1.0)
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(0.72, 0.7, 0.78, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
+vertical_alignment = 1
+
+[node name="Value" type="Label" parent="RecordCard/Box/Stats/Dawns"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_font_sizes/font_size = 36
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Actions" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 1
+anchor_top = 1
+anchor_right = 1
+anchor_bottom = 1
+offset_left = -636.0
+offset_top = -580.0
+offset_right = -64.0
+offset_bottom = -48.0
 mouse_filter = 2
 
-[node name="Row" type="HBoxContainer" parent="GoldPlate"]
+[node name="Box" type="VBoxContainer" parent="Actions"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-alignment = 1
 mouse_filter = 2
-theme_override_constants/separation = 14
+alignment = 2
+theme_override_constants/separation = 16
 
-[node name="Icon" type="TextureRect" parent="GoldPlate/Row"]
-custom_minimum_size = Vector2(56.0, 56.0)
+[node name="Upgrades" type="Button" parent="Actions/Box"]
+custom_minimum_size = Vector2(572.0, 136.0)
 layout_mode = 2
-expand_mode = 1
-stretch_mode = 5
-size_flags_vertical = 4
+icon_alignment = 0
+theme_override_constants/icon_max_width = 96
+theme_override_constants/h_separation = 8
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_colors/font_hover_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_colors/font_focus_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_colors/font_pressed_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_colors/font_disabled_color = Color(0.7, 0.68, 0.76, 1.0)
+theme_override_font_sizes/font_size = 44
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_styles/normal = SubResource("btn_normal")
+theme_override_styles/hover = SubResource("btn_hover")
+theme_override_styles/pressed = SubResource("btn_pressed")
+theme_override_styles/disabled = SubResource("btn_disabled")
+theme_override_styles/focus = SubResource("btn_focus")
 
-[node name="Gold" type="Label" parent="GoldPlate/Row"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_font_sizes/font_size = 42
-horizontal_alignment = 1
-vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 6
+[node name="UIButton" type="Node" parent="Actions/Box/Upgrades"]
+script = ExtResource("8_r")
 
-[node name="Menu" type="VBoxContainer" parent="."]
+[node name="UIAnchor" type="Node" parent="Actions/Box/Upgrades"]
+script = ExtResource("9_r")
+anchor_name = "lobby_upgrades"
+
+[node name="Badge" type="PanelContainer" parent="Actions/Box/Upgrades"]
 layout_mode = 1
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -340.0
-offset_top = -110.0
-offset_right = 340.0
-offset_bottom = 450.0
-alignment = 1
-theme_override_constants/separation = 18
+anchor_left = 1
+anchor_top = 0
+anchor_right = 1
+anchor_bottom = 0
+offset_left = -44.0
+offset_top = -20.0
+offset_right = 16.0
+offset_bottom = 40.0
+visible = false
+mouse_filter = 2
+theme_override_styles/panel = SubResource("badge")
 
-[node name="Record" type="Label" parent="Menu"]
+[node name="Count" type="Label" parent="Actions/Box/Upgrades/Badge"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_font_sizes/font_size = 34
-horizontal_alignment = 1
-vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 6
-autowrap_mode = 3
-
-[node name="Detail" type="Label" parent="Menu"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.7, 0.68, 0.76, 1.0)
 theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 4
 
-[node name="Play" type="Button" parent="Menu"]
-custom_minimum_size = Vector2(680.0, 124.0)
+[node name="UpgradeReady" type="Label" parent="Actions/Box"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_font_sizes/font_size = 26
+theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gap" type="Control" parent="Actions/Box"]
+custom_minimum_size = Vector2(0.0, 18.0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Play" type="Button" parent="Actions/Box"]
+custom_minimum_size = Vector2(572.0, 160.0)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.13, 0.1, 0.07, 1.0)
 theme_override_colors/font_hover_color = Color(0.13, 0.1, 0.07, 1.0)
 theme_override_colors/font_focus_color = Color(0.13, 0.1, 0.07, 1.0)
 theme_override_colors/font_pressed_color = Color(0.13, 0.1, 0.07, 1.0)
 theme_override_colors/font_disabled_color = Color(0.7, 0.68, 0.76, 1.0)
-theme_override_font_sizes/font_size = 54
+theme_override_font_sizes/font_size = 64
+theme_override_colors/font_outline_color = Color(0.13, 0.1, 0.07, 1.0)
+theme_override_constants/outline_size = 4
 theme_override_styles/normal = SubResource("pbtn_normal")
 theme_override_styles/hover = SubResource("pbtn_hover")
 theme_override_styles/pressed = SubResource("pbtn_pressed")
 theme_override_styles/disabled = SubResource("pbtn_disabled")
 theme_override_styles/focus = SubResource("btn_focus")
 
-[node name="UIButton" type="Node" parent="Menu/Play"]
+[node name="UIButton" type="Node" parent="Actions/Box/Play"]
 script = ExtResource("8_r")
 
-[node name="UIAnchor" type="Node" parent="Menu/Play"]
+[node name="UIAnchor" type="Node" parent="Actions/Box/Play"]
 script = ExtResource("9_r")
 anchor_name = "lobby_play"
 
-[node name="Upgrades" type="Button" parent="Menu"]
-custom_minimum_size = Vector2(680.0, 98.0)
+[node name="Goal" type="Label" parent="Actions/Box"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_colors/font_hover_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_colors/font_focus_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_colors/font_pressed_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_colors/font_disabled_color = Color(0.7, 0.68, 0.76, 1.0)
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("btn_normal")
-theme_override_styles/hover = SubResource("btn_hover")
-theme_override_styles/pressed = SubResource("btn_pressed")
-theme_override_styles/disabled = SubResource("btn_disabled")
-theme_override_styles/focus = SubResource("btn_focus")
-
-[node name="UIButton" type="Node" parent="Menu/Upgrades"]
-script = ExtResource("8_r")
-
-[node name="UIAnchor" type="Node" parent="Menu/Upgrades"]
-script = ExtResource("9_r")
-anchor_name = "lobby_upgrades"
-
-[node name="UpgradeReady" type="Label" parent="Menu"]
-layout_mode = 2
-theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 4
-
-[node name="Options" type="Button" parent="Menu"]
-custom_minimum_size = Vector2(680.0, 84.0)
-layout_mode = 2
-theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_colors/font_hover_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_colors/font_focus_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_colors/font_pressed_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_colors/font_disabled_color = Color(0.7, 0.68, 0.76, 1.0)
-theme_override_font_sizes/font_size = 34
-theme_override_styles/normal = SubResource("btn_normal")
-theme_override_styles/hover = SubResource("btn_hover")
-theme_override_styles/pressed = SubResource("btn_pressed")
-theme_override_styles/disabled = SubResource("btn_disabled")
-theme_override_styles/focus = SubResource("btn_focus")
-
-[node name="UIButton" type="Node" parent="Menu/Options"]
-script = ExtResource("8_r")
-
-[node name="UIAnchor" type="Node" parent="Menu/Options"]
-script = ExtResource("9_r")
-anchor_name = "lobby_options"
