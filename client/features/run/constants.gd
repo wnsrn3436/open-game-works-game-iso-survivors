@@ -113,7 +113,5 @@ const BOT_GEM_RADIUS: float = 14.0 # DEV bot play style; no game rule reads it
 const BOT_AWAY_WEIGHT: float = 1.5 # DEV bot play style; no game rule reads it
 ## The DEV bot holds a move key when the wanted direction leans this far along that screen axis.
 const BOT_KEY_THRESHOLD: float = 0.38 # DEV bot play style; no game rule reads it
-## Word joiner (U+2060): kept between the letters of a word so a label line breaks only between words.
-const WORD_JOINER: String = "\u2060" # text layout character, not a tunable value
 ## Format version of the saved run state; a saved state of another version starts a new run.
 const SAVE_VERSION: int = 1 # save format version, not a tunable value

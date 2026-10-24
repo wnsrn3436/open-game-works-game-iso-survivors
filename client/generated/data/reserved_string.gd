@@ -348,8 +348,12 @@ static func loading_text() -> String:
 	return GameData.ReservedStringTable.get_row(1638779652).text
 
 
-static func lobby_best() -> String:
-	return GameData.ReservedStringTable.get_row(2036726659).text
+static func lobby_badge() -> String:
+	return GameData.ReservedStringTable.get_row(686882294).text
+
+
+static func lobby_goal() -> String:
+	return GameData.ReservedStringTable.get_row(1916894101).text
 
 
 static func lobby_gold() -> String:
@@ -368,8 +372,24 @@ static func lobby_play() -> String:
 	return GameData.ReservedStringTable.get_row(1703238938).text
 
 
-static func lobby_runs() -> String:
-	return GameData.ReservedStringTable.get_row(1339058380).text
+static func lobby_record_title() -> String:
+	return GameData.ReservedStringTable.get_row(1193054559).text
+
+
+static func lobby_stat_best_kills() -> String:
+	return GameData.ReservedStringTable.get_row(1710859684).text
+
+
+static func lobby_stat_best_time() -> String:
+	return GameData.ReservedStringTable.get_row(1490371688).text
+
+
+static func lobby_stat_dawns() -> String:
+	return GameData.ReservedStringTable.get_row(1336517869).text
+
+
+static func lobby_stat_runs() -> String:
+	return GameData.ReservedStringTable.get_row(841901827).text
 
 
 static func lobby_upgrade_ready() -> String:
@@ -378,6 +398,18 @@ static func lobby_upgrade_ready() -> String:
 
 static func lobby_upgrades() -> String:
 	return GameData.ReservedStringTable.get_row(1971290436).text
+
+
+static func lobby_value_count() -> String:
+	return GameData.ReservedStringTable.get_row(1285861647).text
+
+
+static func lobby_value_time() -> String:
+	return GameData.ReservedStringTable.get_row(1362311880).text
+
+
+static func lobby_value_times() -> String:
+	return GameData.ReservedStringTable.get_row(250616346).text
 
 
 static func network_confirm() -> String:

@@ -19,17 +19,19 @@ var _buying: bool = false
 
 func prepare(_reason: UICore.PanelOpenReason, _cache: UIPanelCache) -> bool:
 	LocalizationCore.bind_text(title_label, ReservedString.upgrade_title())
-	LocalizationCore.bind_text(desc_label, ReservedString.upgrade_desc())
+	desc_label.text = CommonWordWrap.keep_words(LocalizationCore.get_text(ReservedString.upgrade_desc()))
 	LocalizationCore.bind_text(close_button, ReservedString.upgrade_close())
 	close_click.set_on_click(_on_close)
 	var gold: Texture2D = _texture(ResourceKey.ICON__GOLD)
 	gold_icon.texture = gold
+	var pip_on: Texture2D = _texture(ResourceKey.ICON__UI_PIP_ON)
+	var pip_off: Texture2D = _texture(ResourceKey.ICON__UI_PIP_OFF)
 	var rows: Array[GameData.UpgradeRow] = CommonUpgrades.upgrades()
 	for i: int in entries.size():
 		var entry: LobbyUpgradeEntry = entries[i]
 		entry.visible = i < rows.size()
 		if entry.visible:
-			entry.show_upgrade(rows[i], _texture(rows[i].icon), gold)
+			entry.show_upgrade(rows[i], _texture(rows[i].icon), gold, pip_on, pip_off)
 			entry.click.set_on_click(_on_buy.bind(rows[i].id))
 	EventCore.subscribe(UserStateChangedEvent, _on_user_state_changed)
 	_write()

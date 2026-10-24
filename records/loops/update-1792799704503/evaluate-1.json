@@ -1,0 +1,48 @@
+{
+  "commit": "e2595083c3152966c287cf4330728d6bd27cc0ce",
+  "baseline": "dbf19b500a441cb8dffb9929139a9a90bfac0cc0",
+  "plays": [
+    {
+      "result": "records/loops/update-1792799704503/play-1-1.md",
+      "instance": "mvloaop21e0bc6",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/update-1792799704503/play-1-2.md",
+      "instance": "mvloavi1854f73",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/update-1792799704503/play-1-3.md",
+      "instance": "mvlob2pjfd7137",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/update-1792799704503/play-1-4.md",
+      "instance": "mvlob9mo8cdb5c",
+      "platform": "macos",
+      "moment": "camp_returning_player",
+      "status": "done"
+    }
+  ],
+  "judges": [
+    {
+      "kind": "main",
+      "result": "records/loops/update-1792799704503/judge-1-1.md",
+      "A": "e2595083c3152966c287cf4330728d6bd27cc0ce",
+      "B": "dbf19b500a441cb8dffb9929139a9a90bfac0cc0",
+      "instanceSide": "A",
+      "omittedMoments": [],
+      "vsBaseline": "better",
+      "vsReference": "fail",
+      "status": "done"
+    }
+  ],
+  "measure": "records/loops/update-1792799704503/measure-1.json"
+}

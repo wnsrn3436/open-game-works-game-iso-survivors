@@ -62,6 +62,15 @@ static func any_affordable() -> bool:
 	return false
 
 
+## The number of upgrades whose next step the gold covers.
+static func affordable_count() -> int:
+	var count: int = 0
+	for row: GameData.UpgradeRow in GameData.UpgradeTable.all_rows():
+		if can_buy(next_step(row.id)):
+			count += 1
+	return count
+
+
 ## The upgrade whose next level costs the least among those the gold covers; 0 when none.
 static func cheapest_affordable() -> int:
 	var best: int = 0

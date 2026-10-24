@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://features/run/run_result_panel.gd" id="7_r"]
 [ext_resource type="Script" path="res://core/ui_core/ui_button.gd" id="8_r"]
 [ext_resource type="Script" path="res://core/ui_core/ui_anchor.gd" id="9_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/title_ribbon.png" id="10_r"]
 
 [sub_resource type="StyleBoxTexture" id="btn_normal"]
 content_margin_left = 18.0
@@ -181,7 +182,29 @@ texture_margin_top = 48.0
 texture_margin_right = 40.0
 texture_margin_bottom = 48.0
 
-[node name="ResultPanel" type="Control" node_paths=PackedStringArray("initial_focus", "title_label", "time_label", "kills_label", "level_label", "gold_label", "gold_icon", "best_label", "hint_label", "again_button", "lobby_button", "again_click", "lobby_click")]
+[sub_resource type="StyleBoxTexture" id="ribbon"]
+content_margin_left = 96.0
+content_margin_top = 8.0
+content_margin_right = 96.0
+content_margin_bottom = 18.0
+texture = ExtResource("10_r")
+texture_margin_left = 80.0
+texture_margin_top = 24.0
+texture_margin_right = 80.0
+texture_margin_bottom = 24.0
+
+[sub_resource type="StyleBoxTexture" id="stat_row"]
+content_margin_left = 24.0
+content_margin_top = 8.0
+content_margin_right = 24.0
+content_margin_bottom = 8.0
+texture = ExtResource("6_r")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[node name="ResultPanel" type="Control" node_paths=PackedStringArray("initial_focus", "title_label", "time_label", "kills_label", "level_label", "time_icon", "kills_icon", "level_icon", "gold_label", "gold_icon", "best_label", "hint_label", "again_button", "lobby_button", "again_click", "lobby_click")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -193,9 +216,12 @@ back_policy = 2
 dim = true
 initial_focus = NodePath("Frame/Box/Buttons/Again")
 title_label = NodePath("Frame/Box/Title")
-time_label = NodePath("Frame/Box/Time")
-kills_label = NodePath("Frame/Box/Kills")
-level_label = NodePath("Frame/Box/Level")
+time_label = NodePath("Frame/Box/Stats/Time/Row/Label")
+kills_label = NodePath("Frame/Box/Stats/Kills/Row/Label")
+level_label = NodePath("Frame/Box/Stats/Level/Row/Label")
+time_icon = NodePath("Frame/Box/Stats/Time/Row/Icon")
+kills_icon = NodePath("Frame/Box/Stats/Kills/Row/Icon")
+level_icon = NodePath("Frame/Box/Stats/Level/Row/Icon")
 gold_label = NodePath("Frame/Box/GoldRow/Gold")
 gold_icon = NodePath("Frame/Box/GoldRow/Icon")
 best_label = NodePath("Frame/Box/Best")
@@ -235,39 +261,116 @@ theme_override_constants/separation = 14
 
 [node name="Title" type="Label" parent="Frame/Box"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("ribbon")
 theme_override_colors/font_color = Color(0.788, 0.635, 0.153, 1.0)
-theme_override_font_sizes/font_size = 90
+theme_override_font_sizes/font_size = 76
+theme_override_colors/font_outline_color = Color(0.788, 0.635, 0.153, 1.0)
+theme_override_constants/outline_size = 6
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_outline_size = 19
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 14
 
-[node name="Time" type="Label" parent="Frame/Box"]
+[node name="Stats" type="VBoxContainer" parent="Frame/Box"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_font_sizes/font_size = 40
-horizontal_alignment = 1
-vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 5
+mouse_filter = 2
+theme_override_constants/separation = 10
 
-[node name="Kills" type="Label" parent="Frame/Box"]
+[node name="Time" type="PanelContainer" parent="Frame/Box/Stats"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_font_sizes/font_size = 40
-horizontal_alignment = 1
-vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 5
+mouse_filter = 2
+theme_override_styles/panel = SubResource("stat_row")
 
-[node name="Level" type="Label" parent="Frame/Box"]
+[node name="Row" type="HBoxContainer" parent="Frame/Box/Stats/Time"]
 layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 18
+
+[node name="Icon" type="TextureRect" parent="Frame/Box/Stats/Time/Row"]
+custom_minimum_size = Vector2(56.0, 56.0)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="Frame/Box/Stats/Time/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
 theme_override_font_sizes/font_size = 40
-horizontal_alignment = 1
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 5
+
+[node name="Kills" type="PanelContainer" parent="Frame/Box/Stats"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("stat_row")
+
+[node name="Row" type="HBoxContainer" parent="Frame/Box/Stats/Kills"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 18
+
+[node name="Icon" type="TextureRect" parent="Frame/Box/Stats/Kills/Row"]
+custom_minimum_size = Vector2(56.0, 56.0)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="Frame/Box/Stats/Kills/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 40
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
+vertical_alignment = 1
+
+[node name="Level" type="PanelContainer" parent="Frame/Box/Stats"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("stat_row")
+
+[node name="Row" type="HBoxContainer" parent="Frame/Box/Stats/Level"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 18
+
+[node name="Icon" type="TextureRect" parent="Frame/Box/Stats/Level/Row"]
+custom_minimum_size = Vector2(56.0, 56.0)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+size_flags_vertical = 4
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="Frame/Box/Stats/Level/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 40
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
+vertical_alignment = 1
 
 [node name="GoldRow" type="HBoxContainer" parent="Frame/Box"]
 layout_mode = 2
@@ -285,24 +388,38 @@ size_flags_vertical = 4
 layout_mode = 2
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 46
+theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_constants/outline_size = 4
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 9
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 6
 
 [node name="Best" type="Label" parent="Frame/Box"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 36
+theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 6
 
 [node name="Hint" type="Label" parent="Frame/Box"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.7, 0.68, 0.76, 1.0)
 theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(0.7, 0.68, 0.76, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -321,6 +438,8 @@ theme_override_colors/font_focus_color = Color(0.13, 0.1, 0.07, 1.0)
 theme_override_colors/font_pressed_color = Color(0.13, 0.1, 0.07, 1.0)
 theme_override_colors/font_disabled_color = Color(0.7, 0.68, 0.76, 1.0)
 theme_override_font_sizes/font_size = 42
+theme_override_colors/font_outline_color = Color(0.13, 0.1, 0.07, 1.0)
+theme_override_constants/outline_size = 3
 theme_override_styles/normal = SubResource("pbtn_normal")
 theme_override_styles/hover = SubResource("pbtn_hover")
 theme_override_styles/pressed = SubResource("pbtn_pressed")
@@ -343,6 +462,8 @@ theme_override_colors/font_focus_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_colors/font_pressed_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_colors/font_disabled_color = Color(0.7, 0.68, 0.76, 1.0)
 theme_override_font_sizes/font_size = 42
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 3
 theme_override_styles/normal = SubResource("btn_normal")
 theme_override_styles/hover = SubResource("btn_hover")
 theme_override_styles/pressed = SubResource("btn_pressed")

@@ -462,5 +462,61 @@
   "tween/run/player_fall": {
     "path": "res://resource/tween/run/player_fall.tres",
     "variants": 1
+  },
+  "nine_slice/ui/top_bar": {
+    "path": "res://resource/nine_slice/ui/top_bar.png",
+    "variants": 1
+  },
+  "nine_slice/ui/title_ribbon": {
+    "path": "res://resource/nine_slice/ui/title_ribbon.png",
+    "variants": 1
+  },
+  "nine_slice/ui/badge": {
+    "path": "res://resource/nine_slice/ui/badge.png",
+    "variants": 1
+  },
+  "icon/ui_options": {
+    "path": "res://resource/icon/ui_options.png",
+    "variants": 1
+  },
+  "icon/ui_shrine": {
+    "path": "res://resource/icon/ui_shrine.png",
+    "variants": 1
+  },
+  "icon/ui_runs": {
+    "path": "res://resource/icon/ui_runs.png",
+    "variants": 1
+  },
+  "icon/ui_dawn": {
+    "path": "res://resource/icon/ui_dawn.png",
+    "variants": 1
+  },
+  "icon/ui_level": {
+    "path": "res://resource/icon/ui_level.png",
+    "variants": 1
+  },
+  "icon/ui_pip_on": {
+    "path": "res://resource/icon/ui_pip_on.png",
+    "variants": 1
+  },
+  "icon/ui_pip_off": {
+    "path": "res://resource/icon/ui_pip_off.png",
+    "variants": 1
+  },
+  "image/lobby/hero": {
+    "path": "res://resource/image/lobby/hero.png",
+    "variants": 1
+  },
+  "image/ui/logo_emblem": {
+    "path": "res://resource/image/ui/logo_emblem.png",
+    "variants": 1
+  },
+  "particle/lobby/embers": {
+    "path": "res://resource/particle/lobby/embers.tscn",
+    "variants": 1
+  },
+  "tween/lobby/panel_in": {
+    "path": "res://resource/tween/lobby/panel_in.tres",
+    "variants": 1
   }
 }

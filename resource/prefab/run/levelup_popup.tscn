@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://features/run/run_choice_card.gd" id="8_r"]
 [ext_resource type="Script" path="res://core/ui_core/ui_button.gd" id="9_r"]
 [ext_resource type="Script" path="res://core/ui_core/ui_anchor.gd" id="10_r"]
+[ext_resource type="Texture2D" path="res://resource/nine_slice/ui/title_ribbon.png" id="11_r"]
 
 [sub_resource type="StyleBoxTexture" id="btn_normal"]
 content_margin_left = 18.0
@@ -182,6 +183,17 @@ texture_margin_top = 48.0
 texture_margin_right = 40.0
 texture_margin_bottom = 48.0
 
+[sub_resource type="StyleBoxTexture" id="ribbon"]
+content_margin_left = 96.0
+content_margin_top = 8.0
+content_margin_right = 96.0
+content_margin_bottom = 18.0
+texture = ExtResource("11_r")
+texture_margin_left = 80.0
+texture_margin_top = 24.0
+texture_margin_right = 80.0
+texture_margin_bottom = 24.0
+
 [node name="LevelupPopup" type="Control" node_paths=PackedStringArray("initial_focus", "title_label", "subtitle_label", "hint_label", "cards")]
 layout_mode = 3
 anchors_preset = 15
@@ -228,21 +240,31 @@ theme_override_constants/separation = 14
 
 [node name="Title" type="Label" parent="Frame/Box"]
 layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("ribbon")
 theme_override_colors/font_color = Color(0.788, 0.635, 0.153, 1.0)
 theme_override_font_sizes/font_size = 76
+theme_override_colors/font_outline_color = Color(0.788, 0.635, 0.153, 1.0)
+theme_override_constants/outline_size = 6
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 15
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 12
 
 [node name="Subtitle" type="Label" parent="Frame/Box"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 32
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 4
 
 [node name="Cards" type="HBoxContainer" parent="Frame/Box"]
 layout_mode = 2
@@ -284,10 +306,14 @@ theme_override_constants/separation = 10
 layout_mode = 2
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 5
 
 [node name="Icon" type="TextureRect" parent="Frame/Box/Cards/Card1/Box"]
 custom_minimum_size = Vector2(170.0, 170.0)
@@ -301,16 +327,26 @@ mouse_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 38
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 5
 autowrap_mode = 3
 
 [node name="Desc" type="Label" parent="Frame/Box/Cards/Card1/Box"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 27
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 0
 autowrap_mode = 3
@@ -358,10 +394,14 @@ theme_override_constants/separation = 10
 layout_mode = 2
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 5
 
 [node name="Icon" type="TextureRect" parent="Frame/Box/Cards/Card2/Box"]
 custom_minimum_size = Vector2(170.0, 170.0)
@@ -375,16 +415,26 @@ mouse_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 38
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 5
 autowrap_mode = 3
 
 [node name="Desc" type="Label" parent="Frame/Box/Cards/Card2/Box"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 27
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 0
 autowrap_mode = 3
@@ -432,10 +482,14 @@ theme_override_constants/separation = 10
 layout_mode = 2
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 28
+theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 5
 
 [node name="Icon" type="TextureRect" parent="Frame/Box/Cards/Card3/Box"]
 custom_minimum_size = Vector2(170.0, 170.0)
@@ -449,16 +503,26 @@ mouse_filter = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 38
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 3
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 7
 horizontal_alignment = 1
 vertical_alignment = 1
-theme_override_colors/font_outline_color = Color(0.04, 0.03, 0.06, 1.0)
-theme_override_constants/outline_size = 5
 autowrap_mode = 3
 
 [node name="Desc" type="Label" parent="Frame/Box/Cards/Card3/Box"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 27
+theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 0
 autowrap_mode = 3
@@ -476,5 +540,11 @@ anchor_name = "levelup_choice"
 layout_mode = 2
 theme_override_colors/font_color = Color(0.7, 0.68, 0.76, 1.0)
 theme_override_font_sizes/font_size = 24
+theme_override_colors/font_outline_color = Color(0.7, 0.68, 0.76, 1.0)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 6
 horizontal_alignment = 1
 vertical_alignment = 1

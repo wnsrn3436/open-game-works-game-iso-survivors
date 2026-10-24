@@ -99,8 +99,16 @@ id,text
 [common_terms_agree_all],모두 동의합니다
 [common_terms_agree_both],두 항목에 모두 동의하면 시작할 수 있어요
 [lobby_gold],{gold:n}
-[lobby_best],최고 생존 {time:duration} · 최다 처치 {kills:n}
-[lobby_runs],원정 {runs}회 · 새벽 맞이 {dawns}회
+[lobby_record_title],나의 기록
+[lobby_stat_best_time],최고 생존
+[lobby_stat_best_kills],최다 처치
+[lobby_stat_runs],원정
+[lobby_stat_dawns],새벽 맞이
+[lobby_value_time],{time:duration}
+[lobby_value_count],{count:n}
+[lobby_value_times],{count:n}회
+[lobby_goal],새벽까지 {time:duration} 버티면 승리
+[lobby_badge],{count:n}
 [lobby_no_record],첫 원정을 떠나 새벽까지 버텨 보세요
 [lobby_play],원정 시작
 [lobby_upgrades],등불 제단

@@ -1,0 +1,274 @@
+{
+  "defects": [
+    {
+      "id": "run-hud-flat-boxes",
+      "severity": "major",
+      "owner": "client content",
+      "where": "run HUD",
+      "what": "The HP panel and the kill/gold panel are flat single-color navy boxes with a thin outline, not art frames",
+      "why": "`presentation` looks for engine-default or code-made boxes, and the reference HUD is drawn in one art style",
+      "evidence": [
+        "mvlo9ook21cea5-1792802515070.png",
+        "mvlo9ook21cea5-1792802515070.png`, `mvloa1tsa32ef5-1792802793036-video/frame-00007.png`; `frames-rIONeL/000015000.png",
+        "records/loops/update-1792799704503/judge-1-1.md"
+      ],
+      "source": "judge",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "shrine-buy-button-clipped",
+      "severity": "major",
+      "owner": "client content",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "evidence": [
+        "records/loops/update-1792799704503/check-1.json#UI quality",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ],
+      "source": "check",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "run-fps-below-target",
+      "severity": "major",
+      "owner": "client content",
+      "where": "scene/run/run",
+      "what": "fps 5 percentile 51 is below targetFps 60 (1 samples)",
+      "why": "the run must hold targetFps; the 5th percentile is 51",
+      "evidence": [
+        "records/loops/update-1792799704503/check-1.json#performance",
+        "records/loops/update-1792799704503/evidence/check-1/performance-macos/samples.json"
+      ],
+      "source": "check",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "low-pressure-early",
+      "severity": "minor",
+      "owner": "data",
+      "where": "scene/run/run",
+      "what": "none (standing still), key 1 → At 1:05 HP is 46/100 as before. Kills 130, gold 38. The gem ring has grown to over 80 gems and the XP bar is about 15% full. Several large zombies are near the top of the screen",
+      "why": "standing still for 24 seconds cost no health, so the horde never reaches the player here; there is no pressure to move",
+      "evidence": [
+        "captures/mvloavi1854f73-1792803122873.png",
+        "records/loops/update-1792799704503/play-1-2.md:25",
+        "captures/mvloavi1854f73-1792803301267.png",
+        "records/loops/update-1792799704503/play-1-2.md:26",
+        "captures/mvlob2pjfd7137-1792803391180.png",
+        "records/loops/update-1792799704503/play-1-3.md:22",
+        "captures/mvlob2pjfd7137-1792803518547.png",
+        "records/loops/update-1792799704503/play-1-3.md:23"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "run-field-too-dark",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "run",
+      "what": "key_down D + step → player is a small figure in a dim dark field; the first weapon fires without input",
+      "why": "the field is very dark and plain at the start",
+      "evidence": [
+        "captures/mvloaop21e0bc6-1792802515692.png",
+        "records/loops/update-1792799704503/play-1-1.md:16",
+        "mvlo9ook21cea5-1792802515070.png`, `mvlo9ook21cea5-1792802805302.png"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "shrine-toast-small-overlap",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "shrine",
+      "what": "tap_anchor upgrade_buy [upgrade_might] → 50 gold needed, 29 held; a faint `금화가 부족해요` strip appeared across the middle of the panel; nothing bought; no error log",
+      "why": "the toast overlaps the 서두름 and 자력 rows and is very small",
+      "evidence": [
+        "captures/mvloaop21e0bc6-1792803152677.png",
+        "records/loops/update-1792799704503/play-1-1.md:28",
+        "captures/mvlob9mo8cdb5c-1792802536277.png",
+        "records/loops/update-1792799704503/play-1-4.md:18",
+        "mvloa1tsa32ef5-1792802793036-video/frame-00007.png"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "upgrade-cost-curve-steep",
+      "severity": "minor",
+      "owner": "data",
+      "where": "scene/lobby/lobby",
+      "what": "tap_anchor upgrade_buy [upgrade_vitality] → The buy worked. 생명력 went to Lv 1/5 and its first pip changed colour. Gold went 54 → 14, and the next cost rose to 100 (the guide's 40 → 100 jump is steep). The toast `생명력 강화 완료!` showed at mid-screen, a thin dark bar across the panel",
+      "why": "the purchase feedback is immediate; the jump from 40 to 100 for level 2 is large",
+      "evidence": [
+        "captures/mvloavi1854f73-1792803376086.png",
+        "records/loops/update-1792799704503/play-1-2.md:31",
+        "captures/mvlob9mo8cdb5c-1792802536277.png",
+        "records/loops/update-1792799704503/play-1-4.md:19"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "levelup-offer-repeats",
+      "severity": "minor",
+      "owner": "data",
+      "where": "run",
+      "what": "step to 0:18 → HP 78/100, Lv 3 popup; 2 of 3 cards were new picks, the same `분노의 불씨` card was offered at every popup",
+      "why": "the same offer repeats, little variety",
+      "evidence": [
+        "captures/mvloaop21e0bc6-1792802697908.png",
+        "records/loops/update-1792799704503/play-1-1.md:19"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "shrine-buy-feedback-weak",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "shrine",
+      "what": "tap_anchor upgrade_buy [upgrade_vitality], then [upgrade_might] → Both buys worked: gold 147 → 57, 생명력 and 힘 went to Lv 1/5, and the first pip turned tan",
+      "why": "Buying feels immediate; the pip change is the only sign that something was bought, there was no other visible reaction",
+      "evidence": [
+        "captures/mvlob9mo8cdb5c-1792802533178.png",
+        "records/loops/update-1792799704503/play-1-4.md:17"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "camp-layout-shift",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "camp",
+      "what": "tap_anchor upgrade_close → Back at the camp, gold 57, the `6` badge and the hint line are gone, the shrine button sits lower (y≈695, was ≈640) and the start button stayed in place",
+      "why": "Badge gone because nothing is affordable matches the guide. The shrine button shifts down when the hint line disappears",
+      "evidence": [
+        "captures/mvlob9mo8cdb5c-1792802544389.png",
+        "records/loops/update-1792799704503/play-1-4.md:20"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "meta-upgrade-hint-missing",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "run",
+      "what": "tap_anchor lobby_play → Run began after about 1.5 s of loading. At 0:05: health 115/115 (100 + 15 from the vitality upgrade), the plate `등불 제단의 가호` lists `피해 +5%`, `최대 체력 +15`, `줍는 범위 +20%`, the move hint `WASD 로 움직이세요. 공격은 자동이에요` shows at the bottom, enemies (ghouls, bats) are already on screen around the player",
+      "why": "The plate matches the three bought upgrades, including the one bought earlier (자력). The text `등불 제단의 가호 가 함께합니다` from the guide was not seen in the captures taken at about 1.5 s and 5 s",
+      "evidence": [
+        "captures/mvlob9mo8cdb5c-1792802551797.png",
+        "records/loops/update-1792799704503/play-1-4.md:21"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "gem-drawn-over-hud",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "scene/run/run",
+      "what": "key_down D, step 200 x50 → At 0:10 the player had walked right. Kills 4, gold 2, a blue gem was nearby, a floating damage number `12` showed, and zombies and a bat approached from the screen edges. One blue gem icon draws inside the top-left HUD panel",
+      "why": "the first 10 seconds show hits and a kill count right away; the gem inside the panel is a small layering oddity",
+      "evidence": [
+        "captures/mvloavi1854f73-1792802581019.png",
+        "records/loops/update-1792799704503/play-1-2.md:20"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "play-guide-upgrade-max-mismatch",
+      "severity": "minor",
+      "owner": "design",
+      "where": "shrine",
+      "what": "tap_anchor lobby_upgrades → shrine panel with six rows; `힘` and `생명력` are `Lv 0/5`, the other four `Lv 0/3`; pips are placeholder squares with tiny text; `TITLE_RIBBON` plate behind the heading",
+      "why": "guide says `Lv 1/3` format; pips are not readable",
+      "evidence": [
+        "captures/mvloaop21e0bc6-1792803152677.png",
+        "records/loops/update-1792799704503/play-1-1.md:27",
+        "captures/mvlob2pjfd7137-1792803709230.png",
+        "records/loops/update-1792799704503/play-1-3.md:28"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "lobby-fps-below-target",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "scene/lobby/lobby",
+      "what": "fps 5 percentile 54 is below targetFps 60 (4 samples)",
+      "why": "the camp must hold targetFps; the 5th percentile is 54",
+      "evidence": [
+        "records/loops/update-1792799704503/check-1.json#performance",
+        "records/loops/update-1792799704503/evidence/check-1/performance-macos/samples.json"
+      ],
+      "source": "check",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    }
+  ],
+  "previous": null,
+  "recordedBy": "iteration-1"
+}

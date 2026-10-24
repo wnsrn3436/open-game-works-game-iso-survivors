@@ -129,10 +129,10 @@ func is_picking() -> bool:
 	return _picking
 
 
-## Icon resource keys of the HUD and the level-up popup.
+## Icon resource keys of the HUD, the level-up popup and the result panel.
 static func icon_keys() -> PackedStringArray:
 	var keys: PackedStringArray = PackedStringArray([ResourceKey.ICON__HEAL_SOUP, ResourceKey.ICON__GOLD,
-		ResourceKey.ICON__KILLS, ResourceKey.ICON__TIMER])
+		ResourceKey.ICON__KILLS, ResourceKey.ICON__TIMER, ResourceKey.ICON__UI_LEVEL])
 	for row: GameData.WeaponRow in GameData.WeaponTable.all_rows():
 		keys.append(row.icon)
 	for row: GameData.PassiveRow in GameData.PassiveTable.all_rows():

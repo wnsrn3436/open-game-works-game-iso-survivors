@@ -1,0 +1,634 @@
+{
+  "commit": "e2595083c3152966c287cf4330728d6bd27cc0ce",
+  "checks": [
+    {
+      "name": "regression test",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "static check",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": [
+        {
+          "where": "data/translations/en.csv:131:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_badge] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:132:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_goal] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:137:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_record_title] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:138:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_stat_best_kills] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:139:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_stat_best_time] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:140:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_stat_dawns] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:141:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_stat_runs] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:144:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_value_count] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:145:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_value_time] has no en translation",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:146:5",
+          "message": "data check translation_missing reserved_string.text.[lobby_value_times] has no en translation",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "name": "no blocker",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "full flow",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    },
+    {
+      "name": "performance",
+      "platform": "macos",
+      "result": "fail",
+      "failures": [
+        {
+          "where": "scene/lobby/lobby",
+          "message": "fps 5 percentile 54 is below targetFps 60 (4 samples)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/performance-macos/samples.json"
+          ]
+        },
+        {
+          "where": "scene/run/run",
+          "message": "fps 5 percentile 51 is below targetFps 60 (1 samples)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/performance-macos/samples.json"
+          ]
+        }
+      ],
+      "warnings": [],
+      "hostLoad": {
+        "cpuMaxPercent": 76.8,
+        "memoryMaxPercent": 99.9,
+        "instancesMax": 3
+      }
+    },
+    {
+      "name": "UI quality",
+      "platform": "macos",
+      "result": "fail",
+      "failures": [
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        },
+        {
+          "where": "scene/lobby/lobby",
+          "message": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+          "evidence": [
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+            "records/loops/update-1792799704503/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "no placeholder",
+      "platform": null,
+      "result": "fail",
+      "failures": [
+        {
+          "where": "resource/resources.csv:118",
+          "message": "placeholder nine_slice/ui/top_bar",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:119",
+          "message": "placeholder nine_slice/ui/title_ribbon",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:120",
+          "message": "placeholder nine_slice/ui/badge",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:121",
+          "message": "placeholder icon/ui_options",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:122",
+          "message": "placeholder icon/ui_shrine",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:123",
+          "message": "placeholder icon/ui_runs",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:124",
+          "message": "placeholder icon/ui_dawn",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:125",
+          "message": "placeholder icon/ui_level",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:126",
+          "message": "placeholder icon/ui_pip_on",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:127",
+          "message": "placeholder icon/ui_pip_off",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:128",
+          "message": "placeholder image/lobby/hero",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:129",
+          "message": "placeholder image/ui/logo_emblem",
+          "evidence": []
+        },
+        {
+          "where": "resource/resources.csv:130",
+          "message": "placeholder particle/lobby/embers",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:131",
+          "message": "translation_missing en reserved_string.text.[lobby_badge]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:132",
+          "message": "translation_missing en reserved_string.text.[lobby_goal]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:137",
+          "message": "translation_missing en reserved_string.text.[lobby_record_title]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:138",
+          "message": "translation_missing en reserved_string.text.[lobby_stat_best_kills]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:139",
+          "message": "translation_missing en reserved_string.text.[lobby_stat_best_time]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:140",
+          "message": "translation_missing en reserved_string.text.[lobby_stat_dawns]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:141",
+          "message": "translation_missing en reserved_string.text.[lobby_stat_runs]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:144",
+          "message": "translation_missing en reserved_string.text.[lobby_value_count]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:145",
+          "message": "translation_missing en reserved_string.text.[lobby_value_time]",
+          "evidence": []
+        },
+        {
+          "where": "data/translations/en.csv:146",
+          "message": "translation_missing en reserved_string.text.[lobby_value_times]",
+          "evidence": []
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "name": "row simulation",
+      "platform": null,
+      "result": "pass",
+      "failures": [],
+      "warnings": []
+    }
+  ],
+  "gate": "pass"
+}
