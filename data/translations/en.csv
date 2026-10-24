@@ -128,22 +128,22 @@ reserved_string.text.[levelup_pick_hint],{action:menu_pick_1} {action:menu_pick_
 reserved_string.text.[levelup_subtitle],하나를 고르세요,951bd4e47be6ef49,951bd4e47be6ef49,Choose one
 reserved_string.text.[levelup_title],레벨 업!,474ac456d6432b23,474ac456d6432b23,Level Up!
 reserved_string.text.[loading_text],불러오는 중,5b7e88929ec0ed88,5b7e88929ec0ed88,Loading
-reserved_string.text.[lobby_badge],{count:n},,4cf22236bf8d7cd8,
-reserved_string.text.[lobby_goal],새벽까지 {time:duration} 버티면 승리,,d4feee4eaadcb274,
+reserved_string.text.[lobby_badge],{count:n},4cf22236bf8d7cd8,4cf22236bf8d7cd8,{count:n}
+reserved_string.text.[lobby_goal],새벽까지 {time:duration} 버티면 승리,d4feee4eaadcb274,d4feee4eaadcb274,Survive {time:duration} until Dawn to win
 reserved_string.text.[lobby_gold],{gold:n},653f8333cadc3c9f,653f8333cadc3c9f,{gold:n}
 reserved_string.text.[lobby_no_record],첫 원정을 떠나 새벽까지 버텨 보세요,02d16494c0f2bd1e,02d16494c0f2bd1e,Head out on your first Run and survive until Dawn
 reserved_string.text.[lobby_options],설정,115bced49291a6a0,115bced49291a6a0,Settings
 reserved_string.text.[lobby_play],원정 시작,4e325d9edfa65f56,4e325d9edfa65f56,Start Run
-reserved_string.text.[lobby_record_title],나의 기록,,49d481f329c9ff23,
-reserved_string.text.[lobby_stat_best_kills],최다 처치,,b6bff95ba3ba2acb,
-reserved_string.text.[lobby_stat_best_time],최고 생존,,06649ea805f701b9,
-reserved_string.text.[lobby_stat_dawns],새벽 맞이,,8ef4a651318b2382,
-reserved_string.text.[lobby_stat_runs],원정,,d71fb19e0557eb65,
+reserved_string.text.[lobby_record_title],나의 기록,49d481f329c9ff23,49d481f329c9ff23,My Records
+reserved_string.text.[lobby_stat_best_kills],최다 처치,b6bff95ba3ba2acb,b6bff95ba3ba2acb,Most Kills
+reserved_string.text.[lobby_stat_best_time],최고 생존,06649ea805f701b9,06649ea805f701b9,Longest Survival
+reserved_string.text.[lobby_stat_dawns],새벽 맞이,8ef4a651318b2382,8ef4a651318b2382,Dawns Reached
+reserved_string.text.[lobby_stat_runs],원정,d71fb19e0557eb65,d71fb19e0557eb65,Runs
 reserved_string.text.[lobby_upgrade_ready],금화로 살 수 있는 강화가 있어요,a5a343858ae025da,a5a343858ae025da,You can afford an upgrade with Gold
 reserved_string.text.[lobby_upgrades],등불 제단,ffe4fe18ee6a0f04,ffe4fe18ee6a0f04,Lantern Shrine
-reserved_string.text.[lobby_value_count],{count:n},,4cf22236bf8d7cd8,
-reserved_string.text.[lobby_value_time],{time:duration},,982ff53667fff379,
-reserved_string.text.[lobby_value_times],{count:n}회,,6b0ab97ed67e8074,
+reserved_string.text.[lobby_value_count],{count:n},4cf22236bf8d7cd8,4cf22236bf8d7cd8,{count:n}
+reserved_string.text.[lobby_value_time],{time:duration},982ff53667fff379,982ff53667fff379,{time:duration}
+reserved_string.text.[lobby_value_times],{count:n}회,6b0ab97ed67e8074,6b0ab97ed67e8074,{count:n}x
 reserved_string.text.[network_confirm],확인,1aacb54c49924296,1aacb54c49924296,Confirm
 reserved_string.text.[network_error_banned],계정 이용이 제한되었습니다.,f8bd4d9d2cb9e96c,f8bd4d9d2cb9e96c,This account is restricted.
 reserved_string.text.[network_error_connection],서버에 연결할 수 없습니다.,67e5ccaadfed98b7,67e5ccaadfed98b7,Cannot connect to the server.
