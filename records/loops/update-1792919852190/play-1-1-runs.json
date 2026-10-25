@@ -1,0 +1,316 @@
+{
+  "runs": [
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792921889386,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792921891983,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnne3ktdba3ac",
+      "startedAt": 1792921893154,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor terms_agree_all",
+      "startedAt": 1792921897556,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792921898398,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor terms_confirm",
+      "startedAt": 1792921899558,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792921903422,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor lobby_upgrades",
+      "startedAt": 1792921908354,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792921910299,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor upgrade_buy [upgrade_might]",
+      "startedAt": 1792921911312,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792921913182,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor upgrade_close",
+      "startedAt": 1792921918306,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor lobby_play",
+      "startedAt": 1792921920314,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792921922237,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvnne3ktdba3ac on",
+      "startedAt": 1792921925595,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 200 --count 5 --capture",
+      "startedAt": 1792921926425,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key_down A",
+      "startedAt": 1792921934943,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 200 --count 8 --capture",
+      "startedAt": 1792921935765,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key_up A",
+      "startedAt": 1792921942583,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key 2",
+      "startedAt": 1792921947422,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 200 --count 3 --capture",
+      "startedAt": 1792921948283,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key_down D",
+      "startedAt": 1792921951679,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 500 --count 20",
+      "startedAt": 1792921952559,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key_up D",
+      "startedAt": 1792921965228,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 1000 --count 6 --capture",
+      "startedAt": 1792921968704,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 1000 --count 6 --capture",
+      "startedAt": 1792921979178,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key 1",
+      "startedAt": 1792921985590,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 1000 --count 6",
+      "startedAt": 1792921989130,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key 1",
+      "startedAt": 1792921993825,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 1000 --count 6",
+      "startedAt": 1792921994810,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 1000 --count 6",
+      "startedAt": 1792922002134,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key 1",
+      "startedAt": 1792922007857,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnne3ktdba3ac 1000 --count 6",
+      "startedAt": 1792922008701,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792922016072,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvnne3ktdba3ac off",
+      "startedAt": 1792922021163,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792922025061,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnne3ktdba3ac --summary",
+      "startedAt": 1792922026212,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor result_lobby",
+      "startedAt": 1792922031533,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792922035523,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor lobby_upgrades",
+      "startedAt": 1792922036883,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor upgrade_buy [upgrade_magnet]",
+      "startedAt": 1792922038880,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792922040824,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor upgrade_close",
+      "startedAt": 1792922041915,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor lobby_play",
+      "startedAt": 1792922043911,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792922048862,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key P",
+      "startedAt": 1792922056912,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792922058863,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor pause_resume",
+      "startedAt": 1792922060050,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac key P",
+      "startedAt": 1792922061917,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnne3ktdba3ac tap_anchor pause_give_up",
+      "startedAt": 1792922063830,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnne3ktdba3ac",
+      "startedAt": 1792922067683,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvnne3ktdba3ac",
+      "startedAt": 1792922068798,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

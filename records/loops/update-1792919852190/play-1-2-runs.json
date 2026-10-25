@@ -1,0 +1,352 @@
+{
+  "runs": [
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792921898211,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792921900345,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792921901477,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e tap_anchor terms_agree_all",
+      "startedAt": 1792921905496,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e tap_anchor terms_confirm",
+      "startedAt": 1792921906296,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792921910234,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvnnea7i16978e on",
+      "startedAt": 1792921915349,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e tap_anchor lobby_play",
+      "startedAt": 1792921916158,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792921920138,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792921921567,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e key_down D",
+      "startedAt": 1792921924065,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 200 --count 10 --capture",
+      "startedAt": 1792921924875,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 200 --count 40",
+      "startedAt": 1792921937691,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792921950223,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792921951679,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e key_up D",
+      "startedAt": 1792921956527,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e key_down A",
+      "startedAt": 1792921957385,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 200 --count 25",
+      "startedAt": 1792921958234,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792921963537,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792921964574,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e key 3",
+      "startedAt": 1792921969168,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 200 --count 30 --capture",
+      "startedAt": 1792921970001,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792921995312,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e key_up A",
+      "startedAt": 1792922000201,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 1000 --count 20",
+      "startedAt": 1792922001041,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922013279,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 1000 --count 20",
+      "startedAt": 1792922014085,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922014941,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 1000 --count 20",
+      "startedAt": 1792922015773,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922016665,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 1000 --count 20",
+      "startedAt": 1792922017452,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922018300,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 1000 --count 20",
+      "startedAt": 1792922019092,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922019989,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 1000 --count 20",
+      "startedAt": 1792922020862,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922021790,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792922022641,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e key 1",
+      "startedAt": 1792922026243,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 1000 --count 20",
+      "startedAt": 1792922027189,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922034623,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e key 1",
+      "startedAt": 1792922035554,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 1000 --count 20",
+      "startedAt": 1792922036536,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922042887,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792922043868,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnnea7i16978e 500 --count 5 --capture",
+      "startedAt": 1792922049502,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvnnea7i16978e off",
+      "startedAt": 1792922054164,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792922057076,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922058217,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e tap_anchor result_again",
+      "startedAt": 1792922063326,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792922068258,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnnea7i16978e --summary",
+      "startedAt": 1792922069612,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e key P",
+      "startedAt": 1792922070451,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792922072399,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e tap_anchor pause_give_up",
+      "startedAt": 1792922073643,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792922078526,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e tap_anchor result_lobby",
+      "startedAt": 1792922084667,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnnea7i16978e tap_anchor lobby_upgrades",
+      "startedAt": 1792922088560,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnnea7i16978e",
+      "startedAt": 1792922090472,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

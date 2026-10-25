@@ -1,0 +1,237 @@
+{
+  "defects": [
+    {
+      "id": "shrine-buy-button-clipped",
+      "severity": "major",
+      "owner": "client content",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ],
+      "source": "check",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "run-fps-below-target",
+      "severity": "major",
+      "owner": "client content",
+      "where": "scene/run/run",
+      "what": "fps 5 percentile 55 is below targetFps 60 (2 samples)",
+      "why": "the run must hold targetFps; the 5th percentile is 55",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#performance",
+        "records/loops/update-1792919852190/evidence/check-1/performance-macos/samples.json"
+      ],
+      "source": "check",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "low-health-warning-hidden",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "run, low health",
+      "what": "The red `체력이 위험해요!` text under the player is drawn beneath the fire aura ring, gems and enemies, and cannot be read.",
+      "why": "The low-HP warning is a failure cue; if it can't be read, the player has no warning before the fall.",
+      "evidence": [
+        "`mvnnd6tr5111cb-1792922724828` (1:13, 1/120)"
+      ],
+      "source": "judge",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "run-field-too-dark",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "scene/run",
+      "what": "none (stood still) → At 0:05 there were 1 kill, 8 or more enemies on screen and an XP gem at the left",
+      "why": "the screen is dark and enemies are low contrast against the field",
+      "evidence": [
+        "captures/mvnne3ktdba3ac-1792921930472.png",
+        "records/loops/update-1792919852190/play-1-1.md:21",
+        "captures/mvnnea7i16978e-1792921932934.png",
+        "records/loops/update-1792919852190/play-1-2.md:18",
+        "captures/mvnneh65d2f69c-1792921978080.png",
+        "records/loops/update-1792919852190/play-1-3.md:22"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "first-levelup-no-weapon-card",
+      "severity": "minor",
+      "owner": "data",
+      "where": "scene/run",
+      "what": "key P → At 0:11 (Lv 2) the level-up popup was open, so `P` did nothing and the run stayed held. The cards offered were `질풍 장화`, `바람의 깃털`, `분노의 불씨`, all passives, with no weapon card",
+      "why": "no weapon choice at that level-up",
+      "evidence": [
+        "captures/mvnne3ktdba3ac-1792922059054.png",
+        "records/loops/update-1792919852190/play-1-1.md:28",
+        "captures/mvnnea7i16978e-1792921963726.png",
+        "records/loops/update-1792919852190/play-1-2.md:21",
+        "captures/mvnneons3b5716-1792921949832.png",
+        "records/loops/update-1792919852190/play-1-4.md:16"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "levelup-pace-uneven",
+      "severity": "minor",
+      "owner": "data",
+      "where": "run",
+      "what": "step → Run time 0:54, 64 kills, XP bar about 65%. Lv 3 → Lv 4 took 39 seconds of run time, against 14 seconds for Lv 2 → Lv 3 and 4 seconds for Lv 1 → Lv 2",
+      "why": "the level-up pace slows quickly after the first two picks",
+      "evidence": [
+        "captures/mvnneons3b5716-1792922181428.png",
+        "records/loops/update-1792919852190/play-1-4.md:22"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "low-pressure-early",
+      "severity": "minor",
+      "owner": "data",
+      "where": "run",
+      "what": "key_down W then A+S, step 200ms → Run time 0:34, 40 kills, 13 gold. Many enemies (zombies, bats) were on screen. The player was at full health, not hit once",
+      "why": "the early wave is easy, with no pressure to move",
+      "evidence": [
+        "captures/mvnneons3b5716-1792922094113.png",
+        "records/loops/update-1792919852190/play-1-4.md:21"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "lantern-attack-not-visible",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "scene/run/run",
+      "what": "step 200 x40, holding D → at 0:10: 7 kills, 2 gold, level 1 and an empty XP bar, with 3 blue gems lying on the left while the player walked right",
+      "why": "the weapon (the lantern, level 1) kills on its own, but its attack effect is not visible in the capture; I could only see the kill count rise",
+      "evidence": [
+        "captures/mvnnea7i16978e-1792921950708.png",
+        "records/loops/update-1792919852190/play-1-2.md:19"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "upgrade-cost-curve-steep",
+      "severity": "minor",
+      "owner": "data",
+      "where": "scene/lobby",
+      "what": "tap_anchor result_lobby, lobby_upgrades → Camp gold showed 25 and the shrine showed 25 too. Prices are 50 힘, 40 생명력, 100 서두름, 30 자력, 60 신속, 80 탐욕",
+      "why": "one run earns less than most single upgrades, so only 자력 is within reach after about 1 min of play",
+      "evidence": [
+        "captures/mvnne3ktdba3ac-1792922040966.png",
+        "records/loops/update-1792919852190/play-1-1.md:26",
+        "captures/mvnneh65d2f69c-1792922411133.png",
+        "records/loops/update-1792919852190/play-1-3.md:33"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "shrine-toast-small-overlap",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "scene/lobby",
+      "what": "tap_anchor lobby_upgrades, upgrade_buy [upgrade_might] → Shrine panel lists six rows with `금화가 부족해요` over each dimmed button. The press showed a toast, also reading `금화가 부족해요`, as a dark horizontal band across the middle two rows",
+      "why": "the band cuts across the 서두름 and 자력 text for as long as it shows",
+      "evidence": [
+        "captures/mvnne3ktdba3ac-1792921913327.png",
+        "records/loops/update-1792919852190/play-1-1.md:19",
+        "captures/mvnneh65d2f69c-1792922143377.png",
+        "records/loops/update-1792919852190/play-1-3.md:29",
+        "captures/mvnneh65d2f69c-1792922411133.png",
+        "records/loops/update-1792919852190/play-1-3.md:31"
+      ],
+      "source": "play",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "run-hud-flat-boxes",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "run HUD, result panel",
+      "what": "The health/weapon box (top left), the kills/gold box (top right) and the three stat rows of the result panel are plain dark single-color rectangles with a thin outline. The other panels use art frames.",
+      "why": "Under `presentation`, these are code-made boxes next to art-framed panels.",
+      "evidence": [
+        "mvnnd6tr5111cb-1792922161142`, `mvnnd6tr5111cb-1792922978751"
+      ],
+      "source": "judge",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    },
+    {
+      "id": "lobby-fps-below-target",
+      "severity": "minor",
+      "owner": "client content",
+      "where": "scene/lobby/lobby",
+      "what": "fps 5 percentile 43 is below targetFps 60 (3 samples)",
+      "why": "the camp must hold targetFps; the 5th percentile is 43",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#performance",
+        "records/loops/update-1792919852190/evidence/check-1/performance-macos/samples.json"
+      ],
+      "source": "check",
+      "status": "open",
+      "refusedReason": null,
+      "repeatedDefect": 0,
+      "oscillation": 0
+    }
+  ],
+  "previous": null,
+  "recordedBy": "iteration-1"
+}
