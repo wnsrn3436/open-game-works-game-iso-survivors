@@ -1,0 +1,394 @@
+{
+  "runs": [
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792910296059,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910298220,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghmee7268b5",
+      "startedAt": 1792910299362,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 tap_anchor terms_agree_all",
+      "startedAt": 1792910303786,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910305654,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 tap_anchor terms_confirm",
+      "startedAt": 1792910306808,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910310659,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 tap_anchor lobby_upgrades",
+      "startedAt": 1792910316193,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910317997,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 tap_anchor upgrade_close",
+      "startedAt": 1792910318950,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvnghmee7268b5 on",
+      "startedAt": 1792910320873,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 tap_anchor lobby_play",
+      "startedAt": 1792910321720,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910325696,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghmee7268b5 --summary",
+      "startedAt": 1792910327062,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_down D",
+      "startedAt": 1792910332649,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 200 --count 10 --capture",
+      "startedAt": 1792910333500,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 200 --count 40",
+      "startedAt": 1792910346183,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910358486,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_up D",
+      "startedAt": 1792910365679,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_down W",
+      "startedAt": 1792910366474,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_down A",
+      "startedAt": 1792910367274,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 200 --count 12",
+      "startedAt": 1792910368074,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910372300,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_up W",
+      "startedAt": 1792910378172,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_up A",
+      "startedAt": 1792910379014,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_down D",
+      "startedAt": 1792910379855,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_down S",
+      "startedAt": 1792910380670,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 200 --count 15",
+      "startedAt": 1792910381510,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910416568,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvnghmee7268b5",
+      "startedAt": 1792910423352,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghmee7268b5 --summary",
+      "startedAt": 1792910424227,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key 1",
+      "startedAt": 1792910427779,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 200 --count 3 --capture",
+      "startedAt": 1792910429658,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_up D",
+      "startedAt": 1792910438863,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key_up S",
+      "startedAt": 1792910439678,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 12",
+      "startedAt": 1792910440574,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 12",
+      "startedAt": 1792910448467,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 12",
+      "startedAt": 1792910451605,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 12",
+      "startedAt": 1792910452466,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910453317,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key 2",
+      "startedAt": 1792910456182,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 10",
+      "startedAt": 1792910458039,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 10",
+      "startedAt": 1792910464728,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 10",
+      "startedAt": 1792910471401,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 10",
+      "startedAt": 1792910503948,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 10",
+      "startedAt": 1792910504768,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 500 --count 10",
+      "startedAt": 1792910505616,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910506440,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key 3",
+      "startedAt": 1792910512330,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 200 --count 10 --capture",
+      "startedAt": 1792910514198,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 400 --count 6 --capture",
+      "startedAt": 1792910517669,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 tap_anchor result_again",
+      "startedAt": 1792910532354,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 200 --count 5 --capture",
+      "startedAt": 1792910536209,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key P",
+      "startedAt": 1792910540997,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910542862,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 tap_anchor pause_resume",
+      "startedAt": 1792910550308,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 200 --count 3",
+      "startedAt": 1792910552149,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 key Escape",
+      "startedAt": 1792910553765,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 tap_anchor pause_give_up",
+      "startedAt": 1792910555575,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 400 --count 6 --capture",
+      "startedAt": 1792910557387,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghmee7268b5 400 --count 6 --capture",
+      "startedAt": 1792910560742,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvnghmee7268b5 off",
+      "startedAt": 1792910569792,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghmee7268b5 tap_anchor result_lobby",
+      "startedAt": 1792910570606,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghmee7268b5",
+      "startedAt": 1792910575438,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvnghmee7268b5",
+      "startedAt": 1792910576589,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

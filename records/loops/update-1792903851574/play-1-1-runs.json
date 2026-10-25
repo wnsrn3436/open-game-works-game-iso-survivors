@@ -1,0 +1,604 @@
+{
+  "runs": [
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792905454087,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905454835,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e tap_anchor terms_agree_all",
+      "startedAt": 1792905459774,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e tap_anchor terms_confirm",
+      "startedAt": 1792905460579,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905464381,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e tap_anchor lobby_upgrades",
+      "startedAt": 1792905465535,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905467419,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e tap_anchor upgrade_buy [upgrade_might]",
+      "startedAt": 1792905474314,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905476164,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e tap_anchor upgrade_close",
+      "startedAt": 1792905477148,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e tap_anchor lobby_play",
+      "startedAt": 1792905479174,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvndluaa2c140e on",
+      "startedAt": 1792905482977,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905483843,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905485174,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down D",
+      "startedAt": 1792905489717,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 10 --capture",
+      "startedAt": 1792905490538,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up D",
+      "startedAt": 1792905499481,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down D",
+      "startedAt": 1792905505142,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 25 --capture",
+      "startedAt": 1792905505922,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up D",
+      "startedAt": 1792905542643,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down S",
+      "startedAt": 1792905543459,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 25 --capture",
+      "startedAt": 1792905544265,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up S",
+      "startedAt": 1792905545101,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down A",
+      "startedAt": 1792905545895,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 25 --capture",
+      "startedAt": 1792905546698,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up A",
+      "startedAt": 1792905547529,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down W",
+      "startedAt": 1792905548338,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 25 --capture",
+      "startedAt": 1792905549156,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up W",
+      "startedAt": 1792905549984,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905550789,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905553348,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvndluaa2c140e",
+      "startedAt": 1792905554388,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key 2",
+      "startedAt": 1792905560149,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down A",
+      "startedAt": 1792905561005,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 20",
+      "startedAt": 1792905561826,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905568355,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905569729,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 20",
+      "startedAt": 1792905570588,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905577110,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905578403,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 20",
+      "startedAt": 1792905579176,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905611356,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905612430,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 20",
+      "startedAt": 1792905613265,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905614133,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905615158,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 20",
+      "startedAt": 1792905615956,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905616782,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905617810,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 20",
+      "startedAt": 1792905618575,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905619423,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905620563,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up A",
+      "startedAt": 1792905621371,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905624408,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key 3",
+      "startedAt": 1792905631748,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down S",
+      "startedAt": 1792905632591,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 10",
+      "startedAt": 1792905633420,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up S",
+      "startedAt": 1792905637121,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down A",
+      "startedAt": 1792905637960,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 10",
+      "startedAt": 1792905638761,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up A",
+      "startedAt": 1792905642388,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down W",
+      "startedAt": 1792905643214,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 10",
+      "startedAt": 1792905644035,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up W",
+      "startedAt": 1792905647720,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down D",
+      "startedAt": 1792905648551,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 10",
+      "startedAt": 1792905649377,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up D",
+      "startedAt": 1792905653033,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down S",
+      "startedAt": 1792905653856,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 10",
+      "startedAt": 1792905654638,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up S",
+      "startedAt": 1792905658250,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down A",
+      "startedAt": 1792905659099,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 10",
+      "startedAt": 1792905659923,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up A",
+      "startedAt": 1792905663543,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_down W",
+      "startedAt": 1792905664301,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 10",
+      "startedAt": 1792905665059,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key_up W",
+      "startedAt": 1792905698343,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905699077,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905699786,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key 1",
+      "startedAt": 1792905707229,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key P",
+      "startedAt": 1792905707975,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905709777,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e tap_anchor pause_resume",
+      "startedAt": 1792905710852,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key Escape",
+      "startedAt": 1792905712651,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e tap_anchor pause_give_up",
+      "startedAt": 1792905714457,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905718222,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 10 --capture",
+      "startedAt": 1792905726726,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905728091,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndluaa2c140e 200 --count 12 --capture",
+      "startedAt": 1792905731350,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvndluaa2c140e off",
+      "startedAt": 1792905736874,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905737578,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e tap_anchor result_again",
+      "startedAt": 1792905744185,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905748950,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key 1",
+      "startedAt": 1792905765165,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key 1",
+      "startedAt": 1792905780929,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key 1",
+      "startedAt": 1792905796692,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key 1",
+      "startedAt": 1792905812504,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key 1",
+      "startedAt": 1792905828270,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndluaa2c140e key 1",
+      "startedAt": 1792905844033,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndluaa2c140e",
+      "startedAt": 1792905844780,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndluaa2c140e --summary",
+      "startedAt": 1792905845717,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}
