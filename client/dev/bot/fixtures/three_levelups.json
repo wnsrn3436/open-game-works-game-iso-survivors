@@ -1,0 +1,10 @@
+{
+  "steps": [
+    {
+      "kind": "setup",
+      "command": "run.open_run",
+      "args": [],
+      "timeoutMs": 120000
+    }
+  ]
+}

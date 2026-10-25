@@ -1,0 +1,199 @@
+{
+  "runs": [
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --fixture client/dev/bot/fixtures/three_levelups.json",
+      "startedAt": 1792919927567,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvnm8e0lfb045b"
+    },
+    {
+      "command": "ogw data open-game-works-game-iso-survivors",
+      "startedAt": 1792919928103,
+      "exitCode": 0,
+      "summary": {
+        "glossaryMissing": []
+      }
+    },
+    {
+      "command": "ogw data open-game-works-game-iso-survivors",
+      "startedAt": 1792919931302,
+      "exitCode": 0,
+      "summary": {
+        "glossaryMissing": []
+      }
+    },
+    {
+      "command": "ogw contract open-game-works-game-iso-survivors",
+      "startedAt": 1792919932220,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --regression",
+      "startedAt": 1792919935400,
+      "exitCode": 0,
+      "summary": {
+        "checks": [
+          {
+            "name": "regression test",
+            "result": "pass"
+          }
+        ]
+      },
+      "job": "mvnm8k239ecac1"
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --static",
+      "startedAt": 1792919935995,
+      "exitCode": 0,
+      "summary": {
+        "checks": [
+          {
+            "name": "static check",
+            "result": "pass"
+          }
+        ]
+      },
+      "job": "mvnm8kikfe37de"
+    },
+    {
+      "command": "ogw job wait mvnm8e0lfb045b",
+      "startedAt": 1792919936568,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnm8evc197403",
+      "startedAt": 1792919939841,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvnm8evc197403 get_state",
+      "startedAt": 1792919940753,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvnm8evc197403",
+      "startedAt": 1792919941387,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvnm8evc197403 on",
+      "startedAt": 1792919947552,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnm8evc197403 tap_anchor pause_resume",
+      "startedAt": 1792919948121,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnm8evc197403 key_down D",
+      "startedAt": 1792919948710,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnm8evc197403 200 --count 150",
+      "startedAt": 1792919949274,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnm8evc197403 key 1 50",
+      "startedAt": 1792919964821,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnm8evc197403 200 --count 300",
+      "startedAt": 1792919965450,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnm8evc197403 key 1 50",
+      "startedAt": 1792919996236,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnm8evc197403 200 --count 300",
+      "startedAt": 1792919996876,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnm8evc197403 key 1 50",
+      "startedAt": 1792920029952,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnm8evc197403 200 --count 300",
+      "startedAt": 1792920030581,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvnm8evc197403 run.state",
+      "startedAt": 1792920076716,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnm8evc197403",
+      "startedAt": 1792920077296,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvnm8evc197403",
+      "startedAt": 1792920078026,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvnm8evc197403 list_commands",
+      "startedAt": 1792920086778,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvnm8evc197403",
+      "startedAt": 1792920091479,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvnm8k239ecac1",
+      "startedAt": 1792920096621,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvnm8kikfe37de",
+      "startedAt": 1792920099269,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792920117123,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792920126451,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

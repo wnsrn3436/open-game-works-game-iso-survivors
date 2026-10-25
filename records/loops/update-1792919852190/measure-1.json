@@ -1,0 +1,69 @@
+{
+  "commit": "3749d10403626367e95f3c1bff49f9109e3d48ce",
+  "targets": [
+    {
+      "metric": "input_latency_ms",
+      "min": 0,
+      "max": 100,
+      "value": 16,
+      "result": "in",
+      "data": null
+    },
+    {
+      "metric": "no_response_permille",
+      "min": 0,
+      "max": 150,
+      "value": 25,
+      "result": "in",
+      "data": null
+    },
+    {
+      "metric": "scene_load_ms",
+      "min": 0,
+      "max": 3000,
+      "value": 516,
+      "result": "in",
+      "data": null
+    },
+    {
+      "metric": "restart_delay_ms",
+      "min": 2000,
+      "max": 60000,
+      "value": 23301,
+      "result": "in",
+      "data": "game_setting.run_end_delay"
+    },
+    {
+      "metric": "feedback_per_input",
+      "min": 1,
+      "max": 1000,
+      "value": 3,
+      "result": "in",
+      "data": null
+    },
+    {
+      "metric": "first_reward_ms",
+      "min": 5000,
+      "max": 60000,
+      "value": 46082,
+      "result": "in",
+      "data": "game_setting.xp_base"
+    },
+    {
+      "metric": "reward_interval_ms",
+      "min": 8000,
+      "max": 45000,
+      "value": 14635,
+      "result": "in",
+      "data": "game_setting.xp_step"
+    },
+    {
+      "metric": "goal_interval_ms",
+      "min": 60000,
+      "max": 960000,
+      "value": 66565,
+      "result": "in",
+      "data": "wave.health_permille"
+    }
+  ]
+}

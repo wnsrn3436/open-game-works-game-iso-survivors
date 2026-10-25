@@ -1,0 +1,975 @@
+{
+  "findings": [
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0002-ko-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0011-ko-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0020-ko-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (ko, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0029-ko-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_air_13, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0038-en-macbook_air_13-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (en, macbook_pro_14_notch, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0047-en-macbook_pro_14_notch-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (en, display_16_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0056-en-display_16_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry1/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry2/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry3/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry4/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry5/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "UI quality requires no clipping on every supported screen and language",
+      "id": "shrine-buy-button-clipped",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "clipped UICore/Panel/SafeAreaRoot/UpgradePanel/Frame/Box/Grid/Entry6/Row/Side/Buy in prefab/lobby/upgrade_panel (en, ultrawide_21_9, lobby.open_upgrades, text scale 1000)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#UI quality",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.png",
+        "records/loops/update-1792919852190/evidence/check-1/ui-macos/0065-en-ultrawide_21_9-lobby.open_upgrades-1000.json"
+      ]
+    },
+    {
+      "severity": "major",
+      "owner": "client content",
+      "why": "the run must hold targetFps; the 5th percentile is 55",
+      "id": "run-fps-below-target",
+      "drop": null,
+      "source": "check",
+      "where": "scene/run/run",
+      "what": "fps 5 percentile 55 is below targetFps 60 (2 samples)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#performance",
+        "records/loops/update-1792919852190/evidence/check-1/performance-macos/samples.json"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "The low-HP warning is a failure cue; if it can't be read, the player has no warning before the fall.",
+      "id": "low-health-warning-hidden",
+      "drop": null,
+      "source": "judge",
+      "where": "run, low health",
+      "what": "The red `체력이 위험해요!` text under the player is drawn beneath the fire aura ring, gems and enemies, and cannot be read.",
+      "evidence": [
+        "`mvnnd6tr5111cb-1792922724828` (1:13, 1/120)"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the screen is dark and enemies are low contrast against the field",
+      "id": "run-field-too-dark",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run",
+      "what": "none (stood still) → At 0:05 there were 1 kill, 8 or more enemies on screen and an XP gem at the left",
+      "evidence": [
+        "captures/mvnne3ktdba3ac-1792921930472.png",
+        "records/loops/update-1792919852190/play-1-1.md:21"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the player and enemies are low-contrast on the dark ground and are hard to tell apart at a glance",
+      "id": "run-field-too-dark",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "key_down D, step 200 x10 → at 0:02 the field is very dark; the player is a small figure at the screen center with a small red bar. Enemies come in at the corners and edges. The `WASD` hint was not visible in this capture",
+      "evidence": [
+        "captures/mvnnea7i16978e-1792921932934.png",
+        "records/loops/update-1792919852190/play-1-2.md:18"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the damage numbers are small and low contrast against the dark field",
+      "id": "run-field-too-dark",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "wait → at 0:11 kills 6, gold 2, XP bar about 50%; blue gems on the ground and damage numbers (`12`) float up",
+      "evidence": [
+        "captures/mvnneh65d2f69c-1792921978080.png",
+        "records/loops/update-1792919852190/play-1-3.md:22"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "no weapon choice at that level-up",
+      "id": "first-levelup-no-weapon-card",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run",
+      "what": "key P → At 0:11 (Lv 2) the level-up popup was open, so `P` did nothing and the run stayed held. The cards offered were `질풍 장화`, `바람의 깃털`, `분노의 불씨`, all passives, with no weapon card",
+      "evidence": [
+        "captures/mvnne3ktdba3ac-1792922059054.png",
+        "records/loops/update-1792919852190/play-1-1.md:28"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "the first choice offers no new way to attack, so the choice feels like numbers only",
+      "id": "first-levelup-no-weapon-card",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "none → all three level-up cards at Lv 2 were new passives (바람의 깃털, 거인의 심장, 분노의 불씨); no weapon card was offered",
+      "evidence": [
+        "captures/mvnnea7i16978e-1792921963726.png",
+        "records/loops/update-1792919852190/play-1-2.md:21"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "the first pick has no weapon choice, so a pick has less weight",
+      "id": "first-levelup-no-weapon-card",
+      "drop": null,
+      "source": "play",
+      "where": "run",
+      "what": "step → The first level-up popup opened at 0:04 (Lv 2, 2 kills) and paused the run. Its 3 cards are all passives (`바람의 깃털`, `거인의 심장`, `자석 부적`), all marked `새로 얻기`. The starting lantern weapon showed no upgrade card and no new weapon was offered",
+      "evidence": [
+        "captures/mvnneons3b5716-1792921949832.png",
+        "records/loops/update-1792919852190/play-1-4.md:16"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "the level-up pace slows quickly after the first two picks",
+      "id": "levelup-pace-uneven",
+      "drop": null,
+      "source": "play",
+      "where": "run",
+      "what": "step → Run time 0:54, 64 kills, XP bar about 65%. Lv 3 → Lv 4 took 39 seconds of run time, against 14 seconds for Lv 2 → Lv 3 and 4 seconds for Lv 1 → Lv 2",
+      "evidence": [
+        "captures/mvnneons3b5716-1792922181428.png",
+        "records/loops/update-1792919852190/play-1-4.md:22"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "the early wave is easy, with no pressure to move",
+      "id": "low-pressure-early",
+      "drop": null,
+      "source": "play",
+      "where": "run",
+      "what": "key_down W then A+S, step 200ms → Run time 0:34, 40 kills, 13 gold. Many enemies (zombies, bats) were on screen. The player was at full health, not hit once",
+      "evidence": [
+        "captures/mvnneons3b5716-1792922094113.png",
+        "records/loops/update-1792919852190/play-1-4.md:21"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the weapon (the lantern, level 1) kills on its own, but its attack effect is not visible in the capture; I could only see the kill count rise",
+      "id": "lantern-attack-not-visible",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "step 200 x40, holding D → at 0:10: 7 kills, 2 gold, level 1 and an empty XP bar, with 3 blue gems lying on the left while the player walked right",
+      "evidence": [
+        "captures/mvnnea7i16978e-1792921950708.png",
+        "records/loops/update-1792919852190/play-1-2.md:19"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "one run earns less than most single upgrades, so only 자력 is within reach after about 1 min of play",
+      "id": "upgrade-cost-curve-steep",
+      "drop": null,
+      "source": "play",
+      "where": "scene/lobby",
+      "what": "tap_anchor result_lobby, lobby_upgrades → Camp gold showed 25 and the shrine showed 25 too. Prices are 50 힘, 40 생명력, 100 서두름, 30 자력, 60 신속, 80 탐욕",
+      "evidence": [
+        "captures/mvnne3ktdba3ac-1792922040966.png",
+        "records/loops/update-1792919852190/play-1-1.md:26"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "data",
+      "why": "a big price jump, felt steep for a first upgrade",
+      "id": "upgrade-cost-curve-steep",
+      "drop": null,
+      "source": "play",
+      "where": "scene/run/run",
+      "what": "none → the vitality-bought row cost went 40 to 100 for level 2 (more than doubled)",
+      "evidence": [
+        "captures/mvnneh65d2f69c-1792922411133.png",
+        "records/loops/update-1792919852190/play-1-3.md:33"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the band cuts across the 서두름 and 자력 text for as long as it shows",
+      "id": "shrine-toast-small-overlap",
+      "drop": null,
+      "source": "play",
+      "where": "scene/lobby",
+      "what": "tap_anchor lobby_upgrades, upgrade_buy [upgrade_might] → Shrine panel lists six rows with `금화가 부족해요` over each dimmed button. The press showed a toast, also reading `금화가 부족해요`, as a dark horizontal band across the middle two rows",
+      "evidence": [
+        "captures/mvnne3ktdba3ac-1792921913327.png",
+        "records/loops/update-1792919852190/play-1-1.md:19"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "correct behaviour; the toast text is very small and sits on a narrow dark band across the rows, so it is easy to miss",
+      "id": "shrine-toast-small-overlap",
+      "drop": null,
+      "source": "play",
+      "where": "scene/lobby/lobby",
+      "what": "tap_anchor result_lobby, lobby_upgrades, upgrade_buy [upgrade_magnet] → gold 27 against cost 30: the press did not buy and a thin toast `금화가 부족해요` showed over the middle of the panel",
+      "evidence": [
+        "captures/mvnneh65d2f69c-1792922143377.png",
+        "records/loops/update-1792919852190/play-1-3.md:29"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "clear feedback; the toast is small as above",
+      "id": "shrine-toast-small-overlap",
+      "drop": null,
+      "source": "play",
+      "where": "scene/lobby/lobby",
+      "what": "tap_anchor upgrade_buy [upgrade_vitality] → bought: gold 147 to 107, `Lv 1/5`, one lit pip, next cost 100, toast `생명력 강화 완료!`; the other buy buttons turned bright where affordable",
+      "evidence": [
+        "captures/mvnneh65d2f69c-1792922411133.png",
+        "records/loops/update-1792919852190/play-1-3.md:31"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "Under `presentation`, these are code-made boxes next to art-framed panels.",
+      "id": "run-hud-flat-boxes",
+      "drop": null,
+      "source": "judge",
+      "where": "run HUD, result panel",
+      "what": "The health/weapon box (top left), the kills/gold box (top right) and the three stat rows of the result panel are plain dark single-color rectangles with a thin outline. The other panels use art frames.",
+      "evidence": [
+        "mvnnd6tr5111cb-1792922161142`, `mvnnd6tr5111cb-1792922978751"
+      ]
+    },
+    {
+      "severity": "minor",
+      "owner": "client content",
+      "why": "the camp must hold targetFps; the 5th percentile is 43",
+      "id": "lobby-fps-below-target",
+      "drop": null,
+      "source": "check",
+      "where": "scene/lobby/lobby",
+      "what": "fps 5 percentile 43 is below targetFps 60 (3 samples)",
+      "evidence": [
+        "records/loops/update-1792919852190/check-1.json#performance",
+        "records/loops/update-1792919852190/evidence/check-1/performance-macos/samples.json"
+      ]
+    }
+  ],
+  "discarded": []
+}
