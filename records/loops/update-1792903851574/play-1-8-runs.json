@@ -1,0 +1,268 @@
+{
+  "runs": [
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792910326714,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910327498,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 tap_anchor lobby_upgrades",
+      "startedAt": 1792910333639,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910335581,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvngi7et550e80 --summary",
+      "startedAt": 1792910336559,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 tap_anchor upgrade_close",
+      "startedAt": 1792910341476,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910343402,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvngi7et550e80 on",
+      "startedAt": 1792910344603,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 tap_anchor lobby_play",
+      "startedAt": 1792910345441,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910349292,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvngi7et550e80 200 --count 10 --capture",
+      "startedAt": 1792910353079,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key_down D",
+      "startedAt": 1792910364136,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvngi7et550e80 200 --count 15 --capture",
+      "startedAt": 1792910364994,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvngi7et550e80 200 --count 15 --capture",
+      "startedAt": 1792910381798,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key_up D",
+      "startedAt": 1792910399940,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key_down A",
+      "startedAt": 1792910400729,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key_down W",
+      "startedAt": 1792910401499,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvngi7et550e80 500 --count 12",
+      "startedAt": 1792910402276,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910434821,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvngi7et550e80",
+      "startedAt": 1792910438975,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key 1",
+      "startedAt": 1792910443700,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvngi7et550e80 200 --count 2",
+      "startedAt": 1792910444522,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key_up A",
+      "startedAt": 1792910445940,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key_up W",
+      "startedAt": 1792910446771,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key P",
+      "startedAt": 1792910447606,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910448467,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 tap_anchor pause_resume",
+      "startedAt": 1792910454826,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvngi7et550e80 200 --count 2",
+      "startedAt": 1792910455653,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key P",
+      "startedAt": 1792910457008,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 tap_anchor pause_give_up",
+      "startedAt": 1792910457856,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910459691,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910463990,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 key P",
+      "startedAt": 1792910472265,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910474096,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 tap_anchor pause_give_up",
+      "startedAt": 1792910475187,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910478019,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvngi7et550e80 200 --count 3 --capture",
+      "startedAt": 1792910486350,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvngi7et550e80 --summary",
+      "startedAt": 1792910487828,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvngi7et550e80 200 --count 10 --capture",
+      "startedAt": 1792910491645,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvngi7et550e80 off",
+      "startedAt": 1792910497512,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910499359,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvngi7et550e80 tap_anchor result_again",
+      "startedAt": 1792910505583,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvngi7et550e80",
+      "startedAt": 1792910510404,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvngi7et550e80 --summary",
+      "startedAt": 1792910511705,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

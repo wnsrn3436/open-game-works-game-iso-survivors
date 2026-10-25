@@ -22,7 +22,5 @@ func _on_toggled(_on: bool) -> void:
 func _refresh() -> void:
 	var ready_to_confirm: bool = terms_toggle.button_pressed and privacy_toggle.button_pressed
 	confirm_button.disabled = not ready_to_confirm
-	CommonButtonText.match_outline(confirm_button)
 	var text_color: Color = CommonConstants.TERMS_HINT_DONE_COLOR if ready_to_confirm else CommonConstants.TERMS_HINT_WAITING_COLOR
 	add_theme_color_override("font_color", text_color)
-	add_theme_color_override("font_outline_color", text_color)

@@ -1,0 +1,178 @@
+{
+  "runs": [
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792905485164,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndmflbac0bb7",
+      "startedAt": 1792905487518,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndmflbac0bb7",
+      "startedAt": 1792905488680,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndmflbac0bb7 tap_anchor lobby_upgrades",
+      "startedAt": 1792905493220,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndmflbac0bb7",
+      "startedAt": 1792905495064,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndmflbac0bb7 tap_anchor upgrade_close",
+      "startedAt": 1792905500696,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndmflbac0bb7",
+      "startedAt": 1792905502569,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvndmflbac0bb7 on",
+      "startedAt": 1792905503722,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndmflbac0bb7 tap_anchor lobby_play",
+      "startedAt": 1792905504510,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndmflbac0bb7 200 --count 5 --capture",
+      "startedAt": 1792905508366,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndmflbac0bb7 key_down D",
+      "startedAt": 1792905518041,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndmflbac0bb7 200 --count 40 --capture",
+      "startedAt": 1792905518908,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndmflbac0bb7 200 --count 60",
+      "startedAt": 1792905556582,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndmflbac0bb7",
+      "startedAt": 1792905591974,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvndmflbac0bb7",
+      "startedAt": 1792905595317,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndmflbac0bb7 --summary",
+      "startedAt": 1792905596093,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndmflbac0bb7 key 2",
+      "startedAt": 1792905600107,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndmflbac0bb7 200 --count 3 --capture",
+      "startedAt": 1792905601014,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndmflbac0bb7 key_up D",
+      "startedAt": 1792905604183,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndmflbac0bb7 key P",
+      "startedAt": 1792905605037,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndmflbac0bb7 200 --count 1 --capture",
+      "startedAt": 1792905605924,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndmflbac0bb7",
+      "startedAt": 1792905608155,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndmflbac0bb7 tap_anchor pause_give_up",
+      "startedAt": 1792905613607,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvndmflbac0bb7 off",
+      "startedAt": 1792905614460,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndmflbac0bb7",
+      "startedAt": 1792905616320,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndmflbac0bb7",
+      "startedAt": 1792905620477,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndmflbac0bb7 tap_anchor result_again",
+      "startedAt": 1792905626795,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndmflbac0bb7",
+      "startedAt": 1792905631672,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndmflbac0bb7 --summary",
+      "startedAt": 1792905633029,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

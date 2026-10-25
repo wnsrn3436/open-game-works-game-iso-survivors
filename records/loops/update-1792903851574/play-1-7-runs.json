@@ -1,0 +1,724 @@
+{
+  "runs": [
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792910314844,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792910315634,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor terms_agree_all",
+      "startedAt": 1792910320967,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor terms_confirm",
+      "startedAt": 1792910321825,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792910325803,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor lobby_upgrades",
+      "startedAt": 1792910332487,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792910334385,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor upgrade_close",
+      "startedAt": 1792910335465,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvnghzx2c2cea7 on",
+      "startedAt": 1792910337317,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor lobby_play",
+      "startedAt": 1792910338160,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 5 --capture",
+      "startedAt": 1792910342001,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key_down D",
+      "startedAt": 1792910354378,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10 --capture",
+      "startedAt": 1792910355231,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key_up D",
+      "startedAt": 1792910364223,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792910365065,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key_down D",
+      "startedAt": 1792910372792,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key_down S",
+      "startedAt": 1792910373593,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 40 --capture",
+      "startedAt": 1792910374382,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 1 --capture",
+      "startedAt": 1792910420699,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792910423556,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvnghzx2c2cea7",
+      "startedAt": 1792910424659,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910432666,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10 --capture",
+      "startedAt": 1792910433518,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792910442492,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10 --capture",
+      "startedAt": 1792910443290,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792910452236,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10 --capture",
+      "startedAt": 1792910453046,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792910461953,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10 --capture",
+      "startedAt": 1792910462718,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792910471551,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10 --capture",
+      "startedAt": 1792910472362,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792910481329,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10 --capture",
+      "startedAt": 1792910482138,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792910490985,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910500134,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910508130,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910539834,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910540669,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910548532,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910556448,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910564365,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910572376,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910580332,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910588236,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910624240,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910625008,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910632878,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 25",
+      "startedAt": 1792910640745,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792910648575,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key_up D",
+      "startedAt": 1792910659961,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key_up S",
+      "startedAt": 1792910660681,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10 --capture",
+      "startedAt": 1792910661424,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10 --capture",
+      "startedAt": 1792910669897,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910707025,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792910707754,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792910712844,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910722105,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910725676,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910729277,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910761126,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792910761895,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910775355,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910778908,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910782500,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910814067,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910814822,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910818369,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910821918,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910854876,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910855646,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910859238,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910862819,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910866377,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910898494,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910899248,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910902833,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910906394,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910938503,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910939234,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910942774,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910946323,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910949877,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910953424,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 1",
+      "startedAt": 1792910984685,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910985420,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792910988974,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792910992526,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792910993706,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 5 --capture",
+      "startedAt": 1792911004042,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 5 --capture",
+      "startedAt": 1792911008599,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 5 --capture",
+      "startedAt": 1792911013182,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 5 --capture",
+      "startedAt": 1792911017778,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 5 --capture",
+      "startedAt": 1792911022314,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 5 --capture",
+      "startedAt": 1792911026858,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792911028805,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792911029720,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 key 2",
+      "startedAt": 1792911036364,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792911037104,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792911040684,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792911041384,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792911044933,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792911045635,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792911049221,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792911049934,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792911053493,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvnghzx2c2cea7 200 --count 10",
+      "startedAt": 1792911054199,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792911056614,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvnghzx2c2cea7 --summary",
+      "startedAt": 1792911057652,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvnghzx2c2cea7 off",
+      "startedAt": 1792911061820,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792911065567,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor result_lobby",
+      "startedAt": 1792911073047,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792911076781,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor lobby_upgrades",
+      "startedAt": 1792911077814,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor upgrade_buy [upgrade_vitality]",
+      "startedAt": 1792911079566,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor upgrade_buy [upgrade_magnet]",
+      "startedAt": 1792911080293,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792911082058,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor upgrade_close",
+      "startedAt": 1792911091878,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvnghzx2c2cea7 tap_anchor lobby_play",
+      "startedAt": 1792911093641,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792911096392,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvnghzx2c2cea7",
+      "startedAt": 1792911099585,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

@@ -366,10 +366,9 @@ patch_margin_bottom = 14
 
 [node name="HpText" type="Label" parent="TopLeft/Box/HpRow"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 28
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -400,10 +399,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="TopLeft/Box/Weapons/Slot1"]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 20
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -437,10 +435,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="TopLeft/Box/Weapons/Slot2"]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 20
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -474,10 +471,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="TopLeft/Box/Weapons/Slot3"]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 20
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -511,10 +507,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="TopLeft/Box/Weapons/Slot4"]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 20
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -553,10 +548,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="TopLeft/Box/Passives/Slot1"]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 20
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -590,10 +584,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="TopLeft/Box/Passives/Slot2"]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 20
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -627,10 +620,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="TopLeft/Box/Passives/Slot3"]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 20
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -664,10 +656,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="TopLeft/Box/Passives/Slot4"]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 20
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -700,10 +691,9 @@ theme_override_constants/separation = 6
 
 [node name="Title" type="Label" parent="BlessingPlate/Box"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.788, 0.635, 0.153, 1.0)
 theme_override_font_sizes/font_size = 24
-theme_override_colors/font_outline_color = Color(0.788, 0.635, 0.153, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -730,10 +720,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="BlessingPlate/Box/Grid/Slot1"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 22
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -754,10 +743,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="BlessingPlate/Box/Grid/Slot2"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 22
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -778,10 +766,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="BlessingPlate/Box/Grid/Slot3"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 22
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -802,10 +789,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="BlessingPlate/Box/Grid/Slot4"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 22
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -826,10 +812,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="BlessingPlate/Box/Grid/Slot5"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 22
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -850,10 +835,9 @@ stretch_mode = 5
 
 [node name="Level" type="Label" parent="BlessingPlate/Box/Grid/Slot6"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 22
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -862,10 +846,9 @@ vertical_alignment = 1
 
 [node name="Level" type="Label" parent="."]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 46
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 4
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -904,10 +887,9 @@ size_flags_vertical = 4
 
 [node name="Timer" type="Label" parent="TimerRow"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 60
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 5
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 3
@@ -957,10 +939,9 @@ size_flags_vertical = 4
 
 [node name="Label" type="Label" parent="TopRight/Box/Kills"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 38
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 3
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -984,10 +965,9 @@ size_flags_vertical = 4
 
 [node name="Label" type="Label" parent="TopRight/Box/Gold"]
 layout_mode = 2
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 38
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 3
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -1000,8 +980,6 @@ size_flags_horizontal = 3
 layout_mode = 1
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 30
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -1020,10 +998,9 @@ offset_bottom = -90.0
 
 [node name="Status" type="Label" parent="."]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 52
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 4
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -1043,10 +1020,9 @@ grow_vertical = 2
 
 [node name="Banner" type="Label" parent="."]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.85, 0.32, 0.36, 1.0)
 theme_override_font_sizes/font_size = 68
-theme_override_colors/font_outline_color = Color(0.85, 0.32, 0.36, 1.0)
-theme_override_constants/outline_size = 6
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 3
@@ -1067,10 +1043,9 @@ grow_vertical = 2
 
 [node name="Notice" type="Label" parent="."]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(1.0, 0.85, 0.42, 1.0)
 theme_override_font_sizes/font_size = 52
-theme_override_colors/font_outline_color = Color(1.0, 0.85, 0.42, 1.0)
-theme_override_constants/outline_size = 4
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -1132,10 +1107,9 @@ patch_margin_bottom = 6
 [node name="Warn" type="Label" parent="PlayerBar"]
 visible = false
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.95, 0.36, 0.4, 1.0)
 theme_override_font_sizes/font_size = 26
-theme_override_colors/font_outline_color = Color(0.95, 0.36, 0.4, 1.0)
-theme_override_constants/outline_size = 2
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 2
@@ -1154,10 +1128,9 @@ grow_horizontal = 2
 
 [node name="Fall" type="Label" parent="."]
 layout_mode = 1
+theme_type_variation = &"HeadingLabel"
 theme_override_colors/font_color = Color(0.91, 0.882, 0.816, 1.0)
 theme_override_font_sizes/font_size = 104
-theme_override_colors/font_outline_color = Color(0.91, 0.882, 0.816, 1.0)
-theme_override_constants/outline_size = 9
 theme_override_colors/font_shadow_color = Color(0.04, 0.03, 0.06, 0.9)
 theme_override_constants/shadow_offset_x = 0
 theme_override_constants/shadow_offset_y = 5

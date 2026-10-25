@@ -1,0 +1,363 @@
+{
+  "runs": [
+    {
+      "command": "ogw settings list game open-game-works-game-iso-survivors --owner content",
+      "startedAt": 1792903923058,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw settings set game open-game-works-game-iso-survivors core.LocalizationCore.bodyFontWeight 400 core.LocalizationCore.headingFontWeight 800",
+      "startedAt": 1792904043199,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw data open-game-works-game-iso-survivors",
+      "startedAt": 1792904053207,
+      "exitCode": 0,
+      "summary": {
+        "glossaryMissing": []
+      }
+    },
+    {
+      "command": "ogw contract open-game-works-game-iso-survivors",
+      "startedAt": 1792904054102,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --regression",
+      "startedAt": 1792904057990,
+      "exitCode": 0,
+      "summary": {
+        "checks": [
+          {
+            "name": "regression test",
+            "result": "pass"
+          }
+        ]
+      },
+      "job": "mvncs8yz6d5ea2"
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --static",
+      "startedAt": 1792904058576,
+      "exitCode": 1,
+      "summary": {
+        "checks": [
+          {
+            "name": "static check",
+            "result": "fail"
+          }
+        ]
+      },
+      "job": "mvncs9f8063fa2"
+    },
+    {
+      "command": "ogw instance start open-game-works-game-iso-survivors --fixture client/dev/bot/fixtures/titles_and_buttons.json",
+      "startedAt": 1792904059182,
+      "exitCode": 0,
+      "summary": null,
+      "job": "mvncs9vz729f7e"
+    },
+    {
+      "command": "ogw job wait mvncs9vz729f7e",
+      "startedAt": 1792904063063,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904068732,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvncsauif2d5eb",
+      "startedAt": 1792904069321,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb title.open_title",
+      "startedAt": 1792904088069,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvncsauif2d5eb",
+      "startedAt": 1792904089166,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb lobby.open_lobby",
+      "startedAt": 1792904090168,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb tap_anchor lobby_upgrades",
+      "startedAt": 1792904091284,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvncsauif2d5eb",
+      "startedAt": 1792904092890,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb tap_anchor upgrade_close",
+      "startedAt": 1792904100913,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb tap_anchor lobby_play",
+      "startedAt": 1792904101494,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904102101,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_down D",
+      "startedAt": 1792904102689,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_up D",
+      "startedAt": 1792904103259,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904103818,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_down D",
+      "startedAt": 1792904104405,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_up D",
+      "startedAt": 1792904104973,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904105548,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_down D",
+      "startedAt": 1792904106142,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_up D",
+      "startedAt": 1792904106705,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904107272,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_down D",
+      "startedAt": 1792904107862,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_up D",
+      "startedAt": 1792904108418,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904108989,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_down D",
+      "startedAt": 1792904109582,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_up D",
+      "startedAt": 1792904110134,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904110708,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvncsauif2d5eb",
+      "startedAt": 1792904111302,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key_press 1",
+      "startedAt": 1792904118642,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792904119166,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key 1",
+      "startedAt": 1792904123445,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb key P",
+      "startedAt": 1792904124022,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvncsauif2d5eb",
+      "startedAt": 1792904124606,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvncsauif2d5eb tap_anchor pause_give_up",
+      "startedAt": 1792904125430,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904126029,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904126625,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw command mvncsauif2d5eb get_state",
+      "startedAt": 1792904127222,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvncsauif2d5eb",
+      "startedAt": 1792904127829,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvncsauif2d5eb",
+      "startedAt": 1792904135282,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw instance stop mvncsauif2d5eb",
+      "startedAt": 1792904135845,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvncs8yz6d5ea2",
+      "startedAt": 1792904136431,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw job wait mvncs9f8063fa2",
+      "startedAt": 1792904139593,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw resource sync open-game-works-game-iso-survivors",
+      "startedAt": 1792904142898,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --static",
+      "startedAt": 1792904143736,
+      "exitCode": 0,
+      "summary": {
+        "checks": [
+          {
+            "name": "static check",
+            "result": "pass"
+          }
+        ]
+      },
+      "job": "mvncu34t39b1cc"
+    },
+    {
+      "command": "ogw job wait mvncu34t39b1cc",
+      "startedAt": 1792904148887,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw check open-game-works-game-iso-survivors --static",
+      "startedAt": 1792904164871,
+      "exitCode": 0,
+      "summary": {
+        "checks": [
+          {
+            "name": "static check",
+            "result": "pass"
+          }
+        ]
+      },
+      "job": "mvncujfx8d6dc5"
+    },
+    {
+      "command": "ogw job wait mvncujfx8d6dc5",
+      "startedAt": 1792904169690,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw meta sync open-game-works-game-iso-survivors --staged",
+      "startedAt": 1792904170273,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}

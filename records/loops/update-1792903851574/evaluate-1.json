@@ -1,0 +1,48 @@
+{
+  "commit": "cc39e52094a0797fb37072e2ab87a0012e8f2ef3",
+  "baseline": "e7d6e3ed6c16523bb0e5f08e38a2642211514e75",
+  "plays": [
+    {
+      "result": "records/loops/update-1792903851574/play-1-5.md",
+      "instance": "mvnghmee7268b5",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/update-1792903851574/play-1-6.md",
+      "instance": "mvnghsz640ed6e",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/update-1792903851574/play-1-7.md",
+      "instance": "mvnghzx2c2cea7",
+      "platform": "macos",
+      "moment": null,
+      "status": "done"
+    },
+    {
+      "result": "records/loops/update-1792903851574/play-1-8.md",
+      "instance": "mvngi7et550e80",
+      "platform": "macos",
+      "moment": "titles_and_buttons",
+      "status": "done"
+    }
+  ],
+  "judges": [
+    {
+      "kind": "main",
+      "result": "records/loops/update-1792903851574/judge-1-4.md",
+      "A": "cc39e52094a0797fb37072e2ab87a0012e8f2ef3",
+      "B": "e7d6e3ed6c16523bb0e5f08e38a2642211514e75",
+      "instanceSide": "A",
+      "omittedMoments": [],
+      "vsBaseline": "better",
+      "vsReference": "fail",
+      "status": "done"
+    }
+  ],
+  "measure": "records/loops/update-1792903851574/measure-1.json"
+}

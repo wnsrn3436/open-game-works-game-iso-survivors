@@ -1,0 +1,280 @@
+{
+  "runs": [
+    {
+      "command": "ogw input --help",
+      "startedAt": 1792905463137,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905465075,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor terms_agree_all",
+      "startedAt": 1792905469106,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905469922,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor terms_confirm",
+      "startedAt": 1792905471009,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905474970,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor lobby_upgrades",
+      "startedAt": 1792905479447,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905481287,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor upgrade_buy [upgrade_vitality]",
+      "startedAt": 1792905482232,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905484141,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor upgrade_close",
+      "startedAt": 1792905488340,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor lobby_play",
+      "startedAt": 1792905490201,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905492064,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvndm152ef36b2 on",
+      "startedAt": 1792905496358,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndm152ef36b2 200 --count 5 --capture",
+      "startedAt": 1792905497147,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 key_down S",
+      "startedAt": 1792905506986,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndm152ef36b2 200 --count 6 --capture",
+      "startedAt": 1792905507774,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 key_up S",
+      "startedAt": 1792905513450,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndm152ef36b2 --summary",
+      "startedAt": 1792905514236,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 key_down D",
+      "startedAt": 1792905516573,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndm152ef36b2 200 --count 25",
+      "startedAt": 1792905517413,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905551682,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw log mvndm152ef36b2",
+      "startedAt": 1792905554448,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw telemetry mvndm152ef36b2 --summary",
+      "startedAt": 1792905555259,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 key 2",
+      "startedAt": 1792905557924,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndm152ef36b2 200 --count 20 --capture",
+      "startedAt": 1792905559826,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905576863,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 key P",
+      "startedAt": 1792905582075,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905583922,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor pause_resume",
+      "startedAt": 1792905585070,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndm152ef36b2 200 --count 2",
+      "startedAt": 1792905586887,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 key P",
+      "startedAt": 1792905588241,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor pause_give_up",
+      "startedAt": 1792905590062,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905592884,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 key P",
+      "startedAt": 1792905598726,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndm152ef36b2 200 --count 1 --capture",
+      "startedAt": 1792905599610,
+      "exitCode": 1,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905600493,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor pause_give_up",
+      "startedAt": 1792905605663,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905607486,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905611856,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndm152ef36b2 200 --count 12 --capture",
+      "startedAt": 1792905617468,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step mvndm152ef36b2 200 --count 10 --capture",
+      "startedAt": 1792905620416,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw step-mode mvndm152ef36b2 off",
+      "startedAt": 1792905626330,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905629138,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw input mvndm152ef36b2 tap_anchor result_lobby",
+      "startedAt": 1792905634223,
+      "exitCode": 0,
+      "summary": null
+    },
+    {
+      "command": "ogw capture mvndm152ef36b2",
+      "startedAt": 1792905638068,
+      "exitCode": 0,
+      "summary": null
+    }
+  ]
+}
