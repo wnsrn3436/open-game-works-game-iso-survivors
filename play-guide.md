@@ -22,7 +22,7 @@ The player walks the night field and survives the growing horde until dawn at 15
 6. When health reaches 0, the run ends after about 1.6 seconds and the result panel opens: survived time, kills, level, gold earned. `다시 출발` (Run again, anchor `result_again`, first focus) starts a new run; `야영지로` (To camp, anchor `result_lobby`) goes to the camp
 7. At 15:00 dawn breaks, every enemy vanishes, and the result panel opens with `새벽이 밝았다!` (Dawn has broken!)
 8. Pause popup: `계속하기` (Continue, anchor `pause_resume`) continues; `원정 포기` (Give up, anchor `pause_give_up`) ends the run (`원정을 포기했다…` over the field, result title `원정을 포기했다`), and the gold of the run so far is still granted
-9. An instance started with a save fixture opens on a resumed run with the pause popup open. Press `계속하기` (anchor `pause_resume`) to continue from that moment
+9. An instance started with a save fixture that leaves a run in progress opens on a resumed run with the pause popup open. Press `계속하기` (anchor `pause_resume`) to continue from that moment. An instance started with a save fixture that leaves no run in progress (`titles_and_buttons`) opens on the camp, after the title screen has passed during boot
 10. A run started after a shrine purchase shows `등불 제단의 가호가 함께합니다` and, under the weapon and passive icons, a plate titled `등불 제단의 가호` with each bought shrine upgrade's icon and its effect for the run (e.g. `최대 체력 +15`, `피해 +5%`)
 
 ## failure

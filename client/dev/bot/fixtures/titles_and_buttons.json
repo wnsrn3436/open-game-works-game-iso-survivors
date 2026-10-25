@@ -1,0 +1,10 @@
+{
+  "steps": [
+    {
+      "kind": "setup",
+      "command": "lobby.open_lobby",
+      "args": [],
+      "timeoutMs": 60000
+    }
+  ]
+}

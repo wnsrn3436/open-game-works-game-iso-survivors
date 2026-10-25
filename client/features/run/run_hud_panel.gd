@@ -167,7 +167,6 @@ func _draw_low_health(low: bool) -> void:
 	low_health_label.visible = low
 	var text_color: Color = RunConstants.LOW_HEALTH_TEXT_COLOR if low else RunConstants.HEALTH_TEXT_COLOR
 	hp_label.add_theme_color_override(&"font_color", text_color)
-	hp_label.add_theme_color_override(&"font_outline_color", text_color)
 	for handle: int in _low_handles:
 		TweenCore.stop(handle)
 	_low_handles.clear()

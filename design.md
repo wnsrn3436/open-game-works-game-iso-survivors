@@ -144,7 +144,8 @@
 - style: stylized low-poly 3D with hand-painted textures; chunky, readable silhouettes for the isometric camera (`records/setup/art-direction.md`)
 - hex palette: night `#1B1A2E` (background, panels), moss `#3E5C3A` (ground, cloak), lantern gold `#C9A227` (light, titles, primary buttons, gold), blood red `#8E1F2F` (health bar, hurt flash, warnings), bone `#E8E1D0` (text, skeletons). XP gems glow a deep blue so they read apart from the horde and the props
 - mood: a tense night siege that turns into a power fantasy; the warm lantern light around the player pushes back the dark (a gold omni light on the player, cool moonlight and fog on the field)
-- outline: no 3D outline; UI text is drawn heavy (an outline in its own color thickens the strokes) with a dark rim and a short drop shadow so it reads over the field and the backdrops
+- outline: no 3D outline; UI text has a dark rim and a short drop shadow so it reads over the field and the backdrops
+- text style: body text at font weight 400; titles, buttons, HUD numbers, stat values, card and upgrade names, tags, banners and warnings in the heading text style at weight 800 (`LocalizationCore` font weights). Descriptions, hints, stat names and the tagline stay body
 - UI frame: panel and popup titles sit on a gold ribbon (`nine_slice/ui/title_ribbon`); stat lines are icon rows on plates; main actions are large gold plates, secondary actions dark wood plates
 - proportions: player 0.8x1.8x0.8 m; bat 1.0x0.6, ghoul 0.8x1.5, skeleton 0.9x1.7, wraith 0.9x1.8, grave brute 1.6x2.4, bone knight 1.8x2.8 m. Field props stay low (gravestones, rocks, a few lantern posts) so they do not hide the player
 - screen density: up to `wave.max_alive` enemies plus gems and effects on the field; the HUD keeps to the top band (health, XP, timer, kills, gold, weapon icons) and one hint line at the bottom

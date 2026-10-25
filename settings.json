@@ -163,5 +163,9 @@
     "privacyChoices": false,
     "trackingRequest": false,
     "version": 1
+  },
+  "core": {
+    "LocalizationCore.bodyFontWeight": 400,
+    "LocalizationCore.headingFontWeight": 800
   }
 }

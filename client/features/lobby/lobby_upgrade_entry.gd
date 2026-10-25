@@ -65,11 +65,9 @@ func refresh() -> void:
 		buy_button.icon = null
 		LocalizationCore.bind_text(buy_button, ReservedString.upgrade_maxed())
 		buy_button.disabled = true
-		CommonButtonText.match_outline(buy_button)
 		return
 	buy_button.icon = _gold
 	buy_button.disabled = false
-	CommonButtonText.match_outline(buy_button)
 	_format_args.clear()
 	_format_args.set_int("cost", CommonUpgrades.cost(step.id))
 	buy_button.text = LocalizationCore.format(ReservedString.upgrade_cost(), _format_args)
