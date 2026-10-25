@@ -471,6 +471,8 @@
   "InputCore.padAxisDeadzone": 0.2,
   "QACore.touchIndexCount": 10,
   "QACore.timeScaleMaxPermille": 100000,
+  "LocalizationCore.bodyFontWeight": 0,
+  "LocalizationCore.headingFontWeight": 0,
   "termsPopup": "prefab/common/terms_popup",
   "agePopup": "",
   "privacyPopup": "",
@@ -693,5 +695,5 @@
   "environments.DEV.secrets.db": "",
   "environments.STG.secrets.db": "",
   "environments.PROD.secrets.db": "",
-  "coreVersion": "0.1.0"
+  "coreVersion": "0.2.0"
 }
