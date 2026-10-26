@@ -167,5 +167,6 @@
   "core": {
     "LocalizationCore.bodyFontWeight": 400,
     "LocalizationCore.headingFontWeight": 800
-  }
+  },
+  "sourceLanguage": "ko"
 }
