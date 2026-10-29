@@ -62,7 +62,7 @@ from `open-game-works-core/` (needs `yt-dlp`). It is saved as `eqiqu3fliak.mp4`,
 tools/bin/ogw game reference open-game-works-game-iso-survivors https://youtu.be/eqiqu3fliak
 ```
 
-<details><summary>Before the first DEV build</summary>
+### Before the first DEV build
 
 - `settings.json` does not hold the build values yet.
   `tools/bin/ogw game check open-game-works-game-iso-survivors --build` lists the missing ones, and the `build` agent
@@ -72,8 +72,6 @@ tools/bin/ogw game reference open-game-works-game-iso-survivors https://youtu.be
   `tools/bin/ogw secret set open-game-works-game-iso-survivors <DEV|signing> <name>` (value from stdin) for the
   others, such as the deploy SSH key.
 - The terms document URLs in `settings.json` are placeholders (`.invalid` hosts). Replace them with your own.
-
-</details>
 
 ## How it is built
 

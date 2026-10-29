@@ -62,7 +62,7 @@ open-game-works 루프로 만들었고, 개발하는 동안 macOS에서 플레�
 tools/bin/ogw game reference open-game-works-game-iso-survivors https://youtu.be/eqiqu3fliak
 ```
 
-<details><summary>첫 DEV 빌드 전에</summary>
+### 첫 DEV 빌드 전에
 
 - `settings.json`에는 아직 빌드용 값이 없다.
   `tools/bin/ogw game check open-game-works-game-iso-survivors --build`가 빠진 값을 보여 주고, `build` 에이전트가
@@ -71,8 +71,6 @@ tools/bin/ogw game reference open-game-works-game-iso-survivors https://youtu.be
   `tools/bin/ogw secret generate open-game-works-game-iso-survivors DEV`로, 배포 SSH 키 같은 나머지는
   `tools/bin/ogw secret set open-game-works-game-iso-survivors <DEV|signing> <name>`(값은 표준 입력)으로 넣는다.
 - `settings.json`의 약관 문서 URL은 자리 표시용 값(`.invalid` 호스트)이다. 직접 쓸 값으로 바꾼다.
-
-</details>
 
 ## 만든 방식
 
