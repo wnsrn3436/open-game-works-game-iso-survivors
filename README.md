@@ -3,7 +3,7 @@
 [한국어](README.ko.md)
 
 **Iso Survivors** (`아이소 서바이버즈`) is an isometric 3D horde survival game for macOS in the style of Vampire
-Survivors, made by AI agents with [open-game-works](https://github.com/wnsrn3436/open-game-works-core).
+Survivors. AI agents made it with [open-game-works](https://github.com/wnsrn3436/open-game-works-core).
 
 <p align="center"><img src=".github/media/iso-survivors.gif" alt="iso-survivors gameplay" width="640"></p>
 
@@ -22,30 +22,32 @@ tools/bin/ogw instance start open-game-works-game-iso-survivors   # prints the i
 tools/bin/ogw instance stop <id>
 ```
 
-After cloning, run `update env` once in the Claude Code or Codex session opened in `open-game-works-core/`: it
-installs the engine of this game. The client logs in with a dev account and starts without the terms popup.
+After cloning, run `update env` once in a Claude Code or Codex session opened in `open-game-works-core/`. This command
+installs this game's engine. The client logs in with a dev account and starts without the terms popup.
 
 ## The game
 
-You walk a lone lantern bearer across an endless graveyard field at night. You only move: the weapons fire on their
-own. Defeated enemies drop blue XP gems, each level-up offers a pick of 3 cards (a new weapon, a higher weapon level
-or a passive), and the horde grows every minute. At 4:00, 8:00 and 12:00 a bone knight arrives and drops a chest with
-another pick of 3. The run ends when your health reaches 0, or at 15:00 when dawn breaks and the run counts as a win.
+A lone lantern bearer walks an endless graveyard field at night. You only move, and the weapons attack on their own.
+Defeated enemies drop blue XP gems. Each level-up offers a pick of 3 cards (a new weapon, the next level of a weapon
+you have or a passive), and the horde grows every minute. At 4:00, 8:00 and 12:00 a bone knight appears, and defeating
+it drops a chest that opens another pick of 3 cards. The run ends when your health reaches 0, and if you hold
+out until 15:00, dawn breaks and the run counts as a win.
 
-The gold of every run, dawn or not, buys permanent upgrades at the lantern shrine of the camp, and one press starts
+Dawn or not, the gold earned in a run buys permanent upgrades at the camp's lantern shrine, and one press starts
 the next run. One player, keyboard or gamepad, in Korean (source text) and English.
 
 | input | action |
 |---|---|
-| `W` `A` `S` `D` or arrow keys, gamepad D-pad or left stick | walk (two keys walk diagonally) |
+| `W` `A` `S` `D` or arrow keys, gamepad D-pad or left stick | walk (pressing two keys together walks diagonally) |
 | `1` `2` `3`, gamepad `X` `Y` `RB` | pick the first, second or third level-up card |
 | `P` or `Esc`, gamepad `Start` or `B` | pause during a run (`Esc` and `B` go back on other screens) |
 | mouse click, `Enter` or `Space`, gamepad `A` | press a button or card |
 
 ## Status
 
-Made with the open-game-works loop and played on macOS during development. The open defects are in the loop end
-records (`records/loops/*/end.md`). It has not been built for release yet: the `build` command has not been run on it.
+Made with the open-game-works loop and checked by playing it on macOS during development. The open defects are in the
+loop end records (`records/loops/*/end.md`). There is no release build yet, because the `build` command has never been
+run.
 
 ## Change it with AI
 
@@ -54,9 +56,9 @@ Give these commands in a Claude Code or Codex session opened in `open-game-works
 - `update game: open-game-works-game-iso-survivors <request>` changes the game through the loop.
 - `build: open-game-works-game-iso-survivors DEV` hardens the code, builds the macOS app and deploys the DEV server.
 
-The judge agent of `update game` needs the reference gameplay video, which is not in the repository. Fetch it first,
-from `open-game-works-core/` (needs `yt-dlp`). It is saved as `eqiqu3fliak.mp4`, the name
-[`reference.md`](records/setup/reference/reference.md) already expects:
+The `update game` judge agent needs a reference gameplay video, which is not in the repository. Fetch it first from
+`open-game-works-core/` (needs `yt-dlp`). The video is saved as `eqiqu3fliak.mp4`, the name already written in
+[`reference.md`](records/setup/reference/reference.md).
 
 ```sh
 tools/bin/ogw game reference open-game-works-game-iso-survivors https://youtu.be/eqiqu3fliak
@@ -66,11 +68,11 @@ tools/bin/ogw game reference open-game-works-game-iso-survivors https://youtu.be
 
 - `settings.json` does not hold the build values yet.
   `tools/bin/ogw game check open-game-works-game-iso-survivors --build` lists the missing ones, and the `build` agent
-  asks you for them. A DEV build without `signing.macos` makes an ad-hoc signed, not notarized macOS app.
-- Secret values go into the secret store of your host, never into `settings.json`:
-  `tools/bin/ogw secret generate open-game-works-game-iso-survivors DEV` for generated values, and
-  `tools/bin/ogw secret set open-game-works-game-iso-survivors <DEV|signing> <name>` (value from stdin) for the
-  others, such as the deploy SSH key.
+  asks you for them. A DEV build made without `signing.macos` gives a macOS app that is only ad-hoc signed and not
+  notarized.
+- Secret values go into your host's secret store, not into `settings.json`. Values that can be generated go in
+  with `tools/bin/ogw secret generate open-game-works-game-iso-survivors DEV`, and the others, such as the deploy SSH
+  key, with `tools/bin/ogw secret set open-game-works-game-iso-survivors <DEV|signing> <name>` (value from stdin).
 - The terms document URLs in `settings.json` are placeholders (`.invalid` hosts). Replace them with your own.
 
 ## How it is built
