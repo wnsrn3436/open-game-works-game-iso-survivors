@@ -16,7 +16,7 @@ The player walks the night field and survives the growing horde until dawn at 15
 
 1. Terms consent popup (new user only): `모두 동의합니다` (anchor `terms_agree_all`) turns on both consent checkboxes, then confirm (anchor `terms_confirm`)
 2. Camp (lobby): a top band with the game name, the gold and the gear button `설정` (Options, anchor `lobby_options`, top right); the `나의 기록` (My record) card on the left (best survival, most kills, runs, dawns; before the first run it says `첫 원정을 떠나 새벽까지 버텨 보세요`); the hero by the fire in the middle; on the right `등불 제단` (Lantern shrine, anchor `lobby_upgrades`) with a red badge holding the number of upgrades the gold covers (only when there is one), and the large `원정 시작` (Start run, anchor `lobby_play`, first focus) with the line `새벽까지 15분 버티면 승리` (Last 15 minutes until dawn to win) under it
-3. Lantern shrine panel: six upgrade rows with level (`Lv 1/3` and one pip per level, lit pips for bought levels), effect, and a buy button that shows the coin icon and the gold cost of the next level (`최대` (Max) and disabled when every level is bought). The buy button of a row is anchor `upgrade_buy` with the upgrade ID name as key (`[upgrade_might]`, `[upgrade_vitality]`, `[upgrade_haste]`, `[upgrade_magnet]`, `[upgrade_swiftness]`, `[upgrade_greed]`). Every anchor key in this guide is the ID name with its square brackets, as written: `tap_anchor upgrade_buy [upgrade_vitality]`. A key without the brackets (`upgrade_vitality`) is not found and the input fails. `닫기` (Close, anchor `upgrade_close`) goes back to the camp. A row without enough gold shows `금화가 부족해요` (Not enough gold) over a dimmed buy button and its press does not buy
+3. Lantern shrine panel: six upgrade rows with level (`Lv 1/3` and one pip per level, lit pips for bought levels), effect, and a buy button that shows the coin icon and the gold cost of the next level (`최대` (Max) and disabled when every level is bought). The buy button of a row is anchor `upgrade_buy` with the upgrade ID name as key (`[upgrade_might]`, `[upgrade_vitality]`, `[upgrade_haste]`, `[upgrade_magnet]`, `[upgrade_swiftness]`, `[upgrade_greed]`). Every anchor key in this guide is the ID name with its square brackets, as written: `click_anchor upgrade_buy [upgrade_vitality]`. A key without the brackets (`upgrade_vitality`) is not found and the input fails. `닫기` (Close, anchor `upgrade_close`) goes back to the camp. A row without enough gold shows `금화가 부족해요` (Not enough gold) over a dimmed buy button and its press does not buy
 4. Run: `원정 준비 중` (Getting the run ready) shows briefly, then the run timer starts at 0:00. The move hint shows at the bottom until the player first moves. Enemies come from outside the screen
 5. Level-up popup: three cards (anchor `levelup_choice`, key = the weapon or passive ID name of the card, e.g. `[weapon_spinning_blade]`, `[passive_might]`; the soup card has no key). The run is held until a card is picked. When every owned weapon and passive is at level 5 and the slots are full, a level-up heals at once (soup) without opening the popup
 6. When health reaches 0, the run ends after about 1.6 seconds and the result panel opens: survived time, kills, level, gold earned. `다시 출발` (Run again, anchor `result_again`, first focus) starts a new run; `야영지로` (To camp, anchor `result_lobby`) goes to the camp
@@ -36,14 +36,14 @@ The player walks the night field and survives the growing horde until dawn at 15
 - scene change (camp ↔ run): input is not accepted during the loading screen (about 300ms~2000ms)
 - run start: nothing moves until the server answers (about 100ms~500ms)
 - level-up popup: while it is open, game time and the run stop; only the cards take input
-- pause popup: while it is open, game time and the run stop. In step mode during this time `ogw step` does not advance the run. Close it with `tap_anchor pause_resume`
+- pause popup: while it is open, game time and the run stop. In step mode during this time `ogw step` does not advance the run. Close it with `click_anchor pause_resume`
 - run end: from the fall until the result panel, about 1600ms plus the save response; movement does not move the player. A move key, `P` or `Esc` pops the fall title, and from 600ms into the wait opens the result at once
 - move keys in step mode: the ms of `ogw input <id> key D <ms>` is real time and game time does not pass, so the player does not move. Move with `key_down D` → `ogw step <id> <ms>` → `key_up D`
 
 ## fastest start path
 
-1. (new user) terms popup `tap_anchor terms_agree_all` → `tap_anchor terms_confirm`
-2. Camp: `tap_anchor lobby_play`
+1. (new user) terms popup `click_anchor terms_agree_all` → `click_anchor terms_confirm`
+2. Camp: `click_anchor lobby_play`
 3. About 300ms~2000ms of loading, then the run starts at 0:00
 
 ## play mode
